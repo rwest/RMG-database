@@ -837,7 +837,7 @@ if __name__ == '__main__':
     generateParser = subparsers.add_parser('generate', help='generate and save kinetics group values for one or more families')
     generateParser.add_argument('family', metavar='<family>', type=str, nargs='*', help='the family to generate, or --all for all families')
     generateParser.add_argument('-a', '--all', action='store_true', help='generate for all families')
-    generateParser.add_argument('-m', '--method', metavar='<method>', type=str, nargs='?', default='Arrhenius', help='the method to use')
+    generateParser.add_argument('-m', '--method', metavar='<method>', type=str, nargs='?', default='KineticsData', help='the method to use')
     generateParser.add_argument('--training', metavar='<trainingset>', type=str, nargs='*', help='the training set(s) to use')
     generateParser.set_defaults(run=generate)
     
