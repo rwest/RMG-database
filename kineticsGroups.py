@@ -66,15 +66,19 @@ def createDataSet(labels, family, database):
     dataset = []
     for label in labels:
         data = []
-        
-        if label in ['rules','training','test','PrIMe','PrIMe_RMG_Java']:
-            depository = getattr(family,label)
+        if label == 'rules':
+            depository = family.rules
         else:
-            raise ValueError('Invalid value "{0}" for label parameter.'.format(label))
-        
+            for depository in family.depositories:
+                if depository.label.replace(family.label+'/','') == label:
+                    break # found depository.
+            else:
+                raise ValueError('Family "{0}" does not have depository "{1}".'.format(family.label, label))
+            
         for entry in depository.entries.values():
             if isinstance(entry.data, ArrheniusEP):
                 if entry.data.alpha.value != 0:
+                    print "Skipping entry {0} because it's Evans-Polanyi".format(entry)
                     continue # skip things with Evans-Polanyi values
             reaction, template = database.kinetics.getForwardReactionForFamilyEntry(entry=entry, family=family.label, thermoDatabase=database.thermo)
             data.append([reaction, template, entry])
