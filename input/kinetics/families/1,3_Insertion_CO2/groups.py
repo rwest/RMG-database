@@ -7,7 +7,7 @@ longDesc = u"""
 
 """
 
-template(reactants=["CO2", "RR'"], products=["R_(CO2)_R'"], ownReverse=False)
+template(reactants=["CO2", "R_H"], products=["R_(CO2)_R'"], ownReverse=False)
 
 reverse = "1,2_Elimination_CO2"
 
