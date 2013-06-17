@@ -7,7 +7,7 @@ longDesc = u"""
 
 """
 
-template(reactants=["CO2", "R_H"], products=["R_(CO2)_R'"], ownReverse=False)
+template(reactants=["CO2", "RR'"], products=["R_(CO2)_R'"], ownReverse=False)
 
 reverse = "1,2_Elimination_CO2"
 
@@ -28,7 +28,9 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
+The dictionary defines CO2 in two ways, allowing the R-R' to insert either way
+around. However, there are only rates for one of these ways. The other is
+presumably matching the top level node.
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
@@ -38,14 +40,16 @@ u"""
 entry(
     index = 2,
     label = "RR'",
-    group = "OR{R_H, R_R'}",
+    group = "OR{R_H, O_R'}",
     kinetics = None,
     reference = None,
     referenceType = "",
     shortDesc = u"""""",
     longDesc = 
 u"""
-
+Note that the L2 node R_R' is excluded, because we have no evidence that
+CO2 can insert into a C-C bond, and 0 seems to be a better estimate than
+what was being calculated by averaging the R_H rules. Fariba & Richard, June 2013.
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
@@ -1177,6 +1181,155 @@ u"""
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
     ],
 )
+entry(
+    index = 50,
+    label = "O_R'",
+    group = 
+"""
+1 *3 Os 0 {2,S} 
+2 *4 {H,Cs,Cd,Cb,Sis,Sid} 0 {1,S} 
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Tue June 4 2013","Fariba Seyedzadeh <seyedzadehkhanshan.f@husk.y.neuedu>","action","""Fariba Seyedzadeh<seyedzadehkhanshan.f@husk.y.neuedu> created this entry."""),
+    ],
+)
+
+entry(
+    index = 51,
+    label = "Os_C",
+    group = 
+"""
+1 *3 Os 0 {2,S} {3,S} {4,S} {5,S} 
+2 *4 {Cs,Cd,Cb} 0 {1,S} 
+3    R                  0 {1,S}
+4    R                  0 {1,S}
+5    R                  0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Tue June 4 2013","Fariba Seyedzadeh <seyedzadehkhanshan.f@husk.y.neuedu>","action","""Fariba Seyedzadeh<seyedzadehkhanshan.f@husk.y.neuedu> created this entry."""),
+    ],
+)
+
+entry(
+    index = 52,
+    label = "Os_Cs",
+    group = 
+"""
+1 *3 Os 0 {2,S} {3,S} {4,S} {5,S} 
+2 *4 Cs 0 {1,S} 
+3    R                  0 {1,S}
+4    R                  0 {1,S}
+5    R                  0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Tue June 4 2013","Fariba Seyedzadeh <seyedzadehkhanshan.f@husk.y.neuedu>","action","""Fariba Seyedzadeh<seyedzadehkhanshan.f@husk.y.neuedu> created this entry."""),
+    ],
+)
+
+entry(
+    index = 53,
+    label = "Os_Cs_methyl",
+    group = 
+"""
+1 *3 Os 0 {2,S} {3,S} {4,S} {5,S}
+2 *4 Cs 0 {1,S} {6,S} {7,S} {8,S}
+3    R  0 {1,S}
+4    R  0 {1,S}
+5    R  0 {1,S}
+6    H  0 {2,S}
+7    H  0 {2,S}
+8    H  0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Tue June 4 2013","Fariba Seyedzadeh <seyedzadehkhanshan.f@husk.y.neuedu>","action","""Fariba Seyedzadeh<seyedzadehkhanshan.f@husk.y.neuedu> created this entry."""),
+    ],
+)
+
+entry(
+    index = 54,
+    label = "CsOs_Cs_methyl",
+    group = 
+"""
+1 *3 Os 0 {2,S} {3,S} {4,S} {5,S}
+2 *4 Cs 0 {1,S} {6,S} {7,S} {8,S}
+3    Cs  0 {1,S}
+4    Cs  0 {1,S}
+5    Cs  0 {1,S}
+6    H  0 {2,S}
+7    H  0 {2,S}
+8    H  0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Tue June 4 2013","Fariba Seyedzadeh <seyedzadehkhanshan.f@husk.y.neuedu>","action","""Fariba Seyedzadeh<seyedzadehkhanshan.f@husk.y.neuedu> created this entry."""),
+    ],
+)
+
+entry(
+    index = 55,
+    label = "CspriOs_Cs_methyl",
+    group = 
+"""
+1 *3 Os 0 {2,S} {3,S} {4,S} {5,S}
+2 *4 Cs 0 {1,S} {6,S} {7,S} {8,S}
+3    H  0 {1,S}
+4    H  0 {1,S}
+5    Cs  0 {1,S}
+6    H  0 {2,S}
+7    H  0 {2,S}
+8    H  0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Tue June 4 2013","Fariba Seyedzadeh <seyedzadehkhanshan.f@husk.y.neuedu>","action","""Fariba Seyedzadeh<seyedzadehkhanshan.f@husk.y.neuedu> created this entry."""),
+    ],
+)
 
 tree(
 """
@@ -1229,6 +1382,12 @@ L1: RR'
             L4: C_methyl_Cd_pri
             L4: C_methyl_Cd_sec
         L3: Cs_Cb
+    L2: O_R'
+        L3: Os_C
+            L4: Os_Cs
+                L5: Os_CH3
+                    L6: CsOs_CH3
+                        L7: CH3Os_CH3
 """
 )
 
