@@ -1207,11 +1207,9 @@ entry(
     label = "Os_C",
     group = 
 """
-1 *3 Os 0 {2,S} {3,S} {4,S} {5,S} 
+1 *3 Os 0 {2,S} {3,S} 
 2 *4 {Cs,Cd,Cb} 0 {1,S} 
-3    R                  0 {1,S}
-4    R                  0 {1,S}
-5    R                  0 {1,S}
+3    R 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -1231,11 +1229,9 @@ entry(
     label = "Os_Cs",
     group = 
 """
-1 *3 Os 0 {2,S} {3,S} {4,S} {5,S} 
+1 *3 Os 0 {2,S} {3,S} 
 2 *4 Cs 0 {1,S} 
 3    R                  0 {1,S}
-4    R                  0 {1,S}
-5    R                  0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -1252,17 +1248,15 @@ u"""
 
 entry(
     index = 53,
-    label = "Os_Cs_methyl",
+    label = "Os_CH3",
     group = 
 """
-1 *3 Os 0 {2,S} {3,S} {4,S} {5,S}
-2 *4 Cs 0 {1,S} {6,S} {7,S} {8,S}
+1 *3 Os 0 {2,S} {3,S} 
+2 *4 Cs 0 {1,S} {4,S} {5,S} {6,S}
 3    R  0 {1,S}
-4    R  0 {1,S}
-5    R  0 {1,S}
+4    H  0 {2,S}
+5    H  0 {2,S}
 6    H  0 {2,S}
-7    H  0 {2,S}
-8    H  0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -1279,17 +1273,15 @@ u"""
 
 entry(
     index = 54,
-    label = "CsOs_Cs_methyl",
+    label = "CsOs_CH3",
     group = 
 """
-1 *3 Os 0 {2,S} {3,S} {4,S} {5,S}
-2 *4 Cs 0 {1,S} {6,S} {7,S} {8,S}
+1 *3 Os 0 {2,S} {3,S} 
+2 *4 Cs 0 {1,S} {4,S} {5,S} {6,S}
 3    Cs  0 {1,S}
-4    Cs  0 {1,S}
-5    Cs  0 {1,S}
+4    H  0 {2,S}
+5    H  0 {2,S}
 6    H  0 {2,S}
-7    H  0 {2,S}
-8    H  0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -1306,17 +1298,18 @@ u"""
 
 entry(
     index = 55,
-    label = "CspriOs_Cs_methyl",
+    label = "CH3Os_CH3",
     group = 
 """
-1 *3 Os 0 {2,S} {3,S} {4,S} {5,S}
-2 *4 Cs 0 {1,S} {6,S} {7,S} {8,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs  0 {1,S}
+1 *3 Os 0 {2,S} {3,S} 
+2 *4 Cs 0 {1,S} {4,S} {5,S} {6,S}
+3    Cs  0 {1,S} {7,S} {8,S} {9,S}
+4    H  0 {2,S}
+5    H  0 {2,S}
 6    H  0 {2,S}
-7    H  0 {2,S}
-8    H  0 {2,S}
+7    H  0 {3,S}
+8    H  0 {3,S}
+9    H  0 {3,S}
 """,
     kinetics = None,
     reference = None,
