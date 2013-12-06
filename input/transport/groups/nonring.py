@@ -770,6 +770,29 @@ u"""
 )
 
 
+entry(
+    index = 27,
+    label = "N_centered",
+    group = 
+"""
+1 * {N2d,N3s,N3d,N3t,N5s,N5d,N5dd,N5t} 0
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Mar 11 14:03:16 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> imported this entry from the old RMG database."""),
+    ],
+)
+
 tree(
 """
 L0: R
@@ -786,7 +809,8 @@ L0: R
         L2: CdHR2
             L3: Aldehyde_Ccentered
         L2: CddR2
-        L2: CtHR
+        L2: CtHR  #
+            L3:Ct-HN3t  # -CN ?  Does Joback add the -C#R correction here too?
         L2: CtR2
         
     L1: O_centered
@@ -804,5 +828,20 @@ L0: R
     L1: S_centered
         L2: Thiol
         L2: Thioether
+        
+    L1: N_centered  # no data - top level group
+        L2: N2d   #  no Joback data? what is it?
+        L2: N3s   # 
+            L3: N3s-RHH  # -NH2
+            L3: N3s-RRH  # >NH  (nonring)
+            L3: N3s-RRR  # >N-  (nonring)
+        L2: N3d   #  -N= (nonring)
+        L2: N5d
+            L3: N5d-OdOdR # -NO2
+            
+        # Joback N groups not placed yet:
+        # -CN
+        # NH  (no data anyway)
+
 """
 )
