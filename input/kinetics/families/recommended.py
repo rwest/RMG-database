@@ -4,7 +4,7 @@
 # are not turned on by default because the family is severely lacking in data.
 # These families should only be turned on with caution.
 
-recommendedFamilies(families = {
+recommendedFamilies = {
 '1,2-Birad_to_alkene': True,
 '1,2_Insertion': True,
 '1,2_shiftS': True,
@@ -44,5 +44,6 @@ recommendedFamilies(families = {
 'R_Addition_MultipleBond': True,
 'R_Recombination': True,
 'Substitution_O': True,
-'SubstitutionS': True,}
-)
+'SubstitutionS': True,
+}
+
