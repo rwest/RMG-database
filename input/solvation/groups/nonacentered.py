@@ -691,14 +691,14 @@ entry(
 	group = 
 """
 1 * N3s 0 {2,S} {3,S} {4,S}
-2   H   0 [1,S}
+2   H   0 {1,S}
 3   H   0 {1,S}
 4   Cb  0 {1,S} {5,B} {9,B}
 5   Cb  0 {4,B} {6,B}
 6   Cb  0 {5,B} {7,B}
 7   Cb  0 {6,B} {8,B}
 8   Cb  0 {7,B} {9,B}
-9   Cb  0 {8,B} {4,B}
+9   Cb  0 {4,B} {8,B}
 """,
 	solute = SoluteData(
 		S = 0.0,
