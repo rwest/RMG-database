@@ -463,11 +463,11 @@ u"""
 entry(
 	index = 20,
 	label = "Cd(Od)N",
-	group = 
+	group =
 """
-1 * CO 		  0 {2,D} {3,S}
-2   Od 		  0 {1,D}
-3   {N3s,N3d} 0 {1,S}
+1 * CO 		  U0 {2,D} {3,S}
+2   Od 		  U0 {1,D}
+3   {N3s,N3d} U0 {1,S}
 
 """,
 	solute = SoluteData(
@@ -505,13 +505,13 @@ u"""
 entry(
 	index = 22,
 	label = "Lactam4",
-	group = 
+	group =
 """
-1   Od 0 {2,D}
-2 * CO 0 {1,D} {3,S} {5,S}
-3   N  0 {2,S} {4,S}
-4   Cs 0 {5,S} {3,S}
-5   Cs 0 {4,S} {2,S}
+1   Od U0 {2,D}
+2 * CO U0 {1,D} {3,S} {5,S}
+3   N  U0 {2,S} {4,S}
+4   Cs U0 {5,S} {3,S}
+5   Cs U0 {4,S} {2,S}
 """,
 	solute = None,
 	shortDesc = u"""lactam, 4 membered ring""",
@@ -524,14 +524,14 @@ u"""
 entry(
 	index = 23,
 	label = "Lactam5",
-	group = 
+	group =
 """
-1   Od 0 {2,D}
-2 * CO 0 {1,D} {3,S} {6,S}
-3   N  0 {2,S} {4,S}
-4   Cs 0 {5,S} {3,S}
-5   Cs 0 {4,S} {6,S}
-6   Cs 0 {5,S} {2,S}
+1   Od U0 {2,D}
+2 * CO U0 {1,D} {3,S} {6,S}
+3   N  U0 {2,S} {4,S}
+4   Cs U0 {5,S} {3,S}
+5   Cs U0 {4,S} {6,S}
+6   Cs U0 {5,S} {2,S}
 """,
 	solute = None,
 	shortDesc = u"""lactam, 5 membered ring""",
@@ -544,15 +544,15 @@ u"""
 entry(
 	index = 24,
 	label = "Lactam6",
-	group = 
+	group =
 """
-1   Od 0 {2,D}
-2 * CO 0 {1,D} {3,S} {7,S}
-3   N  0 {2,S} {4,S}
-4   Cs 0 {5,S} {3,S}
-5   Cs 0 {4,S} {6,S}
-6   Cs 0 {5,S} {7,S}
-7   Cs 0 {6,S} {2,S}
+1   Od U0 {2,D}
+2 * CO U0 {1,D} {3,S} {7,S}
+3   N  U0 {2,S} {4,S}
+4   Cs U0 {5,S} {3,S}
+5   Cs U0 {4,S} {6,S}
+6   Cs U0 {5,S} {7,S}
+7   Cs U0 {6,S} {2,S}
 """,
 	solute = None,
 	shortDesc = u"""lactam, 6 membered ring""",
@@ -565,16 +565,16 @@ u"""
 entry(
 	index = 25,
 	label = "Lactam7",
-	group = 
+	group =
 """
-1   Od 0 {2,D}
-2 * CO 0 {1,D} {3,S} {8,S}
-3   N  0 {2,S} {4,S}
-4   Cs 0 {5,S} {3,S}
-5   Cs 0 {4,S} {6,S}
-6   Cs 0 {5,S} {7,S}
-7   Cs 0 {6,S} {8,S}
-8   Cs 0 {7,S} {2,S}
+1   Od U0 {2,D}
+2 * CO U0 {1,D} {3,S} {8,S}
+3   N  U0 {2,S} {4,S}
+4   Cs U0 {5,S} {3,S}
+5   Cs U0 {4,S} {6,S}
+6   Cs U0 {5,S} {7,S}
+7   Cs U0 {6,S} {8,S}
+8   Cs U0 {7,S} {2,S}
 """,
 	solute = None,
 	shortDesc = u"""lactam, 7 membered ring""",
@@ -587,12 +587,12 @@ u"""
 entry(
 	index = 26,
 	label = "SdOdOdN",
-	group = 
+	group =
 """
-1 * Sd 0 {2,D} {3,D} {4,S}
-2   Od 0 {1,D}
-3   Od 0 {1,D}
-4   N  0 {1,S}
+1 * Sd U0 {2,D} {3,D} {4,S}
+2   Od U0 {1,D}
+3   Od U0 {1,D}
+4   N  U0 {1,S}
 
 """,
 	solute = SoluteData(
@@ -612,12 +612,12 @@ u"""
 entry(
 	index = 27,
 	label = "NCd(Od)N",
-	group = 
+	group =
 """
-1 * CO  0 {2,D} {3,S} {4,S}
-2   Od  0 {1,D}
-3   N3s 0 {1,S}
-4   N3s 0 {1,S}
+1 * CO  U0 {2,D} {3,S} {4,S}
+2   Od  U0 {1,D}
+3   N3s U0 {1,S}
+4   N3s U0 {1,S}
 
 """,
 	solute = SoluteData(
@@ -637,12 +637,12 @@ u"""
 entry(
 	index = 28,
 	label = "OsCd(Od)N",
-	group = 
+	group =
 """
-1 * CO  0 {2,D} {3,S} {4,S}
-2   Od  0 {1,D}
-3   Os  0 {1,S}
-4   N3s 0 {1,S}
+1 * CO  U0 {2,D} {3,S} {4,S}
+2   Od  U0 {1,D}
+3   Os  U0 {1,S}
+4   N3s U0 {1,S}
 
 """,
 	solute = SoluteData(
@@ -662,13 +662,13 @@ u"""
 entry(
 	index = 29,
 	label = "Cd(Od)NCd(Od)",
-	group = 
+	group =
 """
-1 * CO  0 {2,D} {3,S}
-2   Od  0 {1,D}
-3   N3s 0 {1,S} {4,S}
-4   CO  0 {3,S} {5,D}
-5   Od  0 {4,D}
+1 * CO  U0 {2,D} {3,S}
+2   Od  U0 {1,D}
+3   N3s U0 {1,S} {4,S}
+4   CO  U0 {3,S} {5,D}
+5   Od  U0 {4,D}
 
 """,
 	solute = SoluteData(
@@ -688,17 +688,17 @@ u"""
 entry(
 	index = 30,
 	label = "N3sH2-benz",
-	group = 
+	group =
 """
-1 * N3s 0 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   H   0 {1,S}
-4   Cb  0 {1,S} {5,B} {9,B}
-5   Cb  0 {4,B} {6,B}
-6   Cb  0 {5,B} {7,B}
-7   Cb  0 {6,B} {8,B}
-8   Cb  0 {7,B} {9,B}
-9   Cb  0 {4,B} {8,B}
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   H   U0 {1,S}
+3   H   U0 {1,S}
+4   Cb  U0 {1,S} {5,B} {9,B}
+5   Cb  U0 {4,B} {6,B}
+6   Cb  U0 {5,B} {7,B}
+7   Cb  U0 {6,B} {8,B}
+8   Cb  U0 {7,B} {9,B}
+9   Cb  U0 {4,B} {8,B}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -717,13 +717,13 @@ u"""
 entry(
 	index = 31,
 	label = "Cd(Od)NH2",
-	group = 
+	group =
 """
-1 * N3s 0 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   H   0 {1,S}
-4   CO  0 {1,S} {5,D}
-5   Od  0 {4,D}
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   H   U0 {1,S}
+3   H   U0 {1,S}
+4   CO  U0 {1,S} {5,D}
+5   Od  U0 {4,D}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -742,13 +742,13 @@ u"""
 entry(
 	index = 32,
 	label = "Cd(Od)NHR",
-	group = 
+	group =
 """
-1 * N3s 0 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   R!H 0 {1,S}
-4   CO  0 {1,S} {5,D}
-5   Od  0 {4,D}
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   H   U0 {1,S}
+3   R!H U0 {1,S}
+4   CO  U0 {1,S} {5,D}
+5   Od  U0 {4,D}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -767,13 +767,13 @@ u"""
 entry(
 	index = 33,
 	label = "Cd(Od)NH-arom",
-	group = 
+	group =
 """
-1 * N3s 	0 {2,S} {3,S} {4,S}
-2   H   	0 {1,S}
-3   {Cb,N3b} 0 {1,S}
-4   CO  	0 {1,S} {5,D}
-5   Od  	0 {4,D}
+1 * N3s 	U0 {2,S} {3,S} {4,S}
+2   H   	U0 {1,S}
+3   {Cb,N3b} U0 {1,S}
+4   CO  	U0 {1,S} {5,D}
+5   Od  	U0 {4,D}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -792,14 +792,14 @@ u"""
 entry(
 	index = 34,
 	label = "N3sHCd(Od)N3sH",
-	group = 
+	group =
 """
-1 * N3s 	0 {2,S} {3,S}
-2   H   	0 {1,S}
-3   CO 		0 {1,S} {4,D} {5,S}
-4   Od		0 {3,D}
-5   N3s		0 {3,S} {6,S}
-6   H       0 {5,S}
+1 * N3s 	U0 {2,S} {3,S}
+2   H   	U0 {1,S}
+3   CO 		U0 {1,S} {4,D} {5,S}
+4   Od		U0 {3,D}
+5   N3s		U0 {3,S} {6,S}
+6   H       U0 {5,S}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -818,14 +818,14 @@ u"""
 entry(
 	index = 34,
 	label = "N3sHCd(Od)N3sH",
-	group = 
+	group =
 """
-1 * N3s 	0 {2,S} {3,S}
-2   H   	0 {1,S}
-3   CO 		0 {1,S} {4,D} {5,S}
-4   Od		0 {3,D}
-5   N3s		0 {3,S} {6,S}
-6   H       0 {5,S}
+1 * N3s 	U0 {2,S} {3,S}
+2   H   	U0 {1,S}
+3   CO 		U0 {1,S} {4,D} {5,S}
+4   Od		U0 {3,D}
+5   N3s		U0 {3,S} {6,S}
+6   H       U0 {5,S}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -844,15 +844,15 @@ u"""
 entry(
 	index = 35,
 	label = "N3sCd(Od)N3sH",
-	group = 
+	group =
 """
-1 * N3s 	0 {2,S} {3,S} {7,S}
-2   R!H   	0 {1,S}
-3   CO 		0 {1,S} {4,D} {5,S}
-4   Od		0 {3,D}
-5   N3s		0 {3,S} {6,S}
-6   H       0 {5,S}
-7   R!H		0 {1,S}
+1 * N3s 	U0 {2,S} {3,S} {7,S}
+2   R!H   	U0 {1,S}
+3   CO 		U0 {1,S} {4,D} {5,S}
+4   Od		U0 {3,D}
+5   N3s		U0 {3,S} {6,S}
+6   H       U0 {5,S}
+7   R!H		U0 {1,S}
 """,
 	solute = SoluteData(
 		S = 0.0,
@@ -871,17 +871,17 @@ u"""
 entry(
 	index = 36,
 	label = "CdsNdNsNs",
-	group = 
+	group =
 """
-1 * Cd 	0 {2,D} {3,S} {4,S}
-2   N3d 0 {1,D} {5,S}
-3   N3s 0 {1,S} {6,S} {7,S}
-4	N3s 0 {1,S} {8,S} {9,S}
-5   H   0 {2,S}
-6   H   0 {3,S}
-7   H   0 {3,S}
-8   H   0 {4,S}
-9   H   0 {4,S}
+1 * Cd 	U0 {2,D} {3,S} {4,S}
+2   N3d U0 {1,D} {5,S}
+3   N3s U0 {1,S} {6,S} {7,S}
+4	N3s U0 {1,S} {8,S} {9,S}
+5   H   U0 {2,S}
+6   H   U0 {3,S}
+7   H   U0 {3,S}
+8   H   U0 {4,S}
+9   H   U0 {4,S}
 """,
 	solute = SoluteData(
 		S = 0.0,
