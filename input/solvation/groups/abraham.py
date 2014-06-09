@@ -9,9 +9,9 @@ longDesc = u"""
 entry(
     index = -11,
     label = "O",
-    group = 
+    group =
 """
-1 * O 0
+1 * O U0
 """,
     solute = None,
     shortDesc = u"""""",
@@ -24,9 +24,9 @@ u"""
 entry(
     index = -10,
     label = "Oss",
-    group = 
+	group =
 """
-1 * Os 0
+1 * Os U0
 """,
     solute = None,
     shortDesc = u"""""",
@@ -39,9 +39,9 @@ u"""
 entry(
     index = -9,
     label = "Cb",
-    group = 
+	group =
 """
-1 * Cb 0
+1 * Cb U0
 
 """,
     solute = None,
@@ -55,9 +55,9 @@ u"""
 entry(
     index = -8,
     label = "N",
-    group = 
+	group =
 """
-1 * N 0
+1 * N U0
 """,
     solute = None,
     shortDesc = u"""""",
@@ -70,9 +70,9 @@ u"""
 entry(
     index = -7,
     label = "N3s",
-    group = 
+	group =
 """
-1 * N3s 0
+1 * N3s U0
 """,
     solute = None,
     shortDesc = u"""""",
@@ -85,9 +85,9 @@ u"""
 entry(
     index = -6,
     label = "N3d",
-    group = 
+	group =
 """
-1 * N3d 0
+1 * N3d U0
 """,
     solute = None,
     shortDesc = u"""""",
@@ -100,9 +100,9 @@ u"""
 entry(
     index = -5,
     label = "N3t",
-    group = 
+	group =
 """
-1 * N3t 0
+1 * N3t U0
 """,
     solute = None,
     shortDesc = u"""""",
@@ -115,7 +115,7 @@ u"""
 entry(
     index = -4,
     label = "O",
-    group = 
+	group =
 """
 1 * {Os,Od} U0
 """,
@@ -129,7 +129,7 @@ u"""
 entry(
 	index = -3,
 	label = "R",
-	group = 
+	group =
 """
 1 * R U0
 """,
@@ -144,7 +144,7 @@ u"""
 entry(
 	index = -2,
 	label = "C",
-	group = 
+	group =
 """
 1 * C U0
 """,
@@ -159,7 +159,7 @@ u"""
 entry(
 	index = -1,
 	label = "Css",
-	group = 
+	group =
 """
 1 * Cs U0
 """,
@@ -174,7 +174,7 @@ u"""
 entry(
 	index = 0,
 	label = "Cds",
-	group = 
+	group =
 """
 1 * {Cd,CO} U0
 """,
@@ -189,7 +189,7 @@ u"""
 entry(
     index = 1,
     label = "CssH3",
-    group = 
+	group =
 """
 1 * Cs  U0 {2,S} {3,S} {4,S} {5,S}
 2   H   U0 {1,S}
@@ -214,7 +214,7 @@ u"""
 entry(
     index = 2,
     label = "CssH2",
-    group = 
+	group =
 """
 1 * Cs  U0 {2,S} {3,S} {4,S} {5,S}
 2   H   U0 {1,S}
@@ -239,7 +239,7 @@ u"""
 entry(
     index = 3,
     label = "CssH",
-    group = 
+	group =
 """
 1 * Cs  U0 {2,S} {3,S} {4,S} {5,S}
 2   H   U0 {1,S}
@@ -265,7 +265,7 @@ u"""
 entry(
 	index = 4,
 	label = "Css-noH",
-	group = 
+	group =
 """
 1 * Cs  U0 {2,S} {3,S} {4,S} {5,S}
 2   R!H U0 {1,S}
@@ -290,7 +290,7 @@ u"""
 entry(
 	index = 5,
 	label = "CdsH2",
-	group = 
+	group =
 """
 1 * {Cd,CO} U0 {2,S} {3,S} {4,D}
 2   H       U0 {1,S}
@@ -315,7 +315,7 @@ u"""
 entry(
 	index = 6,
 	label = "CdsH",
-	group = 
+	group =
 """
 1 * {Cd,CO} U0 {2,S} {3,S} {4,D}
 2   H       U0 {1,S}
@@ -340,7 +340,7 @@ u"""
 entry(
 	index = 7,
 	label = "Cds-noH",
-	group = 
+	group =
 """
 1 * {Cd,CO,Cb} U0 {2,S} {3,S} {4,D}
 2   R!H        U0 {1,S}
@@ -365,7 +365,7 @@ u"""
 entry(
 	index = 8,
 	label = "Cbf",
-	group = 
+	group =
 """
 1 * Cbf U0
 
@@ -387,7 +387,7 @@ u"""
 entry(
 	index = 9,
 	label = "Ct",
-	group = 
+	group =
 """
 1 * Ct U0
 
@@ -407,16 +407,24 @@ u"""
 )
 
 entry(
-	index = 10,
-	label = "Cb",
-	group = 
+        index = 10,
+        label = "N3sH2",
+        group =
 """
-1 * Cb U0
-
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   H   U0 {1,S}
+3   H   U0 {1,S}
+4   R   U0 {1,S}
 """,
-	solute = None,
-	shortDesc = u"""""",
-	longDesc = 
+solute = SoluteData(
+         S =  0.175,
+         B =  0.481,
+         E =  0.085,
+         L =  0.781,
+         A =  0.177
+    ),
+    shortDesc = u"""Platts fragment 10 -NH2 (fragment 3 for A)""",
+    longDesc = 
 u"""
 
 """)
@@ -424,7 +432,7 @@ u"""
 entry(
         index = 11,
         label = "N3sH2-aromatic",
-        group = "OR{N3sH2-Cb,N3sH2-N5ring}",
+        group ="OR{N3sH2-Cb,N3sH2-N5ring}",
         solute = SoluteData(
          S =  0.383,
          B =  0.275,
@@ -443,10 +451,10 @@ entry(
         label = "N3sH",
         group =
 """
-1 * N3s 0 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   R!H 0 {1,S}
-4   R!H   0 {1,S}
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   H   U0 {1,S}
+3   R!H U0 {1,S}
+4   R!H U0 {1,S}
 """,
 solute = SoluteData(
          S =  0.265,
@@ -464,7 +472,7 @@ u"""
 entry(
         index = 13,
         label = "N3sH-aromatic",
-        group = "OR{N3sH-Cb,N3sH-N5ring}",
+        group ="OR{N3sH-Cb,N3sH-N5ring}",
         solute = SoluteData(
          S =  0.311,
          B =  0.415,
@@ -481,14 +489,14 @@ u"""
 entry(
     index = 14,
     label = "N3sH-pyrrole",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   H        0 {1,S}
-3   Cb       0 {1,S} {5,B}
-4   Cb       0 {1,S} {6,B}
-5   Cb       0 {3,B} {6,B}
-6   Cb       0 {4,B} {5,B}
+1 * N3b      U0 {2,S} {3,B} {4,B}
+2   H        U0 {1,S}
+3   Cb       U0 {1,B} {5,B}
+4   Cb       U0 {1,B} {6,B}
+5   Cb       U0 {3,B} {6,B}
+6   Cb       U0 {4,B} {5,B}
 """,
     solute = SoluteData(
          S =  0.221,
@@ -509,10 +517,10 @@ entry(
         label = "N3s-noH",
         group =
 """
-1 * N3s 0 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   R!H U0 {1,S}
+3   R!H U0 {1,S}
+4   R!H U0 {1,S}
 """,
 solute = SoluteData(
          S =  0.323,
@@ -530,7 +538,7 @@ u"""
 entry(
         index = 16,
         label = "N3s-noH-aromatic",
-        group = "OR{N3s-noH-Cb,N3s-noH-N5ring}",
+	    group ="OR{N3s-noH-Cb,N3s-noH-N5ring}",
         solute = SoluteData(
          S =  0.295,
          B =  0.321,
@@ -547,14 +555,14 @@ u"""
 entry(
     index = 17,
     label = "N3s-noH-pyrrole",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   R!H      0 {1,S}
-3   Cb       0 {1,S} {5,B}
-4   Cb       0 {1,S} {6,B}
-5   Cb       0 {3,B} {6,B}
-6   Cb       0 {4,B} {5,B}
+1 * N3b      U0 {2,S} {3,B} {4,B}
+2   R!H      U0 {1,S}
+3   Cb       U0 {1,B} {5,B}
+4   Cb       U0 {1,B} {6,B}
+5   Cb       U0 {3,B} {6,B}
+6   Cb       U0 {4,B} {5,B}
 """,
     solute = SoluteData(
          S =  0.265,
@@ -573,9 +581,9 @@ u"""
 entry(
         index = 18,
         label = "N3d",
-        group =
+	    group =
 """
-1 * N3d 0
+1 * N3d U0
 """,
 solute = SoluteData(
          S =  0.125,
@@ -594,10 +602,10 @@ u"""
 
 entry(
       index = 19,
-      label = "N3b",
-      group =
+      label = "N3b", 
+	  group =
 """
-1 * N3b 0
+1 * N3b U0
 """,
     solute = SoluteData(
          S =  0.254,
@@ -606,7 +614,8 @@ entry(
          L =  -0.24,
          A =  0,
     ),
-    shortDesc = u"""Platts group 19 =N sp2 cyclic""",
+    shortDesc = u"""Platts  
+	group 19 =N sp2 cyclic""",
     longDesc = 
 u"""
 
@@ -616,14 +625,14 @@ u"""
 entry(
       index = 20,
       label = "N3bpyr",
-      group =
+	  group =
 """
-1 * N3b 0 {2,B} {6,B}
-2   Cb 0 {1,B} {3,B}
-3   Cb 0 {2,B} {4,B}
-4   Cb 0 {3,B} {5,B}
-5   Cb 0 {4,B} {6,B}
-6   Cb 0 {1,B} {5,B}
+1 * N3b U0  {2,B} {6,B}
+2   Cb U0 {1,B} {3,B}
+3   Cb U0 {2,B} {4,B}
+4   Cb U0 {3,B} {5,B}
+5   Cb U0 {4,B} {6,B}
+6   Cb U0 {1,B} {5,B}
 """,
     solute = SoluteData(
          S =  0.223,
@@ -642,10 +651,10 @@ u"""
 entry(
         index = 21,
         label = "N3t",
-        group =
+	    group =
 """
-1 * N3t 0 {2,T}
-2   Ct  0 {1,T}
+1 * N3t U0 {2,T}
+2   {N3t,Ct}  U0 {1,T}
 """,
 solute = SoluteData(
          S =  0.694,
@@ -663,7 +672,7 @@ u"""
 entry(
         index = 22,
         label = "N3t-aromatic",
-        group = "OR{N3t-Cb,N3t-N5ring}",
+	    group ="OR{N3t-Cb,N3t-N5ring}",
         solute = SoluteData(
          S =  0.39,
          B =  0.103,
@@ -680,12 +689,13 @@ u"""
 entry(
         index = 23,
         label = "NO2",
-        group =
+         
+	    group =
 """
-1 * N3s 0 {2,S} {3,S} {4,S}
-2   R   0 {1,S}
-3   Os  0 {1,S}
-4   Os  0 {1,S}
+1 * N3s U0 {2,S} {3,S} {4,S}
+2   R   U0 {1,S}
+3   Os  U0 {1,S}
+4   Os  U0 {1,S}
 """,
 solute = SoluteData(
          S =  0.0,
@@ -703,12 +713,12 @@ u"""
 entry(
     index = 25,
     label = "ONO2",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   Os       0 {1,S}
-3   Os       0 {1,S}
-4   Os       0 {1,S}
+1 * N        U0 {2,D} {3,S} {4,S}
+2   O        U0 {1,D}
+3   O        U0 {1,S}
+4   O        U0 {1,S}
 """,
     solute = SoluteData(
          S =  -0.476,
@@ -727,7 +737,7 @@ u"""
 entry(
 	index = 26,
 	label = "OssH",
-	group = 
+	group =
 """
 1 * Os U0 {2,S}
 2   H  U0 {1,S}
@@ -750,7 +760,7 @@ u"""
 entry(
 	index = 27,
 	label = "Oss-noncyclic",
-	group = 
+	group =
 """
 1 * Os  U0 {2,S} {3,S}
 2   R!H U0 {1,S}
@@ -774,7 +784,7 @@ u"""
 entry(
 	index = 30,
 	label = "Od",
-	group = 
+	group =
 """
 1 * Od U0
 
@@ -796,9 +806,9 @@ u"""
 entry(
     index = 31,
     label = "Ss",
-    group = 
+	group =
 """
-1 * Ss 0
+1 * Ss U0
 
 """,
     solute = SoluteData(
@@ -818,13 +828,13 @@ u"""
 entry(
     index = 32,
     label = "Ss-aromatic",
-    group = 
+	group =
 """
-1 * Ss      0 {2,S} {5,S}
-2   Cb      0 {1,S} {3,B}
-3   {Cb,N3b} 0 {2,B} {4,B}
-4   {Cb,N3b} 0 {3,B} {5,B}
-5   Cb      0 {1,S} {4,B}
+1 * Ss      U0 {2,S} {5,S}
+2   Cb      U0 {1,S} {3,B}
+3   {Cb,N3b} U0 {2,B} {4,B}
+4   {Cb,N3b} U0 {3,B} {5,B}
+5   Cb      U0 {1,S} {4,B}
 
 """,
     solute = SoluteData(
@@ -844,9 +854,9 @@ u"""
 entry(
     index = 33,
     label = "Sd",
-    group = 
+	group =
 """
-1 * Sd 0
+1 * Sd U0
 
 """,
     solute = SoluteData(
@@ -866,11 +876,11 @@ u"""
 entry(
     index = 34,
     label = "Sds",
-    group = 
+	group =
 """
-1 * Sd 0 {2,S} {3,S}
-2   R  0 {1,S}
-3   R  0 {1,S}
+1 * Sd U0 {2,S} {3,S}
+2   R  U0 {1,S}
+3   R  U0 {1,S}
 
 """,
     solute = SoluteData(
@@ -890,12 +900,12 @@ u"""
 entry(
     index = 35,
     label = "SdsOsOdOd",
-    group = 
+	group =
 """
-1 * Sd 0 {2,D} {3,D} {4,S}
-2   Od 0 {1,D}
-3   Od 0 {1,D}
-4   Os 0 {1,S}
+1 * Sd U0 {2,D} {3,D} {4,S}
+2   Od U0 {1,D}
+3   Od U0 {1,D}
+4   Os U0 {1,S}
 
 """,
     solute = SoluteData(
@@ -915,9 +925,9 @@ u"""
 entry(
     index = 36,
     label = "S",
-    group = 
+	group =
 """
-1 * {S,Ss,Sd,Sa} 0
+1 * {S,Ss,Sd,Sa} U0
 
 """,
     solute = SoluteData(
@@ -939,12 +949,12 @@ u"""
 entry(
     index = 37,
     label = "Cb-noH",
-    group = 
+	group =
 """
-1 * Cb 0 (2,B) (3,B) (4,B)
-2   R!H 0 (1,B)
-3   R!H 0 (1,B)
-4   R!H 0 (1,B)
+1 * Cb  U0 {2,B} {3,B} {4,B}
+2   R!H U0 {1,B}
+3   R!H U0 {1,B}
+4   R!H U0 {1,B}
 
 """,
     solute = SoluteData(
@@ -964,12 +974,12 @@ u"""
 entry(
     index = 38,
     label = "Cb-H",
-    group = 
+	group =
 """
-1 * Cb 0 (2,B) (3,B) (4,S)
-2   R!H 0 (1,B)
-3   R!H 0 (1,B)
-4   H   0 (1,S)
+1 * Cb  U0 {2,B} {3,B} {4,S}
+2   R!H U0 {1,B}
+3   R!H U0 {1,B}
+4   H   U0 {1,S}
 
 """,
     solute = SoluteData(
@@ -989,12 +999,12 @@ u"""
 entry(
     index = 39,
     label = "Cb-noHnoRing",
-    group = 
+	group =
 """
-1 * Cb 0 (2,B) (3,B) (4,S)
-2   R!H 0 (1,B)
-3   R!H 0 (1,B)
-4   R!H 0 (1,S)
+1 * Cb  U0 {2,B} {3,B} {4,S}
+2   R!H U0 {1,B}
+3   R!H U0 {1,B}
+4   R!H U0 {1,S}
 
 """,
     solute = SoluteData(
@@ -1007,24 +1017,24 @@ entry(
     shortDesc = u"""same as Platts group 7""",
     longDesc = 
 u"""
-Cb is attached to a 3rd R group that isn't in the ring,as in phenol.
+Cb is attached to a 3rd R group that isn't in the ring, as in phenol.
 """
 )
 
 entry(
     index = 40,
     label = "N3sH2-Cb",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   H        0 {1,S}
-3   H        0 {1,S}
-4   Cb       0 {1,S} {5,B} {6,B}
-5   {Cb,N3b} 0 {4,B} {7,B}
-6   {Cb,N3b} 0 {4,B} {8,B}
-7   {Cb,N3b} 0 {5,B} {9,B}
-8   {Cb,N3b} 0 {6,B} {9,B}
-9   {Cb,N3b} 0 {7,B} {8,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   H        U0 {1,S}
+3   H        U0 {1,S}
+4   Cb       U0 {1,S} {5,B} {6,B}
+5   {Cb,N3b} U0  {4,B} {7,B}
+6   {Cb,N3b} U0  {4,B} {8,B}
+7   {Cb,N3b} U0  {5,B} {9,B}
+8   {Cb,N3b} U0  {6,B} {9,B}
+9   {Cb,N3b} U0  {7,B} {8,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1037,16 +1047,16 @@ u"""
 entry(
     index = 41,
     label = "N3sH2-N5ring",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   H        0 {1,S}
-3   H        0 {1,S}
-4   N3s      0 {1,S} {5,S} {6,S}
-5   {Cb,N3b} 0 {4,S} {7,B}
-6   {Cb,N3b} 0 {4,S} {8,B}
-7   {Cb,N3b} 0 {5,B} {8,B}
-8   {Cb,N3b} 0 {6,B} {7,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   H        U0 {1,S}
+3   H        U0 {1,S}
+4   N3s      U0  {1,S} {5,S} {6,S}
+5   {Cb,N3b} U0  {4,S} {7,B}
+6   {Cb,N3b} U0  {4,S} {8,B}
+7   {Cb,N3b} U0  {5,B} {8,B}
+8   {Cb,N3b} U0  {6,B} {7,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1059,17 +1069,17 @@ u"""
 entry(
     index = 42,
     label = "N3sH-Cb",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   H        0 {1,S}
-3   R!H      0 {1,S}
-4   Cb       0 {1,S} {5,B} {6,B}
-5   {Cb,N3b} 0 {4,B} {7,B}
-6   {Cb,N3b} 0 {4,B} {8,B}
-7   {Cb,N3b} 0 {5,B} {9,B}
-8   {Cb,N3b} 0 {6,B} {9,B}
-9   {Cb,N3b} 0 {7,B} {8,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   H        U0 {1,S}
+3   R!H      U0 {1,S}
+4   Cb       U0 {1,S} {5,B} {6,B}
+5   {Cb,N3b} U0  {4,B} {7,B}
+6   {Cb,N3b} U0  {4,B} {8,B}
+7   {Cb,N3b} U0  {5,B} {9,B}
+8   {Cb,N3b} U0  {6,B} {9,B}
+9   {Cb,N3b} U0  {7,B} {8,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1082,16 +1092,16 @@ u"""
 entry(
     index = 43,
     label = "N3sH-N5ring",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   H        0 {1,S}
-3   R!H      0 {1,S}
-4   N3s      0 {1,S} {5,S} {6,S}
-5   {Cb,N3b} 0 {4,S} {7,B}
-6   {Cb,N3b} 0 {4,S} {8,B}
-7   {Cb,N3b} 0 {5,B} {8,B}
-8   {Cb,N3b} 0 {6,B} {7,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   H        U0 {1,S}
+3   R!H      U0 {1,S}
+4   N3s      U0  {1,S} {5,S} {6,S}
+5   {Cb,N3b} U0  {4,S} {7,B}
+6   {Cb,N3b} U0  {4,S} {8,B}
+7   {Cb,N3b} U0  {5,B} {8,B}
+8   {Cb,N3b} U0  {6,B} {7,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1104,17 +1114,17 @@ u"""
 entry(
     index = 44,
     label = "N3s-noH-Cb",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   R!H        0 {1,S}
-3   R!H      0 {1,S}
-4   Cb       0 {1,S} {5,B} {6,B}
-5   {Cb,N3b} 0 {4,B} {7,B}
-6   {Cb,N3b} 0 {4,B} {8,B}
-7   {Cb,N3b} 0 {5,B} {9,B}
-8   {Cb,N3b} 0 {6,B} {9,B}
-9   {Cb,N3b} 0 {7,B} {8,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   R!H      U0 {1,S}
+3   R!H      U0 {1,S}
+4   Cb       U0 {1,S} {5,B} {6,B}
+5   {Cb,N3b} U0  {4,B} {7,B}
+6   {Cb,N3b} U0  {4,B} {8,B}
+7   {Cb,N3b} U0  {5,B} {9,B}
+8   {Cb,N3b} U0  {6,B} {9,B}
+9   {Cb,N3b} U0  {7,B} {8,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1127,16 +1137,16 @@ u"""
 entry(
     index = 45,
     label = "N3s-noH-N5ring",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   R!H      0 {1,S}
-3   R!H      0 {1,S}
-4   N3s      0 {1,S} {5,S} {6,S}
-5   {Cb,N3b} 0 {4,S} {7,B}
-6   {Cb,N3b} 0 {4,S} {8,B}
-7   {Cb,N3b} 0 {5,B} {8,B}
-8   {Cb,N3b} 0 {6,B} {7,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   R!H      U0 {1,S}
+3   R!H      U0 {1,S}
+4   N3s      U0  {1,S} {5,S} {6,S}
+5   {Cb,N3b} U0  {4,S} {7,B}
+6   {Cb,N3b} U0  {4,S} {8,B}
+7   {Cb,N3b} U0  {5,B} {8,B}
+8   {Cb,N3b} U0  {6,B} {7,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1150,17 +1160,17 @@ u"""
 entry(
     index = 46,
     label = "NO2-Cb",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   Os       0 {1,S}
-3   Os       0 {1,S}
-4   Cb       0 {1,S} {5,B} {6,B}
-5   {Cb,N3b} 0 {4,B} {7,B}
-6   {Cb,N3b} 0 {4,B} {8,B}
-7   {Cb,N3b} 0 {5,B} {9,B}
-8   {Cb,N3b} 0 {6,B} {9,B}
-9   {Cb,N3b} 0 {7,B} {8,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   Os       U0 {1,S}
+3   Os       U0 {1,S}
+4   Cb       U0 {1,S} {5,B} {6,B}
+5   {Cb,N3b} U0  {4,B} {7,B}
+6   {Cb,N3b} U0  {4,B} {8,B}
+7   {Cb,N3b} U0  {5,B} {9,B}
+8   {Cb,N3b} U0  {6,B} {9,B}
+9   {Cb,N3b} U0  {7,B} {8,B}
 """,
     solute = SoluteData(
          S =  -0.231,
@@ -1179,16 +1189,16 @@ u"""
 entry(
     index = 47,
     label = "NO2-N5ring",
-    group = 
+	group =
 """
-1 * N3s      0 {2,S} {3,S} {4,S}
-2   Os       0 {1,S}
-3   Os       0 {1,S}
-4   N3s      0 {1,S} {5,S} {6,S}
-5   {Cb,N3b} 0 {4,S} {7,B}
-6   {Cb,N3b} 0 {4,S} {8,B}
-7   {Cb,N3b} 0 {5,B} {8,B}
-8   {Cb,N3b} 0 {6,B} {7,B}
+1 * N3s      U0  {2,S} {3,S} {4,S}
+2   Os       U0  {1,S}
+3   Os       U0  {1,S}
+4   N3s      U0  {1,S} {5,S} {6,S}
+5   {Cb,N3b} U0  {4,S} {7,B}
+6   {Cb,N3b} U0  {4,S} {8,B}
+7   {Cb,N3b} U0  {5,B} {8,B}
+8   {Cb,N3b} U0  {6,B} {7,B}
 """,
     solute = SoluteData(
          S =  -0.231,
@@ -1205,30 +1215,13 @@ u"""
 )
 
 entry(
-        index = 54,
-        label = "N3t-aromatic",
-        group = "OR{N3t-Cb, N3t-N5ring}"),
-        solute = SoluteData(
-         S =  0.39,
-         B =  0.103,
-         E =  0.0,
-         L =  0.732,
-         A =  0.0
-    ),
-    shortDesc = u"""Platts fragment 22""",
-    longDesc = 
-u"""
-
-""")
-
-entry(
     index = 55,
     label = "N3t-Cb",
-    group = 
+	group =
 """
-1 * N3t 0 {2,T}
-2   Ct  0 {1,T} {3,S}
-3   Cb  0 {2,S}
+1 * N3t U0  {2,T}
+2   Ct  U0 {1,T} {3,S}
+3   Cb  U0 {2,S}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1241,15 +1234,15 @@ u"""
 entry(
     index = 56,
     label = "N3t-N5ring",
-    group = 
+	group =
 """
-1 * N3t      0 {2,T}
-2   Ct       0 {1,T} {3,S}
-3   N3s      0 {2,S} {4,S} {5,S}
-4   {Cb,N3b} 0 {3,S} {6,B}
-5   {Cb,N3b} 0 {3,S} {7,B}
-6   {Cb,N3b} 0 {4,B} {7,B}
-7   {Cb,N3b} 0 {5,B} {6,B}
+1 * N3t      U0  {2,T}
+2   Ct       U0 {1,T} {3,S}
+3   N3s      U0  {2,S} {4,S} {5,S}
+4   {Cb,N3b} U0  {3,S} {6,B}
+5   {Cb,N3b} U0  {3,S} {7,B}
+6   {Cb,N3b} U0  {4,B} {7,B}
+7   {Cb,N3b} U0  {5,B} {6,B}
 """,
     solute = None,
     shortDesc = u"""""",
@@ -1264,7 +1257,7 @@ u"""
 entry(
 	index = 57,
 	label = "Cdd",
-	group = 
+	group =
 """
 1 * Cdd U0
 
