@@ -34,7 +34,6 @@ u"""
 entry(
     index = 2,
     label = "R5JJ",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R U1 {2,{S,D}} {5,S}
@@ -54,7 +53,6 @@ u"""
 entry(
     index = 3,
     label = "R6JJ",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R U1 {2,{S,D}} {5,S}
@@ -75,7 +73,6 @@ u"""
 entry(
     index = 4,
     label = "R7JJ",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R U1 {2,{S,D}} {5,S}

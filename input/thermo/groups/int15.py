@@ -9,7 +9,6 @@ longDesc = u"""
 entry(
     index        = 0,
     label        = "CsOsSs",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * {Cs,Os,Ss} U0 {2,S} {3,S}
@@ -37,7 +36,6 @@ u"""
 entry(
     index        = 1,
     label        = "Cs(Cs(CsCsCs)Cs(CsCsR)RR)",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S}
@@ -65,7 +63,6 @@ u"""
 entry(
     index        = 2,
     label        = "Cs(Cs(CsCsCs)Cs(CsCsCs)RR)",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S}
@@ -94,7 +91,6 @@ u"""
 entry(
     index        = 3,
     label        = "Os(Cs(CsCsCs)Cs(CsCsR))",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {3,S}
@@ -122,7 +118,6 @@ u"""
 entry(
     index        = 4,
     label        = "Os(Cs(CsCsCs)Cs(CsCsCs))",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {3,S}
@@ -151,7 +146,6 @@ u"""
 entry(
     index        = 5,
     label        = "Ss(Cs(CsCsCs)Cs(CsCsR))",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Ss U0 {2,S} {3,S}
@@ -179,7 +173,6 @@ u"""
 entry(
     index        = 6,
     label        = "Ss(Cs(CsCsCs)Cs(CsCsCs))",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Ss U0 {2,S} {3,S}

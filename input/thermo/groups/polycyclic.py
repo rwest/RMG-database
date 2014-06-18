@@ -9,7 +9,6 @@ longDesc = u"""
 entry(
     index        = 0,
     label        = "PolycyclicRing",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R U0
@@ -30,7 +29,6 @@ u"""
 entry(
     index        = 1,
     label        = "norborn{a/e}ne",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{norbornane, norbornene}",
     thermo = u'norbornane',
     shortDesc = u"""""",
@@ -43,7 +41,6 @@ u"""
 entry(
     index        = 2,
     label        = "norbornane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S} {7,S}
@@ -70,7 +67,6 @@ u"""
 entry(
     index        = 3,
     label        = "exo-tricyclo[5.2.1.0(2.6)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {3,S} {4,S} {7,S}
@@ -100,7 +96,6 @@ u"""
 entry(
     index        = 4,
     label        = "exo-tricyclo[5.2.1.0(2.6)]decene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {3,S} {4,S} {7,S}
@@ -130,7 +125,6 @@ u"""
 entry(
     index        = 5,
     label        = "exo-tricyclo[5.2.1.0(1.5)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {5,S} {9,S} {10,S}
@@ -160,7 +154,6 @@ u"""
 entry(
     index        = 6,
     label        = "tricyclo[5.2.1.0(3.8)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {9,S} {10,S}
@@ -190,7 +183,6 @@ u"""
 entry(
     index        = 7,
     label        = "norbornene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S} {7,S}
@@ -217,7 +209,6 @@ u"""
 entry(
     index        = 8,
     label        = "exo-tricyclo[5.2.1.0(2.6)]dec-8-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {3,S} {4,S} {7,S}
@@ -247,7 +238,6 @@ u"""
 entry(
     index        = 70,
     label        = "bicyclo[3.2.1]oct{a/e}ne",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{bicyclo[3.2.1]octane, bicyclo[3.2.1]octene}",
     thermo = u'bicyclo[3.2.1]octane',
     shortDesc = u"""""",
@@ -260,7 +250,6 @@ u"""
 entry(
     index        = 71,
     label        = "bicyclo[3.2.1]octane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {6,S} {8,S}
@@ -288,7 +277,6 @@ u"""
 entry(
     index        = 72,
     label        = "tricyclo[4.2.1.1(2.5)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {6,S} {8,S}
@@ -318,7 +306,6 @@ u"""
 entry(
     index        = 73,
     label        = "bicyclo[3.2.1]octene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {6,S} {8,S}
@@ -346,7 +333,6 @@ u"""
 entry(
     index        = 9,
     label        = "ind{a/e}ne",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{indane, indene, cis-octahydro-1H-indene, hexahydro-1H-indene, tetrahydro-1H-indene}",
     thermo = u'indane',
     shortDesc = u"""""",
@@ -359,7 +345,6 @@ u"""
 entry(
     index        = 10,
     label        = "indane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S}
@@ -388,7 +373,6 @@ u"""
 entry(
     index        = 11,
     label        = "indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {4,S}
@@ -417,7 +401,6 @@ u"""
 entry(
     index        = 12,
     label        = "cis-octahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {4,S}
@@ -446,7 +429,6 @@ u"""
 entry(
     index        = 13,
     label        = "tricyclo[4.3.1.0(3.7)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {3,S} {4,S}
@@ -476,7 +458,6 @@ u"""
 entry(
     index        = 14,
     label        = "tricyclo[4.3.1.0(3.8)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {3,S} {4,S}
@@ -506,7 +487,6 @@ u"""
 entry(
     index        = 15,
     label        = "hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{2.3.3a.4.5.6-hexahydro-1H-indene, 2.4.5.6.7.7a-hexahydro-1H-indene, 2.3.3a.4.5.7a-hexahydro-1H-indene, 2.3.3a.4.7.7a-hexahydro-1H-indene, 3a.4.5.6.7.7a-hexahydro-1H-indene, 2.3.4.5.6.7-hexahydro-1H-indene}",
     thermo = u'2.4.5.6.7.7a-hexahydro-1H-indene',
     shortDesc = u"""""",
@@ -519,7 +499,6 @@ u"""
 entry(
     index        = 16,
     label        = "2.3.3a.4.5.6-hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {9,S}
@@ -548,7 +527,6 @@ u"""
 entry(
     index        = 17,
     label        = "2.4.5.6.7.7a-hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,D} {5,S} {9,S}
@@ -577,7 +555,6 @@ u"""
 entry(
     index        = 18,
     label        = "2.3.3a.4.5.7a-hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {9,S}
@@ -601,7 +578,6 @@ u"""
 entry(
     index        = 19,
     label        = "2.3.3a.4.7.7a-hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {9,S}
@@ -625,7 +601,6 @@ u"""
 entry(
     index        = 20,
     label        = "2.3.4.5.6.7-hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {9,S}
@@ -649,7 +624,6 @@ u"""
 entry(
     index        = 21,
     label        = "3a.4.5.6.7.7a-hexahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {9,S}
@@ -673,7 +647,6 @@ u"""
 entry(
     index        = 22,
     label        = "tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{2.3.4.5-tetrahydro-1H-indene, 2.3.4.7-tetrahydro-1H-indene, 2.3.3a.7a-tetrahydro-1H-indene, C12CCCC1=CCC=C2, 2.3.3a.4-tetrahydro-1H-indene, 2.3.5.6-tetrahydro-1H-indene, 2.6.7.7a-tetrahydro-1H-indene}",
     thermo = u'2.3.3a.7a-tetrahydro-1H-indene',
     shortDesc = u"""""",
@@ -686,7 +659,6 @@ u"""
 entry(
     index        = 23,
     label        = "2.3.3a.7a-tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {9,S}
@@ -715,7 +687,6 @@ u"""
 entry(
     index        = 24,
     label        = "C12CCCC1=CCC=C2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {9,S}
@@ -744,7 +715,6 @@ u"""
 entry(
     index        = 25,
     label        = "2.3.4.5-tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,D} {9,S}
@@ -768,7 +738,6 @@ u"""
 entry(
     index        = 26,
     label        = "2.3.4.7-tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,D} {9,S}
@@ -792,7 +761,6 @@ u"""
 entry(
     index        = 27,
     label        = "2.3.3a.4-tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,S} {9,D}
@@ -816,7 +784,6 @@ u"""
 entry(
     index        = 28,
     label        = "2.3.5.6-tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,S} {9,D}
@@ -840,7 +807,6 @@ u"""
 entry(
     index        = 29,
     label        = "2.6.7.7a-tetrahydro-1H-indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {9,S}
@@ -864,7 +830,6 @@ u"""
 entry(
     index        = 30,
     label        = "pental{a/e}ne",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{octahydropentalene, hexahydropentalene, tetrahydropentalene}",
     thermo = u'octahydropentalene',
     shortDesc = u"""""",
@@ -877,7 +842,6 @@ u"""
 entry(
     index        = 31,
     label        = "octahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {8,S}
@@ -905,7 +869,6 @@ u"""
 entry(
     index        = 32,
     label        = "tricyclo[5.2.1.0(4.10)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {9,S} {10,S}
@@ -935,7 +898,6 @@ u"""
 entry(
     index        = 33,
     label        = "tricyclo[5.2.1.0(4.8)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1    Cs U0 {2,S} {10,S}
@@ -965,7 +927,6 @@ u"""
 entry(
     index        = 34,
     label        = "tricyclo[4.2.2.0(1.5)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {5,S} {8,S} {10,S}
@@ -995,7 +956,6 @@ u"""
 entry(
     index        = 35,
     label        = "tricyclo[5.3.0.0(4.10)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {5,S} {10,S}
@@ -1025,7 +985,6 @@ u"""
 entry(
     index        = 36,
     label        = "hexahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{1.2.3.3a.4.6a-hexahydropentalene, 1.2.3.3a.4.5-hexahydropentalene}",
     thermo = u'1.2.3.3a.4.6a-hexahydropentalene',
     shortDesc = u"""""",
@@ -1038,7 +997,6 @@ u"""
 entry(
     index        = 37,
     label        = "1.2.3.3a.4.6a-hexahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {8,S}
@@ -1066,7 +1024,6 @@ u"""
 entry(
     index        = 38,
     label        = "1.2.3.3a.4.5-hexahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {8,S}
@@ -1094,7 +1051,6 @@ u"""
 entry(
     index        = 39,
     label        = "tetrahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{1.3a.4.6a-tetrahydropentalene, 1.3a.6.6a-tetrahydropentalene, 1.2.6.6a-tetrahydropentalene, C12CCC=C1CC=C2}",
     thermo = u'1.3a.4.6a-tetrahydropentalene',
     shortDesc = u"""""",
@@ -1107,7 +1063,6 @@ u"""
 entry(
     index        = 40,
     label        = "1.3a.4.6a-tetrahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {8,S}
@@ -1135,7 +1090,6 @@ u"""
 entry(
     index        = 41,
     label        = "1.3a.6.6a-tetrahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {8,S}
@@ -1158,7 +1112,6 @@ u"""
 entry(
     index        = 42,
     label        = "1.2.6.6a-tetrahydropentalene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S} {8,S}
@@ -1181,7 +1134,6 @@ u"""
 entry(
     index        = 43,
     label        = "C12CCC=C1CC=C2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,S} {8,D}
@@ -1209,7 +1161,6 @@ u"""
 entry(
     index        = 44,
     label        = "sided3memberedring",
-    multiplicity = [1, 2, 3, 4, 5],
     group = "OR{bicyclo-(1.1.0)-butane, bicyclo-(2.1.0)-pentane, bicyclo-(3.1.0)-hexane, bicyclo-(4.1.0)-hept{a/e}ne, bicyclo-(5.1.0)-octane, bicyclo-(6.1.0)-nonane}",
     thermo = u'bicyclo-(1.1.0)-butane',
     shortDesc = u"""""",
@@ -1222,7 +1173,6 @@ u"""
 entry(
     index        = 45,
     label        = "bicyclo-(1.1.0)-butane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {4,S}
@@ -1246,7 +1196,6 @@ u"""
 entry(
     index        = 46,
     label        = "bicyclo-(2.1.0)-pentane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1271,7 +1220,6 @@ u"""
 entry(
     index        = 47,
     label        = "bicyclo-(3.1.0)-hexane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1297,7 +1245,6 @@ u"""
 entry(
     index        = 48,
     label        = "bicyclo-(4.1.0)-hept{a/e}ne",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1319,7 +1266,6 @@ u"""
 entry(
     index        = 49,
     label        = "bicyclo-(4.1.0)-heptane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1346,7 +1292,6 @@ u"""
 entry(
     index        = 50,
     label        = "bicyclo-(4.1.0)-hept-2-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1368,7 +1313,6 @@ u"""
 entry(
     index        = 51,
     label        = "1.1a.3a.4.5.6.6a.6b-octahydrocyclopropa[e]indene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {3,S} {5,S}
@@ -1393,7 +1337,6 @@ u"""
 entry(
     index        = 52,
     label        = "bicyclo-(5.1.0)-octane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1421,7 +1364,6 @@ u"""
 entry(
     index        = 53,
     label        = "bicyclo-(6.1.0)-nonane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1450,7 +1392,6 @@ u"""
 entry(
     index        = 54,
     label        = "bicyclo(2.2.1)hepta-2.5-diene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C  U0 {3,S} {4,S} {7,S}
@@ -1477,7 +1418,6 @@ u"""
 entry(
     index        = 55,
     label        = "biphenylene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C U0 {2,B} {4,S} {6,B}
@@ -1509,7 +1449,6 @@ u"""
 entry(
     index        = 56,
     label        = "spiropentane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -1534,7 +1473,6 @@ u"""
 entry(
     index        = 57,
     label        = "bicyclo[2.1.1]hexane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S} {6,S}
@@ -1560,7 +1498,6 @@ u"""
 entry(
     index        = 58,
     label        = "bicyclo[2.2.0]hexane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {6,S}
@@ -1586,7 +1523,6 @@ u"""
 entry(
     index        = 59,
     label        = "bicyclo[1.1.1]pentane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S} {5,S}
@@ -1611,7 +1547,6 @@ u"""
 entry(
     index        = 60,
     label        = "bicyclo[2.2.2]octane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {6,S} {8,S}
@@ -1639,7 +1574,6 @@ u"""
 entry(
     index        = 69,
     label        = "tricyclo[4.4.0.0(3.8)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {6,S} {10,S}
@@ -1669,7 +1603,6 @@ u"""
 entry(
     index        = 61,
     label        = "bicyclo[2.1.1]hex-2-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S} {6,S}
@@ -1695,7 +1628,6 @@ u"""
 entry(
     index        = 62,
     label        = "methylidenebicyclo[2.2.1]heptane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S} {7,S}
@@ -1723,7 +1655,6 @@ u"""
 entry(
     index        = 63,
     label        = "bicyclo[2.2.0]hex-2-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {6,S}
@@ -1749,7 +1680,6 @@ u"""
 entry(
     index        = 64,
     label        = "bicyclo[2.2.0]hex-1(4)-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {6,S}
@@ -1775,7 +1705,6 @@ u"""
 entry(
     index        = 65,
     label        = "bicyclo[2.1.0]pent-1(4)-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C U0 {2,S} {5,S}
@@ -1800,7 +1729,6 @@ u"""
 entry(
     index        = 66,
     label        = "bicyclo[2.1.0]pent-2-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S} {5,S}
@@ -1825,7 +1753,6 @@ u"""
 entry(
     index        = 67,
     label        = "tricyclo[4.4.0.0(3.9)]decane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {6,S} {10,S}

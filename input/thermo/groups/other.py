@@ -9,7 +9,6 @@ longDesc = u"""
 entry(
     index        = 0,
     label        = "R",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R U0
@@ -30,7 +29,6 @@ u"""
 entry(
     index        = 10,
     label        = "ketene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C U0 {2,D} {3,S} {4,S}
@@ -55,7 +53,6 @@ u"""
 entry(
     index        = 13,
     label        = "ketene_2C-C",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C       U0 {2,D} {3,S} {4,S}
@@ -82,7 +79,6 @@ u"""
 entry(
     index        = 11,
     label        = "ketene_1C-C_1C-H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C       U0 {2,D} {3,S} {4,S}
@@ -111,7 +107,6 @@ u"""
 entry(
     index        = 14,
     label        = "biketene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1    C   U0 {2,S} {3,S} {4,S} {5,S}
@@ -141,7 +136,6 @@ u"""
 entry(
     index        = 12,
     label        = "ketene_2C-H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C U0 {2,D} {3,S} {4,S}
@@ -172,7 +166,6 @@ u"""
 entry(
     index        = 1,
     label        = "cis",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C   U0 {2,Dcis} {3,S} {4,S}
@@ -198,7 +191,6 @@ u"""
 entry(
     index        = 2,
     label        = "2-ene_cis",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C   U0 {2,Dcis} {3,S} {4,S}
@@ -227,7 +219,6 @@ u"""
 entry(
     index        = 3,
     label        = "2-butene_cis",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C U0 {2,Dcis} {3,S} {4,S}
@@ -259,7 +250,6 @@ u"""
 entry(
     index        = 4,
     label        = "t-butyl_cis_2-ene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C   U0 {2,Dcis} {3,S} {4,S}
@@ -291,7 +281,6 @@ u"""
 entry(
     index        = 5,
     label        = "higher-ene_cis",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C   U0 {2,Dcis} {3,S} {4,S}
@@ -323,7 +312,6 @@ u"""
 entry(
     index        = 7,
     label        = "t-butyl_cis",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C   U0 {2,Dcis} {3,S} {4,S}
@@ -355,7 +343,6 @@ u"""
 entry(
     index        = 6,
     label        = "t-butyl_cis_t-butyl",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * C   U0 {2,Dcis} {3,S} {4,S}
@@ -387,7 +374,6 @@ u"""
 entry(
     index        = 8,
     label        = "double_cis",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C   U0 {2,Dcis} {3,S} {4,S}
@@ -413,7 +399,6 @@ u"""
 entry(
     index        = 9,
     label        = "ortho",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C   U0 {2,B} {3,B} {4,S}

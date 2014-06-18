@@ -21,7 +21,6 @@ recipe(actions=[
 entry(
     index = 1,
     label = "CO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO U0 {2,D}
@@ -50,7 +49,6 @@ u"""
 entry(
     index = 3,
     label = "CO_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO U0 {2,D} {3,S} {4,S}
@@ -69,7 +67,6 @@ u"""
 entry(
     index = 4,
     label = "CO_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO     U0 {2,D} {3,S} {4,S}
@@ -88,7 +85,6 @@ u"""
 entry(
     index = 5,
     label = "CO_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO            U0 {2,D} {3,S} {4,S}
@@ -107,7 +103,6 @@ u"""
 entry(
     index = 6,
     label = "CO_Nd2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO     U0 {2,D} {3,S} {4,S}
@@ -126,7 +121,6 @@ u"""
 entry(
     index = 7,
     label = "CO_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO            U0 {2,D} {3,S} {4,S}
@@ -145,7 +139,6 @@ u"""
 entry(
     index = 8,
     label = "CO_De2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 CO            U0 {2,D} {3,S} {4,S}
@@ -164,7 +157,6 @@ u"""
 entry(
     index = 9,
     label = "CH2CHO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C U0 {2,D} {3,S} {4,S}
@@ -185,7 +177,6 @@ u"""
 entry(
     index = 10,
     label = "mb_CO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO U0 {2,D}
@@ -202,7 +193,6 @@ u"""
 entry(
     index = 11,
     label = "mb_CO_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO U0 {2,D} {3,S} {4,S}
@@ -221,7 +211,6 @@ u"""
 entry(
     index = 12,
     label = "mb_CO_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO     U0 {2,D} {3,S} {4,S}
@@ -240,7 +229,6 @@ u"""
 entry(
     index = 13,
     label = "mb_CO_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO            U0 {2,D} {3,S} {4,S}
@@ -259,7 +247,6 @@ u"""
 entry(
     index = 14,
     label = "mb_CO_Nd2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO     U0 {2,D} {3,S} {4,S}
@@ -278,7 +265,6 @@ u"""
 entry(
     index = 15,
     label = "mb_CO_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO            U0 {2,D} {3,S} {4,S}
@@ -297,7 +283,6 @@ u"""
 entry(
     index = 16,
     label = "mb_CO_De2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 CO            U0 {2,D} {3,S} {4,S}
@@ -316,7 +301,6 @@ u"""
 entry(
     index = 17,
     label = "mb_OC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od U0 {2,D}
@@ -333,7 +317,6 @@ u"""
 entry(
     index = 18,
     label = "mb_OC_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od U0 {2,D}
@@ -352,7 +335,6 @@ u"""
 entry(
     index = 19,
     label = "mb_OC_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od     U0 {2,D}
@@ -371,7 +353,6 @@ u"""
 entry(
     index = 20,
     label = "mb_OC_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od            U0 {2,D}
@@ -390,7 +371,6 @@ u"""
 entry(
     index = 21,
     label = "mb_OC_Nd2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od     U0 {2,D}
@@ -409,7 +389,6 @@ u"""
 entry(
     index = 22,
     label = "mb_OC_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od            U0 {2,D}
@@ -428,7 +407,6 @@ u"""
 entry(
     index = 23,
     label = "mb_OC_De2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Od            U0 {2,D}
@@ -447,7 +425,6 @@ u"""
 entry(
     index = 24,
     label = "mb_CCO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd  U0 {2,D}
@@ -465,7 +442,6 @@ u"""
 entry(
     index = 25,
     label = "mb_CCO_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd  U0 {2,D} {3,S} {4,S}
@@ -485,7 +461,6 @@ u"""
 entry(
     index = 26,
     label = "mb_CCO_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd     U0 {2,D} {3,S} {4,S}
@@ -505,7 +480,6 @@ u"""
 entry(
     index = 27,
     label = "mb_CCO_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd            U0 {2,D} {3,S} {4,S}
@@ -525,7 +499,6 @@ u"""
 entry(
     index = 28,
     label = "mb_CCO_Nd2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd     U0 {2,D} {3,S} {4,S}
@@ -545,7 +518,6 @@ u"""
 entry(
     index = 29,
     label = "mb_CCO_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd            U0 {2,D} {3,S} {4,S}
@@ -565,7 +537,6 @@ u"""
 entry(
     index = 30,
     label = "mb_CCO_De2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cd            U0 {2,D} {3,S} {4,S}
@@ -585,7 +556,6 @@ u"""
 entry(
     index = 31,
     label = "mb_COC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd U0 {2,D} {3,D}
@@ -603,7 +573,6 @@ u"""
 entry(
     index = 32,
     label = "mb_COC_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd U0 {2,D} {5,D}
@@ -623,7 +592,6 @@ u"""
 entry(
     index = 33,
     label = "mb_COC_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd    U0 {2,D} {5,D}
@@ -643,7 +611,6 @@ u"""
 entry(
     index = 34,
     label = "mb_COC_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd           U0 {2,D} {5,D}
@@ -663,7 +630,6 @@ u"""
 entry(
     index = 35,
     label = "mb_COC_Nd2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd    U0 {2,D} {5,D}
@@ -683,7 +649,6 @@ u"""
 entry(
     index = 36,
     label = "mb_COC_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd           U0 {2,D} {5,D}
@@ -703,7 +668,6 @@ u"""
 entry(
     index = 37,
     label = "mb_COC_De2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 Cdd           U0 {2,D} {5,D}

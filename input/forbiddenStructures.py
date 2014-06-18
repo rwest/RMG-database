@@ -8,7 +8,6 @@ longDesc = u"""
 """
 entry(
     label = "C8H7S2J",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  S U0 {5,S} {11,S}
@@ -39,7 +38,6 @@ u"""
 
 entry(
     label = "C8H7S2J(2)",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  S U0 {5,S} {11,S}
@@ -129,7 +127,6 @@ u"""
 
 entry(
     label = "N_birad_RsRs",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 N U2         {2,S} {3,S}
@@ -145,7 +142,6 @@ u"""
 
 entry(
     label = "N_birad_RsRsRs",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 N U1         {2,S} {3,S} {4,S}
@@ -162,7 +158,6 @@ u"""
 
 entry(
     label = "O3",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U0 {2,S}
@@ -178,7 +173,6 @@ u"""
 
 entry(
     label = "O3.",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U0 {2,S}
@@ -194,7 +188,6 @@ u"""
 
 entry(
     label = "O3..",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U1 {2,S}
@@ -210,7 +203,6 @@ u"""
 
 entry(
     label = "O4",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U0 {2,S}
@@ -227,7 +219,6 @@ u"""
 
 entry(
     label = "O4.",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U0 {2,S}
@@ -244,7 +235,6 @@ u"""
 
 entry(
     label = "O4..",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U1 {2,S}
@@ -261,7 +251,6 @@ u"""
 
 entry(
     label = "Od_rad",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U1           {2,D}
@@ -276,7 +265,6 @@ u"""
 
 entry(
     label = "Ods",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 O U{0,1,2,3,4} {2,D} {3,S}
@@ -292,7 +280,6 @@ u"""
 
 entry(
     label = "S3",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 S U0 {2,S}
@@ -308,7 +295,6 @@ u"""
 
 entry(
     label = "S3..",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 S U1 {2,S}
@@ -324,7 +310,6 @@ u"""
 
 entry(
     label = "cyclic-C3O",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 C U0 {2,D} {3,S} {4,S}

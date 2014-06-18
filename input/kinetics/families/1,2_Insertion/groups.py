@@ -21,7 +21,6 @@ recipe(actions=[
 entry(
     index = 1,
     label = "Y_birad",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U2
@@ -49,7 +48,6 @@ u"""
 entry(
     index = 3,
     label = "CO_birad",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C U2 {2,D}
@@ -66,7 +64,6 @@ u"""
 entry(
     index = 4,
     label = "carbene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C U2 {2,S} {3,S}
@@ -84,7 +81,6 @@ u"""
 entry(
     index = 5,
     label = "R_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 {H,Cs,Cd,Cb,Ct,O,Sis,Sid,N} U0 {2,S}
@@ -101,7 +97,6 @@ u"""
 entry(
     index = 6,
     label = "H2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 H U0 {2,S}
@@ -118,7 +113,6 @@ u"""
 entry(
     index = 7,
     label = "Ct_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Ct U0 {2,S}
@@ -135,7 +129,6 @@ u"""
 entry(
     index = 8,
     label = "acetylene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Ct U0 {2,S} {3,T}
@@ -154,7 +147,6 @@ u"""
 entry(
     index = 9,
     label = "RO_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 O U0 {2,S} {3,S}
@@ -172,7 +164,6 @@ u"""
 entry(
     index = 6,
     label = "CsO_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 O  U0 {2,S} {3,S}
@@ -190,7 +181,6 @@ u"""
 entry(
     index = 7,
     label = "Cd_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,D} {3,S} {4,S}
@@ -209,7 +199,6 @@ u"""
 entry(
     index = 8,
     label = "Cd_pri",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,D} {3,S} {4,S}
@@ -228,7 +217,6 @@ u"""
 entry(
     index = 13,
     label = "ethene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,D} {3,S} {4,S}
@@ -249,7 +237,6 @@ u"""
 entry(
     index = 14,
     label = "Cd_sec",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C   U0 {2,D} {3,S} {4,S}
@@ -268,7 +255,6 @@ u"""
 entry(
     index = 10,
     label = "Cd/H/NonDeC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,D} {3,S} {4,S}
@@ -287,7 +273,6 @@ u"""
 entry(
     index = 11,
     label = "Cd/H/NonDeO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,D} {3,S} {4,S}
@@ -306,7 +291,6 @@ u"""
 entry(
     index = 12,
     label = "Cd/H/OneDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,D} {3,S} {4,S}
@@ -325,7 +309,6 @@ u"""
 entry(
     index = 13,
     label = "Cb_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cb       U0 {2,B} {3,B} {4,S}
@@ -344,7 +327,6 @@ u"""
 entry(
     index = 14,
     label = "Cs_H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,S} {3,S} {4,S} {5,S}
@@ -364,7 +346,6 @@ u"""
 entry(
     index = 15,
     label = "C_methane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,S} {3,S} {4,S} {5,S}
@@ -384,7 +365,6 @@ u"""
 entry(
     index = 16,
     label = "C_pri",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C   U0 {2,S} {3,S} {4,S} {5,S}
@@ -404,7 +384,6 @@ u"""
 entry(
     index = 17,
     label = "C_pri/NonDeC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,S} {3,S} {4,S} {5,S}
@@ -424,7 +403,6 @@ u"""
 entry(
     index = 18,
     label = "C_pri/NonDeO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,S} {3,S} {4,S} {5,S}
@@ -444,7 +422,6 @@ u"""
 entry(
     index = 19,
     label = "C_pri/De",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -464,7 +441,6 @@ u"""
 entry(
     index = 25,
     label = "C_pri/Cd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,S} {3,S} {4,S} {5,S}
@@ -484,7 +460,6 @@ u"""
 entry(
     index = 26,
     label = "C_pri/Ct",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,S} {3,S} {4,S} {5,S}
@@ -504,7 +479,6 @@ u"""
 entry(
     index = 27,
     label = "C_sec",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C   U0 {2,S} {3,S} {4,S} {5,S}
@@ -524,7 +498,6 @@ u"""
 entry(
     index = 21,
     label = "C/H2/NonDeC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,S} {3,S} {4,S} {5,S}
@@ -544,7 +517,6 @@ u"""
 entry(
     index = 22,
     label = "C/H2/NonDeO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C      U0 {2,S} {3,S} {4,S} {5,S}
@@ -564,7 +536,6 @@ u"""
 entry(
     index = 23,
     label = "C/H2/CsO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,S} {3,S} {4,S} {5,S}
@@ -584,7 +555,6 @@ u"""
 entry(
     index = 24,
     label = "C/H2/O2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C U0 {2,S} {3,S} {4,S} {5,S}
@@ -604,7 +574,6 @@ u"""
 entry(
     index = 25,
     label = "C/H2/OneDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -624,7 +593,6 @@ u"""
 entry(
     index = 26,
     label = "C/H2/OneDeC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -644,7 +612,6 @@ u"""
 entry(
     index = 27,
     label = "C/H2/OneDeO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -664,7 +631,6 @@ u"""
 entry(
     index = 28,
     label = "C/H2/TwoDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -684,7 +650,6 @@ u"""
 entry(
     index = 29,
     label = "C_ter",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C   U0 {2,S} {3,S} {4,S} {5,S}
@@ -704,7 +669,6 @@ u"""
 entry(
     index = 30,
     label = "C/H/NonDeC",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C      U0 {2,S} {3,S} {4,S} {5,S}
@@ -724,7 +688,6 @@ u"""
 entry(
     index = 31,
     label = "C/H/Cs3",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C  U0 {2,S} {3,S} {4,S} {5,S}
@@ -744,7 +707,6 @@ u"""
 entry(
     index = 32,
     label = "C/H/NDMustO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C      U0 {2,S} {3,S} {4,S} {5,S}
@@ -764,7 +726,6 @@ u"""
 entry(
     index = 33,
     label = "C/H/OneDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -784,7 +745,6 @@ u"""
 entry(
     index = 34,
     label = "C/H/Cs2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -804,7 +764,6 @@ u"""
 entry(
     index = 35,
     label = "C/H/ODMustO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -824,7 +783,6 @@ u"""
 entry(
     index = 36,
     label = "C/H/TwoDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -844,7 +802,6 @@ u"""
 entry(
     index = 37,
     label = "C/H/Cs",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -864,7 +821,6 @@ u"""
 entry(
     index = 38,
     label = "C/H/TDMustO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -884,7 +840,6 @@ u"""
 entry(
     index = 39,
     label = "C/H/ThreeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 C             U0 {2,S} {3,S} {4,S} {5,S}
@@ -904,7 +859,6 @@ u"""
 entry(
     index = 47,
     label = "R_R'",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 {Cs,Sis,N}              U0 {2,S} {3,S} {4,S} {5,S}
@@ -924,7 +878,6 @@ u"""
 entry(
     index = 41,
     label = "Cs_Cs",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -944,7 +897,6 @@ u"""
 entry(
     index = 42,
     label = "C_methyl_C_methyl",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -967,7 +919,6 @@ u"""
 entry(
     index = 43,
     label = "C_methyl_C_pri",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -990,7 +941,6 @@ u"""
 entry(
     index = 44,
     label = "C_methyl_C_sec",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -1013,7 +963,6 @@ u"""
 entry(
     index = 45,
     label = "C_methyl_C_ter",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -1036,7 +985,6 @@ u"""
 entry(
     index = 46,
     label = "Cs_Cd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -1056,7 +1004,6 @@ u"""
 entry(
     index = 47,
     label = "C_methyl_Cd_pri",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -1078,7 +1025,6 @@ u"""
 entry(
     index = 48,
     label = "C_methyl_Cd_sec",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}
@@ -1100,7 +1046,6 @@ u"""
 entry(
     index = 49,
     label = "Cs_Cb",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 Cs U0 {2,S} {3,S} {4,S} {5,S}

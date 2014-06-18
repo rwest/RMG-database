@@ -35,7 +35,6 @@ u"""
 entry(
     index = 2,
     label = "cyclohexene_1inring",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U0 {2,S} {6,S}
@@ -57,7 +56,6 @@ u"""
 entry(
     index = 3,
     label = "cyclohexene_2inring",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U0 {2,S} {6,S}
@@ -80,7 +78,6 @@ u"""
 entry(
     index = 4,
     label = "cyclohexene_3inring",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U0 {2,S} {6,S}
@@ -104,7 +101,6 @@ u"""
 entry(
     index = 5,
     label = "cyclohexene_4inring",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  *1 R!H U0 {2,S} {6,S}
@@ -138,7 +134,6 @@ L1: cyclohexene
 
 forbidden(
     label = "two5rings",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1     C U0 {2,S} {4,S} {5,S} {10,S}

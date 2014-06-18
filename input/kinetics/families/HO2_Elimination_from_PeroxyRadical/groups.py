@@ -23,7 +23,6 @@ recipe(actions=[
 entry(
     index = 1,
     label = "R2OO",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 {C,Si,O,N} U0 {2,S} {5,S}
@@ -43,7 +42,6 @@ u"""
 entry(
     index = 2,
     label = "R2OO_0H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 Cd U0 {2,S} {5,S}
@@ -63,7 +61,6 @@ u"""
 entry(
     index = 3,
     label = "R2OO_0H_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 Cd U0 {2,S} {5,S}
@@ -85,7 +82,6 @@ u"""
 entry(
     index = 4,
     label = "R2OO_O",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 O U0 {2,S} {5,S}
@@ -105,7 +101,6 @@ u"""
 entry(
     index = 5,
     label = "R2OO_O_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 O U0 {2,S} {5,S}
@@ -127,7 +122,6 @@ u"""
 entry(
     index = 6,
     label = "R2OO_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C U0 {2,S} {5,S} {6,S} {7,S}
@@ -149,7 +143,6 @@ u"""
 entry(
     index = 7,
     label = "R2OO_2H_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C U0 {2,S} {5,S} {6,S} {7,S}
@@ -173,7 +166,6 @@ u"""
 entry(
     index = 4,
     label = "R2OO_2H_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -197,7 +189,6 @@ u"""
 entry(
     index = 5,
     label = "R2OO_2H_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -221,7 +212,6 @@ u"""
 entry(
     index = 10,
     label = "R2OO_2H_HCd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  *1 C U0 {2,S} {5,S} {6,S} {7,S}
@@ -246,7 +236,6 @@ u"""
 entry(
     index = 11,
     label = "R2OO_2H_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -270,7 +259,6 @@ u"""
 entry(
     index = 8,
     label = "R2OO_2H_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -294,7 +282,6 @@ u"""
 entry(
     index = 9,
     label = "R2OO_2H_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -318,7 +305,6 @@ u"""
 entry(
     index = 10,
     label = "R2OO_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -340,7 +326,6 @@ u"""
 entry(
     index = 11,
     label = "R2OO_HNd_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -364,7 +349,6 @@ u"""
 entry(
     index = 12,
     label = "R2OO_HNd_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -388,7 +372,6 @@ u"""
 entry(
     index = 13,
     label = "R2OO_HNd_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -412,7 +395,6 @@ u"""
 entry(
     index = 14,
     label = "R2OO_HNd_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -436,7 +418,6 @@ u"""
 entry(
     index = 15,
     label = "R2OO_HNd_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -460,7 +441,6 @@ u"""
 entry(
     index = 16,
     label = "R2OO_HNd_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -484,7 +464,6 @@ u"""
 entry(
     index = 17,
     label = "R2OO_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -506,7 +485,6 @@ u"""
 entry(
     index = 18,
     label = "R2OO_HDe_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -530,7 +508,6 @@ u"""
 entry(
     index = 19,
     label = "R2OO_HDe_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -554,7 +531,6 @@ u"""
 entry(
     index = 20,
     label = "R2OO_HDe_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -578,7 +554,6 @@ u"""
 entry(
     index = 21,
     label = "R2OO_HDe_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -602,7 +577,6 @@ u"""
 entry(
     index = 22,
     label = "R2OO_HDe_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -626,7 +600,6 @@ u"""
 entry(
     index = 23,
     label = "R2OO_HDe_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -650,7 +623,6 @@ u"""
 entry(
     index = 24,
     label = "R2OO_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -672,7 +644,6 @@ u"""
 entry(
     index = 25,
     label = "R2OO_NdNd_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -696,7 +667,6 @@ u"""
 entry(
     index = 26,
     label = "R2OO_NdNd_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -720,7 +690,6 @@ u"""
 entry(
     index = 27,
     label = "R2OO_NdNd_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -744,7 +713,6 @@ u"""
 entry(
     index = 28,
     label = "R2OO_NdNd_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C      U0 {2,S} {5,S} {6,S} {7,S}
@@ -768,7 +736,6 @@ u"""
 entry(
     index = 29,
     label = "R2OO_NdNd_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -792,7 +759,6 @@ u"""
 entry(
     index = 30,
     label = "R2OO_NdNd_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -816,7 +782,6 @@ u"""
 entry(
     index = 31,
     label = "R2OO_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -838,7 +803,6 @@ u"""
 entry(
     index = 32,
     label = "R2OO_NdDe_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -862,7 +826,6 @@ u"""
 entry(
     index = 33,
     label = "R2OO_NdDe_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -886,7 +849,6 @@ u"""
 entry(
     index = 34,
     label = "R2OO_NdDe_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -910,7 +872,6 @@ u"""
 entry(
     index = 35,
     label = "R2OO_NdDe_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -934,7 +895,6 @@ u"""
 entry(
     index = 36,
     label = "R2OO_NdDe_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -958,7 +918,6 @@ u"""
 entry(
     index = 37,
     label = "R2OO_NdDe_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -982,7 +941,6 @@ u"""
 entry(
     index = 38,
     label = "R2OO_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -1004,7 +962,6 @@ u"""
 entry(
     index = 39,
     label = "R2OO_DeDe_2H",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -1028,7 +985,6 @@ u"""
 entry(
     index = 40,
     label = "R2OO_DeDe_HNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -1052,7 +1008,6 @@ u"""
 entry(
     index = 41,
     label = "R2OO_DeDe_HDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -1076,7 +1031,6 @@ u"""
 entry(
     index = 42,
     label = "R2OO_DeDe_NdNd",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -1100,7 +1054,6 @@ u"""
 entry(
     index = 43,
     label = "R2OO_DeDe_NdDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}
@@ -1124,7 +1077,6 @@ u"""
 entry(
     index = 44,
     label = "R2OO_DeDe_DeDe",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 C             U0 {2,S} {5,S} {6,S} {7,S}

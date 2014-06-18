@@ -22,7 +22,6 @@ recipe(actions=[
 entry(
     index = 1,
     label = "RJJ",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R U1 {2,{S,D}}

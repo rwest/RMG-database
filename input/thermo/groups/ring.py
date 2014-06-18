@@ -9,7 +9,6 @@ longDesc = u"""
 entry(
     index        = 96,
     label        = "Ring",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R U0
@@ -30,7 +29,6 @@ u"""
 entry(
     index        = 97,
     label        = "ThreeMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {3,{S,D}}
@@ -48,7 +46,6 @@ u"""
 entry(
     index        = 1,
     label        = "Cyclopropane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S}
@@ -71,7 +68,6 @@ u"""
 entry(
     index        = 2,
     label        = "Cyclopropene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S}
@@ -94,7 +90,6 @@ u"""
 entry(
     index        = 125,
     label        = "Cyclopropadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd  U0 {2,S} {3,D}
@@ -117,7 +112,6 @@ u"""
 entry(
     index        = 126,
     label        = "Cyclopropatriene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cdd U0 {2,D} {3,D}
@@ -140,7 +134,6 @@ u"""
 entry(
     index        = 69,
     label        = "Ethylene_oxide",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {3,S}
@@ -163,7 +156,6 @@ u"""
 entry(
     index        = 4,
     label        = "dioxirane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {3,S}
@@ -186,7 +178,6 @@ u"""
 entry(
     index        = 7,
     label        = "2(co)oxirane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   CO U0 {2,S} {3,S}
@@ -209,7 +200,6 @@ u"""
 entry(
     index        = 8,
     label        = "cyclopropanedione",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   CO U0 {2,S} {3,S}
@@ -232,7 +222,6 @@ u"""
 entry(
     index        = 9,
     label        = "cyclopropenone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,S} {3,D}
@@ -255,7 +244,6 @@ u"""
 entry(
     index        = 133,
     label        = "thiirane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {3,S}
@@ -278,7 +266,6 @@ u"""
 entry(
     index        = 134,
     label        = "dithiirane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {3,S}
@@ -301,7 +288,6 @@ u"""
 entry(
     index        = 135,
     label        = "trithiirane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {3,S}
@@ -324,7 +310,6 @@ u"""
 entry(
     index        = 151,
     label        = "thiirene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {3,S}
@@ -347,7 +332,6 @@ u"""
 entry(
     index        = 92,
     label        = "Ethyleneimine",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * N3s U0 {2,S} {3,S}
@@ -370,7 +354,6 @@ u"""
 entry(
     index        = 3,
     label        = "Methylene_cyclopropane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {3,S} {4,D}
@@ -394,7 +377,6 @@ u"""
 entry(
     index        = 5,
     label        = "cyclopropanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C U0 {2,S} {3,S} {4,D}
@@ -418,7 +400,6 @@ u"""
 entry(
     index        = 10,
     label        = "methylenecyclopropene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,S} {3,D}
@@ -442,7 +423,6 @@ u"""
 entry(
     index        = 11,
     label        = "methylenecyclopropanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   CO U0 {2,S} {3,S}
@@ -466,7 +446,6 @@ u"""
 entry(
     index        = 12,
     label        = "methyleneoxirane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Os U0 {2,S} {3,S}
@@ -490,7 +469,6 @@ u"""
 entry(
     index        = 6,
     label        = "12Methylenecyclopropane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,S} {3,S} {4,D}
@@ -515,7 +493,6 @@ u"""
 entry(
     index        = 98,
     label        = "FourMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {4,{S,D}}
@@ -534,7 +511,6 @@ u"""
 entry(
     index        = 13,
     label        = "Cyclobutane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {4,S}
@@ -558,7 +534,6 @@ u"""
 entry(
     index        = 14,
     label        = "Cyclobutene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {4,S}
@@ -582,7 +557,6 @@ u"""
 entry(
     index        = 70,
     label        = "Oxetane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {4,S}
@@ -606,7 +580,6 @@ u"""
 entry(
     index        = 83,
     label        = "Beta-Propiolactone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {4,S}
@@ -630,7 +603,6 @@ u"""
 entry(
     index        = 85,
     label        = "Cyclobutanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {4,S}
@@ -654,7 +626,6 @@ u"""
 entry(
     index        = 15,
     label        = "12dioxetane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {4,S}
@@ -678,7 +649,6 @@ u"""
 entry(
     index        = 16,
     label        = "dioxerene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {4,S}
@@ -702,7 +672,6 @@ u"""
 entry(
     index        = 19,
     label        = "cyclobutadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {4,S}
@@ -726,7 +695,6 @@ u"""
 entry(
     index        = 136,
     label        = "thietane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {4,S}
@@ -750,7 +718,6 @@ u"""
 entry(
     index        = 137,
     label        = "1,2-dithietane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {4,S}
@@ -774,7 +741,6 @@ u"""
 entry(
     index        = 138,
     label        = "1,3-dithietane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {4,S}
@@ -798,7 +764,6 @@ u"""
 entry(
     index        = 139,
     label        = "trithietane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {4,S}
@@ -822,7 +787,6 @@ u"""
 entry(
     index        = 140,
     label        = "tetrathietane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {4,S}
@@ -846,7 +810,6 @@ u"""
 entry(
     index        = 93,
     label        = "Azetidine",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * N3s U0 {2,S} {4,S}
@@ -870,7 +833,6 @@ u"""
 entry(
     index        = 84,
     label        = "4-Methylene-2-oxetanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {4,S}
@@ -895,7 +857,6 @@ u"""
 entry(
     index        = 17,
     label        = "methylenecyclobutane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {4,S}
@@ -920,7 +881,6 @@ u"""
 entry(
     index        = 18,
     label        = "2methyleneoxetane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Os U0 {2,S} {4,S}
@@ -945,7 +905,6 @@ u"""
 entry(
     index        = 20,
     label        = "12methylenecyclobutane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {4,S} {5,D}
@@ -971,7 +930,6 @@ u"""
 entry(
     index        = 99,
     label        = "FiveMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {5,{S,D}}
@@ -991,7 +949,6 @@ u"""
 entry(
     index        = 21,
     label        = "Cyclopentane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S}
@@ -1016,7 +973,6 @@ u"""
 entry(
     index        = 22,
     label        = "Cyclopentene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {5,S}
@@ -1041,7 +997,6 @@ u"""
 entry(
     index        = 23,
     label        = "Cyclopentadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S}
@@ -1066,7 +1021,6 @@ u"""
 entry(
     index        = 152,
     label        = "Cyclopentatriene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd  U0 {2,D} {5,S}
@@ -1091,7 +1045,6 @@ u"""
 entry(
     index        = 71,
     label        = "Tetrahydrofuran",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {5,S}
@@ -1116,7 +1069,6 @@ u"""
 entry(
     index        = 76,
     label        = "2,3-Dihydrofuran",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {5,S}
@@ -1141,7 +1093,6 @@ u"""
 entry(
     index        = 77,
     label        = "1,3-Dioxolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S}
@@ -1166,7 +1117,6 @@ u"""
 entry(
     index        = 78,
     label        = "Furan",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {5,S}
@@ -1191,7 +1141,6 @@ u"""
 entry(
     index        = 80,
     label        = "Dihydro-2,5-furandione",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {5,S}
@@ -1216,7 +1165,6 @@ u"""
 entry(
     index        = 82,
     label        = "2,5-Furandione",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * O  U0 {2,S} {5,S}
@@ -1241,7 +1189,6 @@ u"""
 entry(
     index        = 86,
     label        = "Cyclopentanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {5,S}
@@ -1266,7 +1213,6 @@ u"""
 entry(
     index        = 25,
     label        = "butyrolactone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {5,S}
@@ -1291,7 +1237,6 @@ u"""
 entry(
     index        = 26,
     label        = "25dihydrofuran",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {5,S}
@@ -1316,7 +1261,6 @@ u"""
 entry(
     index        = 27,
     label        = "12dioxolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {5,S}
@@ -1341,7 +1285,6 @@ u"""
 entry(
     index        = 28,
     label        = "12dioxolene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {5,S}
@@ -1366,7 +1309,6 @@ u"""
 entry(
     index        = 29,
     label        = "123trioxolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {5,S}
@@ -1391,7 +1333,6 @@ u"""
 entry(
     index        = 30,
     label        = "124trioxolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Os U0 {2,S} {5,S}
@@ -1416,7 +1357,6 @@ u"""
 entry(
     index        = 141,
     label        = "thiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1441,7 +1381,6 @@ u"""
 entry(
     index        = 142,
     label        = "2,3-dihydrothiophene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S  U0 {2,S} {5,S}
@@ -1466,7 +1405,6 @@ u"""
 entry(
     index        = 143,
     label        = "2,5-dihydrothiophene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S  U0 {2,S} {5,S}
@@ -1491,7 +1429,6 @@ u"""
 entry(
     index        = 144,
     label        = "thiophene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S  U0 {2,S} {5,S}
@@ -1516,7 +1453,6 @@ u"""
 entry(
     index        = 145,
     label        = "1,2-dithiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1541,7 +1477,6 @@ u"""
 entry(
     index        = 146,
     label        = "1,3-dithiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1566,7 +1501,6 @@ u"""
 entry(
     index        = 147,
     label        = "1,2,3-trithiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1591,7 +1525,6 @@ u"""
 entry(
     index        = 148,
     label        = "1,2,4-trithiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1616,7 +1549,6 @@ u"""
 entry(
     index        = 149,
     label        = "tetrathiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1641,7 +1573,6 @@ u"""
 entry(
     index        = 150,
     label        = "pentathiolane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * S U0 {2,S} {5,S}
@@ -1666,7 +1597,6 @@ u"""
 entry(
     index        = 94,
     label        = "Pyrrolidine",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * N3s U0 {2,S} {5,S}
@@ -1691,7 +1621,6 @@ u"""
 entry(
     index        = 31,
     label        = "methylenecyclopentane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,S} {6,D}
@@ -1717,7 +1646,6 @@ u"""
 entry(
     index        = 122,
     label        = "Fulvene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,S} {6,D}
@@ -1743,7 +1671,6 @@ u"""
 entry(
     index        = 123,
     label        = "3-Methylenecyclopentene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {3,S}
@@ -1769,7 +1696,6 @@ u"""
 entry(
     index        = 124,
     label        = "4-Methylenecyclopentene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {3,S} {4,S}
@@ -1795,7 +1721,6 @@ u"""
 entry(
     index        = 24,
     label        = "12methylenecyclopentane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {5,S} {6,D}
@@ -1822,7 +1747,6 @@ u"""
 entry(
     index        = 100,
     label        = "SixMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {6,{S,D}}
@@ -1843,7 +1767,6 @@ u"""
 entry(
     index        = 105,
     label        = "sixnosidedouble",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * {Cs,Os} U0 {2,S} {6,S}
@@ -1864,7 +1787,6 @@ u"""
 entry(
     index        = 32,
     label        = "Cyclohexane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {6,S}
@@ -1890,7 +1812,6 @@ u"""
 entry(
     index        = 38,
     label        = "12dioxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -1916,7 +1837,6 @@ u"""
 entry(
     index        = 73,
     label        = "1,3-Dioxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   O  U0 {2,S} {6,S}
@@ -1942,7 +1862,6 @@ u"""
 entry(
     index        = 74,
     label        = "1,4-Dioxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -1968,7 +1887,6 @@ u"""
 entry(
     index        = 75,
     label        = "1,3,5-Trioxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -1994,7 +1912,6 @@ u"""
 entry(
     index        = 42,
     label        = "124trioxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Os U0 {2,S} {6,S}
@@ -2020,7 +1937,6 @@ u"""
 entry(
     index        = 43,
     label        = "123trioxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Os U0 {2,S} {6,S}
@@ -2046,7 +1962,6 @@ u"""
 entry(
     index        = 111,
     label        = "Oxane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {6,S}
@@ -2072,7 +1987,6 @@ u"""
 entry(
     index        = 95,
     label        = "Piperidine",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * N3s U0 {2,S} {6,S}
@@ -2098,7 +2012,6 @@ u"""
 entry(
     index        = 106,
     label        = "six-sidedoubles",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {C,O}   U0 {2,S} {6,S}
@@ -2124,7 +2037,6 @@ u"""
 entry(
     index        = 107,
     label        = "six-onesidedouble",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2145,7 +2057,6 @@ u"""
 entry(
     index        = 87,
     label        = "Cyclohexanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {6,S}
@@ -2171,7 +2082,6 @@ u"""
 entry(
     index        = 108,
     label        = "sixmembd-allsingles-twosidedoubles-para",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2192,7 +2102,6 @@ u"""
 entry(
     index        = 36,
     label        = "14methylenecyclohexane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2220,7 +2129,6 @@ u"""
 entry(
     index        = 109,
     label        = "sixmembd-allsingles-twosidedoubles-ortho",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2241,7 +2149,6 @@ u"""
 entry(
     index        = 110,
     label        = "sixmembd-allsingles-twosidedoubles-meta",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2262,7 +2169,6 @@ u"""
 entry(
     index        = 114,
     label        = "six-inringonedouble",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2283,7 +2189,6 @@ u"""
 entry(
     index        = 40,
     label        = "34dihydro12dioxin",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   O  U0 {2,S} {6,S}
@@ -2309,7 +2214,6 @@ u"""
 entry(
     index        = 37,
     label        = "36dihydro2hpyran",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,S} {6,D}
@@ -2335,7 +2239,6 @@ u"""
 entry(
     index        = 33,
     label        = "Cyclohexene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2361,7 +2264,6 @@ u"""
 entry(
     index        = 79,
     label        = "3,4-Dihydro-2H-pyran",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   O  U0 {2,S} {6,S}
@@ -2387,7 +2289,6 @@ u"""
 entry(
     index        = 39,
     label        = "36dihydro12dioxin",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2413,7 +2314,6 @@ u"""
 entry(
     index        = 112,
     label        = "24dihydro13dioxin",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {6,S}
@@ -2439,7 +2339,6 @@ u"""
 entry(
     index        = 113,
     label        = "23dihydro14dioxin",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {6,S}
@@ -2465,7 +2364,6 @@ u"""
 entry(
     index        = 44,
     label        = "124trioxene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Os U0 {2,S} {6,S}
@@ -2491,7 +2389,6 @@ u"""
 entry(
     index        = 45,
     label        = "123trioxene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Os U0 {2,S} {6,S}
@@ -2517,7 +2414,6 @@ u"""
 entry(
     index        = 115,
     label        = "six-inringtwodouble-13",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2538,7 +2434,6 @@ u"""
 entry(
     index        = 34,
     label        = "1,3-Cyclohexadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2564,7 +2459,6 @@ u"""
 entry(
     index        = 116,
     label        = "six-inringtwodouble-14",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2585,7 +2479,6 @@ u"""
 entry(
     index        = 35,
     label        = "1,4-Cyclohexadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2611,7 +2504,6 @@ u"""
 entry(
     index        = 41,
     label        = "14dioxin",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {6,S}
@@ -2637,7 +2529,6 @@ u"""
 entry(
     index        = 153,
     label        = "six-inringthreedouble",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd      U0 {2,D} {6,S}
@@ -2663,7 +2554,6 @@ u"""
 entry(
     index        = 117,
     label        = "six-inringtwodouble-12",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2689,7 +2579,6 @@ u"""
 entry(
     index        = 118,
     label        = "six-oneside-twoindoubles-25",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2710,7 +2599,6 @@ u"""
 entry(
     index        = 49,
     label        = "25cyclohexadienone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {6,S}
@@ -2736,7 +2624,6 @@ u"""
 entry(
     index        = 47,
     label        = "14cyclohexadiene3methylene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cd U0 {2,D} {6,S}
@@ -2763,7 +2650,6 @@ u"""
 entry(
     index        = 119,
     label        = "six-oneside-twoindoubles-24",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cs,Os} U0 {2,S} {6,S}
@@ -2784,7 +2670,6 @@ u"""
 entry(
     index        = 48,
     label        = "24cyclohexadienone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2810,7 +2695,6 @@ u"""
 entry(
     index        = 46,
     label        = "13cyclohexadiene5methylene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   Cs U0 {2,S} {6,S}
@@ -2837,7 +2721,6 @@ u"""
 entry(
     index        = 120,
     label        = "six-twoin13-twoout",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {CO,Cd} U0 {2,S} {6,S}
@@ -2858,7 +2741,6 @@ u"""
 entry(
     index        = 50,
     label        = "fg6",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {6,S}
@@ -2885,7 +2767,6 @@ u"""
 entry(
     index        = 51,
     label        = "oxylene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {5,S} {6,S} {8,D}
@@ -2913,7 +2794,6 @@ u"""
 entry(
     index        = 54,
     label        = "obenzoquinone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C  U0 {5,S} {6,S} {8,D}
@@ -2941,7 +2821,6 @@ u"""
 entry(
     index        = 121,
     label        = "six-twoin14-twoout",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1   {Cd,CO} U0 {2,S} {6,S}
@@ -2962,7 +2841,6 @@ u"""
 entry(
     index        = 53,
     label        = "pbenzoquinone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {4,S} {5,S}
@@ -2988,7 +2866,6 @@ u"""
 entry(
     index        = 52,
     label        = "pxylene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {4,S} {5,S} {6,D}
@@ -3016,7 +2893,6 @@ u"""
 entry(
     index        = 125,
     label        = "3,4-dimethylenecyclohexene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C  U0 {2,S} {3,S}
@@ -3044,7 +2920,6 @@ u"""
 entry(
     index        = 101,
     label        = "SevenMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {7,{S,D}}
@@ -3066,7 +2941,6 @@ u"""
 entry(
     index        = 55,
     label        = "Cycloheptane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {7,S}
@@ -3093,7 +2967,6 @@ u"""
 entry(
     index        = 56,
     label        = "Cycloheptene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {7,S}
@@ -3120,7 +2993,6 @@ u"""
 entry(
     index        = 57,
     label        = "1,3-Cycloheptadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {7,S}
@@ -3147,7 +3019,6 @@ u"""
 entry(
     index        = 58,
     label        = "1,3,5-Cycloheptatriene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {7,S}
@@ -3174,7 +3045,6 @@ u"""
 entry(
     index        = 88,
     label        = "Cycloheptanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {7,S}
@@ -3201,7 +3071,6 @@ u"""
 entry(
     index        = 129,
     label        = "1,4-Cycloheptadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * C  U0 {2,D} {7,S}
@@ -3228,7 +3097,6 @@ u"""
 entry(
     index        = 102,
     label        = "EightMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {8,{S,D}}
@@ -3251,7 +3119,6 @@ u"""
 entry(
     index        = 59,
     label        = "Cyclooctane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {8,S}
@@ -3279,7 +3146,6 @@ u"""
 entry(
     index        = 60,
     label        = "cis-Cyclooctene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,D} {8,S}
@@ -3307,7 +3173,6 @@ u"""
 entry(
     index        = 62,
     label        = "1,3,5-Cyclooctatriene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {8,S}
@@ -3335,7 +3200,6 @@ u"""
 entry(
     index        = 63,
     label        = "Cyclooctatetraene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,D} {8,S}
@@ -3363,7 +3227,6 @@ u"""
 entry(
     index        = 89,
     label        = "Cyclooctanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {8,S}
@@ -3391,7 +3254,6 @@ u"""
 entry(
     index        = 126,
     label        = "1,3-cyclooctadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,D} {8,S}
@@ -3414,7 +3276,6 @@ u"""
 entry(
     index        = 127,
     label        = "1,4-cyclooctadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,D} {8,S}
@@ -3442,7 +3303,6 @@ u"""
 entry(
     index        = 128,
     label        = "1,5-cyclooctadiene",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cd U0 {2,D} {8,S}
@@ -3465,7 +3325,6 @@ u"""
 entry(
     index        = 103,
     label        = "NineMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * R!H U0 {2,{S,D}} {9,{S,D}}
@@ -3489,7 +3348,6 @@ u"""
 entry(
     index        = 64,
     label        = "Cyclononane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * Cs U0 {2,S} {9,S}
@@ -3518,7 +3376,6 @@ u"""
 entry(
     index        = 90,
     label        = "Cyclononanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 * CO U0 {2,S} {9,S}
@@ -3547,7 +3404,6 @@ u"""
 entry(
     index        = 104,
     label        = "TenMember",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * R!H U0 {2,{S,D}} {10,{S,D}}
@@ -3572,7 +3428,6 @@ u"""
 entry(
     index        = 67,
     label        = "Cyclodecane",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * Cs U0 {2,S} {10,S}
@@ -3602,7 +3457,6 @@ u"""
 entry(
     index        = 91,
     label        = "Cyclodecanone",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1  * CO U0 {2,S} {10,S}

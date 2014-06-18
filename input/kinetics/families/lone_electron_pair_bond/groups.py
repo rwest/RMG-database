@@ -21,7 +21,6 @@ recipe(actions=[
 entry(
     index = 1,
     label = "N3sRRR",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 N3s U0 L1 {2,S} {3,S} {4,S}
@@ -40,7 +39,6 @@ u"""
 entry(
     index = 2,
     label = "O_(S)",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *2 O U2

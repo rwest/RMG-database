@@ -134,7 +134,6 @@ L1: cyclohexene
 
 forbidden(
     label = "two5rings",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1     C U0 {2,S} {4,S} {5,S} {10,S}

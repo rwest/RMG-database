@@ -34,7 +34,6 @@ u"""
 entry(
     index = 2,
     label = "Y_rad",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1
@@ -50,7 +49,6 @@ u"""
 entry(
     index = 3,
     label = "XH_Rrad",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *3 R!H U1 {2,S}
@@ -80,7 +78,6 @@ u"""
 entry(
     index = 5,
     label = "R3radEndo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -99,7 +96,6 @@ u"""
 entry(
     index = 6,
     label = "R3radExo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -131,7 +127,6 @@ u"""
 entry(
     index = 8,
     label = "R4radEndo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -151,7 +146,6 @@ u"""
 entry(
     index = 9,
     label = "R4radExo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -184,7 +178,6 @@ u"""
 entry(
     index = 11,
     label = "R5radEndo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -205,7 +198,6 @@ u"""
 entry(
     index = 12,
     label = "R5radExo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -239,7 +231,6 @@ u"""
 entry(
     index = 14,
     label = "R6radEndo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -261,7 +252,6 @@ u"""
 entry(
     index = 15,
     label = "R6radExo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -296,7 +286,6 @@ u"""
 entry(
     index = 17,
     label = "R7radEndo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -319,7 +308,6 @@ u"""
 entry(
     index = 18,
     label = "R7radExo",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 *1 R!H U1 {2,{S,D,B,T}}
@@ -365,7 +353,6 @@ L1: XH_Rrad
 
 forbidden(
     label = "fused5rings_1",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 C U1 {2,S} {5,S}
@@ -386,7 +373,6 @@ u"""
 
 forbidden(
     label = "fused5rings_2",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 C U1 {2,S} {5,S}
@@ -407,7 +393,6 @@ u"""
 
 forbidden(
     label = "fused5rings_3",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 C U1 {2,S} {5,S}
@@ -428,7 +413,6 @@ u"""
 
 forbidden(
     label = "fused5rings_4",
-    multiplicity = [1, 2, 3, 4, 5],
     group = 
 """
 1 C U0 {2,S} {5,S}
