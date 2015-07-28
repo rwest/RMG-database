@@ -5,6 +5,7 @@
 # These families should only be turned on with caution.
 
 recommendedFamilies = {
+'Surface_Adsorption_Single': True,
 '1+2_Cycloaddition':False,
 '1,2-Birad_to_alkene':False,
 '1,2_Insertion_CO':False,
