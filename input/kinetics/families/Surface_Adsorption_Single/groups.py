@@ -31,7 +31,7 @@ entry(
     label = "Site",
     group = 
 """
-1 *2 X u*
+1 *2 X u0
 """,
     kinetics = None,
 )

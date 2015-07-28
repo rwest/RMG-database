@@ -12,8 +12,7 @@ entry(
     kinetics = StickingCoefficient(
         A = 0.1,
         n = 0,
-        alpha = 0,
-        E0 = (0, 'kcal/mol'),
+        Ea=(0, 'kcal/mol'),
         Tmin = (200, 'K'),
         Tmax = (3000, 'K'),
     ),
