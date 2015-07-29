@@ -33,7 +33,7 @@ entry(
     label = "CH3*",
     molecule = 
 """
-1 C u0 p0 {2,S}{3,S}{4,S}{5,S}
+1 C u0 p0 {2,S} {3,S} {4,S} {5,S}
 2 H u0 p0 {1,S}
 3 H u0 p0 {1,S}
 4 H u0 p0 {1,S}
