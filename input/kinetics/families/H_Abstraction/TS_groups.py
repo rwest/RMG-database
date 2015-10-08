@@ -2317,6 +2317,66 @@ u"""
 )
 
 entry(
+    index = 414,
+    label = "CsClHHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cl u0 {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 415,
+    label = "CsNHHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    N  ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 416,
+    label = "CsSiHHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Si ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 417,
+    label = "CsSHHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    S  ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
     index = 45,
     label = "CsRRHH",
     group = 
@@ -2818,6 +2878,66 @@ u"""
 [<Entry index=132 label="C/H2/Cs/O">, <Entry index=72 label="CtjC">]
 [<Entry index=132 label="C/H2/Cs/O">, <Entry index=62 label="OjCs">]
 """,
+)
+
+entry(
+    index = 418,
+    label = "CsCClHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    C  ux {1,S}
+5    Cl u0 {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 419,
+    label = "CsCNHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    C  ux {1,S}
+5    N  ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 420,
+    label = "CsCSiHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    C  ux {1,S}
+5    Si ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 421,
+    label = "CsCSHH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    C  ux {1,S}
+5    S  ux {1,S}
+""",
+    distances = DistanceData(distances={}),
 )
 
 entry(
@@ -3378,6 +3498,66 @@ u"""
 [<Entry index=156 label="C/H/Cs/Cs/O">, <Entry index=208 label="Csj/Cs/H2">]
 [<Entry index=156 label="C/H/Cs/Cs/O">, <Entry index=32 label="OjO">]
 """,
+)
+
+entry(
+    index = 422,
+    label = "CsCCClH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    C  ux {1,S}
+4    C  ux {1,S}
+5    Cl u0 {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 423,
+    label = "CsCCNH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    C  ux {1,S}
+4    C  ux {1,S}
+5    N  ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 424,
+    label = "CsCCSiH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    C  ux {1,S}
+4    C  ux {1,S}
+5    Si ux {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 425,
+    label = "CsCCSH",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    C  ux {1,S}
+4    C  ux {1,S}
+5    S  ux {1,S}
+""",
+    distances = DistanceData(distances={}),
 )
 
 entry(
@@ -12970,6 +13150,10 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
                         L7: C/H3/Ct
                         L7: C/H3/Cb
                     L6: CsOHHH
+                    L6: CsClHHH
+                    L6: CsNHHH
+                    L6: CsSiHHH
+                    L6: CsSHHH
                 L5: CsRRHH
                     L6: CsCCHH
                         L7: C/H2/Cs/Cs
@@ -12987,6 +13171,10 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
                         L7: C/H2/Cd/O
                         L7: C/H2/Ct/O
                         L7: C/H2/Cb/O
+                    L6: CsCClHH
+                    L6: CsCNHH
+                    L6: CsCSiHH
+                    L6: CsCSHH
                     L6: CsOOHH
                 L5: CsRRRH
                     L6: CsCCCH
@@ -13021,6 +13209,10 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
                         L7: C/H/Ct/Ct/O
                         L7: C/H/Ct/Cb/O
                         L7: C/H/Cb/Cb/O
+                    L6: CsCCClH
+                    L6: CsCCNH
+                    L6: CsCCSiH
+                    L6: CsCCSH
                     L6: CsCOOH
                         L7: C/H/Cs/O/O
                         L7: C/H/Cd/O/O
@@ -13395,4 +13587,3 @@ L1: Y_rad_birad_trirad_quadrad
             L4: N5d_rad
 """
 )
-
