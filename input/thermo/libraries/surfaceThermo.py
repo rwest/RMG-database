@@ -47,8 +47,6 @@ entry(
         Tmin = (298,'K'),
         Tmax = (2000,'K'),
     ),
-    sh
-
     shortDesc = u"""H atom adsorbed on nickel""",
     longDesc =  u"""Estimated via CFG-TOC""",
 )
