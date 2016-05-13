@@ -6,6 +6,9 @@
 
 recommendedFamilies = {
 'Surface_Adsorption_Single': True,
+'Surface_Adsorption_Double': False,
+'Surface_Adsorption_vdW': False,
+'Surface_Adsorption_Dissociative': True,
 'Surface_Recombination': True,
 '1+2_Cycloaddition':False,
 '1,2-Birad_to_alkene':False,
