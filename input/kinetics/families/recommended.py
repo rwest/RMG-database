@@ -11,6 +11,7 @@ recommendedFamilies = {
 'Surface_Adsorption_Dissociative': False,
 'Surface_Adsorption_Bidentate': False,
 'Surface_Recombination': True,
+'Surface_Abstraction': False,
 '1+2_Cycloaddition':False,
 '1,2-Birad_to_alkene':False,
 '1,2_Insertion_CO':False,
