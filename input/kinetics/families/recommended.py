@@ -8,7 +8,7 @@ recommendedFamilies = {
 'Surface_Adsorption_Single': True,
 'Surface_Adsorption_Double': False,
 'Surface_Adsorption_vdW': False,
-'Surface_Adsorption_Dissociative': False,  # degeneracy error
+'Surface_Adsorption_Dissociative': True,  # degeneracy error
 'Surface_Adsorption_Bidentate': False,
 'Surface_Recombination': True,
 'Surface_Abstraction': True, # reaction pairs error
