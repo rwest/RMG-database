@@ -7,11 +7,11 @@
 recommendedFamilies = {
 'Surface_Adsorption_Single': True,
 'Surface_Adsorption_Double': False,
-'Surface_Adsorption_vdW': False,
-'Surface_Adsorption_Dissociative': True,  # degeneracy error
-'Surface_Adsorption_Bidentate': False,
+'Surface_Adsorption_vdW': False, # vdW bond doesn't exist yet
+'Surface_Adsorption_Dissociative': True,
+'Surface_Adsorption_Bidentate': True,
 'Surface_Recombination': True,
-'Surface_Abstraction': True, # reaction pairs error
+'Surface_Abstraction': True,
 '1+2_Cycloaddition':False,
 '1,2-Birad_to_alkene':False,
 '1,2_Insertion_CO':False,
