@@ -24,6 +24,56 @@ entry(
 u"""
 
 """,
+    rank = 10,
+)
+
+
+entry(
+    index = 96,
+    label = "Aromatic",
+    group = 
+"""
+1 * Cb u0
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Aromatic""",
+    longDesc = 
+u"""
+Ring correction is zero because RMG uses Cb group corrections instead in the case of a ring containing Cb bonds
+""",
+    rank = 1,
+)
+
+
+entry(
+    index = 96,
+    label = "Benzene",
+    group = 
+"""
+1 Cb u0 {2,B} {6,B}
+2 Cb u0 {1,B} {3,B}
+3 Cb u0 {2,B} {4,B}
+4 Cb u0 {3,B} {5,B}
+5 Cb u0 {4,B} {6,B}
+6 Cb u0 {1,B} {5,B}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Aromatic""",
+    longDesc = 
+u"""
+Ring correction is zero because RMG uses Cb group corrections instead in the case of a ring containing Cb bonds
+""",
+    rank = 1,
 )
 
 entry(
@@ -1175,9 +1225,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-6.058,-7.002,-6.774,-6.09,-4.988,-3.95,-2.882],'cal/(mol*K)'),
-        H298 = (6.89,'kcal/mol'),
-        S298 = (30.0857,'cal/(mol*K)'),
+        Cpdata = ([-6.09,-7.18,-6.79,-5.86,-4.83,-3.71,-2.9],'cal/(mol*K)'),
+        H298 = (-6.3,'kcal/mol'),
+        S298 = (31.71,'cal/(mol*K)'),
     ),
     shortDesc = u"""Furan ring BENSON""",
     longDesc = 
@@ -3242,6 +3292,32 @@ u"""
 )
 
 entry(
+    index = 160,
+    label = "oxepane",
+    group =
+"""
+1 * C u0 {2,S} {7,S}
+2   C u0 {1,S} {3,S}
+3   C u0 {2,S} {4,S}
+4   C u0 {3,S} {5,S}
+5   C u0 {4,S} {6,S}
+6   C u0 {5,S} {7,S}
+7   Os u0 {1,S} {6,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-6.10,-5.33,-3.85,-2.52,-0.92,0.26,5.83],'cal/(mol*K)'),
+        H298 = (6.54,'kcal/mol'),
+        S298 = (17.14,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Calculation: Mixture of two twist chair formations""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
     index = 59,
     label = "Cyclooctane",
     group = 
@@ -3638,6 +3714,8 @@ u"""
 tree(
 """
 L1: Ring
+    L2: Aromatic
+        L3: Benzene
     L2: ThreeMember
         L3: Cyclopropane
         L3: Cyclopropene
@@ -3773,6 +3851,7 @@ L1: Ring
         L3: 1,4-Cycloheptadiene
         L3: 1,2,4,6-Cycloheptatetraene
         L3: heptasulfur
+	L3: oxepane
     L2: EightMember
         L3: Cyclooctane
         L3: cis-Cyclooctene

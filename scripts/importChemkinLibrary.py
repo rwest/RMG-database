@@ -38,7 +38,7 @@ if __name__ == '__main__':
         species.label = getSpeciesIdentifier(species)
         species.index = -1
     # load thermo library entries
-    thermoLibrary = ThermoLibrary()
+    thermoLibrary = ThermoLibrary(name=name)
     for i in range(len(speciesList)): 
         species = speciesList[i]
         if species.thermo:
@@ -52,7 +52,7 @@ if __name__ == '__main__':
             logging.warning('Species {0} did not contain any thermo data and was omitted from the thermo library.'.format(str(species)))
                         
     # load kinetics library entries                    
-    kineticsLibrary = KineticsLibrary()
+    kineticsLibrary = KineticsLibrary(name=name)
     kineticsLibrary.entries = {}
     for i in range(len(reactionList)):
         reaction = reactionList[i]        
@@ -65,7 +65,10 @@ if __name__ == '__main__':
         entry.longDesc = reaction.kinetics.comment
         kineticsLibrary.entries[i+1] = entry
     
-    kineticsLibrary.checkForDuplicates()
+    # Mark as duplicates where there are mixed pressure dependent and non-pressure dependent duplicate kinetics
+    # Even though CHEMKIN does not require a duplicate flag, RMG needs it.
+    # Using flag markDuplicates = True
+    kineticsLibrary.checkForDuplicates(markDuplicates=True)
     kineticsLibrary.convertDuplicatesToMulti()
 
     # Save in Py format
@@ -75,6 +78,6 @@ if __name__ == '__main__':
     except:
         pass
     
-    thermoLibrary.save(os.path.join(databaseDirectory, 'thermo' ,' libraries', name + '.py'))
+    thermoLibrary.save(os.path.join(databaseDirectory, 'thermo' ,'libraries', name + '.py'))
     kineticsLibrary.save(os.path.join(databaseDirectory, 'kinetics', 'libraries', name, 'reactions.py'))
     kineticsLibrary.saveDictionary(os.path.join(databaseDirectory, 'kinetics', 'libraries', name, 'dictionary.txt'))
