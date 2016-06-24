@@ -9,8 +9,8 @@ recommendedFamilies = {
 'Surface_Adsorption_Double': False,
 'Surface_Adsorption_vdW': False, # vdW bond doesn't exist yet
 'Surface_Adsorption_Dissociative': True,
-'Surface_Adsorption_Bidentate': False,
 'Surface_Recombination': False,
+'Surface_Adsorption_Bidentate': True,
 'Surface_Dissociation': True,
 'Surface_Abstraction': True,
 '1+2_Cycloaddition':False,
