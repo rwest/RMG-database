@@ -6155,20 +6155,20 @@ multiplicity [1,2,3,4,5]
 )
 
 entry(
-    index = 342,
+    index = 345,
     label = "Sid_H",
     group = 
 """
 multiplicity [1,2,3,4,5]
-1 *1 Sid u0 {2,S}
+1 *1 Sid ux {2,S}
 2 *2 H  u0 {1,S}
 """,
     distances = DistanceData(distances={})
 )
 
 entry(
-    index = 342,
-    label = "Sid_H",
+    index = 346,
+    label = "Sinorad_H",
     group = 
 """
 multiplicity [1,2,3,4,5]
@@ -6191,18 +6191,6 @@ multiplicity [1,2,3,4,5]
 )
 
 entry(
-    index = 349,
-    label = "Sid_H",
-    group = 
-"""
-multiplicity [1,2,3,4,5]
-1 *1 Sid u0 {2,S}
-2 *2 H  u0 {1,S}
-""",
-    distances = DistanceData(distances={})
-)
-
-entry(
     index = 350,
     label = "Sid_Si_H2",
     group = 
@@ -6222,7 +6210,7 @@ entry(
     group = 
 """
 multiplicity [1,2,3,4,5]
-1 *1 Sis u0 {2,S}
+1 *1 Sis ux {2,S}
 2 *2 H  u0 {1,S}
 """,
     distances = DistanceData(distances={})
@@ -6258,6 +6246,18 @@ entry(
 )
 
 entry(
+    index = 354,
+    label = "Sisnorad_H",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Sis u0 {2,S}
+2 *2 H  u0 {1,S}
+""",
+    distances = DistanceData(distances={})
+)
+
+entry(
     index = 359,
     label = "NH3",
     group = 
@@ -6281,6 +6281,63 @@ entry(
 4    R!H ux {1,S}
 """,
     distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 361,
+    label = "Sisrad_H",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Sis u1 {2,S}
+2 *2 H  u0 {1,S}
+""",
+    distances = DistanceData(distances={})
+)
+
+entry(
+    index = 362,
+    label = "Sisrad_Si_H2",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Sis u1 {2,S}
+2 *2 H  u0 {1,S}
+3    Si ux {1,S}
+4    H  u0 {1,S}
+""",
+    distances = DistanceData(distances={})
+)
+
+entry(
+    index = 363,
+    label = "Sisbirad_H",
+    group = "OR{Sis_singlet_H, Sis_triplet_H}", 
+    distances = DistanceData(distances={})
+)
+
+entry(
+    index = 364,
+    label = "Sis_singlet_H",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Sis u0 p1 {2,S}
+2 *2 H  u0 {1,S}
+""",
+    distances = DistanceData(distances={})
+)
+
+entry(
+    index = 365,
+    label = "Sis_triplet_H",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *1 Sis u2 {2,S}
+2 *2 H  u0 {1,S}
+""",
+    distances = DistanceData(distances={})
 )
 
 entry(
@@ -12777,7 +12834,7 @@ entry(
     group = 
 """
 multiplicity [1,2,3,4,5]
-1 *3 Sis u[1,2,3,4]
+1 *3 Sis u1
 """,
     distances = DistanceData(distances={}),
 )
@@ -12811,18 +12868,18 @@ multiplicity [1,2,3,4,5]
 )
 
 entry(
-    index = 413,
+    index = 414,
     label = "Sid_rad",
     group = 
 """
 multiplicity [1,2,3,4,5]
-1 *3 Sid u[1,2]
+1 *3 Sid u1
 """,
     distances = DistanceData(distances={}),
 )
 
 entry(
-    index = 414,
+    index = 415,
     label = "Sid_rad_Si_H",
     group = 
 """
@@ -12830,6 +12887,70 @@ multiplicity [1,2,3,4,5]
 1 *3 Sid u1 {2,D} {3,S}
 2 Si u[0,1,2] {1,D}
 3 H u0 p0 c0 {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 416,
+    label = "Sij",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *3 Si u1
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 416,
+    label = "Sijj",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *3 Si u2
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 417,
+    label = "Sijj_Si_H",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *3 Si u2 {2,S} {3,S}
+2    Si ux {1,S}
+3    H u0 {1,S}
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 418,
+    label = "Sijjj",
+    group = "OR{Si_quartet, Si_doublet}", 
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 419,
+    label = "Si_quartet",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *3 Si u3
+""",
+    distances = DistanceData(distances={}),
+)
+
+entry(
+    index = 420,
+    label = "Si_doublet",
+    group = 
+"""
+multiplicity [1,2,3,4,5]
+1 *3 Si u1 p1
 """,
     distances = DistanceData(distances={}),
 )
@@ -13002,10 +13123,17 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
     L2: Cl_H
     L2: Si_H
         L3: Sid_H
-            L4: Sid_Si_H2
+            L4: Sidnorad_H
+                L5: Sid_Si_H2
         L3: Sis_H
-            L4: Sis_Si_H3
-            L4: Si_silane
+            L4: Sisrad_H
+                L5: Sisrad_Si_H2
+            L4: Sisbirad_H
+                L5: Sis_singlet_H
+                L5: Sis_triplet_H
+            L4: Sisnorad_H
+                L5: Sis_Si_H3
+                L5: Si_silane
     L2: N_H
         L3: N3_H
             L4: N3s_H
@@ -13236,11 +13364,17 @@ L1: Y_rad_birad_trirad_quadrad
             L4: C_triplet
     L2: Clrad
     L2: Sirad
-        L3: Sis_rad
-            L4: Si_silyl
-            L4: Sis_rad_Si_H2
-        L3: Sid_rad
-            L4: Sid_rad_Si_H
+        L3: Sij
+            L4: Sis_rad
+                L5: Si_silyl
+                L5: Sis_rad_Si_H2
+            L4: Sid_rad
+                L5: Sid_rad_Si_H
+        L3: Sijj
+            L4: Sijj_Si_H
+        L3: Sijjj
+            L4: Si_quartet
+            L4: Si_doublet
     L2: Srad
         L3: Srad_H
         L3: Srad_R
