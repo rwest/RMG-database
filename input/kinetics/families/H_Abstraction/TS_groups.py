@@ -6168,7 +6168,7 @@ multiplicity [1,2,3,4,5]
 
 entry(
     index = 346,
-    label = "Sinorad_H",
+    label = "Sidnorad_H",
     group = 
 """
 multiplicity [1,2,3,4,5]
@@ -6301,7 +6301,7 @@ entry(
     group = 
 """
 multiplicity [1,2,3,4,5]
-1 *1 Sis u1 {2,S}
+1 *1 Sis u1 {2,S} {3,S} {4,S}
 2 *2 H  u0 {1,S}
 3    Si ux {1,S}
 4    H  u0 {1,S}
@@ -12844,7 +12844,6 @@ entry(
     label = "Si_silyl",
     group = 
 """
-multiplicity 2
 1 *3 Sis u1 {2,S} {3,S} {4,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
@@ -12855,7 +12854,7 @@ multiplicity 2
 
 entry(
     index = 413,
-    label = "Si_rad_Si_H2",
+    label = "Sis_rad_Si_H2",
     group = 
 """
 multiplicity [1,2,3,4,5]
