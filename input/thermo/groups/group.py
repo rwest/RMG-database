@@ -40987,28 +40987,6 @@ u"""
 )
 
 entry(
-    index = 1461,
-    label = "Os-Cs(Cds-Sd)",
-    group = 
-"""
-1 * Os u0 {2,S} {3,S}
-2   Cs u0 {1,S}
-3   CS u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.56,6.31,7,7.61,8.52,8.99,9.29],'cal/(mol*K)'),
-        H298 = (-14.54,'kcal/mol'),
-        S298 = (10.02,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""CAC CBS-QB3 1D-HR""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
     index = 1128,
     label = "Os-Cs(Cds-Cd)",
     group = 
@@ -41271,10 +41249,10 @@ entry(
     group = 
 """
 1 * Sis u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2   Sis ux p0 c0 {1,S}
-3   Sis ux p0 c0 {1,S}
-4   Sis ux p0 c0 {1,S}
-5   Sis ux p0 c0 {1,S}
+2   Sis u0 px c0 {1,S}
+3   Sis u0 px c0 {1,S}
+4   Sis u0 px c0 {1,S}
+5   Sis u0 px c0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -43716,28 +43694,6 @@ entry(
     longDesc = 
 u"""
 
-""",
-)
-
-entry(
-    index = 1999,
-    label = "Sis-RsiSis",
-    group = 
-"""
-1 * Sis u0 p0 c0 {2,S} {3,S}
-2   Sis u0 p0 c0 {1,S}
-3   Si  u0 p[1,2] c0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
-        Cpdata = ([7.88, 9.16, 10.00, 10.62, 11.49, 12.08, 12.92],'cal/(mol*K)'),
-        H298 = (10.09,'kcal/mol'),
-        S298 = (-2.52,'cal/(mol*K)'),
-    ),
-   shortDesc = u"""""",
-   longDesc =
-u"""
-This is a parent node created with a child's data. This is necessary to make generation of Sis-Sis-si2 species possible.
 """,
 )
 
