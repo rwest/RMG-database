@@ -1,19 +1,19 @@
 # This file contains a dictionary of kinetics families.  The families
 # set to `True` are recommended by RMG and turned on by default by setting
-# kineticsFamilies = 'default' in the RMG input file. Families set to `False` 
+# kineticsFamilies = 'default' in the RMG input file. Families set to `False`
 # are not turned on by default because the family is severely lacking in data.
 # These families should only be turned on with caution.
 
 recommendedFamilies = {
-'Surface_Adsorption_Single': False, #True
+'Surface_Adsorption_Single': True,
 'Surface_Adsorption_Double': False,
 'Surface_Adsorption_vdW': False, # vdW bond doesn't exist yet
-'Surface_Adsorption_Dissociative': False, #True
-'Surface_Adsorption_Bidentate': False, #True
+'Surface_Adsorption_Dissociative': True,
+'Surface_Adsorption_Bidentate': True,
 'Surface_Recombination': False, #DEPRICATED. USE SURFACE_DISSOCIATION INSTEAD!
 'Surface_Bidentate_Dissociation': False,
-'Surface_Dissociation': False, #True
-'Surface_Abstraction': False, #True
+'Surface_Dissociation': True,
+'Surface_Abstraction': True,
 '1+2_Cycloaddition':True,
 '1,2-Birad_to_alkene':True,
 '1,2_Insertion_CO':True,
