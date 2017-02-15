@@ -32,7 +32,7 @@ recommendedFamilies = {
 'Diels_alder_addition':False,
 'Disproportionation':False,
 'HO2_Elimination_from_PeroxyRadical':False,
-'H_Abstraction':False,
+'H_Abstraction':True,
 'H_shift_cyclopentadiene':False,
 'Intra_Diels_alder':False,
 'Intra_Disproportionation':False,
