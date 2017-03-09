@@ -13,6 +13,7 @@ recommendedFamilies = {
 'Surface_Recombination': False, #DEPRECATED. USE SURFACE_DISSOCIATION INSTEAD!
 'Surface_Bidentate_Dissociation': False,
 'Surface_Dissociation': True,
+'Surface_Dissociation_vdW': False,
 'Surface_Abstraction': True,
 '1+2_Cycloaddition':False,
 '1,2-Birad_to_alkene':False,
