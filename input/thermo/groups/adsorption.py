@@ -13,6 +13,24 @@ entry(
     label = "R*",
     group=
 """
+1 R u0
+2 X u0
+""",
+    thermo=None,
+    shortDesc=u"""Anything adsorbed anyhow.""",
+    longDesc=u"""
+   R
+   x
+***********
+This node should be empty, ensuring that one of the nodes below is used.
+""",
+)
+
+entry(
+    index=1,
+    label="R*chemisorbed",
+    group=
+"""
 1 R u0 px {2,[S,D,T,Q]}
 2 X u0 p0 {1,[S,D,T,Q]}
 """,
@@ -22,13 +40,41 @@ entry(
         H298=(-100, 'kcal/mol'),
         S298=(-30., 'cal/(mol*K)'),
         ),
-    shortDesc=u"""Anything adsorbed by any bond. BAD DATA! REMOVE!""",
-    longDesc =  u"""
+    shortDesc=u"""Anything adsorbed by any chemical bond. BAD DATA! REMOVE!""",
+    longDesc=u"""
    R
-   x
-***********
+   x  <--(single, double, triple, or quadruple bond)
+********
+Data made up. Do not use!
 """,
 )
+
+entry(
+    index=1,
+    label="R*vdW",
+    group=
+"""
+1 R u0 px 
+2 X u0 p0
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'cal/(mol*K)'),
+        H298=(-10.0, 'kcal/mol'),
+        S298=(-4.0, 'cal/(mol*K)'),
+        ),
+    shortDesc=u"""Anything physisorbed by a van der Waals bond""",
+    longDesc =  u"""
+   R
+   :  <---(van der Waals bond)
+********
+Consider the Deutschmann mechanism rate constants for CH4, CO2, and H2O.
+The average binding enthalpy is 41.3 kJ/mol, so call it 10 kcal/mol.
+The average loss in entropy is -16.7 J/mol-K, so call it -4. cal/mol-K
+""",
+)
+
+
 
 entry(
     index = 1,
@@ -39,7 +85,7 @@ entry(
 2 X u0 p0 {1,[S,D,T,Q]}
 """,
     thermo=None,
-    shortDesc = u"""Carbon adsorbed by any bond""",
+    shortDesc=u"""Carbon chemisorbed by any bond""",
     longDesc =  u"""
    C
    x
@@ -56,7 +102,7 @@ entry(
 2 X u0 p0 {1,[S,D,T,Q]}
 """,
     thermo=None,
-    shortDesc = u"""Oxygen adsorbed by any bond""",
+    shortDesc=u"""Oxygen chemisorbed by any bond""",
     longDesc =  u"""
    O
    x
@@ -67,7 +113,7 @@ entry(
 
 entry(
     index = 1,
-    label = "C*R",
+    label="C#*R",
     group=
 """
 1 C u0 p0 {2,S} {3,T}
@@ -90,7 +136,7 @@ entry(
 
 entry(
     index = 2,
-    label = "C*R2",
+    label="C=*R2",
     group=
 """
 1 C u0 p0 {2,S} {3,S} {4,D}
@@ -141,24 +187,24 @@ entry(
 
 entry(
     index = 4,
-    label = "C*R4",
+    label="(CR4)*",
     group=
 """
-1 C u0 p0 {2,S} {3,S} {4,S} {5,S} {6,vdW}
+1 C u0 p0 {2,S} {3,S} {4,S} {5,S}
 2 R u0 p0 {1,S}
 3 R u0 p0 {1,S}
 4 R u0 p0 {1,S}
 5 R u0 p0 {1,S}
-6 X u0 p0 {1,vdW}
+6 X u0 p0 
 """,
     thermo=ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata=([-1.17, -1.10, -1.06, -1.04, -1.02, -1.01, -1.00], 'cal/(mol*K)'),
-        H298=(-0.46, 'kcal/mol'),
-        S298=(-19.25, 'cal/(mol*K)'),
+        Cpdata=([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'cal/(mol*K)'),
+        H298=(-8.9, 'kcal/mol'),
+        S298=(-10.4, 'cal/(mol*K)'),
     ),
     shortDesc = u"""CR4 physisorbed on nickel""",
-    longDesc =  u"""Estimated via CFG-TiC
+    longDesc =  u"""taken from Delgado, ratio of rate constants for R11/R12
  R2-C-R2
     :
 ***********
@@ -167,22 +213,22 @@ entry(
 
 entry(
     index = 5,
-    label = "O*R2",
+    label="(OR2)*",
     group=
 """
-1 O u0 p2 {2,S} {3,S} {4,vdW}
+1 O u0 p2 {2,S} {3,S}
 2 R u0 p0 {1,S}
 3 R u0 p0 {1,S}
-4 X u0 p0 {1,vdW}
+4 X u0 p0 
 """,
     thermo=ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata=([-0.99, -0.99, -0.99, -0.99, -0.99, -0.99, -0.99], 'cal/(mol*K)'),
-        H298=(-0.46, 'kcal/mol'),
-        S298=(-14.96, 'cal/(mol*K)'),
+        Cpdata=([0.0, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00], 'cal/(mol*K)'),
+        H298=(-14.5, 'kcal/mol'),
+        S298=(-0.7, 'cal/(mol*K)'),
     ),
     shortDesc = u"""R2O physisorbed on nickel""",
-    longDesc =  u"""Estimated via CFG-TiC
+    longDesc =  u"""Estimated Delgado mechanism for ratio of R5/R6
   R-O-R
     :
 ***********
@@ -191,7 +237,7 @@ entry(
 
 entry(
     index = 6,
-    label = "C*RR*",
+    label="C=*RR*",
     group=
 """
 1 C u0 p0 {2,S} {3,S} {4,D}
@@ -215,7 +261,7 @@ R--C--R
 
 entry(
     index = 7,
-    label = "C*OR",
+    label="C#*OR",
     group=
 """
 1 C u0 p0 {2,S} {4,T}
@@ -229,7 +275,7 @@ entry(
         H298=(-48.39, 'kcal/mol'),
         S298=(-43.58, 'cal/(mol*K)'),
     ),
-    shortDesc = u"""COR adsorbed on nickel: SUBSET OF C*R!""",
+    shortDesc=u"""COR adsorbed on nickel by a triple bond: SUBSET OF C*R!""",
     longDesc =  u"""Estimated via CFG-TiC
  RO-C
    |||
@@ -266,7 +312,7 @@ R2--C--R
 
 entry(
     index = 9,
-    label = "C*ROR",
+    label="C=*ROR",
     group=
 """
 1 C u0 p0 {2,S} {3,S} {5,D}
@@ -281,7 +327,7 @@ entry(
         H298=(-55.31, 'kcal/mol'),
         S298=(-45.59, 'cal/(mol*K)'),
     ),
-    shortDesc = u"""CROR double-bonded on nickel: SUBSET OF C*R2""",
+    shortDesc=u"""CROR double-bonded on nickel: SUBSET OF C=*R2""",
     longDesc =  u"""Estimated via CFG-TiC
   R-C-OR
    ||
@@ -349,16 +395,16 @@ entry(
 
 entry(
     index = 12,
-    label = "O*RCR3",
+    label="(CR3OR)*",
     group=
 """
-1 O u0 p2 {2,S} {3,S} {7,vdW}
+1 O u0 p2 {2,S} {3,S}
 2 C u0 p0 {1,S} {4,S} {5,S} {6,S}
 3 R u0 p0 {1,S}
 4 R u0 p0 {2,S}
 5 R u0 p0 {2,S}
 6 R u0 p0 {2,S}
-7 X u0 p0 {1,vdW}
+7 X u0 p0
 """,
     thermo=ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -405,17 +451,20 @@ RO--C--R
 tree(
 """
 L1: R*
-    L2: C*
-        L3: C*R
-            L4: C*OR
-        L3: C*R2
-            L4: C*ROR
-        L3: C*R3
-            L4: C*R2OR
-        L3: C*R4
-    L2: O*
-        L3: O*R2
-            L4: O*RCR3        
-        L3: O*CR3
+    L2: R*chemisorbed
+        L3: C*
+            L4: C#*R
+                L5: C#*OR
+            L4: C=*R2
+                L5: C=*ROR
+            L4: C*R3
+                L5: C*R2OR
+        L3: O*
+            L4: O*CR3
+    L2: R*vdW
+        L3: (CR4)*
+        L3: (OR2)*
+           L4: (CR3OR)*
+        
 """
 )
