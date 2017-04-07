@@ -46593,3 +46593,39 @@ Kinetics of Hydrogen Abstraction Reactions of Butene Isomers by OH Radical
 p-allylic site of iso-butene ref: DOI: 10.1021/jp1062786""",
 )
 
+
+entry(
+    index = 7046,
+    label = "C_pri;O2b",
+    kinetics = ArrheniusEP(
+        A = (7e+12, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (50.76, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Curran et al. Rate expressions for H atom abstraction from fuels.""",
+    longDesc =
+u"""
+Using data from C/H3/Cs;O2b (which is for a primary carbon bonded to a Cs atom),
+and generaziling it to apply to any primary carbon atom (including those bonded
+to oxygen atoms, etc., such as C/H3/O.
+
+[8] Curran, H.J.; Gaffuri, P.; Pit z, W.J.; Westbrook, C.K. Combust. Flame 2002, 129, 253.
+"A comprehensive modeling study of iso-octane oxidation"
+Rate expressions for H atom abstraction from fuels.
+https://doi.org/10.1016/S0010-2180(01)00373-X
+
+pg 257 A Comprehensive Modelling Study of iso-Octane Oxidation, Table 1. Radical:O2, Site: primary (a)
+
+Verified by Karma James
+Rate expression is changed to per H.(divided by 9) - Yushi Suzuki
+
+
+Note however that Curran et al. attribute the rate to
+T. Ingham, R.W. Walker, R.E. Woolford
+Proc. Combust. Inst., 25 (1994), pp. 767–774
+""",
+)
