@@ -2156,22 +2156,6 @@ entry(
     shortDesc = u"""A.G. Vandeputte""",
     longDesc = 
 u"""
-MRH estimate
-
-A reasonable estimate for the total k_inf(T) for the recombination of H radical with a heavy atom
-is a temperature-independent 1e+14 cm3 mol-1 s-1.  HOWEVER, the value I choose to store in the database
-is 1e+13 cm3 mol-1 s-1, because this is the single-event value.  Not knowing what species RMG will find
-in trying this estimate, I want to fail on the low side.
-
-Using a hydrogen on a primary carbon as an example: Ethane has a multiplicity of six, iso-butane has a
-multiplicity of nine, and neo-pentane has a multiplicity of 12.  Using the 1e+13 cm3 mol-1 s-1 with any
-of these multiplicities will not result in ridiculously fast kinetics.  The purpose of adding entries
-491 and 492 are to reduce the chance RMG sends ridiculously fast high-P-limit kinetics to fame, thereby
-giving us ridiculously fast k(T,P) in our chem.inp files and causing stiffness issues in flame solvers.
-
-NOTE TO RMG USERS: If your model proves to be sensitive to the kinetics of the H+R(+M)=H-R(+M), I would
-encourage you to run a fame job separately, with the 1e+14 cm3 mol-1 s-1 as the total k(T) (if no better
-estimate is known).
 """,
 )
 
@@ -2435,6 +2419,82 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""A. G. Vandeputte estimated value""",
+)
+
+entry(
+    index = 600,
+    label = "N5d-OdOs;O_rad",
+    kinetics = ArrheniusEP(
+        A = (3.5e+12, 'cm^3/(mol*s)'),
+        n = 0.24,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 1,
+    shortDesc = u"""Experimental, J. Hahn, K. Luther and J. Troe""",
+    longDesc = 
+u"""
+J. Hahn, K. Luther and J. Troe
+Experimental and theoretical study of the temperature and pressure dependences of the recombination reactions O + NO2(+M) => NO3(+M) and NO2 + NO3(+M) => N2O5(+M)
+Phys. Chem. Chem. Phys., 2000, 2, 5098-5104
+DOI: 10.1039/B005756H
+
+NO2 + O <=> NO3
+
+Also appears in the Nitrogen_Glarborg_Zhang_et_al library (index 712)
+and in the Nitrogen_Glarborg_Gimenez_et_al library (index 936)
+
+The high-pressure limit kinetics was taken. Troe coefficients are:
+    kinetics = Troe(
+        arrheniusHigh = Arrhenius(A=(3.5e+12, 'cm^3/(mol*s)'), n=0.24, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(A=(2.5e+20, 'cm^6/(mol^2*s)'), n=-1.5, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+        alpha = 0.71,
+        T3 = (1e-30, 'K'),
+        T1 = (1700, 'K'),
+        T2 = (1e+30, 'K'),
+        efficiencies = {},
+    ),
+""",
+)
+
+entry(
+    index = 601,
+    label = "N5d-OdOs;O_pri_rad",
+    kinetics = ArrheniusEP(
+        A = (3e+13, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""J. Troe""",
+    longDesc = 
+u"""
+J. Troe
+Analysis of the temperature and pressure dependence of the reaction HO + NO2 + M = HONO2 + M
+International Journal of Chemical Kinetics, Volume 33, Issue 12 December 2001 Pages 878-889
+DOI: 10.1002/kin.10019
+
+NO2 + OH <=> HONO2; T range: 50 to 1400 K, P range: 10E-4 to 10E3 bar
+
+Also appears in the Nitrogen_Glarborg_Zhang_et_al library (index 713)
+and in the Nitrogen_Glarborg_Gimenez_et_al library (index 937)
+
+The high-pressure limit kinetics was taken. Troe coefficients are:
+    kinetics = Troe(
+        arrheniusHigh = Arrhenius(A=(3e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(A=(2.938e+25, 'cm^6/(mol^2*s)'), n=-3, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+        alpha = 0.4,
+        T3 = (1e-30, 'K'),
+        T1 = (1e+30, 'K'),
+        T2 = (1e+30, 'K'),
+        efficiencies = {},
+    ),
+""",
 )
 
 entry(

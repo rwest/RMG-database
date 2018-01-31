@@ -1,6 +1,6 @@
 # This file contains a dictionary of kinetics families.  The families
 # set to `True` are recommended by RMG and turned on by default by setting
-# kineticsFamilies = 'default' in the RMG input file. Families set to `False` 
+# kineticsFamilies = 'default' in the RMG input file. Families set to `False`
 # are not turned on by default because the family is severely lacking in data.
 # These families should only be turned on with caution.
 
@@ -28,13 +28,14 @@ recommendedFamilies = {
 '2+2_cycloaddition_CO':False,
 '2+2_cycloaddition_Cd':False,
 'Birad_recombination':False,
+'CO_Disproportionation':False,
+'Birad_R_Recombination':False,
 'Cyclic_Ether_Formation':False,
 'Diels_alder_addition':False,
 'Disproportionation':False,
 'HO2_Elimination_from_PeroxyRadical':False,
-'H_Abstraction':True,
-'H_shift_cyclopentadiene':False,
-'Intra_Diels_alder':False,
+'H_Abstraction':False,
+'Intra_Retro_Diels_alder_bicyclic':False,
 'Intra_Disproportionation':False,
 'Intra_RH_Add_Endocyclic':False,
 'Intra_RH_Add_Exocyclic':False,
@@ -43,7 +44,6 @@ recommendedFamilies = {
 'Intra_R_Add_Exocyclic':False,
 'Korcek_step1':False,
 'Korcek_step2':False,
-'Oa_R_Recombination':False,
 'R_Addition_COm':False,
 'R_Addition_CSm':False,
 'R_Addition_MultipleBond':False,
@@ -59,4 +59,12 @@ recommendedFamilies = {
 'intra_substitutionS_isomerization':False,
 'ketoenol':False,
 'lone_electron_pair_bond':False,
+'Singlet_Carbene_Intra_Disproportionation':False,
+'Intra_5_membered_conjugated_C=C_C=C_addition':False,
+'Intra_Diels_alder_monocyclic':False,
+'Concerted_Intra_Diels_alder_monocyclic_1,2_shiftH':False,
+'Intra_2+2_cycloaddition_Cd':False,
+'Intra_ene_reaction':False,
+'Cyclopentadiene_scission':False,
+'6_membered_central_C-C_shift':False
 }

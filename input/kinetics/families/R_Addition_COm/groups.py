@@ -13,10 +13,10 @@ reverse = "COM_Elimination_From_Carbonyl"
 
 recipe(actions=[
     ['LOSE_PAIR', '*1', '1'],
-    ['CHANGE_BOND', '*1', '-1', '*3'],
+    ['CHANGE_BOND', '*1', -1, '*3'],
     ['GAIN_RADICAL', '*1', '1'],
     ['GAIN_PAIR', '*3', '1'],
-    ['FORM_BOND', '*1', 'S', '*2'],
+    ['FORM_BOND', '*1', 1, '*2'],
     ['LOSE_RADICAL', '*2', '1'],
 ])
 
@@ -25,8 +25,8 @@ entry(
     label = "COm",
     group = 
 """
-1 *1 Ct u0 p1 {2,T}
-2 *3 Ot u0 p1 {1,T}
+1 *1 Ct u0 p1 c-1 {2,T}
+2 *3 Ot u0 p1 c+1 {1,T}
 """,
     kinetics = None,
 )
@@ -403,7 +403,7 @@ entry(
 
 entry(
     index = 32,
-    label = "CH[CH3]2",
+    label = "CH(CH3)2",
     group = 
 """
 1  *2 C  u1 {2,S} {3,S} {4,S}
@@ -741,7 +741,7 @@ L1: Y_rad
             L4: C_rad/H2/O
         L3: C_sec_rad
             L4: C_rad/H/NonDeC
-                L5: CH[CH3]2
+                L5: CH(CH3)2
             L4: C_rad/H/NonDeO
                 L5: C_rad/H/CsO
                 L5: C_rad/H/O2
