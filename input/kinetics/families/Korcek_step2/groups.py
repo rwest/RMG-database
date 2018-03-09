@@ -7,22 +7,22 @@ longDesc = u"""
 
 """
 
-template(reactants=["C1(R)(H)(O[OC3(OH)(R')]C2)"], products=["C1(R)(O)(C2)", "C3(OH)(O)(R')"], ownReverse=False)
+template(reactants=["C1(R)(H)(O(OC3(OH)(R'))C2)"], products=["C1(R)(O)(C2)", "C3(OH)(O)(R')"], ownReverse=False)
 
 reverse = "none"
 
 recipe(actions=[
-    ['BREAK_BOND', '*1', 'S', '*6'],
-    ['BREAK_BOND', '*4', 'S', '*5'],
-    ['BREAK_BOND', '*2', 'S', '*3'],
-    ['CHANGE_BOND', '*3', '1', '*4'],
-    ['CHANGE_BOND', '*1', '1', '*5'],
-    ['FORM_BOND', '*2', 'S', '*6'],
+    ['BREAK_BOND', '*1', 1, '*6'],
+    ['BREAK_BOND', '*4', 1, '*5'],
+    ['BREAK_BOND', '*2', 1, '*3'],
+    ['CHANGE_BOND', '*3', 1, '*4'],
+    ['CHANGE_BOND', '*1', 1, '*5'],
+    ['FORM_BOND', '*2', 1, '*6'],
 ])
 
 entry(
     index = 1,
-    label = "C1(R)(H)(O[OC3(OH)(R')]C2)",
+    label = "C1(R)(H)(O(OC3(OH)(R'))C2)",
     group = 
 """
 1  *1 C u0 {2,S} {4,S} {7,S} {9,S}
@@ -43,7 +43,7 @@ entry(
 
 tree(
 """
-L1: C1(R)(H)(O[OC3(OH)(R')]C2)
+L1: C1(R)(H)(O(OC3(OH)(R'))C2)
 """
 )
 

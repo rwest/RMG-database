@@ -12,7 +12,7 @@ template(reactants=["Y_rad", "Y_rad"], products=["Y_Y"], ownReverse=False)
 reverse = "Bond_Dissociation"
 
 recipe(actions=[
-    ['FORM_BOND', '*1', 'S', '*2'],
+    ['FORM_BOND', '*1', 1, '*2'],
     ['LOSE_RADICAL', '*1', '1'],
     ['LOSE_RADICAL', '*2', '1'],
 ])
@@ -130,8 +130,7 @@ entry(
     group = 
 """
 1 * Ss u1 {2,S}
-2   Cd u0 {1,S} {3,D}
-3   Sd u0 {2,D}
+2   CS u0 {1,S}
 """,
     kinetics = None,
 )
@@ -291,8 +290,8 @@ entry(
 1 * C   u1 {2,D} {3,S}
 2   C   u0 {1,D} {4,S} {5,S}
 3   R!H u0 {1,S}
-4   R u0 {2,S}
-5   R u0 {2,S}
+4   R   u0 {2,S}
+5   R   u0 {2,S}
 """,
     kinetics = None,
 )
@@ -305,8 +304,8 @@ entry(
 1 * C      u1 {2,D} {3,S}
 2   C      u0 {1,D} {4,S} {5,S}
 3   [Cs,O] u0 {1,S}
-4   R u0 {2,S}
-5   R u0 {2,S}
+4   R      u0 {2,S}
+5   R      u0 {2,S}
 """,
     kinetics = None,
 )
@@ -319,8 +318,8 @@ entry(
 1 * C             u1 {2,D} {3,S}
 2   C             u0 {1,D} {4,S} {5,S}
 3   [Cd,Ct,Cb,CO] u0 {1,S}
-4   R u0 {2,S}
-5   R u0 {2,S}
+4   R             u0 {2,S}
+5   R             u0 {2,S}
 """,
     kinetics = None,
 )
@@ -333,8 +332,8 @@ entry(
 1 * C  u1 {2,D} {3,S}
 2   C  u0 {1,D} {4,S} {5,S}
 3   Cd u0 {1,S}
-4   R u0 {2,S}
-5   R u0 {2,S}
+4   R  u0 {2,S}
+5   R  u0 {2,S}
 """,
     kinetics = None,
 )
@@ -344,9 +343,9 @@ entry(
     label = "Cd_allenic",
     group = 
 """
-1 * C  u1 {2,D} {3,S}
-2   Cdd  u0 {1,D} 
-3   R u0 {1,S}
+1 * C   u1 {2,D} {3,S}
+2   Cdd u0 {1,D}
+3   R   u0 {1,S}
 """,
     kinetics = None,
 )
@@ -428,9 +427,8 @@ entry(
     label = "C=SJ",
     group = 
 """
-1 * Cd u1 {2,D} {3,S}
-2   Sd u0 {1,D}
-3   R  u0 {1,S}
+1 * CS u1 {2,S}
+2   R  u0 {1,S}
 """,
     kinetics = None,
 )
@@ -440,9 +438,8 @@ entry(
     label = "C=SJ-H",
     group = 
 """
-1 * Cd u1 {2,S} {3,D}
+1 * CS u1 {2,S}
 2   H  u0 {1,S}
-3   Sd u0 {1,D}
 """,
     kinetics = None,
 )
@@ -452,9 +449,8 @@ entry(
     label = "C=SJ-C",
     group = 
 """
-1 * Cd u1 {2,S} {3,D}
+1 * CS u1 {2,S}
 2   C  u0 {1,S}
-3   Sd u0 {1,D}
 """,
     kinetics = None,
 )
@@ -464,9 +460,8 @@ entry(
     label = "C=SJ-Cs",
     group = 
 """
-1 * Cd u1 {2,S} {3,D}
+1 * CS u1 {2,S}
 2   Cs u0 {1,S}
-3   Sd u0 {1,D}
 """,
     kinetics = None,
 )
@@ -476,9 +471,8 @@ entry(
     label = "C=SJ-Ss",
     group = 
 """
-1 * Cd u1 {2,S} {3,D}
+1 * CS u1 {2,S}
 2   Ss u0 {1,S}
-3   Sd u0 {1,D}
 """,
     kinetics = None,
 )
@@ -796,6 +790,21 @@ entry(
 )
 
 entry(
+    index = 66,
+    label = "C_rad_cyclopentadiene",
+    group = 
+"""
+1 * C  u1 {2,S} {3,S} {4,S}
+2   H  u0 {1,S}
+3   Cd u0 {1,S} {5,D}
+4   Cd u0 {1,S} {6,D}
+5   Cd u0 {3,D} {6,S}
+6   Cd u0 {4,D} {5,S}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 60,
     label = "CsJ-CSH",
     group = 
@@ -867,10 +876,9 @@ entry(
     group = 
 """
 1 * C  u1 {2,S} {3,S} {4,S}
-2   Cd u0 {1,S} {5,D}
+2   CS u0 {1,S}
 3   Ss u0 {1,S}
 4   H  u0 {1,S}
-5   Sd u0 {2,D}
 """,
     kinetics = None,
 )
@@ -884,21 +892,6 @@ entry(
 2   Ss u0 {1,S}
 3   Ss u0 {1,S}
 4   H  u0 {1,S}
-""",
-    kinetics = None,
-)
-
-entry(
-    index = 66,
-    label = "C_rad_cyclopentadiene",
-    group = 
-"""
-1 * C u1 {2,S} {3,S} {4,S}
-2 H u0 {1,S}
-3 Cd u0 {1,S} {5,D} 
-4 Cd u0 {1,S} {6,D} 
-5 Cd u0 {3,D} {6,S} 
-6 Cd u0 {4,D} {5,S} 
 """,
     kinetics = None,
 )
@@ -1118,10 +1111,9 @@ entry(
     group = 
 """
 1 * C  u1 {2,S} {3,S} {4,S}
-2   Cd u0 {1,S} {5,D}
+2   CS u0 {1,S}
 3   Ss u0 {1,S}
 4   Ss u0 {1,S}
-5   Sd u0 {2,D}
 """,
     kinetics = None,
 )
@@ -1199,9 +1191,8 @@ entry(
 """
 1 * C  u1 {2,S} {3,S} {4,S}
 2   Cs u0 {1,S}
-3   Cd u0 {1,S} {5,D}
+3   CS u0 {1,S}
 4   Ss u0 {1,S}
-5   Sd u0 {3,D}
 """,
     kinetics = None,
 )
@@ -1221,6 +1212,16 @@ entry(
 
 entry(
     index = 104,
+    label = "N1s_rad",
+    group = 
+"""
+1 * N1s u1 p2
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 105,
     label = "N3_rad",
     group = 
 """
@@ -1230,7 +1231,7 @@ entry(
 )
 
 entry(
-    index = 105,
+    index = 106,
     label = "N3s_rad",
     group = 
 """
@@ -1240,20 +1241,8 @@ entry(
 )
 
 entry(
-    index = 106,
-    label = "NH2_rad",
-    group = 
-"""
-1 * N3s u1 {2,S} {3,S}
-2   H   u0 {1,S}
-3   H   u0 {1,S}
-""",
-    kinetics = None,
-)
-
-entry(
     index = 107,
-    label = "N3s_rad_pri",
+    label = "N3s_pri_rad",
     group = 
 """
 1 * N3s u1 {2,S} {3,S}
@@ -1265,7 +1254,55 @@ entry(
 
 entry(
     index = 108,
-    label = "N3s_rad_sec",
+    label = "NH2_rad",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   H   u0 {1,S}
+3   H   u0 {1,S}
+""",
+    kinetics = None,
+)
+        
+entry(
+    index = 109,
+    label = "N3s-Cs",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   H   u0 {1,S}
+3   Cs  u0 {1,S}
+""",
+    kinetics = None,
+)
+        
+entry(
+    index = 110,
+    label = "N3s-Os",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   H   u0 {1,S}
+3   Os  u0 {1,S}
+""",
+    kinetics = None,
+)
+        
+entry(
+    index = 111,
+    label = "N3s-N3s",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   H   u0 {1,S}
+3   N3s u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 113,
+    label = "N3s_sec_rad",
     group = 
 """
 1 * N3s u1 {2,S} {3,S}
@@ -1276,7 +1313,79 @@ entry(
 )
 
 entry(
-    index = 109,
+    index = 114,
+    label = "N3s-CsCs",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   Cs  u0 {1,S}
+3   Cs  u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 115,
+    label = "N3s-CsOs",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   Cs  u0 {1,S}
+3   Os  u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 116,
+    label = "N3s-CsN3s",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   Cs  u0 {1,S}
+3   N3s u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 117,
+    label = "N3s-OsOs",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   Os  u0 {1,S}
+3   Os  u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 118,
+    label = "N3s-OsN3s",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   Os  u0 {1,S}
+3   N3s u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 119,
+    label = "N3s-N3sN3s",
+    group = 
+"""
+1 * N3s u1 {2,S} {3,S}
+2   N3s u0 {1,S}
+3   N3s u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 120,
     label = "N3d_rad",
     group = 
 """
@@ -1287,21 +1396,107 @@ entry(
 )
 
 entry(
-    index = 110,
-    label = "N5_rad",
+    index = 121,
+    label = "N3d-Cd",
     group = 
 """
-1 * [N5s,N5d,N5t] u1
+1 * N3d u1 {2,D}
+2   Cd  u0 {1,D}
 """,
     kinetics = None,
 )
 
 entry(
-    index = 111,
+    index = 122,
+    label = "N3d-Cdd",
+    group = 
+"""
+1 * N3d u1 {2,D}
+2   Cdd u0 {1,D}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 123,
+    label = "N3d-Od",
+    group = 
+"""
+1 * N3d u1 {2,D}
+2   Od  u0 {1,D}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 130,
+    label = "N5d-OdOs",
+    group = 
+"""
+1 * N5d u1 p0 c+1 {2,D} {3,S}
+2   Od  u0 {1,D}
+3   Os  u0 p3 c-1 (1,S)
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 124,
+    label = "N3d-N3d",
+    group = 
+"""
+1 * N3d u1 {2,D}
+2   N3d u0 {1,D}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 125,
+    label = "N5_rad",
+    group = 
+"""
+1 * [N5s,N5d,N5t,N5b] u1 p0
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 126,
+    label = "N5s_rad",
+    group = 
+"""
+1 * N5s u1 p0
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 127,
     label = "N5d_rad",
     group = 
 """
-1 * N5d u1
+1 * N5d u1 p0
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 128,
+    label = "N5t_rad",
+    group = 
+"""
+1 * N5t u1 p0
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 129,
+    label = "N5b_rad",
+    group = 
+"""
+1 * N5b u1 p0
 """,
     kinetics = None,
 )
@@ -1404,31 +1599,33 @@ L1: Y_rad
                 L5: CsJ-CsCdSs
                 L5: CsJ-CsC=SSs
             L4: CsJ-SsSsSs
+    L2: N1s_rad
     L2: N3_rad
         L3: N3s_rad
             L4: NH2_rad
-            L4: N3s_rad_pri
-            L4: N3s_rad_sec
+            L4: N3s_pri_rad
+                L5: N3s-Cs
+                L5: N3s-Os
+                L5: N3s-N3s
+            L4: N3s_sec_rad
+                L5: N3s-CsCs
+                L5: N3s-CsOs
+                L5: N3s-CsN3s
+                L5: N3s-OsOs
+                L5: N3s-OsN3s
+                L5: N3s-N3sN3s
         L3: N3d_rad
+            L4: N3d-Cd
+            L4: N3d-Cdd
+            L4: N3d-Od
+            L4: N3d-N3d
     L2: N5_rad
+        L3: N5s_rad
         L3: N5d_rad
+            L4: N5d-OdOs
+        L3: N5t_rad
+        L3: N5b_rad
 """
-)
-
-forbidden(
-    label = "O4",
-    group = 
-"""
-1    O u1 {2,S}
-2 *1 O u0 {1,S} {3,S}
-3 *2 O u0 {2,S} {4,S}
-4    O u1 {3,S}
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
 forbidden(
@@ -1448,7 +1645,7 @@ forbidden(
     label = "Cl_2",
     group = 
 """
-1 *12 Cl u1
+1 *2 Cl u1
 """,
     shortDesc = u"""""",
     longDesc = 
@@ -1456,3 +1653,20 @@ u"""
 
 """,
 )
+
+forbidden(
+    label = "O4",
+    group = 
+"""
+1    O u1 {2,S}
+2 *1 O u0 {1,S} {3,S}
+3 *2 O u0 {2,S} {4,S}
+4    O u1 {3,S}
+""",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+

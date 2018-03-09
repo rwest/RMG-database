@@ -4,7 +4,23 @@
 name = "SulfurLibrary"
 shortDesc = u""
 longDesc = u"""
+Thermo Library for Sulfur Compounds
+Unless othewise noted in "Comments," all values are from QM calculations (CBS-QB3 with 1D-HR corrections).
+Uncertainties estimated at 1.00, unless experimental uncertainty available.
 
+References
+[1] Good, W.D. et al. J. Phys. Chem., 1961, 65, 2229-2231.
+[2] McCullough, J.P. et al. J. Am. Chem. Soc., 1957, 79, 561-566.
+[3] Hubbard, W.N.; Waddington, G. Rec. Trav. Chim. Pays/Bas, 1954, 73, 910.
+[4] Hubbard, W.N. et al. J. Phys. Chem., 1958, 62, 614-617.
+[5] Voronkov, M.G. et al. Dokl. Phys. Chem. (Engl. Transl.), 1989, 307, 650-653.
+[6] Scott, D.W. et al. J. Chem. Phys., 1962, 36, 406-412.
+[7] Ruscic, B.; Berkowitz, J., J. Chem. Phys., 1993, 98, 2568-2579.
+[8] Roy, M.; McMahon, T.B. Org. Mass Spectrom., 1982, 8, 392-395.
+[9] Butler, J.J.; Baer, T., Org. Mass Spectrom., 1983, 18, 248-253.
+[10] Chase, M.W., Jr., NIST-JANAF Thermochemical Tables, Fourth Edition, 
+     J. Phys. Chem. Ref. Data, Monograph 9, 1998, 1-1951.
+[11] Alfassi, Z.B., S-centered radicals. 1999.
 """
 entry(
     index = 1,
@@ -24,7 +40,6 @@ entry(
     shortDesc = u"""All from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -48,7 +63,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -70,7 +84,6 @@ entry(
     shortDesc = u"""All from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -93,7 +106,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -117,7 +129,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -142,7 +153,6 @@ entry(
     shortDesc = u"""H298 from [1]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -170,7 +180,6 @@ entry(
     shortDesc = u"""H298 from [5]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -200,7 +209,6 @@ entry(
     shortDesc = u"""H298 from [5], strong disagreement w/ QM""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -228,7 +236,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -254,7 +261,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -283,7 +289,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -310,7 +315,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -334,7 +338,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -361,7 +364,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -389,7 +391,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -415,7 +416,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -441,7 +441,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -466,7 +465,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -494,7 +492,6 @@ entry(
     shortDesc = u"""H298 from [2]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -523,7 +520,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -552,7 +548,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -579,7 +574,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -605,7 +599,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -632,7 +625,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -663,7 +655,6 @@ entry(
     shortDesc = u"""H298 from [3]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -695,7 +686,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -725,7 +715,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -754,7 +743,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -784,7 +772,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -818,7 +805,6 @@ entry(
     shortDesc = u"""H298 from [4]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -844,7 +830,6 @@ entry(
     shortDesc = u"""Expt available [9]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -876,7 +861,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -911,7 +895,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -940,7 +923,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -967,7 +949,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -992,7 +973,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1017,7 +997,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1046,7 +1025,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1076,7 +1054,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1104,7 +1081,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1132,7 +1108,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1158,7 +1133,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1182,7 +1156,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1209,7 +1182,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1235,7 +1207,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1260,7 +1231,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1291,7 +1261,6 @@ entry(
     shortDesc = u"""H298 from [3]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1325,7 +1294,6 @@ entry(
     shortDesc = u"""H298 from [4]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1362,7 +1330,6 @@ entry(
     shortDesc = u"""H298 from [6]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1394,7 +1361,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1429,7 +1395,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1459,7 +1424,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1492,7 +1456,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1524,7 +1487,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1553,7 +1515,6 @@ entry(
     shortDesc = u"""H298 from [5]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1583,7 +1544,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1611,7 +1571,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1638,7 +1597,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1668,7 +1626,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1691,7 +1648,6 @@ entry(
     shortDesc = u"""Expts available [7] and [8]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1718,7 +1674,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1750,7 +1705,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1785,7 +1739,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1823,7 +1776,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1854,7 +1806,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1882,7 +1833,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1918,7 +1868,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1950,7 +1899,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -1980,7 +1928,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2013,7 +1960,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2043,7 +1989,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2079,7 +2024,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2112,7 +2056,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2142,7 +2085,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2173,7 +2115,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2200,7 +2141,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2231,7 +2171,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2266,7 +2205,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2293,7 +2231,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2323,7 +2260,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2355,7 +2291,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2390,7 +2325,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2423,7 +2357,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2458,7 +2391,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2480,7 +2412,6 @@ multiplicity 2
     shortDesc = u"""All from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2505,7 +2436,6 @@ multiplicity 2
     shortDesc = u"""H298, S298 from [11]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2531,7 +2461,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2555,7 +2484,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2579,7 +2507,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2602,7 +2529,6 @@ multiplicity 2
     shortDesc = u"""Expt available [11]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2628,7 +2554,6 @@ multiplicity 2
     shortDesc = u"""Expts available [11]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2652,7 +2577,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2677,7 +2601,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2705,7 +2628,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2734,7 +2656,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2761,7 +2682,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2788,7 +2708,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2814,7 +2733,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2845,7 +2763,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2877,7 +2794,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2907,7 +2823,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2937,7 +2852,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2966,7 +2880,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -2992,7 +2905,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3018,7 +2930,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3067,7 +2978,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3096,7 +3006,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3127,7 +3036,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3161,7 +3069,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3190,7 +3097,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3219,7 +3125,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3249,7 +3154,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3278,7 +3182,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3305,7 +3208,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3333,7 +3235,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3362,7 +3263,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3391,7 +3291,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3422,7 +3321,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3456,7 +3354,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3493,7 +3390,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3529,7 +3425,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3551,7 +3446,6 @@ multiplicity 3
     shortDesc = u"""All from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3572,7 +3466,6 @@ entry(
     shortDesc = u"""All from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3606,7 +3499,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3640,7 +3532,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3666,7 +3557,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3695,7 +3585,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3721,7 +3610,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3750,7 +3638,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3774,7 +3661,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3798,7 +3684,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3822,7 +3707,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3844,7 +3728,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3872,7 +3755,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3901,7 +3783,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -3930,42 +3811,9 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
-entry(
-    index = 140,
-    label = "benzaldehyde",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,B} {6,B} {9,S}
-2  C u0 p0 c0 {1,B} {3,B} {10,S}
-3  C u0 p0 c0 {2,B} {4,B} {11,S}
-4  C u0 p0 c0 {3,B} {5,B} {12,S}
-5  C u0 p0 c0 {4,B} {6,B} {13,S}
-6  C u0 p0 c0 {1,B} {5,B} {7,S}
-7  C u0 p0 c0 {6,S} {8,D} {14,S}
-8  O u0 p2 c0 {7,D}
-9  H u0 p0 c0 {1,S}
-10 H u0 p0 c0 {2,S}
-11 H u0 p0 c0 {3,S}
-12 H u0 p0 c0 {4,S}
-13 H u0 p0 c0 {5,S}
-14 H u0 p0 c0 {7,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([26.37,34.38,41.26,46.87,55.14,60.79,68.78],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (-10.03,'kcal/mol','+|-',1),
-        S298 = (79.67,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
 
 entry(
     index = 141,
@@ -3996,7 +3844,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4032,7 +3879,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4054,7 +3900,6 @@ entry(
     shortDesc = u"""H298 from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4077,7 +3922,6 @@ entry(
     shortDesc = u"""H298 from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4101,7 +3945,6 @@ entry(
     shortDesc = u"""H298 from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4126,7 +3969,6 @@ entry(
     shortDesc = u"""H298 from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4152,7 +3994,6 @@ entry(
     shortDesc = u"""H298 from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4179,279 +4020,9 @@ entry(
     shortDesc = u"""H298 from [10]""",
     longDesc = 
 u"""
-
 """,
 )
 
-entry(
-    index = 149,
-    label = "cyc-C6H10",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,D} {6,S} {7,S}
-2  C u0 p0 c0 {1,D} {3,S} {8,S}
-3  C u0 p0 c0 {2,S} {4,S} {9,S} {10,S}
-4  C u0 p0 c0 {3,S} {5,S} {11,S} {12,S}
-5  C u0 p0 c0 {4,S} {6,S} {13,S} {14,S}
-6  C u0 p0 c0 {1,S} {5,S} {15,S} {16,S}
-7  H u0 p0 c0 {1,S}
-8  H u0 p0 c0 {2,S}
-9  H u0 p0 c0 {3,S}
-10 H u0 p0 c0 {3,S}
-11 H u0 p0 c0 {4,S}
-12 H u0 p0 c0 {4,S}
-13 H u0 p0 c0 {5,S}
-14 H u0 p0 c0 {5,S}
-15 H u0 p0 c0 {6,S}
-16 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.42,33.39,41.41,48.14,58.47,65.88,76.91],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (-1.03,'kcal/mol','+|-',0.23),
-        S298 = (74.2,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""see NIST webbook""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 150,
-    label = "cyc-C6H9J-3",
-    molecule = 
-"""
-multiplicity 2
-1  C u0 p0 c0 {2,S} {3,S} {7,S} {8,S}
-2  C u0 p0 c0 {1,S} {5,S} {9,S} {10,S}
-3  C u0 p0 c0 {1,S} {4,S} {11,S} {12,S}
-4  C u0 p0 c0 {3,S} {6,D} {13,S}
-5  C u1 p0 c0 {2,S} {6,S} {14,S}
-6  C u0 p0 c0 {4,D} {5,S} {15,S}
-7  H u0 p0 c0 {1,S}
-8  H u0 p0 c0 {1,S}
-9  H u0 p0 c0 {2,S}
-10 H u0 p0 c0 {2,S}
-11 H u0 p0 c0 {3,S}
-12 H u0 p0 c0 {3,S}
-13 H u0 p0 c0 {4,S}
-14 H u0 p0 c0 {5,S}
-15 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.28,32.36,39.58,45.76,55.33,62.07,71.91],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (30.04,'kcal/mol','+|-',1),
-        S298 = (73.79,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""CAC CBS-QB3""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 151,
-    label = "cyc-C6H9J-4",
-    molecule = 
-"""
-multiplicity 2
-1  C u0 p0 c0 {2,S} {4,S} {7,S} {8,S}
-2  C u0 p0 c0 {1,S} {5,S} {9,S} {10,S}
-3  C u0 p0 c0 {4,S} {6,S} {11,S} {12,S}
-4  C u1 p0 c0 {1,S} {3,S} {13,S}
-5  C u0 p0 c0 {2,S} {6,D} {14,S}
-6  C u0 p0 c0 {3,S} {5,D} {15,S}
-7  H u0 p0 c0 {1,S}
-8  H u0 p0 c0 {1,S}
-9  H u0 p0 c0 {2,S}
-10 H u0 p0 c0 {2,S}
-11 H u0 p0 c0 {3,S}
-12 H u0 p0 c0 {3,S}
-13 H u0 p0 c0 {4,S}
-14 H u0 p0 c0 {5,S}
-15 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.02,32.86,39.89,45.96,55.45,62.19,72.03],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (45.73,'kcal/mol','+|-',1),
-        S298 = (75.45,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""CAC CBS-QB3""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 152,
-    label = "cyc-C6H8",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,D} {6,S} {7,S}
-2  C u0 p0 c0 {1,D} {3,S} {8,S}
-3  C u0 p0 c0 {2,S} {4,D} {9,S}
-4  C u0 p0 c0 {3,D} {5,S} {10,S}
-5  C u0 p0 c0 {4,S} {6,S} {11,S} {12,S}
-6  C u0 p0 c0 {1,S} {5,S} {13,S} {14,S}
-7  H u0 p0 c0 {1,S}
-8  H u0 p0 c0 {2,S}
-9  H u0 p0 c0 {3,S}
-10 H u0 p0 c0 {4,S}
-11 H u0 p0 c0 {5,S}
-12 H u0 p0 c0 {5,S}
-13 H u0 p0 c0 {6,S}
-14 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.66,30.72,37.76,43.56,52.27,58.42,67.52],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (25,'kcal/mol','+|-',0.15),
-        S298 = (72.52,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""see NIST webbook""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 153,
-    label = "cyc-C6H7J",
-    molecule = 
-"""
-multiplicity 2
-1  C u0 p0 c0 {2,D} {6,S} {7,S}
-2  C u0 p0 c0 {1,D} {3,S} {8,S}
-3  C u0 p0 c0 {2,S} {4,D} {9,S}
-4  C u0 p0 c0 {3,D} {5,S} {10,S}
-5  C u1 p0 c0 {4,S} {6,S} {11,S}
-6  C u0 p0 c0 {1,S} {5,S} {12,S} {13,S}
-7  H u0 p0 c0 {1,S}
-8  H u0 p0 c0 {2,S}
-9  H u0 p0 c0 {3,S}
-10 H u0 p0 c0 {4,S}
-11 H u0 p0 c0 {5,S}
-12 H u0 p0 c0 {6,S}
-13 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.3,29.55,35.87,41.17,49.18,54.69,62.6],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (48.64,'kcal/mol','+|-',1),
-        S298 = (70.6,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""CAC CBS-QB3""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 154,
-    label = "benzene",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,B} {6,B} {7,S}
-2  C u0 p0 c0 {1,B} {3,B} {8,S}
-3  C u0 p0 c0 {2,B} {4,B} {9,S}
-4  C u0 p0 c0 {3,B} {5,B} {10,S}
-5  C u0 p0 c0 {4,B} {6,B} {11,S}
-6  C u0 p0 c0 {1,B} {5,B} {12,S}
-7  H u0 p0 c0 {1,S}
-8  H u0 p0 c0 {2,S}
-9  H u0 p0 c0 {3,S}
-10 H u0 p0 c0 {4,S}
-11 H u0 p0 c0 {5,S}
-12 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.84,27.13,33.3,38.26,45.52,50.53,57.87],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (19.8,'kcal/mol','+|-',0.2),
-        S298 = (64.36,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""H from [12], rest from TRC""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 155,
-    label = "toluene",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,B} {6,B} {8,S}
-2  C u0 p0 c0 {1,B} {3,B} {9,S}
-3  C u0 p0 c0 {2,B} {4,B} {10,S}
-4  C u0 p0 c0 {3,B} {5,B} {11,S}
-5  C u0 p0 c0 {4,B} {6,B} {12,S}
-6  C u0 p0 c0 {1,B} {5,B} {7,S}
-7  C u0 p0 c0 {6,S} {13,S} {14,S} {15,S}
-8  H u0 p0 c0 {1,S}
-9  H u0 p0 c0 {2,S}
-10 H u0 p0 c0 {3,S}
-11 H u0 p0 c0 {4,S}
-12 H u0 p0 c0 {5,S}
-13 H u0 p0 c0 {7,S}
-14 H u0 p0 c0 {7,S}
-15 H u0 p0 c0 {7,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.95,33.44,40.82,46.89,56,62.43,71.94],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (12,'kcal/mol','+|-',0.26),
-        S298 = (80.74,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""see NIST webbook, used G3B3 calc for entropy""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 156,
-    label = "benzyl",
-    molecule = 
-"""
-multiplicity 2
-1  C u0 p0 c0 {2,B} {6,B} {8,S}
-2  C u0 p0 c0 {1,B} {3,B} {9,S}
-3  C u0 p0 c0 {2,B} {4,B} {10,S}
-4  C u0 p0 c0 {3,B} {5,B} {11,S}
-5  C u0 p0 c0 {4,B} {6,B} {12,S}
-6  C u0 p0 c0 {1,B} {5,B} {7,S}
-7  C u1 p0 c0 {6,S} {13,S} {14,S}
-8  H u0 p0 c0 {1,S}
-9  H u0 p0 c0 {2,S}
-10 H u0 p0 c0 {3,S}
-11 H u0 p0 c0 {4,S}
-12 H u0 p0 c0 {5,S}
-13 H u0 p0 c0 {7,S}
-14 H u0 p0 c0 {7,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([26.48,34.85,41.67,47.06,54.92,60.39,68.52],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (49.5,'kcal/mol','+|-',1),
-        S298 = (76.31,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""see NIST, used QCISD/cc-pVDZ for Cp""",
-    longDesc = 
-u"""
-
-""",
-)
 
 entry(
     index = 157,
@@ -4489,7 +4060,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4529,7 +4099,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4558,7 +4127,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4590,7 +4158,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4620,7 +4187,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4650,7 +4216,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4682,7 +4247,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4714,7 +4278,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4744,7 +4307,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4777,7 +4339,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4808,7 +4369,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4837,7 +4397,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4866,7 +4425,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4895,7 +4453,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -4953,7 +4510,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5011,7 +4567,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5049,7 +4604,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5090,7 +4644,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5129,7 +4682,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5168,7 +4720,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5209,7 +4760,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5250,7 +4800,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5289,7 +4838,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5331,7 +4879,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5371,7 +4918,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5429,7 +4975,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5487,7 +5032,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5545,7 +5089,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5603,7 +5146,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5641,7 +5183,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5679,7 +5220,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5717,7 +5257,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5757,7 +5296,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5795,7 +5333,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5829,7 +5366,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5865,7 +5401,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5901,7 +5436,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5937,7 +5471,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -5971,7 +5504,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6005,7 +5537,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6043,7 +5574,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6081,7 +5611,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6117,7 +5646,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6151,7 +5679,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6189,7 +5716,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6223,7 +5749,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6254,7 +5779,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6285,7 +5809,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6331,7 +5854,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6377,7 +5899,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6423,7 +5944,6 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
@@ -6469,47 +5989,9 @@ multiplicity 2
     shortDesc = u"""""",
     longDesc = 
 u"""
-
 """,
 )
 
-entry(
-    index = 209,
-    label = "hexanal",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,S} {8,S} {9,S} {10,S}
-2  C u0 p0 c0 {1,S} {3,S} {11,S} {12,S}
-3  C u0 p0 c0 {2,S} {4,S} {13,S} {14,S}
-4  C u0 p0 c0 {3,S} {5,S} {15,S} {16,S}
-5  C u0 p0 c0 {4,S} {6,S} {17,S} {18,S}
-6  C u0 p0 c0 {5,S} {7,D} {19,S}
-7  O u0 p2 c0 {6,D}
-8  H u0 p0 c0 {1,S}
-9  H u0 p0 c0 {1,S}
-10 H u0 p0 c0 {1,S}
-11 H u0 p0 c0 {2,S}
-12 H u0 p0 c0 {2,S}
-13 H u0 p0 c0 {3,S}
-14 H u0 p0 c0 {3,S}
-15 H u0 p0 c0 {4,S}
-16 H u0 p0 c0 {4,S}
-17 H u0 p0 c0 {5,S}
-18 H u0 p0 c0 {5,S}
-19 H u0 p0 c0 {6,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([35.419,43.266,50.737,57.281,67.784,75.65,87.689],'cal/(mol*K)','+|-',[1.12,1.12,1.12,1.12,1.12,1.12,1.12]),
-        H298 = (-59.831,'kcal/mol','+|-',1.15),
-        S298 = (101.757,'cal/(mol*K)','+|-',1.39),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
 
 entry(
     index = 210,
@@ -6530,3 +6012,4 @@ u"""
 Singlet sulfur, thermo data copied from triplet sulfur, likely very incorrect.
 """,
 )
+
