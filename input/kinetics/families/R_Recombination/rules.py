@@ -1711,7 +1711,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 
 entry(
     index = 480,
-    label = "SsJ-Ss;C_methyl",
+    label = "SsJ-S2s;C_methyl",
     kinetics = ArrheniusEP(
         A = (3.94e+09, 'cm^3/(mol*s)'),
         n = 1.25,
@@ -1747,7 +1747,7 @@ u"""
 
 entry(
     index = 482,
-    label = "CsJ-SsHH;H_rad",
+    label = "C_rad/H2/S;H_rad",
     kinetics = ArrheniusEP(
         A = (5e+11, 'cm^3/(mol*s)'),
         n = 0.65,
@@ -1783,7 +1783,7 @@ u"""
 
 entry(
     index = 484,
-    label = "SsJ-Ss;C_rad/Cs3",
+    label = "SsJ-S2s;C_rad/Cs3",
     kinetics = ArrheniusEP(
         A = (3.94e+09, 'cm^3/(mol*s)'),
         n = 1.25,
@@ -2143,7 +2143,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 
 entry(
     index = 491,
-    label = "SsJ-Ss;C_methyl",
+    label = "SsJ-S2s;C_methyl",
     kinetics = ArrheniusEP(
         A = (6.44e+09, 'cm^3/(mol*s)'),
         n = 1.19,
@@ -2365,15 +2365,15 @@ entry(
     index = 508,
     label = "C_rad_cyclopentadiene;H_rad",
     kinetics = ArrheniusEP(
-        A = (1.00E+14, 'cm^3/(mol*s)'),
+        A = (5.00E+14, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
         Tmin = (300, 'K'),
-        Tmax = (2000, 'K'),
+        Tmax = (2500, 'K'),
     ),
     rank = 3,
-    shortDesc = u"""BENZENE OXIDATION TAKEN FROM DACOSTA 2003 IJCK""",
+    shortDesc = u"""From 2001 Roy IJCK high-P value""",
 )
 
 entry(
@@ -2423,7 +2423,7 @@ entry(
 
 entry(
     index = 600,
-    label = "N5d-OdOs;O_rad",
+    label = "N5dc-OdOs;O_rad",
     kinetics = ArrheniusEP(
         A = (3.5e+12, 'cm^3/(mol*s)'),
         n = 0.24,
@@ -2461,7 +2461,7 @@ The high-pressure limit kinetics was taken. Troe coefficients are:
 
 entry(
     index = 601,
-    label = "N5d-OdOs;O_pri_rad",
+    label = "N5dc-OdOs;O_pri_rad",
     kinetics = ArrheniusEP(
         A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,

@@ -24,7 +24,7 @@ boundaryAtoms = ["*1", "*3"]
 entry(
     index = 1,
     label = "Rn",
-    group = "OR{R3, R4, R5, R6, R7}",
+    group = "OR{R2radExo, R3, R4, R5, R6, R7}",
     kinetics = None,
 )
 
@@ -243,8 +243,8 @@ entry(
     label = "Y_rad_NDe",
     group = 
 """
-1 *1 R!H u1 {2,S}
-2 [Cs,Os,Ss] u0 {1,S}
+1 *1 R!H         u1 {2,S}
+2    [Cs,O2s,S2s] u0 {1,S}
 """,
     kinetics = None,
 )
@@ -254,8 +254,8 @@ entry(
     label = "Y_rad_De",
     group = 
 """
-1 *1 R!H u1 {2,[S,D]}
-2 [Cd,Cdd,Ct,CO,Cb] u0 {1,[S,D]}
+1 *1 R!H                  u1 {2,[S,D]}
+2    [Cd,Cdd,Ct,CO,CS,Cb] u0 {1,[S,D]}
 """,
     kinetics = None,
 )
@@ -265,10 +265,10 @@ entry(
     label = "XH_Rrad_NDe",
     group = 
 """
-1 *3 R!H u1 {2,S} {4,S}
-2 *2 R!H u0 {1,S} {3,S}
-3 *4 H u0 {2,S}
-4 [Cs,Os,Ss] u0 {1,S}
+1 *3 R!H         u1 {2,S} {4,S}
+2 *2 R!H         u0 {1,S} {3,S}
+3 *4 H           u0 {2,S}
+4    [Cs,O2s,S2s] u0 {1,S}
 """,
     kinetics = None,
 )
@@ -278,10 +278,23 @@ entry(
     label = "XH_Rrad_De",
     group = 
 """
-1 *3 R!H u1 {2,S} {4,[S,D]}
-2 *2 R!H u0 {1,S} {3,S}
-3 *4 H u0 {2,S}
-4 [Cd,Cdd,Ct,CO,Cb] u0 {1,[S,D]}
+1 *3 R!H                  u1 {2,S} {4,[S,D]}
+2 *2 R!H                  u0 {1,S} {3,S}
+3 *4 H                    u0 {2,S}
+4    [Cd,Cdd,Ct,CO,CS,Cb] u0 {1,[S,D]}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 24,
+    label = "R2radExo",
+    group = 
+"""
+1 *1 R!H u1 {2,[S,D,B]}
+2 *2 R!H u0 {1,[S,D,B]} {3,S} {4,S}
+3 *3 R!H u1 {2,S}
+4 *4 H   u0 {2,S}
 """,
     kinetics = None,
 )
@@ -289,6 +302,7 @@ entry(
 tree(
 """
 L1: Rn
+    L2: R2radExo
     L2: R3
         L3: R3radExo
     L2: R4
@@ -392,33 +406,3 @@ u"""
 """,
 )
 
-forbidden(
-    label = "Allylicrad1",
-    group = 
-"""
-1 *1 R u1 {2,S}
-2 R u0 {1,S} {3,D}
-3 R u0 {2,D} 
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-
-forbidden(
-    label = "Allylicrad2",
-    group = 
-"""
-+1 *3 R u1 {2,S}
-+2 R u0 {1,S} {3,D}
-+3 R u0 {2,D} 
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
