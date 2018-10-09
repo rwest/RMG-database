@@ -1965,7 +1965,7 @@ entry(
     group =
 """
 1 X  u0 {2,T}
-2 N  u0 {1,T} {2,[S,D]}
+2 N  u0 {1,T} {3,[S,D]}
 3 R  u0 {2,[S,D]}
 """,
     thermo=u'N*'
@@ -1982,7 +1982,7 @@ entry(
 4 R  u0 {2,S}
 5 R  u0 {2,S}
 """,
-    thermo=u'(CR2NR)*'
+    thermo=u'(CR2NR)*',
     longDesc=u"""Perhaps should be an average?"""
 )
 
@@ -2010,7 +2010,7 @@ entry(
 4 R  u0 p0 c0 {2,S}
 5 R  u0 p0 c0 {2,S}
 """,
-    thermo=u'(NR3)*'
+    thermo=u'(NR3)*',
     longDesc=u"""Do we have data for this?"""
 )
 
@@ -2024,7 +2024,7 @@ entry(
 3 R  u0 {2,D}
 4 R  u0 {2,S}
 """,
-    thermo=u'(NRO)*'
+    thermo=u'(NRO)*',
     longDesc=u"""Parent of (RN=O)* and (RN=NR)*. Should it be an average?"""
 )
 
