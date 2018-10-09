@@ -6,6 +6,7 @@ shortDesc = u""
 longDesc = u"""
 Changes due to adsorbing on a surface.
 Here, Pt(111)
+Note: "-h" means "horizontal".
 """
 
 entry(
@@ -51,7 +52,7 @@ entry(
 
 entry(
     index = 2,
-    label = "R2",
+    label = "(R2)*",
     group =
 """
 1 X  u0 p0 c0
@@ -75,7 +76,7 @@ entry(
 
 entry(
     index = 3,
-    label = "R2O",
+    label = "(OR2)*",
     group =
 """
 1 X  u0 p0 c0
@@ -100,7 +101,7 @@ entry(
 
 entry(
     index = 4,
-    label = "OR",
+    label = "O-*R",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -126,7 +127,7 @@ entry(
 
 entry(
     index = 5,
-    label = "RO-OR",
+    label = "(OROR)*",
     group =
 """
 1 X  u0 p0 c0
@@ -152,7 +153,7 @@ entry(
 
 entry(
     index = 6,
-    label = "O2",
+    label = "O-*O-*",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,S}
@@ -177,7 +178,7 @@ entry(
 
 entry(
     index = 7,
-    label = "OOR",
+    label = "O-*OR",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -204,7 +205,7 @@ entry(
 
 entry(
     index = 8,
-    label = "O",
+    label = "O=*",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -227,7 +228,7 @@ entry(
 
 entry(
     index = 9,
-    label = "O-NR2",
+    label = "O-*NR2",
     group =
 """
 1 X  u0 p0 c0 {3,S}
@@ -255,7 +256,7 @@ entry(
 
 entry(
     index = 10,
-    label = "O-CR3",
+    label = "O-*CR3",
     group =
 """
 1 X  u0 p0 c0 {3,S}
@@ -284,7 +285,7 @@ entry(
 
 entry(
     index = 11,
-    label = "NR3",
+    label = "(NR3)*",
     group =
 """
 1 X  u0 p0 c0
@@ -310,7 +311,7 @@ entry(
 
 entry(
     index = 12,
-    label = "NR2",
+    label = "N-*R2",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -335,7 +336,7 @@ entry(
 
 entry(
     index = 13,
-    label = "NR",
+    label = "N=*R",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -356,7 +357,7 @@ entry(
 
 entry(
     index = 14,
-    label = "N",
+    label = "N#*",
     group =
 """
 1 X  u0 p0 c0 {2,T}
@@ -379,7 +380,7 @@ entry(
 
 entry(
     index = 15,
-    label = "R2N-OR",
+    label = "(NR2OR)*",
     group =
 """
 1 X  u0 p0 c0
@@ -406,7 +407,7 @@ entry(
 
 entry(
     index = 16,
-    label = "RN-O",
+    label = "(NRO)*",
     group =
 """
 1 X  u0 p0 c0
@@ -431,7 +432,7 @@ entry(
 
 entry(
     index = 17,
-    label = "RN-OR",
+    label = "N-*ROR",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -457,7 +458,7 @@ entry(
 
 entry(
     index = 18,
-    label = "NO",
+    label = "N-*O",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -483,7 +484,7 @@ entry(
 
 entry(
     index = 19,
-    label = "NO-h",
+    label = "N=*O-*",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,D}
@@ -508,7 +509,7 @@ entry(
 
 entry(
     index = 20,
-    label = "NOR",
+    label = "N=*OR",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -535,7 +536,7 @@ entry(
 
 entry(
     index = 21,
-    label = "R2N-NR2",
+    label = "(NR2NR2)*",
     group =
 """
 1 X  u0 p0 c0
@@ -563,7 +564,7 @@ entry(
 
 entry(
     index = 22,
-    label = "RN-NR",
+    label = "(NRNR)*",
     group =
 """
 1 X  u0 p0 c0
@@ -589,7 +590,7 @@ entry(
 
 entry(
     index = 23,
-    label = "NN",
+    label = "N-*N-*",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,S}
@@ -614,7 +615,7 @@ entry(
 
 entry(
     index = 24,
-    label = "RN-NR2",
+    label = "N-*RNR2",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -641,7 +642,7 @@ entry(
 
 entry(
     index = 25,
-    label = "N-NR",
+    label = "N-*NR",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -668,7 +669,7 @@ entry(
 
 entry(
     index = 26,
-    label = "N-NR2",
+    label = "N=*NR2",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -696,7 +697,7 @@ entry(
 
 entry(
     index = 27,
-    label = "RN-NR-h",
+    label = "N-*RN-*R",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,S}
@@ -723,7 +724,7 @@ entry(
 
 entry(
     index = 28,
-    label = "RN-CR3",
+    label = "N-*RCR3",
     group =
 """
 1 X  u0 p0 c0 {3,S}
@@ -751,7 +752,7 @@ entry(
 
 entry(
     index = 29,
-    label = "N-CR2",
+    label = "N-*CR2",
     group =
 """
 1 X  u0 p0 c0 {3,S}
@@ -779,7 +780,7 @@ entry(
 
 entry(
     index = 30,
-    label = "N-CR3",
+    label = "N=*CR3",
     group =
 """
 1 X  u0 p0 c0 {3,D}
@@ -808,7 +809,7 @@ entry(
 
 entry(
     index = 31,
-    label = "ON-O",
+    label = "N-*O2",
     group =
 """
 1 X  u0  p0 c0 {2,S}
@@ -833,7 +834,7 @@ entry(
 
 entry(
     index = 32,
-    label = "C",
+    label = "Cq*",
     group =
 """
 1 X  u0 p0 c0 {2,Q}
@@ -856,7 +857,7 @@ entry(
 
 entry(
     index = 33,
-    label = "C-C",
+    label = "C-*C-*",
     group =
 """
 1 X  u0  p0 c0 {2,S} {3,D}
@@ -881,7 +882,7 @@ entry(
 
 entry(
     index = 34,
-    label = "C-CR2",
+    label = "C=*CR2",
     group =
 """
 1 X  u0  p0 c0 {2,D}
@@ -909,7 +910,7 @@ entry(
 
 entry(
     index = 35,
-    label = "C-CR3",
+    label = "C#*CR3",
     group =
 """
 1 X  u0 p0 c0 {3,T}
@@ -938,7 +939,7 @@ entry(
 
 entry(
     index = 36,
-    label = "CR",
+    label = "C#*R",
     group =
 """
 1 X  u0 p0 c0 {2,T}
@@ -964,7 +965,7 @@ entry(
 
 entry(
     index = 37,
-    label = "CR-CR",
+    label = "C=*RC=*R",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,D}
@@ -983,7 +984,7 @@ entry(
     shortDesc=u"""Came from CH-CH bidentate, twice double-bonded on Pt(111)""",
     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
 
- R-C--C-H
+ R-C--C-R
   ||  ||
 ***********
 """
@@ -991,7 +992,7 @@ entry(
 
 entry(
     index = 38,
-    label = "CR2",
+    label = "C=*R2",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -1016,7 +1017,7 @@ entry(
 
 entry(
     index = 39,
-    label = "CR2-CR2",
+    label = "C-*R2C-*R2",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,S}
@@ -1045,7 +1046,7 @@ entry(
 
 entry(
     index = 40,
-    label = "CR3",
+    label = "C-*R3",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -1071,7 +1072,7 @@ entry(
 
 entry(
     index = 41,
-    label = "CR3-CR3",
+    label = "(CR3CR3)*",
     group =
 """
 1 X  u0 p0 c0
@@ -1101,7 +1102,7 @@ entry(
 
 entry(
     index = 42,
-    label = "CR4",
+    label = "(CR4)*",
     group =
 """
 1 X  u0 p0 c0
@@ -1128,7 +1129,7 @@ entry(
 
 entry(
     index = 43,
-    label = "CN",
+    label = "C=*N-*",
     group =
 """
 1 X  u0  p0 c0 {2,S} {3,D}
@@ -1153,7 +1154,7 @@ entry(
 
 entry(
     index = 44,
-    label = "CNR",
+    label = "C=*NR",
     group =
 """
 1 X  u0  p0 c0 {2,D}
@@ -1180,7 +1181,7 @@ entry(
 
 entry(
     index = 45,
-    label = "CNR2",
+    label = "C#*NR2",
     group =
 """
 1 X  u0 p0 c0 {2,T}
@@ -1208,7 +1209,7 @@ entry(
 
 entry(
     index = 46,
-    label = "CO-f",
+    label = "C=*O",
     group =
 """
 1 X  u0  p0 c0 {2,D}
@@ -1234,7 +1235,7 @@ entry(
 
 entry(
     index = 47,
-    label = "COR",
+    label = "C#*OR",
     group =
 """
 1 X  u0 p0 c0 {2,T}
@@ -1261,7 +1262,7 @@ entry(
 
 entry(
     index = 48,
-    label = "R2C-CR",
+    label = "C-*R2C=*R",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,S}
@@ -1289,7 +1290,7 @@ entry(
 
 entry(
     index = 49,
-    label = "R2C-CR3",
+    label = "C-*R2CR3",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -1320,7 +1321,7 @@ entry(
 
 entry(
     index = 50,
-    label = "R2C-NR",
+    label = "(CR2NR)*",
     group =
 """
 1 X  u0 p0 c0
@@ -1347,7 +1348,7 @@ entry(
 
 entry(
     index = 51,
-    label = "R2C-NR2",
+    label = "C-*R2NR2",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -1377,7 +1378,7 @@ entry(
 
 entry(
     index = 52,
-    label = "R2C-O",
+    label = "(CR2O)*",
     group =
 """
 1 X  u0 p0 c0
@@ -1403,7 +1404,7 @@ entry(
 
 entry(
     index = 53,
-    label = "R2C-OR",
+    label = "C-*R2OR",
     group =
 """
 1 X  u0 p0 c0 {2,S}
@@ -1432,7 +1433,7 @@ entry(
 
 entry(
     index = 54,
-    label = "R3C-NR2",
+    label = "(CR3NR2)*",
     group =
 """
 1 X  u0 p0 c0
@@ -1461,7 +1462,7 @@ entry(
 
 entry(
     index = 55,
-    label = "R3C-OR",
+    label = "(CR3OR)*",
     group =
 """
 1 X  u0 p0 c0
@@ -1489,7 +1490,7 @@ entry(
 
 entry(
     index = 56,
-    label = "RC-C",
+    label = "C-*RC=*",
     group =
 """
 1 X  u0  p0 c0 {2,S} {3,S}
@@ -1515,7 +1516,7 @@ entry(
 
 entry(
     index = 57,
-    label = "RC-CR2",
+    label = "C-*RCR2",
     group =
 """
 1 X  u0  p0 c0 {2,S}
@@ -1544,7 +1545,7 @@ entry(
 
 entry(
     index = 58,
-    label = "RC-CR3",
+    label = "C=*RCR3",
     group =
 """
 1 X  u0 p0 c0 {3,D}
@@ -1574,7 +1575,7 @@ entry(
 
 entry(
     index = 59,
-    label = "RCN",
+    label = "(CRN)*",
     group =
 """
 1 X  u0  p0 c0
@@ -1591,7 +1592,7 @@ entry(
     shortDesc=u"""Came from HCN vdW-bonded on Pt(111)""",
     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
 
- RC=N
+ RC#N
    :
 ***********
 """
@@ -1599,7 +1600,7 @@ entry(
 
 entry(
     index = 60,
-    label = "RCN-h",
+    label = "C=*RN=*",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,D}
@@ -1619,7 +1620,7 @@ entry(
 
   R
   |
-  C==N
+  C--N
  ||  ||
 ***********
 """
@@ -1627,7 +1628,7 @@ entry(
 
 entry(
     index = 61,
-    label = "RCNR",
+    label = "C-*RNR",
     group =
 """
 1 X  u0  p0 c0 {2,S}
@@ -1655,7 +1656,7 @@ entry(
 
 entry(
     index = 62,
-    label = "RCNR-h",
+    label = "C=*RN-*R",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,D}
@@ -1682,7 +1683,7 @@ entry(
 
 entry(
     index = 63,
-    label = "RCNR2",
+    label = "C=*RNR2",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -1711,7 +1712,7 @@ entry(
 
 entry(
     index = 64,
-    label = "RCO",
+    label = "C-*RO",
     group =
 """
 1 X  u0  p0 c0 {2,S}
@@ -1738,7 +1739,7 @@ entry(
 
 entry(
     index = 65,
-    label = "RCO-h",
+    label = "C=*RO-*",
     group =
 """
 1 X  u0 p0 c0 {2,S} {3,D}
@@ -1766,7 +1767,7 @@ entry(
 
 entry(
     index = 66,
-    label = "RCOR",
+    label = "C=*ROR",
     group =
 """
 1 X  u0 p0 c0 {2,D}
@@ -1792,11 +1793,261 @@ entry(
 """
 )
 
+entry(
+    index = 67,
+    label = "C*",
+    group =
+"""
+1 X  u0 
+2 C  u0 
+""",
+    thermo=u'C-*R3',
+)
+
+entry(
+    index = 68,
+    label = "N*",
+    group =
+"""
+1 X  u0 
+2 N  u0 
+""",
+    thermo=u'N-*R2',
+)
+
+entry(
+    index = 69,
+    label = "O*",
+    group =
+"""
+1 X  u0 
+2 O  u0 
+""",
+    thermo=u'O-*R',
+)
+
+entry(
+    index = 70,
+    label = "R*single_chemisorbed",
+    group =
+"""
+1 X  u0 
+2 R  u0
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([-0.09, 1.28, 2.17, 2.75, 3.43, 3.79, 4.16], 'cal/(mol*K)'),
+        H298=(-45.38, 'kcal/mol'),
+        S298=(-38.17, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Average of C-*R3, N-*R2 and O-*R thermo. """
+)
+
+entry(
+    index = 71,
+    label = "C*C*",
+    group =
+"""
+1 X  u0 
+2 X  u0 
+3 C  u0
+4 C  u0
+""",
+    thermo=u'C-*R2C-*R2',
+)
+
+entry(
+    index = 72,
+    label = "C*N*",
+    group =
+"""
+1 X  u0 
+2 X  u0 
+3 C  u0
+4 N  u0
+""",
+    thermo=u'C=*RN-*R',
+)
+
+entry(
+    index = 73,
+    label = "C*O*",
+    group =
+"""
+1 X  u0 
+2 X  u0 
+3 C  u0
+4 O  u0
+""",
+    thermo=u'C=*RO-*R',
+)
+
+entry(
+    index = 74,
+    label = "N*N*",
+    group =
+"""
+1 X  u0 
+2 X  u0 
+3 N  u0
+4 N  u0
+""",
+    thermo=u'N-*RN-*R',
+)
+
+entry(
+    index = 75,
+    label = "R*bidentate",
+    group =
+"""
+1 X  u0 
+2 X  u0
+3 R  u0
+4 R  u0
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([1.69, 3.14, 3.95, 4.38, 4.73, 4.84, 4,88], 'cal/(mol*K)'),
+        H298=(-37.29, 'kcal/mol'),
+        S298=(-44.37, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Average of C-*R2C-*R2, C=*RN-*R, C=*RO-* and N-*RN-*R thermo. """
+)
+
+entry(
+    index = 76,
+    label = "R*vdW",
+    group =
+"""
+1 X  u0 
+2 R  u0
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([1.51, 2.1, 2.45, 2.68, 2.94, 3.07, 3.2], 'cal/(mol*K)'),
+        H298=(-7.79, 'kcal/mol'),
+        S298=(-20.48, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Average of (CR4)*, (NR3)* and (OR2)* thermo. """
+)
+
+entry(
+    index = 77,
+    label = "N*O*",
+    group =
+"""
+1 X  u0
+2 X  u0
+3 N  u0
+4 O  u0
+""",
+    thermo=u'N=*O-*',
+)
+
+entry(
+    index = 78,
+    label = "O*O*",
+    group =
+"""
+1 X  u0
+2 X  u0
+3 O  u0
+4 O  u0
+""",
+    thermo=u'O-*O-*'
+)
+
+entry(
+    index = 79,
+    label = "N#*R",
+    group =
+"""
+1 X  u0
+2 N  u0
+3 R  u0
+""",
+    thermo=u'N*'
+)
+
+entry(
+    index = 80,
+    label = "(CR3)*",
+    group =
+"""
+1 X  u0
+2 C  u0
+3 N  u0
+4 R  u0
+5 R  u0
+6 R  u0
+""",
+    thermo=u'(CR2NR)*'
+)
+
+entry(
+    index = 81,
+    label = "(CR2)*",
+    group =
+"""
+1 X  u0
+2 C  u0
+3 N  u0
+4 R  u0
+""",
+    thermo=u'(CRN)*'
+)
+
+entry(
+    index = 82,
+    label = "(NR2CR3)*",
+    group =
+"""
+1 X  u0 
+2 N  u0 
+3 R  u0 
+4 R  u0
+5 R  u0 
+""",
+    thermo=u'(NR3)*'
+)
+
+entry(
+    index = 83,
+    label = "(NR2)*",
+    group =
+"""
+1 X  u0
+2 N  u0
+3 R  u0
+4 R  u0
+""",
+    thermo=u'(NRO)*'
+)
 
 tree(
 """
 L1: R*
-    L2: R*chemisorbed
+    L2: R*bidentate
+        L3: C*C*
+            L4: C-*C-*
+            L4: C=*RC=*R
+            L4: C-*R2C-*R2
+            L4: C-*R2C=*R
+            L4: C-*RC=*
+        L3: C*N*
+            L4: C=*N-*
+            L4: C=*RN=*
+            L4: C=*RN-*R
+        L3: C*O*
+            L4: C=*RO-*
+        L3: N*N*
+            L4: N-*N-*
+            L4: N-*RN-*R
+        L3: N*O*
+            L4: N=*O-*
+        L3: O*O*
+            L4: O-*O-*
+    L2: R*single_chemisorbed
         L3: C*
             L4: Cq*
             L4: C#*R
@@ -1807,23 +2058,30 @@ L1: R*
                 L5: C=*RCR3
                 L5: C=*RNR2
                 L5: C=*ROR
-            L4: C*R3
+                L5: C=*CR2
+                L5: C=*NR
+            L4: C-*R3
                 L5: C-*R2CR3
                 L5: C-*R2NR2
                 L5: C-*R2OR
+                L5: C-*RCR2
+                L5: C-*RNR
+                L5: C-*RO
         L3: N*
             L4: N#*R
             L4: N=*R
                 L5: N=*CR3
                 L5: N=*NR2
                 L5: N=*OR
-            L4: N*R2
+            L4: N-*R2
                 L5: N-*RCR3
                 L5: N-*RNR2
                 L5: N-*ROR
+                L5: N-*CR2
+                L5: N-*NR
         L3: O*
             L4: O=*
-            L4: O*R
+            L4: O-*R
                 L5: O-*CR3
                 L5: O-*NR2
                 L5: O-*OR
@@ -1832,10 +2090,18 @@ L1: R*
             L4: (CR3CR3)*
             L4: (CR3NR2)*
             L4: (CR3OR)*
+        L3: (CR3)*
+            L4: (CR2NR)*
+            L4: (CR2O)*
+        L3: (CR2)*
+            L4: (CRN)*
         L3: (NR3)*
             L4: (NR2CR3)*
             L4: (NR2NR2)*
             L4: (NR2OR)*
+        L3: (NR2)*
+            L4: (NRO)*
+            L4: (NRNR)*
         L3: (OR2)*
             L4: (OROR)*
 
