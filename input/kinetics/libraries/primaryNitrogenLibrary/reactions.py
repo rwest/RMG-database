@@ -4053,15 +4053,15 @@ The latter is given in reverse in the Nitrogen_Glarborg_Zhang_et_al library:
     )
 Reversing the high-P limit rate of this reaction using thermo for CH3CH2O from FFCM-1, NO from NitrogenCurran,
 and CH3CH2ONO from NitrogenCurran gives in 300-2000 K:
-K(T) = 9.85E+15 * exp(46 kcal/mol / RT) cm3/mol*s    (negative Ea)   [UNITS!!? it's unimolecular - RWest]
-A = 9.85E+15 cm3/mol*s         [UNITS!!? it's unimolecular - RWest]
+K(T) = 9.85E+15 * exp(46 kcal/mol / RT)  s^-1   (negative Ea)
+A = 9.85E+15 s^-1
 
 The Ea is taken as the bond energy of C2H5O-NO
 Ea = H(NO) + H(C2H5O) - H(CH3CH2ONO)     (values taken at 1000 K)
 Ea = 26.93 + 14.52 - (-0.31) = 41.76 kcal/mol
 
 This is in agreement with the rate reported by [Green2014] (probably estimated similarly)::
-K(T) = 1.0E+16 * exp(-42 kcal/mol / RT) cm3/mol*s    [UNITS!!? it's unimolecular - RWest]
+K(T) = 1.0E+16 * exp(-42 kcal/mol / RT)  s^-1
 """,
 )
 
