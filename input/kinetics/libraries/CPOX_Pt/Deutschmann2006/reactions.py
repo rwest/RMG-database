@@ -39,6 +39,7 @@ entry(
     longDesc = u"""R2"""
 )
 
+<<<<<<< HEAD
 entry(
     index = 3,
     label = "CH4 + Pt + Pt <=> CH3X + HX",
@@ -52,6 +53,22 @@ entry(
     shortDesc = u"""Default""",
     longDesc = u"""R3"""
 )
+=======
+#endothermic - reverse of R34
+#entry(
+#    index = 3,
+#    label = "CH4 + Pt + Pt <=> CH3X + HX",
+#    kinetics = StickingCoefficient(
+#        A = 9.0E-4,
+#        n = 0,
+#        Ea=(72000, 'J/mol'),
+#        Tmin = (200, 'K'),
+#        Tmax = (3000, 'K'),
+#    ),
+#    shortDesc = u"""Default""",
+#    longDesc = u"""R3"""
+#)
+>>>>>>> 6c1c0796e9db6c61c8a43abc3719c57befd3dfb2
 
 entry(
     index = 4,
@@ -501,6 +518,7 @@ entry(
 )
 
 
+<<<<<<< HEAD
 #entry(
 #    index = 34,
 #    label = "CH3X + HX <=> CH4 + Pt + Pt",
@@ -514,6 +532,21 @@ entry(
 #    shortDesc = u"""Default""",
 #    longDesc = u"""R34"""
 #)
+=======
+entry(
+    index = 34,
+    label = "CH3X + HX <=> CH4 + Pt + Pt",
+    kinetics = SurfaceArrhenius(
+        A=(3.3E21, 'cm^2/(mol*s)'),
+        n = 0,
+        Ea=(50000, 'J/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""Default""",
+    longDesc = u"""R34"""
+)
+>>>>>>> 6c1c0796e9db6c61c8a43abc3719c57befd3dfb2
 
 #endothermic - reverse of R5
 #entry(
