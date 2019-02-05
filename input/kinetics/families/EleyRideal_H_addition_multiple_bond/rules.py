@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "Surface_Adsorption_EeleyRideal/rules"
+name = "EleyRideal_H_addition_multiple_bond/rules"
 shortDesc = u""
 longDesc = u"""
-Adsorption of a gas-phase species forming two single adsorbates that are bound to two sites
+Eley Rideal mechanism for a gas phase double or triple bonded species.
 """
 entry(
     index = 1,
-    label = "Adsorbate;VacantSite1;VacantSite2",
+    label = "Adsorbate1;Gas;Adsorbate2",
     kinetics = StickingCoefficientBEP(
         A = 0.1,
         n = 0,

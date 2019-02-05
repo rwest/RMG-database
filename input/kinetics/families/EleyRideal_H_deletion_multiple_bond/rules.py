@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "Surface_Dissociation_EeleyRideal/rules"
+name = "EleyRideal_H_deletion_multiple_bond/rules"
 shortDesc = u""
 longDesc = u"""
 Dissociation of two single adsorbates to eachother
 """
 entry(
     index = 1,
-    label = "Adsorbed1;Adsorbed2",
+    label = "Adsorbate1",
     kinetics = StickingCoefficientBEP(
         A = 0.1,
         n = 0,
