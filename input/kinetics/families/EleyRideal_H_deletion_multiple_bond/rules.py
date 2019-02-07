@@ -13,7 +13,7 @@ entry(
         A = 0.1,
         n = 0,
         alpha = 0,
-        E0 = (0, 'kcal/mol'),
+        E0 = (10, 'kcal/mol'),
         Tmin = (200, 'K'),
         Tmax = (3000, 'K'),
     ),
