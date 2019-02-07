@@ -79,6 +79,8 @@ surface = {
     'Surface_Adsorption_Dissociative',
     'Surface_Dissociation',
     'Surface_Abstraction',
+    'EleyRideal_H_addition_multiple_bond',
+    'EleyRideal_H_deletion_multiple_bond',
 }
 
 # Surface chemistry families that are under development and not yet working well.
