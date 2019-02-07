@@ -39,7 +39,7 @@ entry(
 
 entry(
     index = 2,
-    label="Gas1",
+    label="Gas",
     group =
 """
 1 *3 R u0 {2,[D,T,Q]}
