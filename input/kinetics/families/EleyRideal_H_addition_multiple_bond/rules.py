@@ -8,7 +8,7 @@ Eley Rideal mechanism for a gas phase double or triple bonded species.
 """
 entry(
     index = 1,
-    label = "Adsorbate1;Gas;Adsorbate2",
+    label = "Adsorbate1;Gas",
     kinetics = StickingCoefficientBEP(
         A = 0.1,
         n = 0,
