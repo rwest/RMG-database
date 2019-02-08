@@ -12,11 +12,7 @@ Note: "-h" means "horizontal".
 entry(
     index = 1,
     label = "R*",
-    group=
-"""
-1 R u0
-2 X u0
-""",
+    group="OR{R*vdW}",
     thermo=None,
     shortDesc=u"""Anything adsorbed anyhow.""",
     longDesc=u"""
@@ -24,9 +20,23 @@ entry(
    x
 ***********
 This node should be empty, ensuring that one of the nodes below is used.
+
+<<<<<<< HEAD
+=======
+
+The group could well be defined as:
+
+    1 R u0
+    2 X u0
+
+but then it is identical with the R*vdW node, and the database tests
+do not like that. It should be OK, because things would check the
+tree in order, and if there *was* a bond it would match either 
+R*bidentate or R*single_chemisorbed and thus not R*vdW.
 """,
 )
 
+>>>>>>> aa7e9eb318177d6a9872b3f613e63b5ff4630fe0
 #entry(
 #    index = 1,
 #    label = "R-*",
@@ -53,6 +63,7 @@ This node should be empty, ensuring that one of the nodes below is used.
 #"""
 #)
 
+<<<<<<< HEAD
 entry(
     index = 2,
     label = "(R2)*",
@@ -79,6 +90,35 @@ entry(
 ***********
 """
 )
+=======
+### This doesn't have a place in the tree, so I'm commenting it out. -- RHW
+# entry(
+#     index = 2,
+#     label = "(R2)*",
+#     group =
+# """
+# 1 X  u0 p0 c0
+# 2 R  u0 p0 c0 {3,S}
+# 3 R  u0 p0 c0 {2,S}
+# """,
+#     thermo=ThermoData(
+#         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+#         Cpdata=([1.13, 1.17, 1.19, 1.2, 1.21, 1.21, 1.22], 'cal/(mol*K)'),
+#         H298=(-1.22, 'kcal/mol'),
+#         S298=(-7.73, 'cal/(mol*K)'),
+#     ),
+#     shortDesc=u"""Came from H2 vdW-bonded on Pt(111)""",
+#     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
+#             DFT binding energy: -0.054 eV.
+#             Linear scaling parameters: ref_adatom_H = -0.240 eV, psi = -0.05448 eV, gamma_H(X) = 0.000.
+#             The two lowest frequencies, 14.0 and 24.4 cm-1, where replaced by the 2D gas model.
+
+#   R-R
+#    :
+# ***********
+# """
+# )
+>>>>>>> aa7e9eb318177d6a9872b3f613e63b5ff4630fe0
 
 entry(
     index = 3,
@@ -87,8 +127,8 @@ entry(
 """
 1 X  u0 p0 c0
 2 O  u0 p2 c0 {3,S} {4,S}
-3 R  u0 p0 c0 {2,S}
-4 R  u0 p0 c0 {2,S}
+3 R  u0 p[0,1,2] c0 {2,S}
+4 R  u0 p[0,1,2] c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -115,7 +155,7 @@ entry(
 """
 1 X  u0 p0 c0 {2,S}
 2 O  u0 p2 c0 {1,S} {3,S}
-3 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -170,8 +210,8 @@ entry(
     label = "O-*O-*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
 3 O  u0 p2 c0 {1,S} {4,S}
 4 O  u0 p2 c0 {2,S} {3,S}
 """,
@@ -188,7 +228,7 @@ entry(
 
    O--O
    |  |
-***********
+***** *****
 """
 )
 
@@ -535,8 +575,8 @@ entry(
     label = "N=*O-*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,D}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,D}
+2 X  u0 p0 c0 {4,S}
 3 N  u0 p1 c0 {1,D} {4,S}
 4 O  u0 p2 c0 {2,S} {3,S}
 """,
@@ -651,8 +691,8 @@ entry(
     label = "N-*N-*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
 3 N  u0 p1 c0 {1,S} {4,D}
 4 N  u0 p1 c0 {2,S} {3,D}
 """,
@@ -767,8 +807,8 @@ entry(
     label = "N-*RN-*R",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
 3 N  u0 p1 c0 {1,S} {4,S} {5,S}
 4 N  u0 p1 c0 {2,S} {3,S} {6,S}
 5 R  u0 p0 c0 {3,S}
@@ -882,32 +922,34 @@ entry(
 """
 )
 
-entry(
-    index = 31,
-    label = "N-*O2",
-    group =
-"""
-1 X  u0  p0 c0 {2,S}
-2 N  u0  p0 c+1 {1,S} {3,S} {4,D}
-3 O  u0  p2 c-1 {2,S}
-4 O  u0  p2 c0 {2,D}
-""",
-    thermo=ThermoData(
-        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([2.35, 2.6, 2.67, 2.66, 2.61, 2.57, 2.5], 'cal/(mol*K)'),
-        H298=(-16.1, 'kcal/mol'),
-        S298=(-33.93, 'cal/(mol*K)'),
-    ),
-    shortDesc=u"""Came from ON-O single-bonded on Pt(111)""",
-    longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
-            Linear scaling parameters: ref_adatom_N = 0.525 eV, psi = -0.86302 eV, gamma_N(X) = 0.333.
-            The two lowest frequencies, -33.2 and 55.1 cm-1, where replaced by the 2D gas model.
-
- O-N=O
-   |
-***********
-"""
-)
+### Leads to AtomTypeError: Unable to determine atom type for atom O-, which has 3 single bonds, 0 double bonds to C, 0 double bonds to O, 0 double bonds to S, 0 triple bonds, 0 benzene bonds, 0 lone pairs, and 2 charge.
+### And is not in the tree anyway, so commenting out. RHW
+# entry(
+#     index = 31,
+#     label = "N-*O2",
+#     group =
+# """
+# 1 X  u0  p0 c0 {2,S}
+# 2 N  u0  p0 c+1 {1,S} {3,S} {4,D}
+# 3 O  u0  p2 c-1 {2,S}
+# 4 O  u0  p2 c0 {2,D}
+# """,
+#     thermo=ThermoData(
+#         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+#         Cpdata=([2.35, 2.6, 2.67, 2.66, 2.61, 2.57, 2.5], 'cal/(mol*K)'),
+#         H298=(-16.1, 'kcal/mol'),
+#         S298=(-33.93, 'cal/(mol*K)'),
+#     ),
+#     shortDesc=u"""Came from ON-O single-bonded on Pt(111)""",
+#     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
+#             Linear scaling parameters: ref_adatom_N = 0.525 eV, psi = -0.86302 eV, gamma_N(X) = 0.333.
+#             The two lowest frequencies, -33.2 and 55.1 cm-1, where replaced by the 2D gas model.
+#
+#  O-N=O
+#    |
+# ***********
+# """
+# )
 
 entry(
     index = 32,
@@ -939,8 +981,8 @@ entry(
     label = "C-*C-*",
     group =
 """
-1 X  u0  p0 c0 {2,S} {3,D}
-2 X  u0  p0 c0 {1,S} {4,D}
+1 X  u0  p0 c0 {3,D}
+2 X  u0  p0 c0 {4,D}
 3 C  u0  p0 c0 {1,D} {4,D}
 4 C  u0  p0 c0 {2,D} {3,D}
 """,
@@ -963,14 +1005,12 @@ entry(
 
 entry(
     index = 34,
-    label = "C=*CR2",
+    label = "C=*(=C)",
     group =
 """
 1 X  u0  p0 c0 {2,D}
 2 C  u0  p0 c0 {1,D} {3,D}
-3 C  u0  p0 c0 {2,D} {4,S} {5,S}
-4 R  u0  p0 c0 {3,S}
-5 R  u0  p0 c0 {3,S}
+3 C  u0  p0 c0 {2,D}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -978,16 +1018,19 @@ entry(
         H298=(-93.15, 'kcal/mol'),
         S298=(-48.06, 'cal/(mol*K)'),
     ),
-    shortDesc=u"""Came from C-CH2 double-bonded on Pt(111)""",
+    shortDesc=u"""Came from C=CH2 double-bonded on Pt(111)""",
     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
             DFT binding energy: -3.980 eV.
             Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = -0.60024 eV, gamma_C(X) = 0.500.
 
-   CR2
+   C
   ||
    C
   ||
 ***********
+
+Because the C atom bonded to the surface only has one ligand 
+not two, it is not a child of the C=*R2 node
 """
 )
 
@@ -1029,7 +1072,7 @@ entry(
 """
 1 X  u0 p0 c0 {2,T}
 2 C  u0 p0 c0 {1,T} {3,S}
-3 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1055,8 +1098,8 @@ entry(
     label = "C=*RC=*R",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,D}
-2 X  u0 p0 c0 {1,S} {4,D}
+1 X  u0 p0 c0 {3,D}
+2 X  u0 p0 c0 {4,D}
 3 C  u0 p0 c0 {1,D} {4,S} {5,S}
 4 C  u0 p0 c0 {2,D} {3,S} {6,S}
 5 R  u0 p0 c0 {3,S}
@@ -1111,8 +1154,8 @@ entry(
     label = "C-*R2C-*R2",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
 3 C  u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
 4 C  u0 p0 c0 {2,S} {3,S} {7,S} {8,S}
 5 R  u0 p0 c0 {3,S}
@@ -1144,9 +1187,9 @@ entry(
 """
 1 X  u0 p0 c0 {2,S}
 2 C  u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 R  u0 p0 c0 {2,S}
-4 R  u0 p0 c0 {2,S}
-5 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
+4 R  u0 px c0 {2,S}
+5 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1205,10 +1248,10 @@ entry(
 """
 1 X  u0 p0 c0
 2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 R  u0 p0 c0 {2,S}
-4 R  u0 p0 c0 {2,S}
-5 R  u0 p0 c0 {2,S}
-6 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
+4 R  u0 px c0 {2,S}
+5 R  u0 px c0 {2,S}
+6 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1233,8 +1276,8 @@ entry(
     label = "C=*N-*",
     group =
 """
-1 X  u0  p0 c0 {2,S} {3,D}
-2 X  u0  p0 c0 {1,S} {4,S}
+1 X  u0  p0 c0 {3,D}
+2 X  u0  p0 c0 {4,S}
 3 C  u0  p0 c0 {1,D} {4,D}
 4 N  u0  p1 c0 {2,S} {3,D}
 """,
@@ -1314,33 +1357,35 @@ entry(
 """
 )
 
-entry(
-    index = 46,
-    label = "C=*O",
-    group =
-"""
-1 X  u0  p0 c0 {2,D}
-2 C  u0  p0 c0 {1,D} {3,D}
-3 O  u0  p2 c0 {2,D}
-""",
-    thermo=ThermoData(
-        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([2.21, 2.9, 3.29, 3.53, 3.74, 3.8, 3.78], 'cal/(mol*K)'),
-        H298=(-34.7, 'kcal/mol'),
-        S298=(-38.09, 'cal/(mol*K)'),
-    ),
-    shortDesc=u"""Came from CO-f double-bonded on Pt(111)""",
-    longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
-            DFT binding energy: -1.480 eV.
-            Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = 1.89529 eV, gamma_C(X) = 0.500.
 
-   O
-  ||
-   C
-  ||
-***********
-"""
-)
+## Not present in the tree
+# entry(
+#     index = 46,
+#     label = "C=*O",
+#     group =
+# """
+# 1 X  u0  p0 c0 {2,D}
+# 2 C  u0  p0 c0 {1,D} {3,D}
+# 3 O  u0  p2 c0 {2,D}
+# """,
+#     thermo=ThermoData(
+#         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+#         Cpdata=([2.21, 2.9, 3.29, 3.53, 3.74, 3.8, 3.78], 'cal/(mol*K)'),
+#         H298=(-34.7, 'kcal/mol'),
+#         S298=(-38.09, 'cal/(mol*K)'),
+#     ),
+#     shortDesc=u"""Came from CO-f double-bonded on Pt(111)""",
+#     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
+#             DFT binding energy: -1.480 eV.
+#             Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = 1.89529 eV, gamma_C(X) = 0.500.
+#
+#    O
+#   ||
+#    C
+#   ||
+# ***********
+# """
+# )
 
 entry(
     index = 47,
@@ -1376,8 +1421,8 @@ entry(
     label = "C-*R2C=*R",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,D}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,D}
 3 C  u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
 4 C  u0 p0 c0 {2,D} {3,S} {7,S}
 5 R  u0 p0 c0 {3,S}
@@ -1626,8 +1671,8 @@ entry(
     label = "C-*RC=*",
     group =
 """
-1 X  u0  p0 c0 {2,S} {3,S}
-2 X  u0  p0 c0 {1,S} {4,D}
+1 X  u0  p0 c0 {3,S}
+2 X  u0  p0 c0 {4,D}
 3 C  u0  p0 c0 {1,S} {4,D} {5,S}
 4 C  u0  p0 c0 {2,D} {3,D}
 5 R  u0  p0 c0 {3,S}
@@ -1745,8 +1790,8 @@ entry(
     label = "C=*RN=*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,D}
-2 X  u0 p0 c0 {1,S} {4,D}
+1 X  u0 p0 c0 {3,D}
+2 X  u0 p0 c0 {4,D}
 3 C  u0 p0 c0 {1,D} {4,S} {5,S}
 4 N  u0 p1 c0 {2,D} {3,S}
 5 R  u0 p0 c0 {3,S}
@@ -1806,8 +1851,8 @@ entry(
     label = "C=*RN-*R",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,D}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,D}
+2 X  u0 p0 c0 {4,S}
 3 C  u0 p0 c0 {1,D} {4,S} {5,S}
 4 N  u0 p1 c0 {2,S} {3,S} {6,S}
 5 R  u0 p0 c0 {3,S}
@@ -1897,8 +1942,8 @@ entry(
     label = "C=*RO-*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,D}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,D}
+2 X  u0 p0 c0 {4,S}
 3 C  u0 p0 c0 {1,D} {4,S} {5,S}
 4 O  u0 p2 c0 {2,S} {3,S}
 5 R  u0 p0 c0 {3,S}
@@ -1959,7 +2004,7 @@ entry(
     group =
 """
 1 X  u0 {2,[S,D,T,Q]}
-2 C  u0 {1,[S,D,T,Q]}
+2 C  ux {1,[S,D,T,Q]}
 """,
     thermo=u'C-*R3',
     longDesc=u"""Thermo is currently for C-*R3.  Maybe should average all the children instead?"""
@@ -1971,7 +2016,7 @@ entry(
     group =
 """
 1 X  u0 {2,[S,D,T]}
-2 N  u0 {1,[S,D,T]}
+2 N  ux {1,[S,D,T]}
 """,
     thermo=u'N-*R2',
     longDesc=u"""Thermo is currently for N-*R2.  Maybe should average all the children instead?"""
@@ -1983,7 +2028,7 @@ entry(
     group =
 """
 1 X  u0 {2,[S,D]}
-2 O  u0 {1,[S,D]}
+2 O  ux {1,[S,D]}
 """,
     thermo=u'O-*R',
     longDesc=u"""Thermo is currently for O-*R.  Maybe should average all the children instead?"""
@@ -2011,8 +2056,8 @@ entry(
     label = "C*C*",
     group =
 """
-1 X  u0 {2,S} {3,[S,D]}
-2 X  u0 {1,S} {4,[S,D]}
+1 X  u0 {3,[S,D]}
+2 X  u0 {4,[S,D]}
 3 C  u0 {1,[S,D]} {4,[S,D]}
 4 C  u0 {2,[S,D]} {3,[S,D]}
 """,
@@ -2025,8 +2070,8 @@ entry(
     label = "C*N*",
     group =
 """
-1 X  u0 {2,S} {3,[S,D]}
-2 X  u0 {1,S} {4,[S,D,T]}
+1 X  u0 {3,[S,D]}
+2 X  u0 {4,[S,D,T]}
 3 C  u0 {1,[S,D]} {4,[S,D,T]}
 4 N  u0 {2,[S,D,T]} {3,[S,D,T]}
 """,
@@ -2039,8 +2084,8 @@ entry(
     label = "C*O*",
     group =
 """
-1 X  u0 {2,S} {3,[S,D,T]}
-2 X  u0 {1,S} {4,S}
+1 X  u0 {3,[S,D,T]}
+2 X  u0 {4,S}
 3 C  u0 {1,[S,D,T]} {4,[S,D,T]}
 4 O  u0 {2,S} {3,[S,D,T]}
 """,
@@ -2052,8 +2097,8 @@ entry(
     label = "N*N*",
     group =
 """
-1 X  u0 {2,S} {3,[S,D,T]}
-2 X  u0 {1,S} {4,[S,D,T]}
+1 X  u0 {3,[S,D,T]}
+2 X  u0 {4,[S,D,T]}
 3 N  u0 {1,[S,D,T]} {4,[S,D,T]}
 4 N  u0 {2,[S,D,T]} {3,[S,D,T]}
 """,
@@ -2066,8 +2111,8 @@ entry(
     label = "R*bidentate",
     group =
 """
-1 X  u0 {2,S} {3,[S,D,T]}
-2 X  u0 {1,S} {4,[S,D,T]}
+1 X  u0 {3,[S,D,T]}
+2 X  u0 {4,[S,D,T]}
 3 R  u0 {1,[S,D,T]} {4,[S,D,T]}
 4 R  u0 {2,[S,D,T]} {3,[S,D,T]}
 """,
@@ -2102,8 +2147,8 @@ entry(
     label = "N*O*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,[S,D]}
-2 X  u0 p0 c0 {1,S} {4,[S,D]}
+1 X  u0 p0 c0 {3,[S,D]}
+2 X  u0 p0 c0 {4,[S,D]}
 3 N  u0 p1 c0 {1,[S,D]} {4,[S,D]}
 4 O  u0 p2 c0 {2,[S,D]} {3,[S,D]}
 """,
@@ -2116,8 +2161,8 @@ entry(
     label = "O*O*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
 3 O  u0 p2 c0 {1,S} {4,S}
 4 O  u0 p2 c0 {2,S} {3,S}
 """,
@@ -2199,8 +2244,8 @@ entry(
     label = "N-*RN=*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,D}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,D}
 3 N  u0 p1 c0 {1,S} {4,S} {5,S}
 4 R  u0 p1 c0 {2,D} {3,S}
 5 R  u0 p0 c0 {3,S}
@@ -2256,8 +2301,8 @@ entry(
     label = "C-*R2N=*",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,D}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,D}
 3 C  u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
 4 N  u0 p1 c0 {2,D} {3,S}
 5 R  u0 p0 c0 {3,S}
@@ -2285,8 +2330,8 @@ entry(
     label = "C-*R2N-*R",
     group =
 """
-1 X  u0 p0 c0 {2,S} {3,S}
-2 X  u0 p0 c0 {1,S} {4,S}
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
 3 C  u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
 4 N  u0 p1 c0 {2,S} {3,S} {7,S}
 5 R  u0 p0 c0 {3,S}
@@ -2348,8 +2393,8 @@ L1: R*
                 L5: C=*RCR3
                 L5: C=*RNR2
                 L5: C=*ROR
-                L5: C=*CR2
                 L5: C=*NR
+            L4: C=*(=C)
             L4: C-*R3
                 L5: C-*R2CR3
                 L5: C-*R2NR2
