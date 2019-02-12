@@ -12,12 +12,16 @@ Note: "-h" means "horizontal".
 entry(
     index = 1,
     label = "R*",
-    group="OR{R*vdW}",
+    group=
+"""
+1 R  ux
+2 X  ux
+""",
     thermo=None,
     shortDesc=u"""Anything adsorbed anyhow.""",
     longDesc=u"""
    R
-   x
+   X
 ***********
 This node should be empty, ensuring that one of the nodes below is used.
 
@@ -26,8 +30,8 @@ This node should be empty, ensuring that one of the nodes below is used.
 
 The group could well be defined as:
 
-    1 R u0
-    2 X u0
+    1 R ux
+    2 X ux
 
 but then it is identical with the R*vdW node, and the database tests
 do not like that. It should be OK, because things would check the
@@ -207,7 +211,7 @@ entry(
 
 entry(
     index = 6,
-    label = "O-*O-*",
+    label = "O*O*",
     group =
 """
 1 X  u0 p0 c0 {3,S}
@@ -357,9 +361,9 @@ entry(
 """
 1 X  u0 p0 c0
 2 N  u0 p1 c0 {3,S} {4,S} {5,S}
-3 R  u0 p0 c0 {2,S}
-4 R  u0 p0 c0 {2,S}
-5 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
+4 R  u0 px c0 {2,S}
+5 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -384,9 +388,8 @@ entry(
     group =
 """
 1 X  u0 p0 c0 {2,S}
-2 N  u0 p1 c0 {1,S} {3,S} {4,S}
-3 R  u0 p0 c0 {2,S}
-4 R  u0 p0 c0 {2,S}
+2 N  u0 p1 c0 {1,S} {3,[S,D]}
+3 R  u0 px c0 {2,[S,D]}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -412,7 +415,7 @@ entry(
 """
 1 X  u0 p0 c0 {2,D}
 2 N  u0 p1 c0 {1,D} {3,S}
-3 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1005,12 +1008,12 @@ entry(
 
 entry(
     index = 34,
-    label = "C=*(=C)",
+    label = "C=*(=R)",
     group =
 """
-1 X  u0  p0 c0 {2,D}
-2 C  u0  p0 c0 {1,D} {3,D}
-3 C  u0  p0 c0 {2,D}
+1 X   u0  p0 c0 {2,D}
+2 C   u0  p0 c0 {1,D} {3,D}
+3 R!H u0  px c0 {2,D}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1129,8 +1132,8 @@ entry(
 """
 1 X  u0 p0 c0 {2,D}
 2 C  u0 p0 c0 {1,D} {3,S} {4,S}
-3 R  u0 p0 c0 {2,S}
-4 R  u0 p0 c0 {2,S}
+3 R  u0 px c0 {2,S}
+4 R  u0 px c0 {2,S}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1186,10 +1189,9 @@ entry(
     group =
 """
 1 X  u0 p0 c0 {2,S}
-2 C  u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 R  u0 px c0 {2,S}
-4 R  u0 px c0 {2,S}
-5 R  u0 px c0 {2,S}
+2 C  u0 p0 c0 {1,S} {3,[S,D]} {4,[S,D]}
+3 R  u0 px c0 {2,[S,D]}
+4 R  u0 px c0 {2,[S,D]}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -1300,7 +1302,7 @@ entry(
 
 entry(
     index = 44,
-    label = "C=*NR",
+    label = "C=*(=NR)",
     group =
 """
 1 X  u0  p0 c0 {2,D}
@@ -2040,7 +2042,7 @@ entry(
     group =
 """
 1 X  u0 {2,[S,D,T,Q]}
-2 R  u0 {1,[S,D,T,Q]}
+2 R  ux {1,[S,D,T,Q]}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -2097,10 +2099,10 @@ entry(
     label = "N*N*",
     group =
 """
-1 X  u0 {3,[S,D,T]}
-2 X  u0 {4,[S,D,T]}
-3 N  u0 {1,[S,D,T]} {4,[S,D,T]}
-4 N  u0 {2,[S,D,T]} {3,[S,D,T]}
+1 X  u0 {3,[S,D]}
+2 X  u0 {4,[S,D]}
+3 N  u0 {1,[S,D]} {4,[S,D]}
+4 N  u0 {2,[S,D]} {3,[S,D]}
 """,
     thermo=u'N-*RN-*R',
     longDesc=u"""Thermo is currently for N-*RN-*R.  Maybe should average all the children instead?"""
@@ -2111,10 +2113,10 @@ entry(
     label = "R*bidentate",
     group =
 """
-1 X  u0 {3,[S,D,T]}
-2 X  u0 {4,[S,D,T]}
-3 R  u0 {1,[S,D,T]} {4,[S,D,T]}
-4 R  u0 {2,[S,D,T]} {3,[S,D,T]}
+1 X   u0 {3,[S,D,T]}
+2 X   u0 {4,[S,D,T]}
+3 R!H ux {1,[S,D,T]} {4,[S,D,T]}
+4 R!H ux {2,[S,D,T]} {3,[S,D,T]}
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
@@ -2156,42 +2158,54 @@ entry(
     longDesc=u"""Is there really any way to do N*O* besides N=*O-* ?"""
 )
 
-entry(
-    index = 78,
-    label = "O*O*",
-    group =
-"""
-1 X  u0 p0 c0 {3,S}
-2 X  u0 p0 c0 {4,S}
-3 O  u0 p2 c0 {1,S} {4,S}
-4 O  u0 p2 c0 {2,S} {3,S}
-""",
-    thermo=u'O-*O-*',
-    longDesc=u"""Is there really any way to do O*O* besides O-*O-* ?"""
-)
+#entry(
+#    index = 78,
+#    label = "O*O*",
+#    group =
+#"""
+#1 X  u0 p0 c0 {3,S}
+#2 X  u0 p0 c0 {4,S}
+#3 O  u0 p2 c0 {1,S} {4,S}
+#4 O  u0 p2 c0 {2,S} {3,S}
+#""",
+#    thermo=u'O-*O-*',
+#    longDesc=u"""Is there really any way to do O*O* besides O-*O-* ?"""
+#)
+
+###Have not been able to find any examples of when N is triple bonded to the surface and
+###has an R group attached.  Redid for no R group below. --EM
+#entry(
+#    index = 79,
+#    label = "N#*R",
+#    group =
+#"""
+#1 X  u0 c-1 {2,T}
+#2 N  u0 c+1 {1,T} {3,S}
+#3 R  u0 c0  {2,S}
+#""",
+#    thermo=u'N*'
+#)
 
 entry(
     index = 79,
-    label = "N#*R",
+    label = "N#*",
     group =
 """
-1 X  u0 {2,T}
-2 N  u0 {1,T} {3,[S,D]}
-3 R  u0 {2,[S,D]}
+1 X  u0 p0 {2,T}
+2 N  u0 p1 {1,T}
 """,
     thermo=u'N*'
 )
-
 entry(
     index = 80,
     label = "(CR3)*",
     group =
 """
-1 X  u0 
-2 C  u0 {3,D} {4,S} {5,S}
-3 R  u0 {2,D}
-4 R  u0 {2,S}
-5 R  u0 {2,S}
+1 X   u0 
+2 C   u0 {3,D} {4,S} {5,S}
+3 R!H u0 {2,D}
+4 R   u0 {2,S}
+5 R   u0 {2,S}
 """,
     thermo=u'(CR2NR)*',
     longDesc=u"""Perhaps should be an average?"""
@@ -2202,10 +2216,10 @@ entry(
     label = "(CR2)*",
     group =
 """
-1 X  u0
-2 C  u0 {3,[S,D,T]} {4,[S,D,T]}
-3 R  u0 {2,[S,D,T]}
-4 R  u0 {2,[S,D,T]}
+1 X   u0
+2 C   u0 {3,T} {4,S}
+3 R!H u0 {2,T}
+4 R   u0 {2,S}
 """,
     thermo=u'(CRN)*'
 )
@@ -2230,10 +2244,10 @@ entry(
     label = "(NR2)*",
     group =
 """
-1 X  u0 
-2 N  u0 {3,D} {4,S}
-3 R  u0 {2,D}
-4 R  u0 {2,S}
+1 X   u0 
+2 N   u0 {3,D} {4,S}
+3 R!H u0 {2,D}
+4 R   u0 {2,S}
 """,
     thermo=u'(NRO)*',
     longDesc=u"""Parent of (RN=O)* and (RN=NR)*. Should it be an average?"""
@@ -2247,7 +2261,7 @@ entry(
 1 X  u0 p0 c0 {3,S}
 2 X  u0 p0 c0 {4,D}
 3 N  u0 p1 c0 {1,S} {4,S} {5,S}
-4 R  u0 p1 c0 {2,D} {3,S}
+4 N  u0 p1 c0 {2,D} {3,S}
 5 R  u0 p0 c0 {3,S}
 """,
     thermo=ThermoData(
@@ -2355,6 +2369,37 @@ entry(
 """
 )
 
+entry(
+    index = 88,
+    label = "C=*(=C)",
+    group =
+"""
+1 X  u0  p0 c0 {2,D}
+2 C  u0  p0 c0 {1,D} {3,D}
+3 C  u0  p0 c0 {2,D}
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([-1.2, 0.67, 1.9, 2.71, 3.62, 4.07, 4.52], 'cal/(mol*K)'),
+        H298=(-93.15, 'kcal/mol'),
+        S298=(-48.06, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Came from C=CH2 double-bonded on Pt(111)""",
+    longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
+            DFT binding energy: -3.980 eV.
+            Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = -0.60024 eV, gamma_C(X) = 0.500.
+
+   C
+  ||
+   C
+  ||
+***********
+
+Because the C atom bonded to the surface only has one ligand 
+not two, it is not a child of the C=*R2 node
+"""
+)
+
 
 tree(
 """
@@ -2381,7 +2426,6 @@ L1: R*
         L3: N*O*
             L4: N=*O-*
         L3: O*O*
-            L4: O-*O-*
     L2: R*single_chemisorbed
         L3: C*
             L4: Cq*
@@ -2393,8 +2437,9 @@ L1: R*
                 L5: C=*RCR3
                 L5: C=*RNR2
                 L5: C=*ROR
-                L5: C=*NR
-            L4: C=*(=C)
+            L4: C=*(=R)
+                L5: C=*(=C)
+                L5: C=*(=NR)
             L4: C-*R3
                 L5: C-*R2CR3
                 L5: C-*R2NR2
@@ -2403,7 +2448,7 @@ L1: R*
                 L5: C-*RNR
                 L5: C-*RO
         L3: N*
-            L4: N#*R
+            L4: N#*
             L4: N=*R
                 L5: N=*CR3
                 L5: N=*NR2
@@ -2414,6 +2459,7 @@ L1: R*
                 L5: N-*ROR
                 L5: N-*CR2
                 L5: N-*NR
+                L5: N-*O
         L3: O*
             L4: O=*
             L4: O-*R
@@ -2440,6 +2486,5 @@ L1: R*
             L4: (NRNR)*
         L3: (OR2)*
             L4: (OROR)*
-
 """
 )
