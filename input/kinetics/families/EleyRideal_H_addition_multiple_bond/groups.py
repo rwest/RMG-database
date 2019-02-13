@@ -13,6 +13,10 @@ Eeley Rideal reaction with a gas phase double or triple bonded species.
 The rate, which should be in mol/m2/s,
 will be given by k * (mol/m2) * (mol/m3)
 so k should be in (m3/mol/s). We will use sticking coefficients.
+
+This is from Theoretical Investigation of the Mechanisms for Olefinic Hydrogenation on
+Pt(110) and Pt(111) Surfaces
+Vincent Maurice & Christian Minot, J. Phys. Chem. 1990, 94, 8579-8588
 """
 
 template(reactants=["Adsorbate1", "Gas"], products=["Adsorbate2"], ownReverse=False)
