@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# encoding: utf-8
 
 
 name = "SurfaceThermoPt"
@@ -659,8 +660,8 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 
-2 N  u0 p1 c0 {2,T}
-3 N  u0 p1 c0 {3,T}
+2 N  u0 p1 c0 {3,T}
+3 N  u0 p1 c0 {2,T}
 """,
     thermo = NASA(
         polynomials = [
@@ -2082,7 +2083,7 @@ entry(
 
 entry(
     index = 72,
-    species(name = "H2CO-h_ads",
+    label = "H2CO-h_ads",
     molecule = 
 """
 1 X  u0 p0 c0 {3,S}
@@ -2109,7 +2110,6 @@ entry(
             DFT binding energy: -0.236 eV.
             Linear scaling parameters: ref_adatom_C1 = -6.750 eV, ref_adatom_O2 = -1.030 eV, psi = 1.96700 eV, gamma_C1(X) = 0.250, gamma_O2(X) = 0.500.""",
 )
-
-
-
-
+    
+    
+    

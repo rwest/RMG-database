@@ -25,9 +25,6 @@ entry(
 ***********
 This node should be empty, ensuring that one of the nodes below is used.
 
-<<<<<<< HEAD
-=======
-
 The group could well be defined as:
 
     1 R ux
@@ -40,7 +37,6 @@ R*bidentate or R*single_chemisorbed and thus not R*vdW.
 """,
 )
 
->>>>>>> aa7e9eb318177d6a9872b3f613e63b5ff4630fe0
 #entry(
 #    index = 1,
 #    label = "R-*",
@@ -67,34 +63,6 @@ R*bidentate or R*single_chemisorbed and thus not R*vdW.
 #"""
 #)
 
-<<<<<<< HEAD
-entry(
-    index = 2,
-    label = "(R2)*",
-    group =
-"""
-1 X  u0 p0 c0
-2 R  u0 p0 c0 {3,S}
-3 R  u0 p0 c0 {2,S}
-""",
-    thermo=ThermoData(
-        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([1.13, 1.17, 1.19, 1.2, 1.21, 1.21, 1.22], 'cal/(mol*K)'),
-        H298=(-1.22, 'kcal/mol'),
-        S298=(-7.73, 'cal/(mol*K)'),
-    ),
-    shortDesc=u"""Came from H2 vdW-bonded on Pt(111)""",
-    longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
-            DFT binding energy: -0.054 eV.
-            Linear scaling parameters: ref_adatom_H = -0.240 eV, psi = -0.05448 eV, gamma_H(X) = 0.000.
-            The two lowest frequencies, 14.0 and 24.4 cm-1, where replaced by the 2D gas model.
-
-  R-R
-   :
-***********
-"""
-)
-=======
 ### This doesn't have a place in the tree, so I'm commenting it out. -- RHW
 # entry(
 #     index = 2,
@@ -122,7 +90,6 @@ entry(
 # ***********
 # """
 # )
->>>>>>> aa7e9eb318177d6a9872b3f613e63b5ff4630fe0
 
 entry(
     index = 3,
@@ -2398,7 +2365,7 @@ entry(
 Because the C atom bonded to the surface only has one ligand 
 not two, it is not a child of the C=*R2 node
 """
-
+)
 
 entry(
     index = 89,
@@ -2412,7 +2379,7 @@ entry(
 5 R  u0 p0 c0 {3,S}
 6 R  u0 p0 c0 {3,S}
 """,
-    thermo=Thermodata(
+    thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
         Cpdata=([2.47, 3.94, 4.70, 5.04, 5.21, 5.17, 5.03], 'cal/(mol*K)'),
         H298=(-6.024, 'kcal/mol'),
