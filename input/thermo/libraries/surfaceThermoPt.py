@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# encoding: utf-8
 
 
 name = "SurfaceThermoPt"
@@ -658,19 +659,18 @@ entry(
     label = "NN_ads",
     molecule =
 """
-1 X  u0 p0 c0 {3,S}
-2 X  u0 p0 c0 {4,S}
-3 N  u0 p1 c0 {1,S} {4,D}
-4 N  u0 p1 c0 {2,S} {3,D}
+1 X  u0 p0 c0 
+2 N  u0 p1 c0 {3,T}
+3 N  u0 p1 c0 {2,T}
 """,
     thermo = NASA(
         polynomials = [
             NASAPolynomial(coeffs=[
              4.139939170E+00,  -9.927559100E-04,   1.767040330E-06,  -1.578843420E-10,
-             -3.642067120E-13,  -4.380795290E+03,  -7.289846350E+00], Tmin=(298.0,'K'), Tmax=(1000.0, 'K')),
+             -3.642067120E-13,  -4.380795290E+03,  -7.282993530E+00], Tmin=(298.0,'K'), Tmax=(1000.0, 'K')),
             NASAPolynomial(coeffs=[
              4.386605170E+00,  -1.506923910E-03,   2.676405940E-06,  -1.415318030E-09,
-             2.513633790E-13,  -4.482254750E+03,  -8.669017440E+00], Tmin=(1000.0,'K'), Tmax=(2000.0, 'K')),
+             2.513633790E-13,  -4.482254750E+03,  -9.362164620E+00], Tmin=(1000.0,'K'), Tmax=(2000.0, 'K')),
         ],
         Tmin = (298.0, 'K'),
         Tmax = (2000.0, 'K'),
@@ -678,7 +678,7 @@ entry(
     longDesc = u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (file: compute_NASA_for_Pt-adsorbates.ipynb). 
             Based on DFT calculations by Jelena Jelic at KIT.
             DFT binding energy: -0.109 eV.
-            Linear scaling parameters: ref_adatom_N1 = 0.525 eV, ref_adatom_N2 = 0.525 eV, psi = -0.45958 eV, gamma_N1(X) = 0.333, gamma_N2(X) = 0.333.
+            Linear scaling parameters: ref_adatom_N = 0.525 eV, psi = -0.10949 eV, gamma_N(X) = 0.000. 
             The two lowest frequencies, 6.3 and 24.2 cm-1, where replaced by the 2D gas model.""",
 )
 
@@ -1783,35 +1783,36 @@ entry(
             Linear scaling parameters: ref_adatom_C1 = -6.750 eV, ref_adatom_C2 = -6.750 eV, psi = 0.96689 eV, gamma_C1(X) = 0.250, gamma_C2(X) = 0.500.""",
 )
 
-entry(
-    index = 62,
-    label = "HC-CH2_ads",
-    molecule =
-"""
-1 X  u0  p0 c0 {2,S}
-2 C  u0  p0 c0 {1,S} {3,D} {4,S}
-3 C  u0  p0 c0 {2,D} {5,S} {6,S}
-4 H  u0  p0 c0 {2,S}
-5 H  u0  p0 c0 {3,S}
-6 H  u0  p0 c0 {3,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[
-             -3.761998800E+00,   4.463873830E-02,  -5.865136870E-05,   4.048714140E-08,
-             -1.120403080E-11,  -2.545452840E+03,   1.391918370E+01], Tmin=(298.0,'K'), Tmax=(1000.0, 'K')),
-            NASAPolynomial(coeffs=[
-             1.147737520E+01,  -8.889811580E-03,   1.588277200E-05,  -8.483602150E-09,
-             1.521747930E-12,  -6.167735370E+03,  -6.194706680E+01], Tmin=(1000.0,'K'), Tmax=(2000.0, 'K')),
-        ],
-        Tmin = (298.0, 'K'),
-        Tmax = (2000.0, 'K'),
-    ),
-    longDesc = u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (file: compute_NASA_for_Pt-adsorbates.ipynb). 
-            Based on DFT calculations by Jelena Jelic at KIT.
-            DFT binding energy: -2.790 eV.
-            Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = -1.09643 eV, gamma_C(X) = 0.250.""",
-)
+#This is actually bidentate, so this input is not correct (should be the same as index 51).
+#entry(
+#    index = 62,
+#    label = "HC-CH2_ads",
+#    molecule =
+#"""
+#1 X  u0  p0 c0 {2,S}
+#2 C  u0  p0 c0 {1,S} {3,D} {4,S}
+#3 C  u0  p0 c0 {2,D} {5,S} {6,S}
+#4 H  u0  p0 c0 {2,S}
+#5 H  u0  p0 c0 {3,S}
+#6 H  u0  p0 c0 {3,S}
+#""",
+#    thermo = NASA(
+#        polynomials = [
+#            NASAPolynomial(coeffs=[
+#             -3.761998800E+00,   4.463873830E-02,  -5.865136870E-05,   4.048714140E-08,
+#             -1.120403080E-11,  -2.545452840E+03,   1.391918370E+01], Tmin=(298.0,'K'), Tmax=(1000.0, 'K')),
+#            NASAPolynomial(coeffs=[
+#             1.147737520E+01,  -8.889811580E-03,   1.588277200E-05,  -8.483602150E-09,
+#             1.521747930E-12,  -6.167735370E+03,  -6.194706680E+01], Tmin=(1000.0,'K'), Tmax=(2000.0, 'K')),
+#        ],
+#        Tmin = (298.0, 'K'),
+#        Tmax = (2000.0, 'K'),
+#    ),
+#    longDesc = u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (file: compute_NASA_for_Pt-adsorbates.ipynb). 
+#            Based on DFT calculations by Jelena Jelic at KIT.
+#            DFT binding energy: -2.790 eV.
+#            Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = -1.09643 eV, gamma_C(X) = 0.250.""",
+#)
 
 entry(
     index = 63,
@@ -2080,3 +2081,34 @@ entry(
             Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = 0.42191 eV, gamma_C(X) = 0.500.
             The two lowest frequencies, 46.4 and 91.5 cm-1, where replaced by the 2D gas model.""",
 )
+
+entry(
+    index = 72,
+    label = "H2CO-h_ads",
+    molecule = 
+"""
+1 X  u0 p0 c0 {3,S}
+2 X  u0 p0 c0 {4,S}
+3 C  u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+4 O  u0 p2 c0 {2,S} {3,S}
+5 H  u0 p0 c0 {3,S}
+6 H  u0 p0 c0 {3,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[
+             1.02400610E-01, 2.37197512E-02, -2.57930815E-05, 1.52033151E-08, 
+             -3.68397327E-12, -2.71157474E+04, -4.98129327E-01], Tmin=(298.0,'K'), Tmax=(1000.0, 'K')),
+            NASAPolynomial(coeffs=[
+             9.52719632E+00, -6.50602819E-03, 1.16581384E-05, -6.25773731E-09, 
+             1.12684291E-12,-2.95082935E+04, -4.81511621E+01], Tmin=(1000.0,'K'), Tmax=(2000.0, 'K')),
+        ],
+        Tmin = (298.0, 'K'),
+        Tmax = (2000.0, 'K'),
+    ),
+    longDesc = u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (file: compute_NASA_for_Pt-adsorbates.ipynb). 
+            Based on DFT calculations by Jelena Jelic at KIT.
+            DFT binding energy: -0.236 eV.
+            Linear scaling parameters: ref_adatom_C1 = -6.750 eV, ref_adatom_O2 = -1.030 eV, psi = 1.96700 eV, gamma_C1(X) = 0.250, gamma_O2(X) = 0.500.""",
+)
+

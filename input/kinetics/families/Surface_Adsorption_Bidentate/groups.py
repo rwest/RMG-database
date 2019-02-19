@@ -4,11 +4,15 @@
 name = "Surface_Adsorption_Bidentate/groups"
 shortDesc = u""
 longDesc = u"""
-Dissociative adsorption of a gas-phase species onto the surface. The single-bond in the gas-phase species is split; the resulting fragments each are singled bonded to the surface.
+Bidentate adsorption of a gas-phase species onto the surface. 
+The multiple-bond in the gas-phase species is decrease; 
+the atoms at either end are each singled bonded to the surface.
 
- *1=*2               *1-*2
-             ---->    |  |
-~*3~ + ~*4~         ~*3~*4~~
+ *1=*2                *1-*2
+             ---->    |   |
+~*3~ + ~*4~         ~*3~ *4~~
+
+Note that it does not form a bond between *3 and *4.
 
 The rate, which should be in mol/m2/s,
 will be given by k * (mol/m2) * (mol/m2) * (mol/m3)
@@ -30,8 +34,8 @@ entry(
     label = "Adsorbate",
     group =
 """
-1 *1 R u0 {2,[D,T]}
-2 *2 R u0 {1,[D,T]}
+1 *1 R!H u0 {2,[D,T]}
+2 *2 R!H u0 {1,[D,T]}
 """,
     kinetics = None,
 )
@@ -71,13 +75,14 @@ forbidden(
     label = "chargedSurface1",
     group =
 """
-1 *1 R u0 c-1 {2,T}
-2 *2 R u0 c+1 {1,T}
+1 *1 R!H u0 c-1 {2,T}
+2 *2 R!H u0 c+1 {1,T}
 """,
     shortDesc = u"""""",
     longDesc =
 u"""
-The adsorbing molecule should not have a charge on the surface. I've written it specifically for the case of CO adsorption for now.
+The adsorbing molecule should not have a charge on the surface. 
+I've written it specifically for the case of CO adsorption for now.
 
 e.g. this is not allowed:
 
@@ -91,13 +96,14 @@ forbidden(
     label = "chargedSurface2",
     group =
 """
-1 *1 R u0 c+1 {2,T}
-2 *2 R u0 c-1 {1,T}
+1 *1 R!H u0 c+1 {2,T}
+2 *2 R!H u0 c-1 {1,T}
 """,
     shortDesc = u"""""",
     longDesc =
 u"""
-The adsorbing molecule should not have a charge on the surface. I've written it specifically for the case of CO adsorption for now.
+The adsorbing molecule should not have a charge on the surface. 
+I've written it specifically for the case of CO adsorption for now.
 e.g. this is not allowed:
 
 -C#O+    -->  -C=O+
