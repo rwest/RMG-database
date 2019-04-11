@@ -466,15 +466,14 @@ entry(
 """,
     thermo=ThermoData(
         Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
-        Cpdata=([-0.22, 0.65, 1.14, 1.4, 1.61, 1.68, 1.77], 'cal/(mol*K)'),
-        H298=(-18.76, 'kcal/mol'),
-        S298=(-32.78, 'cal/(mol*K)'),
+        Cpdata=([1.74, 2.63, 3.12, 3.38, 3.60, 3.67, 3.76], 'cal/(mol*K)'),
+        H298=(-18.32, 'kcal/mol'),
+        S298=(-37.88, 'cal/(mol*K)'),
     ),
     shortDesc=u"""Came from HN-O vdW-bonded on Pt(111)""",
     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
             DFT binding energy: -1.270 eV.
             Linear scaling parameters: ref_adatom_N = -4.352 eV, psi = -1.26632 eV, gamma_N(X) = 0.000.
-            The two lowest frequencies, 36.2 and 74.0 cm-1, where replaced by the 2D gas model.
 
   RN=O
     :
@@ -1528,6 +1527,7 @@ entry(
     longDesc=u"""Calculated by Katrin Blondal at Brown University using statistical mechanics (files: compute_NASA_for_Pt-adsorbates.ipynb and compute_NASA_for_Pt-gas_phase.ipynb). Based on DFT calculations by Jelena Jelic at KIT.
             DFT binding energy: -0.184 eV.
             Linear scaling parameters: ref_adatom_C = -6.750 eV, psi = -0.18361 eV, gamma_C(X) = 0.000.
+            The two lowest frequencies, 14.8 and 17.3 cm-1, where replaced by the 2D gas model.
 
  R2C=O
     :
