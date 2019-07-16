@@ -7160,6 +7160,44 @@ entry(
 """,
     kinetics = None,
 )
+                                      
+entry(
+    index = 492,
+    label = "Si_H",
+    group = 
+"""
+1 *1 Si u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    R  u0 {1,S}
+4    R  u0 {1,S}
+5    R  u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 493,
+    label = "Si_silane",
+    group = 
+"""
+1 *1 Si u0 {2,S} {3,S} {4,S} {5,S}
+2 *2 H  u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
 
 tree(
 """
@@ -7440,6 +7478,8 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
             L4: N5dc_H
                 L5: N5dc/H/NonDeOO
         L3: HCl
+        L3: Si_H
+	        L4: Si_silane 
 L1: Y_rad_birad_trirad_quadrad
     L2: Y_1centerquadrad
         L3: C_quintet
