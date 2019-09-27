@@ -24,6 +24,9 @@ default = {
     'Birad_recombination',
     'CO_Disproportionation',
     'Birad_R_Recombination',
+    'Cl_Abstraction',
+    'F_Abstraction',
+    'Br_Abstraction',
     'Cyclic_Ether_Formation',
     'Cyclic_Thioether_Formation',
     'Diels_alder_addition',
@@ -56,6 +59,7 @@ default = {
     '6_membered_central_C-C_shift',
     'Intra_R_Add_Exo_scission',
     '1,2_shiftC',
+    'XY_Addition_DoubleBond'
     '1,2_NH3_elimination',
     '1,3_NH3_elimination',
 }

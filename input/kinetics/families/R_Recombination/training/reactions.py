@@ -14,7 +14,7 @@ entry(
     kinetics = Arrhenius(A=(1.09e+14, 's^-1'), n=0.25, Ea=(33.3, 'kcal/mol'), T0=(1, 'K')),
     rank = 10,
     shortDesc = u"""Method CBS-QB3 w/ 1-d Hindered rotor corrections""",
-    longDesc = 
+    longDesc =
 u"""
 High-Pressure Rate Rules for Alkyl + O2 Reactions. 1. The Dissociation, Concerted Elimination, and Isomerization Channels of the Alkyl Peroxy Radical
 Stephanie M. Villano, Lam K. Huynh, Hans-Heinrich Carstensen, and Anthony M. Dean
@@ -32,7 +32,7 @@ entry(
     kinetics = Arrhenius(A=(9.49e+21, 's^-1'), n=-2.41, Ea=(35.8, 'kcal/mol'), T0=(1, 'K')),
     rank = 10,
     shortDesc = u"""Method CBS-QB3 w/ 1-d Hindered rotor corrections""",
-    longDesc = 
+    longDesc =
 u"""
 High-Pressure Rate Rules for Alkyl + O2 Reactions. 1. The Dissociation, Concerted Elimination, and Isomerization Channels of the Alkyl Peroxy Radical
 Stephanie M. Villano, Lam K. Huynh, Hans-Heinrich Carstensen, and Anthony M. Dean
@@ -50,7 +50,7 @@ entry(
     kinetics = Arrhenius(A=(1.52e+23, 's^-1'), n=-2.71, Ea=(36.4, 'kcal/mol'), T0=(1, 'K')),
     rank = 10,
     shortDesc = u"""Method CBS-QB3 w/ 1-d Hindered rotor corrections""",
-    longDesc = 
+    longDesc =
 u"""
 High-Pressure Rate Rules for Alkyl + O2 Reactions. 1. The Dissociation, Concerted Elimination, and Isomerization Channels of the Alkyl Peroxy Radical
 Stephanie M. Villano, Lam K. Huynh, Hans-Heinrich Carstensen, and Anthony M. Dean
@@ -73,9 +73,9 @@ entry(
     ),
     rank = 10,
     shortDesc = u"""CBS-QB3 w/ 1-d HR""",
-    longDesc = 
+    longDesc =
 u"""
-Reference: Low-Temperature Combustion Chemistry of n-Butanol: Principal Oxidation Pathways of Hydroxybutyl Radicals 
+Reference: Low-Temperature Combustion Chemistry of n-Butanol: Principal Oxidation Pathways of Hydroxybutyl Radicals
 DOI: 10.1021/jp403792t
 """,
 )
@@ -106,7 +106,7 @@ entry(
     referenceType = "experiment",
     rank = 10,
     shortDesc = u"""High or low pressure extrapolation""",
-    longDesc = 
+    longDesc =
 u"""
 Bath gas: N2
 Excitation technique: Flash photolysis (laser or conventional)
@@ -140,7 +140,7 @@ entry(
     referenceType = "experiment",
     rank = 10,
     shortDesc = u"""Derived from fitting to a complex mechanism""",
-    longDesc = 
+    longDesc =
 u"""
 Uncertainty: 3.0
 Bath gas: NO2
@@ -174,7 +174,7 @@ entry(
     referenceType = "experiment",
     rank = 10,
     shortDesc = u"""Absolute value measured directly""",
-    longDesc = 
+    longDesc =
 u"""
 Pressure dependence: Rate constant is high pressure limit
 Experimental procedure: Static or low flow - Data taken vs time
@@ -198,7 +198,7 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: vinylCPD_H""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: ethyl + CPDyl <=> ethylCPD
 """,
@@ -218,7 +218,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Training reaction from kinetics library: primaryNitrogenLibrary""",
-    longDesc = 
+    longDesc =
 u"""
 R.S. Zhu, P. Raghunath, M.C. Lin, J. Phys. Chem. A, 2013, 117, 7308-7313, doi: 10.1021/jp401148q
 p. 7311
@@ -251,7 +251,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""CASPT2/cc-pvdz""",
-    longDesc = 
+    longDesc =
 u"""
 S.J. Klippenstein, Y. Georgievskiia, L.B. Hardingb
 Predictive theory for the combination kinetics of two alkyl radicals
@@ -274,7 +274,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""CASPT2/cc-pvdz""",
-    longDesc = 
+    longDesc =
 u"""
 S.J. Klippenstein, Y. Georgievskiia, L.B. Hardingb
 Predictive theory for the combination kinetics of two alkyl radicals
@@ -297,7 +297,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""CASPT2/cc-pvdz""",
-    longDesc = 
+    longDesc =
 u"""
 S.J. Klippenstein, Y. Georgievskiia, L.B. Hardingb
 Predictive theory for the combination kinetics of two alkyl radicals
@@ -494,7 +494,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Training reaction from kinetics library: primaryNitrogenLibrary""",
-    longDesc = 
+    longDesc =
 u"""
 R.S. Zhu, P. Raghunath, M.C. Lin, J. Phys. Chem. A, 2013, 117, 7308-7313, doi: 10.1021/jp401148q
 p. 7311
@@ -518,7 +518,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Training reaction from kinetics library: primaryNitrogenLibrary""",
-    longDesc = 
+    longDesc =
 u"""
 See Table 1 on p. 2397 in L.V Moskaleva, M.C. Lin, Proceedings of the Combustion Institute, 2000, 28(2), 2393-2401, doi: 10.1016/S0082-0784(00)80652-9
 Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
@@ -539,7 +539,7 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Training reaction from kinetics library: primarySulfurLibrary""",
-    longDesc = 
+    longDesc =
 u"""
 A. Goumri, J-D.R. Rocha, D. Laakso, C.E. Smith, P. Marshall, J. Phys. Chem. A, 1999, 103(51), 11328-11335 doi: 10.1021/jp9924070
 Table 7 on p. 11333
@@ -567,7 +567,7 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: primaryNitrogenLibrary""",
-    longDesc = 
+    longDesc =
 u"""
 R.S. Zhu, M.C. Lin, J. Chem. Phys., 2003, 119, 10667, doi: 10.1063/1.1619373
 
@@ -575,7 +575,7 @@ Lindemann expression given, only k_inf taken here:
     kinetics = Lindemann(
         arrheniusHigh = Arrhenius(A=(1.03e+14, 'cm^3/(mol*s)'), n=-0.24, Ea=(-200, 'cal/mol'), T0=(1, 'K'), Tmin=(200, 'K'), Tmax=(2000, 'K')),
         arrheniusLow = Arrhenius(A=(1.14e+50, 'cm^6/(mol^2*s)'), n=-12.3, Ea=(1163, 'cal/mol'), T0=(1, 'K'), Tmin=(200, 'K'), Tmax=(2000, 'K'))),
-        
+
 A low T (200-400 K) kinetics from a different source is:
     kinetics = Arrhenius(
         A = (2.41e+07, 'm^3/(mol*s)'),
@@ -803,7 +803,7 @@ entry(
     kinetics = Arrhenius(A=(1.89e+16, 's^-1'), n=-0.28, Ea=(68.378, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: First_to_Second_Aromatic_Ring/2016_Mebel_C10H9_highP""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: W111 <=> P114 + H
 """,
@@ -821,7 +821,7 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: First_to_Second_Aromatic_Ring/2012_Matsugi_C3H3_C7H7_highP""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: C3H3 + C7H7 <=> W1
 """,
@@ -839,7 +839,7 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: First_to_Second_Aromatic_Ring/2012_Matsugi_C3H3_C7H7_highP""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: C3H3 + C7H7 <=> W2
 """,
@@ -852,7 +852,7 @@ entry(
     kinetics = Arrhenius(A=(9.431e+15, 's^-1'), n=-0.34, Ea=(77.615, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: First_to_Second_Aromatic_Ring/2012_Matsugi_C3H3_C7H7_highP""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: W10 <=> P5 + H
 """,
@@ -865,7 +865,7 @@ entry(
     kinetics = Arrhenius(A=(5.081e+15, 's^-1'), n=-0.263, Ea=(86.584, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: First_to_Second_Aromatic_Ring/2012_Matsugi_C3H3_C7H7_highP""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: W17 <=> P9 + H
 """,
@@ -878,7 +878,7 @@ entry(
     kinetics = Arrhenius(A=(2.899e+16, 's^-1'), n=-0.42, Ea=(88.738, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: First_to_Second_Aromatic_Ring/2012_Matsugi_C3H3_C7H7_highP""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: W17 <=> P10 + H
 """,
@@ -891,7 +891,7 @@ entry(
     kinetics = Arrhenius(A=(1e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: kislovB""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: phenyl_16 + C3H3_9 <=> C9H8_20
 """,
@@ -904,7 +904,7 @@ entry(
     kinetics = Arrhenius(A=(1e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: kislovB""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: phenyl_16 + C3H3_9 <=> C9H8_21
 """,
@@ -917,7 +917,7 @@ entry(
     kinetics = Arrhenius(A=(1e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
     shortDesc = u"""Training reaction from kinetics library: kislovB""",
-    longDesc = 
+    longDesc =
 u"""
 Taken from entry: C9H7_19 + H_15 <=> indene_25
 """,

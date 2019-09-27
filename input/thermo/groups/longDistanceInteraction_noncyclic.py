@@ -32,6 +32,12 @@ Chinugh-Ju Chen, D. Wong, Joseph W. Bozzelli,
 Standard Chemical Thermodynamic Properties of Multichloro Alkanes and Alkenes: A Modified Group Additivity Scheme
 JPCA, 1998, 102, 4551-4558
 
+
+Non-Next Nearest Neighbor (NNI) interaction terms for fluorine added (intF). Values come from:
+Heng Wang, Álvaro Castillo, and Joseph W. Bozzelli,
+Thermochemical Properties Enthalpy, Entropy, and Heat Capacity of C1−C4 Fluorinated Hydrocarbons: Fluorocarbon Group Additivity
+DOI: 10.1021/acs.jpca.5b03912.
+
 March-16-2018
 """
 
@@ -1551,6 +1557,150 @@ Divided by two to avoid doublecounting
 """,
 )
 
+entry(
+    index = 0,
+    label = "intF",
+    group = 
+"""
+1 *1 Cs   u0 p0 {2,S} {3,S}
+2 *2 Cs   u0 p0 {1,S}
+3    F1s  u0 p3 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0.0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 0,
+    label = "Cs(F)-Cs(F)",
+    group = 
+"""
+1 *1 Cs   u0 p0 {2,S} {3,S}
+2 *2 Cs   u0 p0 {1,S} {4,S}
+3    F1s  u0 p3 {1,S}
+4    F1s  u0 p3 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (1.3,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""F/F from Bozzelli""",
+    longDesc = 
+u"""
+Divided by two to avoid doublecounting
+""",
+)
+
+entry(
+    index = 0,
+    label = "Cs(F)2-Cs(F)",
+    group = 
+"""
+1 *1 Cs   u0 p0 {2,S} {3,S} {4,S}
+2 *2 Cs   u0 p0 {1,S} {5,S}
+3    F1s  u0 p3 {1,S}
+4    F1s  u0 p3 {1,S}
+5    F1s  u0 p3 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (2.6,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""2F/F from Bozzelli""",
+    longDesc = 
+u"""
+Divided by two to avoid doublecounting
+""",
+)
+
+entry(
+    index = 0,
+    label = "Cs(F)2-Cs(F)2",
+    group = 
+"""
+1 *1 Cs   u0 p0 {2,S} {3,S} {4,S}
+2 *2 Cs   u0 p0 {1,S} {5,S} {6,S}
+3    F1s  u0 p3 {1,S}
+4    F1s  u0 p3 {1,S}
+5    F1s  u0 p3 {2,S}
+6    F1s  u0 p3 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (4.65,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""2F/2F from Bozzelli""",
+    longDesc = 
+u"""
+Divided by two to avoid doublecounting
+""",
+)
+
+entry(
+    index = 0,
+    label = "Cs(F)3-Cs(F)2",
+    group = 
+"""
+1 *1 Cs   u0 p0 {2,S} {3,S} {4,S} {5,S}
+2 *2 Cs   u0 p0 {1,S} {6,S} {7,S}
+3    F1s  u0 p3 {1,S}
+4    F1s  u0 p3 {1,S}
+5    F1s  u0 p3 {1,S}
+6    F1s  u0 p3 {2,S}
+7    F1s  u0 p3 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (6.7,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""3F/2F from Bozzelli""",
+    longDesc = 
+u"""
+Divided by two to avoid doublecounting
+""",
+)
+
+entry(
+    index = 0,
+    label = "Cs(F)3-Cs(F)",
+    group = 
+"""
+1 *1 Cs   u0 p0 {2,S} {3,S} {4,S} {5,S}
+2 *2 Cs   u0 p0 {1,S} {6,S}
+3    F1s  u0 p3 {1,S}
+4    F1s  u0 p3 {1,S}
+5    F1s  u0 p3 {1,S}
+6    F1s  u0 p3 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (3.7,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""3F/F from Bozzelli""",
+    longDesc = 
+u"""
+Divided by two to avoid doublecounting
+""",
+)
+
 tree(
 """
 L1: R
@@ -1571,6 +1721,12 @@ L1: R
         L3: Cds(Cl)=Cds(Cl)
         L3: Cds(Cl)2=Cds(Cl)
         L3: Cds(Cl)2=Cds(Cl)2
+    L2: intF
+        L3: Cs(F)-Cs(F)
+            L4: Cs(F)2-Cs(F)
+                L5: Cs(F)3-Cs(F)
+                    L6: Cs(F)3-Cs(F)2
+                L5: Cs(F)2-Cs(F)2
     L2: int14_gauche
         L3: CsCs
             L4: CsCs-P
