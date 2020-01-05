@@ -37,6 +37,25 @@ u"""
 )
 
 entry(
+    label = "N_2singleBondsToRadicals",
+    group = 
+"""
+1 N ux px {2,S} {3,S}
+2 R u1 {1,S}
+3 R u1 {1,S}
+""",
+    shortDesc = u"""Rj-N-Rj""",
+    longDesc = 
+u"""
+I think we're horrible at estimating the thermo for this
+and it's showing up in the core causing havoc with 
+disproportionation reactions being far too fast,
+so until we can calculate its thermo better,
+I'm forbidding it. - Richard West 2020-01-04
+""",
+)
+
+entry(
     label = "N_birad_triplet_2singleBonds",
     group = 
 """
