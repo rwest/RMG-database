@@ -56,6 +56,26 @@ I'm forbidding it. - Richard West 2020-01-04
 )
 
 entry(
+    label = "Oj_N_OH",
+    group = 
+"""
+1 N u0 p1 {2,S} {3,S}
+2 O u1 {1,S}
+3 O u0 {1,S}
+""",
+    shortDesc = u"""Oj-N-OH""",
+    longDesc = 
+u"""
+I think we're horrible at estimating the thermo for this
+and it's showing up in the core causing havoc with 
+disproportionation reactions being far too fast,
+so until we can calculate its thermo better,
+I'm forbidding it. - Richard West 2020-01-04
+""",
+)
+
+
+entry(
     label = "N_birad_triplet_2singleBonds",
     group = 
 """
