@@ -4,6 +4,8 @@
 #
 ################################################################################
 
+.DS_Store
+
 # Eclipse project files
 .project
 .pydevproject
