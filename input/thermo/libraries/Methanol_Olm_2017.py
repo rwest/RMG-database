@@ -18,36 +18,10 @@ Keywords: Methanol combustion; Formaldehyde combustion; Chemical kinetic mechani
 
 Note: the following reaction was commented out
 OHEX<=>OH+HV                        1.4500E+06    0.0000       0.000
+
+OHEX was removed entirely
 """
-entry(
-    index = 0,
-    label = "OHEX",
-    molecule = 
-"""
-multiplicity 2
-1 O u1 p2 c0 {2,S}
-2 H u0 p0 c0 {1,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.63727,0.000185091,-1.67616e-06,2.3872e-09,-8.43144e-13,50021.3,1.35886], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.88273,0.00101397,-2.27688e-07,2.17468e-11,-5.12631e-16,50265,5.59571], Tmin=(1000,'K'), Tmax=(5000,'K')),
-        ],
-        Tmin = (298,'K'),
-        Tmax = (5000,'K'),
-        E0 = (416.033,'kJ/mol'),
-        Cp0 = (29.1007,'J/mol/K'),
-        CpInf = (37.4151,'J/mol/K'),
-    ),
-    shortDesc = """as in optimized syngas mechanism""",
-    longDesc = 
-"""
-as in optimized syngas mechanism
-_low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
-[OH]
-_imported from CombFlame2017/45-Olm/olm_mech.txt.
-""",
-)
+
 
 entry(
     index = 1,
@@ -74,6 +48,7 @@ multiplicity 2
 """
 as in optimized syngas mechanism.
 Duplicate of species OHEX (i.e. same molecular structure according to RMG)
+OHEX was removed
 [OH]
 _imported from CombFlame2017/45-Olm/olm_mech.txt.
 """,
