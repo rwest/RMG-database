@@ -4679,10 +4679,7 @@ entry(
     index = 258,
     label = "C2H3 + CH2O <=> C2H4 + HCO",
     degeneracy = 1,
-    duplicate = True,
-    kinetics = MultiPDepArrhenius(
-        arrhenius = [
-            PDepArrhenius(
+    kinetics = PDepArrhenius(
                 pressures = ([0.001, 0.01, 0.1, 1, 10, 100, 1000], 'atm'),
                 arrhenius = [
                     Arrhenius(
@@ -4723,110 +4720,12 @@ entry(
                     ),
                     Arrhenius(A=(17, 'cm^3/(mol*s)'), n=3.17, Ea=(9400, 'cal/mol'), T0=(1, 'K')),
                 ],
-            ),
-            PDepArrhenius(
-                pressures = ([0.001, 0.01, 0.1, 1, 10, 100, 1000], 'atm'),
-                arrhenius = [
-                    Arrhenius(
-                        A = (-2.3e+16, 'cm^3/(mol*s)'),
-                        n = -1.269,
-                        Ea = (20617, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                    Arrhenius(
-                        A = (-5.2e+16, 'cm^3/(mol*s)'),
-                        n = -1.366,
-                        Ea = (20805, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                    Arrhenius(
-                        A = (-1.5e+18, 'cm^3/(mol*s)'),
-                        n = -1.769,
-                        Ea = (22524, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                    Arrhenius(
-                        A = (-8.5e+19, 'cm^3/(mol*s)'),
-                        n = -2.264,
-                        Ea = (23862, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                    Arrhenius(
-                        A = (-4.4e+23, 'cm^3/(mol*s)'),
-                        n = -3.278,
-                        Ea = (27795, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                    Arrhenius(
-                        A = (-4.2e+24, 'cm^3/(mol*s)'),
-                        n = -3.418,
-                        Ea = (31817, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                    Arrhenius(
-                        A = (-2.1e+11, 'cm^3/(mol*s)'),
-                        n = 0.618,
-                        Ea = (30251, 'cal/mol'),
-                        T0 = (1, 'K'),
-                    ),
-                ],
-            ),
-        ],
     ),
+    shortDesc = """The chemkin file had a duplicate, but other models (eg AramcoMech) don't seem to, 
+    and use this exact rate instead. So I removed the duplicate, which was causing Cantera validation errors.
+    and removed the next reaction, which is there to compensate. RHW""",
 )
 
-entry(
-    index = 259,
-    label = "C2H3 + CH2O <=> C2H4 + H + CO",
-    degeneracy = 1,
-    kinetics = PDepArrhenius(
-        pressures = ([0.001, 0.01, 0.1, 1, 10, 100, 1000], 'atm'),
-        arrhenius = [
-            Arrhenius(
-                A = (2.3e+16, 'cm^3/(mol*s)'),
-                n = -1.269,
-                Ea = (20617, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (5.2e+16, 'cm^3/(mol*s)'),
-                n = -1.366,
-                Ea = (20805, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (1.5e+18, 'cm^3/(mol*s)'),
-                n = -1.769,
-                Ea = (22524, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (8.5e+19, 'cm^3/(mol*s)'),
-                n = -2.264,
-                Ea = (23862, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (4.4e+23, 'cm^3/(mol*s)'),
-                n = -3.278,
-                Ea = (27795, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (4.2e+24, 'cm^3/(mol*s)'),
-                n = -3.418,
-                Ea = (31817, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (2.1e+11, 'cm^3/(mol*s)'),
-                n = 0.618,
-                Ea = (30251, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-        ],
-    ),
-)
 
 entry(
     index = 260,
