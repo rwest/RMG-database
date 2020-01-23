@@ -25,7 +25,8 @@ entry(
     Experimental and microkinetic modeling of steady-state NO reduction by H2 on Pt/BaO/Al2O3 monolith catalysts
     Xu, Clayton, Balakotaiah, Harold et al.
     doi: 10.1016.j.apcatb.2007.08.008
-"""
+""",
+    metal = "Pt",
 )
 
 entry(
@@ -45,9 +46,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R4
-
-metal = 'Ni'
-"""
+""",
+    metal = "Ni",
 )
 
 entry(
@@ -69,7 +69,8 @@ and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 4.667E11 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 1.586e16 m^2/(mol*s)
-"""
+""",
+    metal = "Cu",
 )
 
 entry(
@@ -91,7 +92,8 @@ entry(
     doi: 10.1016/j.ces.2011.07.007
 
     This is R9
-    """
+""",
+    metal = "Ni",
 )
 
 entry(
@@ -112,7 +114,8 @@ entry(
     doi: 10.1016/j.ces.2011.07.007
 
     This is R11
-    """
+""",
+    metal = "Ni",
 )
 
 entry(
@@ -132,9 +135,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R16
-
-metal = 'Ni'
-"""
+""",
+	metal = "Ni",
 )
 
 
@@ -155,9 +157,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R18
-
-metal = 'Ni'
-"""
+""",
+	metal = "Ni",
 )
 
 #Delgado has this reaction as exothermic. However, our own thermo has this reaction as endothermic. removing and replacing with reverse direction, R20.
@@ -178,9 +179,8 @@ metal = 'Ni'
 #"Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 #Delgado et al
 #Catalysts, 2015, 5, 871-904. Reaction R19
-#
-# metal = 'Cu'
-#"""
+#""",
+#    metal = "Ni"
 #)
 
 entry(
@@ -200,9 +200,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R20
-
-metal = 'Ni'
-"""
+""",
+	metal = "Ni",
 )
 
 entry(
@@ -224,7 +223,8 @@ and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 2.570E12 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 8.733e16 m^2/(mol*s)
-"""
+""",
+    metal = "Cu",
 )
 
 entry(
@@ -246,7 +246,8 @@ and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 3.698E12 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 1.257e17 m^2/(mol*s)
-"""
+""",
+    metal = "Cu",
 )
 
 entry(
@@ -266,9 +267,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R32
-
-metal = 'Ni'
-"""
+""",
+	metal = "Ni",
 )
 
 entry(
@@ -290,7 +290,8 @@ and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 2.193E13 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 7.452e17 m^2/(mol*s)
-"""
+""",
+    metal = "Cu",
 )
 
 entry(
@@ -305,14 +306,19 @@ entry(
         Tmax = (2000, 'K'),
     ),
     rank = 10,
-    shortDesc = u"""Default""",
+    shortDesc = u"""Delgado 2015 Ni""",
     longDesc = u"""
 Reaction 36 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 5.485E13 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 1.864e18 m^2/(mol*s)
-"""
+
+"Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
+Delgado et al
+Catalysts, 2015, 5, 871-904. Reaction R4
+""",
+	metal = "Ni",
 )
 
 entry(
@@ -332,9 +338,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R8
-
-metal = 'Ni'
-"""
+""",
+	metal = "Ni",
 )
 
 entry(
@@ -349,12 +354,13 @@ entry(
         Tmax = (2000, 'K'),
     ),
     rank=10,
-    shortDesc = u"""Default""",
+    shortDesc = u"""Grabow """,
     longDesc = u"""
 Reaction 26 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 9.240E12 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 3.140e17 m^2/(mol*s)
-"""
+""",
+    metal = "Cu",
 )
