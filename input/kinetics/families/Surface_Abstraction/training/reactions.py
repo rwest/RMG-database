@@ -25,7 +25,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R24
-"""
+""",
+	metal = "Ni",
 )
 
 entry(
@@ -45,7 +46,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R26
-"""
+""",
+	metal = "Ni",
 )
 
 #Delgado has this reaction as exothermic. However, our own thermo has this reaction as endothermic. removing and replacing with reverse direction, R28.
@@ -66,7 +68,7 @@ Catalysts, 2015, 5, 871-904. Reaction R26
 #"Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 #Delgado et al
 #Catalysts, 2015, 5, 871-904. Reaction R27
-#"""
+#""",
 #)
 
 entry(
@@ -86,7 +88,8 @@ entry(
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R28
-"""
+""",
+	metal = "Ni",
 )
 
 entry(
@@ -108,5 +111,6 @@ and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
 A factor from paper / surface site density of Cu
 1.0e13 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 3.298e17 m^2/(mol*s)
-"""
+""",
+    metal = "Cu",
 )
