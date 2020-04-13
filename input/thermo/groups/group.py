@@ -47908,6 +47908,26 @@ u"""
 """,
 )
 
+entry(
+    index = 2218,
+    label = "Br",
+    group = 
+"""
+1 * Br1s u0
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Dummy Bromine group""",
+    longDesc = 
+u"""
+Dummy group for singly-bonded Bromine.
+""",
+)
+
 
 tree(
 """
@@ -50127,6 +50147,7 @@ L1: R
     L2: F
         L3: FH
         L3: F2
+    L2: Br
 """
 )
 
