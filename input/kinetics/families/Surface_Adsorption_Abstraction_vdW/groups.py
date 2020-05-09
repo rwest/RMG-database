@@ -49,7 +49,7 @@ entry(
     group =
 """
 1 *6 Xo  u0 p0 c0 {2,S}
-2 *4 R!H ux px cx {1,S} {3,[S,D,T]}
+2 *4 R!H ux px c0 {1,S} {3,[S,D,T]}
 3 *5 R   ux px cx {2,[S,D,T]}
 """,
     kinetics = None,
@@ -61,7 +61,7 @@ entry(
     group =
 """
 1 *6 Xo u0 p0 c0 {2,S}
-2 *4 C  ux px cx {1,S} {3,[S,D,T]}
+2 *4 C  ux px c0 {1,S} {3,[S,D,T]}
 3 *5 R  ux px cx {2,[S,D,T]}
 """,
     kinetics = None,
@@ -97,7 +97,7 @@ entry(
     group =
 """
 1 *6 Xo  u0 p0 c0 {2,S}
-2 *4 N   ux px cx {1,S} {3,[S,D,T]}
+2 *4 N   ux px c0 {1,S} {3,[S,D,T]}
 3 *5 R   ux px cx {2,[S,D,T]}
 """,
     kinetics = None,
