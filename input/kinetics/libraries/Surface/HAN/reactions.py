@@ -45,3 +45,23 @@ entry(
     """
 )
 
+entry( 
+    index = 3,
+    label = "HAN_X <=> HO_X + NH2OH + NO2",
+    kinetics = SurfaceArrhenius(
+        A = (5e20, '1/s'),
+        n = 0,
+        Ea=(8.07, 'kcal/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""NO2 elimination from HAN on Ir""",
+    longDesc = u"""
+    The "NO2 elimaniton" pathway which is fastest on Ir(111) from Banerjee.
+    Their products look more like OX and NH3OH (and NO2) but then the NH3OH 
+    needs a positive charge, and that can't work.  i.e. it's not clear 
+    what hapens next from their "product" structure.
+
+    The rate is entirely wrong (copied from one with different units)
+    """
+)
