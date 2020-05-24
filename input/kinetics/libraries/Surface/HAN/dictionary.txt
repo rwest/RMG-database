@@ -61,17 +61,17 @@ H2O
 3 H u0 p0 c0 {1,S}
 
 HAN_X 
-1  O u0 p2 c0 {2,S} {10,H} {11,S}
-2  N u0 p0 c+1 {1,S} {3,D} {4,S}
-3  O u0 p2 c0 {2,D}
-4  O u0 p3 c-1 {2,S} {7,H}
-5  N u0 p0 c+1 {6,S} {8,S} {9,S} {7,S}
-6  O u0 p2 c0 {5,S} {10,S}
-7  H u0 p0 c0 {4,H} {5,S}
-8  H u0 p0 c0 {5,S}
+1  O u0 p2 c0 {5,S} {8,S}
+2  O u0 p3 c-1 {6,S} {7,H}
+3  O u0 p3 c-1 {6,S} {8,H}
+4  O u0 p2 c0 {6,D}
+5  N u0 p0 c+1 {1,S} {7,S} {9,S} {10,S}
+6  N u0 p0 c+1 {2,S} {3,S} {4,D}
+7  H u0 p0 c0 {2,H} {5,S}
+8  H u0 p0 c0 {1,S} {3,H}
 9  H u0 p0 c0 {5,S}
-10 H u0 p0 c0 {6,S} {1,H}
-11 X u0 p0 c-1 {1,S}
+10 H u0 p0 c0 {5,S}
+11 X u0 p0 c0
 
 HO_X 
 1 O u0 p2 c0 {2,S} {3,S}
