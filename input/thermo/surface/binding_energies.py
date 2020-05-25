@@ -377,3 +377,94 @@ entry(
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
      """,
 )
+
+entry(
+     index = 21,
+     label = "Cu",
+     bindingEnergies = "Cu211",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 22,
+     label = "Pd",
+     bindingEnergies = "Pd111",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 23,
+     label = "Ag",
+     bindingEnergies = "Ag111",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 25,
+     label = "Ru",
+     bindingEnergies = "Ru0001",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 26,
+     label = "Rh",
+     bindingEnergies = "Rh111",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 27,
+     label = "Au",
+     bindingEnergies = "Au111",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 28,
+     label = "Ni",
+     bindingEnergies = "Ni111",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 29,
+     label = "Co",
+     bindingEnergies = "Co211",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
+entry(
+     index = 30,
+     label = "Ir",
+     bindingEnergies = "Ir111",
+     shortDesc = u"",
+     longDesc = u"""
+
+     """,
+)
+
