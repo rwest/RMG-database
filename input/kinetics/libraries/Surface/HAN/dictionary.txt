@@ -32,16 +32,15 @@ O_X
 2 X u0 p0 c0 {1,D}
 
 NH4NO3
-1 N u0 p0 c+1 {2,S} {3,S} {4,S} {5,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 O u0 p3 c-1 {7,S}
-7 N u0 p0 c+1 {6,S} {8,S} {9,D}
-8 O u0 p3 c-1 {7,S}
-9 O u0 p2 c0 {7,D}
-
+1 O u0 p3 c-1 {2,S} {6,H}
+2 N u0 p0 c+1 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 O u0 p3 c-1 {2,S} {7,H}
+5 N u0 p0 c+1 {6,S} {7,S} {8,S} {9,S}
+6 H u0 p0 c0 {5,S} {1,H}
+7 H u0 p0 c0 {5,S} {4,H}
+8 H u0 p0 c0 {5,S}
+9 H u0 p0 c0 {5,S}
 
 N2O_X
 1 O u0 p2 c0 {2,D}
