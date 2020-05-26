@@ -28,9 +28,32 @@ a fixed sticking coefficient of 1e-6.
     """
 )
 
+entry(
+    index = 2,
+    label = "HAN + X <=> HAN_X",
+    kinetics = StickingCoefficient(
+        A = 0.1,
+        n = 0,
+        Ea=(0, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    shortDesc = u"""HAN vdW adsorbing on the surface""",
+    longDesc = u"""
+    Deutchmann 2006 seems to have things vdW adsorbing with these sticking coefficients:
+     H2O   0.75
+     CO2   0.005
+     CO    0.84 (not vdW)
+     NH3   0.011   in 10.1016/j.ces.2011.07.007 on Ni
+
+    I was about to put 0.01, but our vdW reaction family only
+    has the top level estimate and that's currently 0.10, so 
+    for consistency I have put that.
+    """
+)
 
 entry( 
-    index = 2,
+    index = 3,
     label = "HAN_X + X <=> HO_X + NH2O_X + HONO",
     kinetics = SurfaceArrhenius(
         A = (5e20, 'cm^2/(mol*s)'),
@@ -46,7 +69,7 @@ entry(
 )
 
 entry( 
-    index = 3,
+    index = 4,
     label = "HAN_X <=> HO_X + NH2OH + NO2",
     kinetics = SurfaceArrhenius(
         A = (7.7e13, '1/s'),

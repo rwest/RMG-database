@@ -59,6 +59,18 @@ H2O
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 
+HAN
+1  O u0 p3 c-1 {2,S} {10,H}
+2  N u0 p0 c+1 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  O u0 p3 c-1 {2,S} {7,H}
+5  N u0 p0 c+1 {6,S} {8,S} {9,S} {7,S}
+6  O u0 p2 c0 {5,S} {10,S}
+7  H u0 p0 c0 {4,H} {5,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {5,S}
+10 H u0 p0 c0 {6,S} {1,H}
+
 HAN_X 
 1  O u0 p2 c0 {5,S} {8,S}
 2  O u0 p3 c-1 {6,S} {7,H}
