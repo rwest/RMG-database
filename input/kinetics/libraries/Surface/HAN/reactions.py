@@ -49,7 +49,7 @@ entry(
     index = 3,
     label = "HAN_X <=> HO_X + NH2OH + NO2",
     kinetics = SurfaceArrhenius(
-        A = (5e20, '1/s'),
+        A = (7.7e13, '1/s'),
         n = 0,
         Ea=(8.07, 'kcal/mol'),
         Tmin = (200, 'K'),
@@ -62,6 +62,6 @@ entry(
     needs a positive charge, and that can't work.  i.e. it's not clear 
     what hapens next from their "product" structure.
 
-    The rate is entirely wrong (copied from one with different units)
+    The pre-exponential factor is based on CH2X <=> H2 + CX Deutchmann 2006
     """
 )
