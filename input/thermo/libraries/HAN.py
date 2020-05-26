@@ -8,7 +8,7 @@ Collection of things needed for the modeling of Hydroxyl Ammonium Nitrate
 """
 
 entry(
-    index = 0,
+    index = 1,
     label = 'HAN',
     molecule = 
 """
@@ -61,7 +61,7 @@ so the adjacency list is drawn that way.  [O-][N+](=O)O.NO
 )
 
 entry(
-    index = 0,
+    index = 2,
     label = 'HANionic',
     molecule = 
 """
@@ -112,5 +112,41 @@ is for the "ionic" form, so that if we come across it in a model
    Enthalpy of formation (0 K)     =   -50.542 kcal/mol
    Enthalpy of formation (298 K)   =   -55.814 kcal/mol
    Entropy of formation (298 K)    =    84.496 cal/(mol*K)
+""",
+)
+
+
+entry(
+    index = 3,
+    label = 'NH4NO3', # Ammonium Nitrate, AN
+    molecule = 
+"""
+1 O u0 p3 c-1 {2,S}
+2 N u0 p0 c+1 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 O u0 p3 c-1 {2,S}
+5 N u0 p0 c+1 {6,S} {7,S} {8,S} {9,S}
+6 H u0 p0 c0 {5,S}
+7 H u0 p0 c0 {5,S}
+8 H u0 p0 c0 {5,S}
+9 H u0 p0 c0 {5,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([  300., 400., 500., 600., 700., 800., 900.,1000],'K'),
+        Cpdata = ([22.37,25.83,28.84,31.39,33.54,35.36,36.92,38.27],'cal/(mol*K)'),
+        H298 = (-61.8,'kcal/mol','+|-',5.),
+        S298 = (81.82,'cal/(mol*K)'),
+    ),
+    shortDesc = """Hildenbrand 2010 Revised Thermochemistry of Gaseous Ammonium Nitrate, NH4NO3(g)""",
+    longDesc = 
+"""
+Table 3 from:
+
+Revised Thermochemistry of Gaseous Ammonium Nitrate, NH4NO3(g)
+D. L. Hildenbrand, K. H. Lau, and D. Chandra
+J. Phys. Chem. A 2010, 114, 43, 11654–11655
+https://doi-org.ezproxy.neu.edu/10.1021/jp105773q
+
+Does not agree, even within uncertainty, with an adjoining theoretical calculation.
 """,
 )
