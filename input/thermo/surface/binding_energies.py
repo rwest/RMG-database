@@ -26,6 +26,8 @@ entry(
                        'C':(-7.02515507E+00, 'eV/molecule'),
                        'N':(-4.63224568E+00, 'eV/molecule'),
                        'O':(-3.81153179E+00, 'eV/molecule'),
+                       'H2O': (-0.23, 'eV/molecule'),
+                       'NH3': (-0.78, 'eV/molecule'),
     },
     surfaceSiteDensity = (2.483E-09, 'mol/cm^2'),
     facet = "111",
@@ -33,6 +35,7 @@ entry(
     shortDesc = u"fcc",
     longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
     """,
 )
 
@@ -62,6 +65,8 @@ entry(
                        'C':(-7.33483762E+00, 'eV/molecule'),
                        'N':(-5.30055389E+00, 'eV/molecule'),
                        'O':(-4.71419163E+00, 'eV/molecule'),
+                       'H2O': (-0.31, 'eV/molecule'),
+                       'NH3': (-0.80, 'eV/molecule'),
     },
     surfaceSiteDensity = (2.656E-09, 'mol/cm^2'),
     facet = "111",
@@ -69,6 +74,7 @@ entry(
     shortDesc = u"fcc",
     longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
     """,
 )
 
@@ -76,10 +82,12 @@ entry(
      index = 4,
      label = "Ir111",
      bindingEnergies = {
-     		            'H':(-2.67673532E+00, 'eV/molecule'),
+     		          'H':(-2.67673532E+00, 'eV/molecule'),
                         'C':(-7.25234155E+00, 'eV/molecule'),
                         'N':(-5.06204488E+00, 'eV/molecule'),
                         'O':(-4.35235655E+00, 'eV/molecule'),
+                        'H2O': (-0.28, 'eV/molecule'),
+                         'NH3': (-0.88, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.587E-09, 'mol/cm^2'),
      facet = "111",
@@ -87,6 +95,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -94,10 +103,12 @@ entry(
      index = 5,
      label = "Au111",
      bindingEnergies = {
-     		            'H':(-2.20847988E+00, 'eV/molecule'),
+     		          'H':(-2.20847988E+00, 'eV/molecule'),
                         'C':(-4.54649977E+00, 'eV/molecule'),
                         'N':(-2.41077552E+00, 'eV/molecule'),
                         'O':(-2.71822397E+00, 'eV/molecule'),
+                        'H2O': (-0.16, 'eV/molecule'),
+                         'NH3': (-0.34, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.270E-09, 'mol/cm^2'),
      facet = "111",
@@ -105,6 +116,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -116,6 +128,8 @@ entry(
                         'C':(-7.16786381E+00, 'eV/molecule'),
                         'N':(-4.78495869E+00, 'eV/molecule'),
                         'O':(-4.13577325E+00, 'eV/molecule'),
+                        'H2O': (-0.25, 'eV/molecule'),
+                        'NH3': (-0.65, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.534E-09, 'mol/cm^2'),
      facet = "111",
@@ -123,6 +137,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -134,6 +149,8 @@ entry(
                         'C':(-4.96033553E+00, 'eV/molecule'),
                         'N':(-3.58446699E+00, 'eV/molecule'),
                         'O':(-4.20763879E+00, 'eV/molecule'),
+                        'H2O': (-0.18, 'eV/molecule'),
+                         'NH3': (-0.42, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.943E-09, 'mol/cm^2'),
      facet = "111",
@@ -141,6 +158,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -152,6 +170,8 @@ entry(
                         'C':(-3.50609006E+00, 'eV/molecule'),
                         'N':(-1.97973590E+00, 'eV/molecule'),
                         'O':(-3.11159241E+00, 'eV/molecule'),
+                        'H2O': (-0.17, 'eV/molecule'),
+                        'NH3': (-0.31, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.292E-09, 'mol/cm^2'),
      facet = "111",
@@ -159,6 +179,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -170,6 +191,8 @@ entry(
                         'C':(-6.79794124E+00, 'eV/molecule'),
                         'N':(-5.16380660E+00, 'eV/molecule'),
                         'O':(-4.98902184E+00, 'eV/molecule'),
+                        'H2O': (-0.24, 'eV/molecule'),
+                         'NH3': (-0.63, 'eV/molecule'),
      },
      surfaceSiteDensity = (3.148E-09, 'mol/cm^2'),
      facet = "111",
@@ -177,6 +200,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -206,6 +230,8 @@ entry(
                         'C':(-7.205, 'eV/molecule'),
                         'N':(-4.635, 'eV/molecule'),
                         'O':(-4.150, 'eV/molecule'),
+                        'H2O': (-0.31, 'eV/molecule'),
+                         'NH3': (-0.90, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.634E-09, 'mol/cm^2'),
      facet = "211",
@@ -213,6 +239,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -224,6 +251,8 @@ entry(
                         'C':(-7.805735262, 'eV/molecule'),
                         'N':(-5.491597358, 'eV/molecule'),
                         'O':(-4.776603013, 'eV/molecule'),
+                        'H2O': (-0.44, 'eV/molecule'),
+                         'NH3': (-0.84, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.817E-09, 'mol/cm^2'),
      facet = "211",
@@ -231,6 +260,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -242,6 +272,8 @@ entry(
                         'C':(-4.045, 'eV/molecule'),
                         'N':(-2.051, 'eV/molecule'),
                         'O':(-3.126, 'eV/molecule'),
+                        'H2O': (-0.25, 'eV/molecule'),
+                         'NH3': (-0.35, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.432E-09, 'mol/cm^2'),
      facet = "211",
@@ -249,6 +281,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -260,6 +293,8 @@ entry(
                         'C':(-7.826, 'eV/molecule'),
                         'N':(-4.774, 'eV/molecule'),
                         'O':(-3.980, 'eV/molecule'),
+                        'H2O': (-0.35, 'eV/molecule'),
+                        'NH3': (-0.67, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.688E-09, 'mol/cm^2'),
      facet = "211",
@@ -267,6 +302,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -278,6 +314,8 @@ entry(
                         'C':(-4.758643121, 'eV/molecule'),
                         'N':(-2.455006241, 'eV/molecule'),
                         'O':(-2.753661561, 'eV/molecule'),
+                        'H2O': (-0.22, 'eV/molecule'),
+                         'NH3': (-0.40, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.408E-09, 'mol/cm^2'),
      facet = "211",
@@ -285,6 +323,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -296,6 +335,8 @@ entry(
                         'C':(-7.518738006, 'eV/molecule'),
                         'N':(-5.386894619, 'eV/molecule'),
                         'O':(-5.153576364, 'eV/molecule'),
+                        'H2O': (-0.44, 'eV/molecule'),
+                         'NH3': (-1.02, 'eV/molecule'),
      },
      surfaceSiteDensity = (2.744E-09, 'mol/cm^2'),
      facet = "211",
@@ -303,6 +344,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -350,6 +392,9 @@ entry(
                         'C':(-7.775, 'eV/molecule'),
                         'N':(-5.310, 'eV/molecule'),
                         'O':(-5.086, 'eV/molecule'),
+                        'H2O': (-0.41, 'eV/molecule'),
+                         'NH3': (-0.80, 'eV/molecule'),
+
      },
      surfaceSiteDensity = (3.339E-09, 'mol/cm^2'),
      facet = "211",
@@ -357,6 +402,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
@@ -368,6 +414,8 @@ entry(
                         'C':(-5.831, 'eV/molecule'),
                         'N':(-3.723, 'eV/molecule'),
                         'O':(-4.307, 'eV/molecule'),
+                        'H2O': (-0.33, 'eV/molecule'),
+                         'NH3': (-0.60, 'eV/molecule'),
      },
      surfaceSiteDensity = (3.121E-09, 'mol/cm^2'),
      facet = "211",
@@ -375,6 +423,7 @@ entry(
      shortDesc = u"fcc",
      longDesc = u"""
 Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+H2O and NH3 from https://pubs.acs.org/doi/10.1021/acs.inorgchem.8b00902
      """,
 )
 
