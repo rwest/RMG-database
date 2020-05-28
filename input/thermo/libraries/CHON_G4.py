@@ -2,9 +2,24 @@
 # encoding: utf-8
 
 name = "CHON_G4"
-shortDesc = ""
+shortDesc = "CHON small molecule G4 thermo library"
 longDesc = """
+This library contains over 2000 stochastically generated closed and radical 
+(multiplicity 1 or 2) small molecules (< 6 heavy atoms) comprised of at least 
+1 nitrogen atom with hydrogen, oxygen, and carbon.  Each species was calculated 
+using AutoTST's automated thermochemistry workflow as follows:
+1) Systematic conformer generation using dftb with the halorg-0-1 parameter set 
+(https://www.dftb.org/parameters/download/halorg/halorg-0-1-cc/).
+2) Lowest energy conformer with DFT M062X-D3/JUN-CC-PVTZ using Gaussian 16.
+3) 1D hindered rotors at B3LYP/6-31G(2df,p) in Gaussian 16.
+4) Single point energy evaluation with G4 method.
+5) NASA polynomial obtained from Arkane with 1D Hindered Rotors.
 
+This library should be used as a supporting library for nitrogen-containing systems.
+The approximate uncertainty for enthalpies of formation with the G4 method is ~1.5 kcal/mol.
+
+Note: This library was used to train thermo groups (group and radical) for nitrogen-containing
+species.
 """
 entry(
     index = 0,
