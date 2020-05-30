@@ -2549,7 +2549,26 @@ entry(
     facet = "111",
 )
 
-
+entry(
+    index = 90,
+    label = "N+O-*",
+    group =
+"""
+1 X u0 p0 c0
+2 O u0 p1 c-1 {3,S}
+3 N ux px c+1 {2,S}
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([0.71, 1.22, 1.49, 1.65, 1.81, 1.9, 1.98], 'cal/(mol*K)'),
+        H298=(-10, 'kcal/mol'),
+        S298=(-22.53, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Came from (OR2)*, H298 lowered to -10 kcal/mol""",
+    longDesc=u"""Made up by David. Came from (OR2)*, H298 lowered to -10 kcal/mol. Pt(111)""",
+    metal = "Pt",
+    facet = "111",
+)
 
 
 tree(
@@ -2618,6 +2637,7 @@ L1: R*
                 L5: O-*NR2
                 L5: O-*OR
     L2: R*vdW
+        L3: N+O-*
         L3: (CR4)*
             L4: (CR3CR3)*
             L4: (CR3NR2)*
