@@ -114,3 +114,49 @@ A factor from paper / surface site density of Cu
 """,
     metal = "Cu",
 )
+
+entry(
+    index = 40,
+    label = "NH2X_3 + O* <=> NHX_5 + OH*",
+    degeneracy = 1,
+    kinetics = SurfaceArrhenius(
+        A = (1.51463e+18, 'm^2/(mol*s)'),
+        n = 0.,
+        Ea = (87.0, 'kJ/mol'),
+        Tmin = (298, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Default""",
+    longDesc = u"""
+Reaction 4 in "Modeling ammonia oxidation over a Pt (533) surface"
+https://doi.org/10.1016/j.susc.2011.08.014
+
+A factor from paper / surface site density of Pt
+6.1e12 1/s / 2.483e-05 mol/m^2 = 1.51463e+18 m^2/(mol*s)
+Metal surface: Pt(533)
+"""
+)
+
+entry(
+    index = 41,
+    label = "NHX_3 + O* <=> NX_5 + OH*",
+    degeneracy = 1,
+    kinetics = SurfaceArrhenius(
+        A = (2.483e+18, 'm^2/(mol*s)'),
+        n = 0.,
+        Ea = (84.0, 'kJ/mol'),
+        Tmin = (298, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Default""",
+    longDesc = u"""
+Reaction 5 in "Modeling ammonia oxidation over a Pt (533) surface"
+https://doi.org/10.1016/j.susc.2011.08.014
+
+A factor from paper / surface site density of Pt
+1e13 1/s / 2.483e05 mol/m^2 = 2.483e+18 m^2/(mol*s)
+Metal surface: Pt(533)
+"""
+)
