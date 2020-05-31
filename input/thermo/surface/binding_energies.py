@@ -517,3 +517,20 @@ entry(
      """,
 )
 
+entry(
+    index = 31,
+    label = "Pt100",
+    bindingEnergies = {
+    		           'H':(-2.89, 'eV/molecule'),
+                       'C':(-7.02515507E+00, 'eV/molecule'),
+                       'N': (-4.48, 'eV/molecule'),
+                       'O': (-4.25, 'eV/molecule'),
+    },
+    facet = "100",
+    metal = "Pt",
+    shortDesc = u"fcc",
+    longDesc = u"""
+H, C, and O from https://pubs.acs.org/doi/10.1021/acs.jpcb.7b01115
+C from Pt111
+    """,
+)
