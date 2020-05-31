@@ -97,6 +97,53 @@ entry(
 )
 
 entry(
+    index = 5,
+    label = "NH2_X + X_4 <=> NHX_1 + HX_5",
+    degeneracy = 2,
+    kinetics = SurfaceArrhenius(
+        A = (1.2415e+18, 'm^2/(mol*s)'),
+        n = 0,
+        Ea = (110, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    rank = 10,
+    shortDesc = u"""NH2 Surface Dissociation on Pt""",
+    longDesc = u"""
+    "Ammonia activation on platinum {1 1 1}: A density functional theory study"
+    https://doi.org/10.1016/j.susc.2006.01.031
+
+    A factor from paper / surface site density of Pt
+    5e12 1/s / 2.483e-05 mol/m^2 = 1.2415e+18 m^2/(mol*s)
+
+    Metal: Pt(111)
+    """
+)
+
+entry(
+    index = 6,
+    label = "NHX_2 + X_4 <=> NX + HX_5",
+    kinetics = SurfaceArrhenius(
+        A = (1.78776e+18, 'm^2/(mol*s)'),
+        n = 0,
+        Ea = (118.0, 'kJ/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    rank = 10,
+    shortDesc = u"""NH Surface Dissociation Pt""",
+    longDesc = u"""
+    "Ammonia activation on platinum {1 1 1}: A density functional theory study"
+    https://doi.org/10.1016/j.susc.2006.01.031
+
+    A factor from paper / surface site density of Pt
+    7.2e12 1/s / 2.483e-05 mol/m^2 = 1.78776e+18 m^2/(mol*s)
+
+    Metal surface Pt(111)
+    """
+)
+
+entry(
     index = 7,
     label = "NHX_2 + X_4 <=> NX + HX_5",
     kinetics = SurfaceArrhenius(
