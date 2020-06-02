@@ -10,7 +10,7 @@ training set for generating rate rules to populate this kinetics family.
 
 entry(
     index = 7,
-    label = "NH3_X + Cu4 <=> NH2_X + H*",
+    label = "NH3_X + X <=> NH2_X + H*",
     degeneracy = 3,
     kinetics = SurfaceArrhenius(
         A = (5.723e22, 'cm^2/(mol*s)'),
@@ -33,7 +33,7 @@ entry(
 
 entry(
     index = 8,
-    label = "NH3_X + Pt <=> NH2_X + H*",
+    label = "NH3_X + X <=> NH2_X + H*",
     degeneracy = 3,
     kinetics = SurfaceArrhenius(
         A = (2.13538e+17, 'm^2/(mol*s)'),
@@ -57,7 +57,7 @@ entry(
 
 entry(
     index = 13,
-    label = "COOH* + H* <=> HCOOH* + Cu4",
+    label = "COOH* + H* <=> HCOOH* + X",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(2.308e18, 'm^2/(mol*s)'),
@@ -80,7 +80,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 14,
-    label = "H2O* + Cu4 <=> OH* + H*",
+    label = "H2O* + X <=> OH* + H*",
     degeneracy = 2,
     kinetics = SurfaceArrhenius(
         A=(4.879e15, 'm^2/(mol*s)'),
@@ -103,7 +103,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 19,
-    label = "HCOO* + H* <=> HCOOH_1* + Cu4",
+    label = "HCOO* + H* <=> HCOOH_1* + X",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(4.424e18, 'm^2/(mol*s)'),
@@ -126,7 +126,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 25,
-    label = "CH3O* + H* <=> CH3OH_2* + Cu4",
+    label = "CH3O* + H* <=> CH3OH_2* + X",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(4.349e22, 'm^2/(mol*s)'),
@@ -149,7 +149,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 30,
-    label = "HCO* + H* <=> CH2O* + Cu4",
+    label = "HCO* + H* <=> CH2O* + X",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.932e17, 'm^2/(mol*s)'),
@@ -172,7 +172,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 33,
-    label = "CH2OH* + H* <=> CH3OH_1* + Cu4",
+    label = "CH2OH* + H* <=> CH3OH_1* + X",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(2.783e17, 'm^2/(mol*s)'),
@@ -195,7 +195,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 34,
-    label = "HCOOH_2* + Cu4 <=> HCO* + OH_2*",
+    label = "HCOOH_2* + X <=> HCO* + OH_2*",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.781e17, 'm^2/(mol*s)'),
