@@ -10,7 +10,7 @@ training set for generating rate rules to populate this kinetics family.
 
 entry(
     index = 1,
-    label = "OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4",
+    label = "OCX_3 + HOX_5 <=> HOCXO_1 + X_4",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(4.02E14, 'm^2/(mol*s)'),
@@ -30,8 +30,8 @@ entry(
 )
 
 entry(
-    index = 4,
-    label = "HOCXO_1 + Ni_4 <=> OCX_3 + HOX_5",
+    index = 2,
+    label = "HOCXO_1 + X_4 <=> OCX_3 + HOX_5",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.46E20, 'm^2/(mol*s)'),
@@ -51,8 +51,8 @@ Catalysts, 2015, 5, 871-904. Reaction R4
 )
 
 entry(
-    index = 10,
-    label = "OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4",
+    index = 3,
+    label = "OCX_3 + HOX_5 <=> HOCXO_1 + X_4",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.586e16, 'm^2/(mol*s)'),
@@ -74,8 +74,8 @@ A factor from paper / surface site density of Cu
 )
 
 entry(
-    index = 9,
-    label = "NH2_X + Ni_4 <=> NHX_1 + HX_5",
+    index = 4,
+    label = "NH2_X + X_4 <=> NHX_1 + HX_5",
     degeneracy = 2,
     kinetics = SurfaceArrhenius(
         A = (2.718e22, 'cm^2/(mol*s)'),
@@ -97,8 +97,8 @@ entry(
 )
 
 entry(
-    index = 11,
-    label = "NHX_2 + Ni_4 <=> NX + HX_5",
+    index = 7,
+    label = "NHX_2 + X_4 <=> NX + HX_5",
     kinetics = SurfaceArrhenius(
         A = (6.213e19, 'cm^2/(mol*s)'),
         n = 0,
@@ -119,8 +119,8 @@ entry(
 )
 
 entry(
-    index = 16,
-    label = "CH2X_3 + HX_5 <=> CH3X_1 + Ni_4",
+    index = 8,
+    label = "CH2X_3 + HX_5 <=> CH3X_1 + X_4",
     degeneracy = 3,
     kinetics = SurfaceArrhenius(
         A=(3.09E19, 'm^2/(mol*s)'),
@@ -141,8 +141,8 @@ Catalysts, 2015, 5, 871-904. Reaction R16
 
 
 entry(
-    index = 18,
-    label = "CHX_3 + HX_5 <=> CH2X_1 + Ni_4",
+    index = 9,
+    label = "CHX_3 + HX_5 <=> CH2X_1 + X_4",
     degeneracy = 2,
     kinetics = SurfaceArrhenius(
         A=(9.77E20, 'm^2/(mol*s)'),
@@ -164,7 +164,7 @@ Catalysts, 2015, 5, 871-904. Reaction R18
 #Delgado has this reaction as exothermic. However, our own thermo has this reaction as endothermic. removing and replacing with reverse direction, R20.
 #entry(
 #    index = 19,
-#    label = "CHX_1 + Ni_4 <=> CX_3 + HX_5",
+#    label = "CHX_1 + X_4 <=> CX_3 + HX_5",
 #    degeneracy = 1,
 #    kinetics = SurfaceArrhenius(
 #        A=(9.88E16, 'm^2/(mol*s)'),
@@ -184,8 +184,8 @@ Catalysts, 2015, 5, 871-904. Reaction R18
 #)
 
 entry(
-    index = 20,
-    label = "CX_3 + HX_5 <=> CHX_1 + Ni_4",
+    index = 10,
+    label = "CX_3 + HX_5 <=> CHX_1 + X_4",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.70E20, 'm^2/(mol*s)'),
@@ -205,8 +205,8 @@ Catalysts, 2015, 5, 871-904. Reaction R20
 )
 
 entry(
-    index = 28,
-    label = "HCOO* + Ni_4 <=> HCO* + OX_3",
+    index = 11,
+    label = "HCOO* + X_4 <=> HCO* + OX_3",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(8.733e16, 'm^2/(mol*s)'),
@@ -229,7 +229,7 @@ A factor from paper / surface site density of Cu
 
 entry(
     index = 31,
-    label = "HCOH* + HX_5 <=> CH2OH* + Ni_4",
+    label = "HCOH* + HX_5 <=> CH2OH* + X_4",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.257e17, 'm^2/(mol*s)'),
@@ -251,8 +251,8 @@ A factor from paper / surface site density of Cu
 )
 
 entry(
-    index = 32,
-    label = "HOX_1 + Ni_4 <=> OX_3 + HX_5",
+    index = 13,
+    label = "HOX_1 + X_4 <=> OX_3 + HX_5",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(2.25E16, 'm^2/(mol*s)'),
@@ -272,8 +272,8 @@ Catalysts, 2015, 5, 871-904. Reaction R32
 )
 
 entry(
-    index = 15,
-    label = "HOX_1 + Ni_4 <=> OX_3 + HX_5",
+    index = 14,
+    label = "HOX_1 + X_4 <=> OX_3 + HX_5",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(7.452e17, 'm^2/(mol*s)'),
@@ -295,8 +295,8 @@ A factor from paper / surface site density of Cu
 )
 
 entry(
-    index = 36,
-    label = "CH3O2* + Ni_4 <=> CH2OH*_2 + OX_3",
+    index = 15,
+    label = "CH3O2* + X_4 <=> CH2OH*_2 + OX_3",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(1.864e18, 'm^2/(mol*s)'),
@@ -322,8 +322,8 @@ Catalysts, 2015, 5, 871-904. Reaction R4
 )
 
 entry(
-    index = 48,
-    label = "CXHO_1 + Ni_4 <=> OCX_3 + HX_5",
+    index = 16,
+    label = "CXHO_1 + X_4 <=> OCX_3 + HX_5",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(3.71E17, 'm^2/(mol*s)'),
@@ -343,8 +343,8 @@ Catalysts, 2015, 5, 871-904. Reaction R8
 )
 
 entry(
-    index = 26,
-    label = "OCX_3 + HX_5 <=> CXHO_1 + Ni_4",
+    index = 17,
+    label = "OCX_3 + HX_5 <=> CXHO_1 + X_4",
     degeneracy = 1,
     kinetics = SurfaceArrhenius(
         A=(3.140e17, 'm^2/(mol*s)'),
