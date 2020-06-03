@@ -25,7 +25,8 @@ Reactions pertinent to the decomposition of HAN
 # Assume N2O_X is vdw-adsorbed (because "weakly bound", and I can't figure out a Lewis structure with bonds).
 # For the rate, just copied Deutschmann's dissociative adsorption of N2 from above, i.e.
 # a fixed sticking coefficient of 1e-6.
-#     """
+#     """,
+#    metal = "Pt",
 # )
 
 entry(
@@ -41,7 +42,8 @@ entry(
     shortDesc = u"""Ammonium Nitrate Adsorption""",
     longDesc = u"""
 Copied from HAN sticking coeff
-    """
+    """,
+    metal = "Pt",
 )
 
 entry(
@@ -58,7 +60,8 @@ entry(
     longDesc = u"""
 David's guess, based on the N-H bond dissociation energy of aqueous [NH2-H]+ -> NH3 (~12.5 kcal/mol)
 Reduced to 8.0 due to guess of the surface correction. 
-    """
+    """,
+    metal = "Pt",
 )
 
 entry(
@@ -82,7 +85,8 @@ entry(
     I was about to put 0.01, but our vdW reaction family only
     has the top level estimate and that's currently 0.10, so 
     for consistency I have put that.
-    """
+    """,
+    metal = "Pd",
 )
 
 entry( 
@@ -98,7 +102,8 @@ entry(
     shortDesc = u"""HONO elimination from HAN on Pd""",
     longDesc = u"""
     The "HONO elimaniton" pathway which is fastest on Pd(111) from Banerjee
-    """
+    """,
+    metal = "Pd",
 )
 
 entry( 
@@ -119,7 +124,8 @@ entry(
     what hapens next from their "product" structure.
 
     The pre-exponential factor is based on CH2X <=> H2 + CX Deutchmann 2006
-    """
+    """,
+    metal = "Ir",
 )
 
 entry(
@@ -135,5 +141,6 @@ entry(
     shortDesc = u"""HAN dissocation""",
     longDesc = u"""
     David's estimation
-    """
+    """,
+    metal = "Pd",
 )
