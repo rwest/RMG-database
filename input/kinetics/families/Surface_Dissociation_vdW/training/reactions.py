@@ -52,7 +52,8 @@ entry(
     8.6e11 1/s / 2.483e-05 mol/m^2 = 2.13538e+17 m^2/(mol*s)
 
     Metal: Pt(111)
-"""
+""",
+    metal = "Pt",
 )
 
 entry(
