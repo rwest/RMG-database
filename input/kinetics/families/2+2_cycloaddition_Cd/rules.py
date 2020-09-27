@@ -6,25 +6,27 @@ shortDesc = u""
 longDesc = u"""
 
 """
-entry(
-    index = 586,
-    label = "db;doublebond",
-    kinetics = ArrheniusEP(
-        A = (6.92e+10, 'cm^3/(mol*s)'),
-        n = 0,
-        alpha = 0,
-        E0 = (43.72, 'kcal/mol'),
-        Tmin = (723, 'K'),
-        Tmax = (786, 'K'),
-    ),
-    rank = 5,
-    shortDesc = u"""Quick et al. [107]""",
-    longDesc = 
-u"""
-[107] Quick, L. M. *Int. J. Chem. Kinet.* 1972, 4, 61. 
 
-C2H4 + C2H4 --> cyclobutane, absolute value measured directly using thermal excitation technique 
-and mass spectrometry. Pressure  0.40 - 1.73 bar.
-""",
+entry(
+    index = 1,
+    label = "db;doublebond",
+    degeneracy = 2.0,
+    kinetics = ArrheniusEP(
+        A = (1.05605e+06, 'cm^3/(mol*s)'),
+        n = 1.86,
+        alpha = 0,
+        E0 = (232.89994, 'kJ/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = """Zalotai et al. 1983""",
+    longDesc = """
+Kinetics fitted from reverse direction using rate of 
+
+C3H6O <=> C2H4 + CH2O, low or high pressure extrapolation with thermal excitation technique, taken from 
+
+Zalotai, L. et al, Kinetics of gas phase decomposition of oxetan and oxetan-2,2-d2, Int. J. Chem. Kinet., 15, 505, 1983
+http://kinetics.nist.gov/kinetics/Detail?id=1983ZAL/HUN505:1 """
 )
 

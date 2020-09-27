@@ -1,0 +1,67 @@
+RMG_version: 3.0.0
+adjacency_list: |
+  multiplicity 1
+  1 Cl u0 p3 c0 {2,S}
+  2 C  u0 p1 c0 {1,S} {3,S}
+  3 H  u0 p0 c0 {2,S}
+calculated_data:
+  LevelOfTheory(method='wb97mv',basis='def2tzvpd',software='qchem'):
+    class: CalculatedDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        units: kcal/mol
+        value: 75.40621845703328
+      class: ThermoData
+    xyz_dict:
+      coords:
+        class: np_array
+        object:
+        - - 1.1709385492
+          - 0.1763143411
+          - -0.0
+        - - -0.5031634975
+          - -0.010943003599999999
+          - 0.0
+        - - 1.528148162
+          - -0.8718549847
+          - 0.0
+      isotopes:
+      - 12
+      - 35
+      - 1
+      symbols:
+      - C
+      - Cl
+      - H
+charge: 0
+class: ReferenceSpecies
+datetime: 2020-02-24 11:05
+default_xyz_chemistry:
+  basis: def2tzvpd
+  class: LevelOfTheory
+  method: wb97mv
+  software: qchem
+formula: CHCl
+inchi: InChI=1S/CHCl/c1-2/h1H
+inchi_key: LKYXEULZVGJVTG-UHFFFAOYSA-N
+index: 54
+label: Chloromethylene
+molecular_weight:
+  class: ScalarQuantity
+  units: amu
+  value: 48.47164333952298
+multiplicity: 1
+reference_data:
+  ATcT:
+    class: ReferenceDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        uncertainty: 0.89
+        uncertainty_type: +|-
+        units: kJ/mol
+        value: 320.52
+      class: ThermoData
+smiles: '[CH]Cl'
+symmetry_number: 1.0

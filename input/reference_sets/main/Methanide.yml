@@ -1,0 +1,72 @@
+RMG_version: 3.0.0
+adjacency_list: |
+  1 C u0 p1 c-1 {2,S} {3,S} {4,S}
+  2 H u0 p0 c0 {1,S}
+  3 H u0 p0 c0 {1,S}
+  4 H u0 p0 c0 {1,S}
+calculated_data:
+  LevelOfTheory(method='wb97mv',basis='def2tzvpd',software='qchem'):
+    class: CalculatedDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        units: kcal/mol
+        value: 37.8626175327632
+      class: ThermoData
+    xyz_dict:
+      coords:
+        class: np_array
+        object:
+        - - -1.61274e-05
+          - 1.82073e-05
+          - -0.1484052646
+        - - 0.3447603229999999
+          - -0.9545212294
+          - 0.29677086659999996
+        - - -0.9991067170999999
+          - 0.17872297029999998
+          - 0.2968440109
+        - - 0.6544431582
+          - 0.7756890155999999
+          - 0.2968167098
+      isotopes:
+      - 12
+      - 1
+      - 1
+      - 1
+      symbols:
+      - C
+      - H
+      - H
+      - H
+charge: -1
+class: ReferenceSpecies
+datetime: 2020-02-24 11:05
+default_xyz_chemistry:
+  basis: def2tzvpd
+  class: LevelOfTheory
+  method: wb97mv
+  software: qchem
+formula: CH3
+inchi: InChI=1S/CH3/h1H3/q-1
+inchi_key: LGRLWUINFJPLSH-UHFFFAOYSA-N
+index: 16
+label: Methanide
+molecular_weight:
+  class: ScalarQuantity
+  units: amu
+  value: 15.034521442196064
+multiplicity: 1
+reference_data:
+  ATcT:
+    class: ReferenceDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        uncertainty: 0.3
+        uncertainty_type: +|-
+        units: kJ/mol
+        value: 137.63
+      class: ThermoData
+smiles: '[CH3-]'
+symmetry_number: 3.0

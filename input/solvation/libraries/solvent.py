@@ -4,7 +4,19 @@
 name = "Solvent Descriptors"
 shortDesc = u""
 longDesc = u"""
+Abraham solvent parameters (s_g, b_g, e_g, l_g, a_g, c_g) are from:
+Jalan, Amrit. (2014). Predictive kinetic modeling of low-temperature hydrocarbon oxidation (Doctoral dissertation).
+Cambridge, MA: Massachusetts Institute of Technology.
 
+'name_in_coolprop' represents the solvent's name used in the external package CoolProp. CoolProp is used for
+fluid property calculation. If the solvent is not available in CoolProp, 'name_in_coolprop' is set to None.
+
+Reference legend:
+[Abraham2012] The hydrogen bond properties of water from 273 K to 573 K; equations for the prediction of gas-water partition coefficients Michael H. Abraham and William E. Acree Jr Phys. Chem. Chem. Phys., 2012,14, 7433–7440
+[Abraham2016] Equations for the Partition of Neutral Molecules, Ionsand Ionic Species from Water to Water–MethanolMixtures Michael H. Abraham and William E. Acree Jr J Solution Chem (2016) 45:861–874
+[Gagliardi2007] Static Dielectric Constants of Acetonitrile/Water Mixtures at Different Temperatures and Debye−Huckel A and a0B Parameters for Activity Coefficients Leonardo G. Gagliardi, Cecilia B. Castells, Clara Rafols, Marti Roses and, and Elisabeth Bosch, Journal of Chemical & Engineering Data 2007 52 (3), 1103-1107 DOI: 10.1021/je700055p
+[JIRKAL2016] Application of Solvation Model to Prediction of the Solute Retention in Liquid Chromatography over a Wide Range of Mobile-Phase Compositions S. JIRKAL, M. MACHOVCOVA, AND J.G.K. SEVCIK DOI: 10.1556/1326.2016.28.1.06
+[Mohsen-Nia2012] Measurement and modelling of static dielectric constants of aqueous solutions of methanol, ethanol and acetic acid at T = 293.15 K and 91.3 kPa M.Mohsen-Nia, H.Amiria https://doi.org/10.1016/j.jct.2012.08.009
 """
 entry(
     index = 1,
@@ -31,6 +43,7 @@ entry(
         alpha = 0.353,
         beta = 0.38,
         eps = 80.4,
+        name_in_coolprop = "water",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -64,6 +77,7 @@ entry(
         alpha = 0.328,
         beta = 0.45,
         eps = 10.3,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -98,6 +112,7 @@ entry(
         alpha = 0,
         beta = 0.14,
         eps = 2.3,
+        name_in_coolprop = "benzene",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -131,6 +146,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "CycloHexane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -164,6 +180,7 @@ entry(
         alpha = 0,
         beta = 0.45,
         eps = 3.1,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -197,6 +214,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "Octane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -230,6 +248,7 @@ entry(
         alpha = 0.37,
         beta = 0.48,
         eps = 17.8,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -263,6 +282,7 @@ entry(
         alpha = 0,
         beta = 0.05,
         eps = 2.23,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -296,6 +316,7 @@ entry(
         alpha = 0.15,
         beta = 0.02,
         eps = 4.8,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -329,6 +350,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "decane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -362,6 +384,7 @@ entry(
         alpha = 0.1,
         beta = 0.105,
         eps = 10.7,
+        name_in_coolprop = "Dichloroethane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -395,6 +418,7 @@ entry(
         alpha = 0,
         beta = 0.73,
         eps = 36.7,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -428,6 +452,7 @@ entry(
         alpha = 0,
         beta = 0.88,
         eps = 46.7,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -462,6 +487,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "Dodecane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -495,6 +521,7 @@ entry(
         alpha = 0.37,
         beta = 0.48,
         eps = 24.3,
+        name_in_coolprop = "ethanol",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -528,6 +555,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 1.9,
+        name_in_coolprop = "Heptane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -561,6 +589,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.08,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -594,6 +623,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "Hexane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -610,7 +640,7 @@ entry(
         s_g = 0,
         b_g = 0,
         e_g = -0.244,
-        l_g = -6.708,
+        l_g = 0.972,
         a_g = 0,
         c_g = 0.275,
         s_h = 0.0,
@@ -627,6 +657,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 1.94,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -660,6 +691,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "nonane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -693,6 +725,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 1.8,
+        name_in_coolprop = "Pentane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -726,6 +759,7 @@ entry(
         alpha = 0,
         beta = 0.14,
         eps = 2.2,
+        name_in_coolprop = "toluene",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -759,6 +793,7 @@ entry(
         alpha = 0,
         beta = 0,
         eps = 2.0,
+        name_in_coolprop = "Undecane",
     ),
     shortDesc = u""" """,
     longDesc =
@@ -792,6 +827,7 @@ entry(
         alpha = 0.04,
         beta = 0.33,
         eps = 37.5,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -825,6 +861,7 @@ entry(
         alpha = 0,
         beta = 0.45,
         eps = 6.0,
+        name_in_coolprop = None,
     ),
     shortDesc = u""" """,
     longDesc =
@@ -833,3 +870,161 @@ u"""
 """,
 )
 
+entry(
+    index = 26,
+    label = "methanol",
+    molecule = "CO",
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at 298K
+        s_g = 1.317,
+        b_g = 1.396,
+        e_g = -0.338,
+        l_g = 0.773,
+        a_g = 3.826,
+        c_g = -0.039,
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = 33.0,
+        name_in_coolprop = "Methanol",
+    ),
+    shortDesc = u"""[Abraham2012], [Mohsen-Nia2012]""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 27,
+    label = "methanol_50_water_50",
+    molecule = ["CO", "O"],
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
+        # parameter = gas-to-water + water-to-solvent = gas-to-solvent
+        s_g = 2.521, # 2.743 + -0.222
+        b_g = 3.067, # 4.814 + -1.747
+        e_g = 1.045, # 0.822 + 0.223
+        l_g = 1.449, # -0.213 + 1.662
+        a_g = 4.168, # 3.904 + 0.264
+        c_g = -1.248, # -1.271 + 0.023
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = 50.22,
+        name_in_coolprop = None,
+    ),
+    shortDesc = u"""[Abraham2016], [Mohsen-Nia2012]""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 28,
+    label = "acetonitrile_40_water_60",
+    molecule = ["CC#N", "O"],
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
+        # parameter = gas-to-water + water-to-solvent = gas-to-solvent
+        s_g = 2.653, # 2.743 + -0.09
+        b_g = 2.934, # 4.814 + -1.88
+        e_g = 0.862, # 0.822 + 0.04
+        l_g = 1.347, # -0.213 + 1.56
+        a_g = 3.454, # 3.904 + -0.45
+        c_g = -1.441, # -1.271 + -0.17
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = 60.61,
+        name_in_coolprop = None,
+    ),
+    shortDesc = u"""[JIRKAL2016], [Gagliardi2007]""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 29,
+    label = "acetonitrile_60_water_40",
+    molecule = ["CC#N", "O"],
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
+        # parameter = gas-to-water + water-to-solvent = gas-to-solvent
+        s_g = 2.413, # 2.743 + -0.33
+        b_g = 3.834, # 4.814 + -0.98
+        e_g = 0.932, # 0.822 + 0.11
+        l_g = 0.717, # -0.213 + 0.93
+        a_g = 3.464, # 3.904 + -0.44
+        c_g = -1.451, # -1.271 + -0.18
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = 51.05,
+        name_in_coolprop = None,
+    ),
+    shortDesc = u"""[JIRKAL2016], [Gagliardi2007]""",
+    longDesc =
+u"""
+
+""",
+)
