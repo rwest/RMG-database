@@ -17593,3 +17593,17 @@ Original entry: 2-Vinylphenyl <=> W8
 """,
 )
 
+entry(
+    index = 851,
+    label = "C2F3O <=> C2F3O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.61e+12,'s^-1'), n=0.69, Ea=(59688.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is F2COCF <=> CF2CFO""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: F2COCF <=> CF2CFO
+""",
+)
+

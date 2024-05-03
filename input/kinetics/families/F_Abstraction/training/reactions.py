@@ -1904,3 +1904,59 @@ Torsional scans with  M06-2X/cc-pVTZ.
 """,
 )
 
+entry(
+    index = 117,
+    label = "CF4 + H <=> FH + CF3-2",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(65100,'cm^3/(mol*s)'), n=2.95, Ea=(40266.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is CF4+H <=> CF3+HF""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CF4+H <=> CF3+HF
+""",
+)
+
+entry(
+    index = 118,
+    label = "C2F6 + H <=> FH + C2F5-2",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(12600,'cm^3/(mol*s)'), n=3.06, Ea=(36033.6,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is C2F6+H <=> CF3CF2+HF""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C2F6+H <=> CF3CF2+HF
+""",
+)
+
+entry(
+    index = 119,
+    label = "C3F8 + H <=> FH + C3F7",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(7650,'cm^3/(mol*s)'), n=3.12, Ea=(35260.6,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is C3F8+H <=> C2F5CF2+HF""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C3F8+H <=> C2F5CF2+HF
+""",
+)
+
+entry(
+    index = 120,
+    label = "C4F10 + H <=> FH + C4F9",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(629000,'cm^3/(mol*s)'), n=2.12, Ea=(35197.3,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is C4F10+H <=> C3F7CF2+HF""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C4F10+H <=> C3F7CF2+HF
+""",
+)
+

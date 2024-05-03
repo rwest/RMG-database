@@ -424,3 +424,31 @@ H    1.412967    -0.921889    1.229368
 """,
 )
 
+entry(
+    index = 19,
+    label = "C2F2O2 <=> CO2 + CF2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.17e+13,'s^-1'), n=0.33, Ea=(19504.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is c_F2COC(O) <=> CF2+CO2""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: c_F2COC(O) <=> CF2+CO2
+""",
+)
+
+entry(
+    index = 20,
+    label = "C3F4O2 <=> CO2 + C2F4-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.81e+12,'s^-1'), n=0.64, Ea=(32162.9,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is CF3-c_FCOC(O) <=> CF3CF+CO2""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CF3-c_FCOC(O) <=> CF3CF+CO2
+""",
+)
+

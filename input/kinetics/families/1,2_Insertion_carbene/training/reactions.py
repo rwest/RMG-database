@@ -1338,3 +1338,45 @@ H    -1.775441    0.692753    -0.328757
 """,
 )
 
+entry(
+    index = 63,
+    label = "CHF3 <=> CF2_r1 + FH",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(8.66e+07,'s^-1'), n=2.01, Ea=(71629,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is CF3H <=> CF2+HF""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CF3H <=> CF2+HF
+""",
+)
+
+entry(
+    index = 64,
+    label = "FC(F)(F)C(F)(F)F_p123 <=> CF2_r1 + CF4_r23",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(9.74e+11,'s^-1'), n=0.9, Ea=(119826,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is C2F6 <=> CF4+CF2""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C2F6 <=> CF4+CF2
+""",
+)
+
+entry(
+    index = 65,
+    label = "C4F10 <=> C2F4 + C2F6-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.27e+08,'s^-1'), n=1.39, Ea=(117727,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is C4F10 <=> CF3CF+C2F6""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C4F10 <=> CF3CF+C2F6
+""",
+)
+
