@@ -138,6 +138,14 @@ C2H2F4-2
 7    H u0 p0 c0 {5,S}
 8 *3 H u0 p0 c0 {6,S}
 
+CF2CHF
+1    F u0 p3 c0 {4,S}
+2    F u0 p3 c0 {5,S}
+3    F u0 p3 c0 {4,S}
+4 *1 C u0 p0 c0 {1,S} {3,S} {5,D}
+5 *2 C u0 p0 c0 {2,S} {4,D} {6,S}
+6    H u0 p0 c0 {5,S}
+
 C2HF5
 1    F u0 p3 c0 {6,S}
 2    F u0 p3 c0 {6,S}
@@ -509,6 +517,14 @@ CH3CHFBr_2
 7 *3 H  u0 p0 c0 {3,S}
 8    H  u0 p0 c0 {4,S}
 
+CH2CHBr
+1    Br u0 p3 c0 {3,S}
+2 *1 C  u0 p0 c0 {3,D} {4,S} {5,S}
+3 *2 C  u0 p0 c0 {1,S} {2,D} {6,S}
+4    H  u0 p0 c0 {2,S}
+5    H  u0 p0 c0 {2,S}
+6    H  u0 p0 c0 {3,S}
+
 CH2FCHFBr
 1 *4 Br u0 p3 c0 {5,S}
 2    F  u0 p3 c0 {5,S}
@@ -528,6 +544,14 @@ CH2FCHFBr_2
 6    H  u0 p0 c0 {4,S}
 7 *3 H  u0 p0 c0 {4,S}
 8    H  u0 p0 c0 {5,S}
+
+CHFCHBr
+1    Br u0 p3 c0 {4,S}
+2    F  u0 p3 c0 {3,S}
+3 *1 C  u0 p0 c0 {2,S} {4,D} {5,S}
+4 *2 C  u0 p0 c0 {1,S} {3,D} {6,S}
+5    H  u0 p0 c0 {3,S}
+6    H  u0 p0 c0 {4,S}
 
 CHF2CHFBr
 1 *4 Br u0 p3 c0 {6,S}
@@ -549,6 +573,14 @@ CHF2CHFBr_2
 7 *3 H  u0 p0 c0 {5,S}
 8    H  u0 p0 c0 {6,S}
 
+CF2CHBr
+1    Br u0 p3 c0 {5,S}
+2    F  u0 p3 c0 {4,S}
+3    F  u0 p3 c0 {4,S}
+4 *1 C  u0 p0 c0 {2,S} {3,S} {5,D}
+5 *2 C  u0 p0 c0 {1,S} {4,D} {6,S}
+6    H  u0 p0 c0 {5,S}
+
 CH3CH2CHFBr
 1  *4 Br u0 p3 c0 {5,S}
 2     F  u0 p3 c0 {5,S}
@@ -562,6 +594,17 @@ CH3CH2CHFBr
 10    H  u0 p0 c0 {4,S}
 11    H  u0 p0 c0 {5,S}
 
+CH3CHCHF
+1    F u0 p3 c0 {4,S}
+2    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+3 *1 C u0 p0 c0 {2,S} {4,D} {8,S}
+4 *2 C u0 p0 c0 {1,S} {3,D} {9,S}
+5    H u0 p0 c0 {2,S}
+6    H u0 p0 c0 {2,S}
+7    H u0 p0 c0 {2,S}
+8    H u0 p0 c0 {3,S}
+9    H u0 p0 c0 {4,S}
+
 CH3CH2CHFBr_2
 1     Br u0 p3 c0 {5,S}
 2  *4 F  u0 p3 c0 {5,S}
@@ -574,49 +617,6 @@ CH3CH2CHFBr_2
 9     H  u0 p0 c0 {4,S}
 10    H  u0 p0 c0 {4,S}
 11    H  u0 p0 c0 {5,S}
-
-CH2CHBr
-1    Br u0 p3 c0 {3,S}
-2 *1 C  u0 p0 c0 {3,D} {4,S} {5,S}
-3 *2 C  u0 p0 c0 {1,S} {2,D} {6,S}
-4    H  u0 p0 c0 {2,S}
-5    H  u0 p0 c0 {2,S}
-6    H  u0 p0 c0 {3,S}
-
-CHFCHBr
-1    Br u0 p3 c0 {4,S}
-2    F  u0 p3 c0 {3,S}
-3 *1 C  u0 p0 c0 {2,S} {4,D} {5,S}
-4 *2 C  u0 p0 c0 {1,S} {3,D} {6,S}
-5    H  u0 p0 c0 {3,S}
-6    H  u0 p0 c0 {4,S}
-
-CF2CHF
-1    F u0 p3 c0 {4,S}
-2    F u0 p3 c0 {5,S}
-3    F u0 p3 c0 {4,S}
-4 *1 C u0 p0 c0 {1,S} {3,S} {5,D}
-5 *2 C u0 p0 c0 {2,S} {4,D} {6,S}
-6    H u0 p0 c0 {5,S}
-
-CF2CHBr
-1    Br u0 p3 c0 {5,S}
-2    F  u0 p3 c0 {4,S}
-3    F  u0 p3 c0 {4,S}
-4 *1 C  u0 p0 c0 {2,S} {3,S} {5,D}
-5 *2 C  u0 p0 c0 {1,S} {4,D} {6,S}
-6    H  u0 p0 c0 {5,S}
-
-CH3CHCHF
-1    F u0 p3 c0 {4,S}
-2    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
-3 *1 C u0 p0 c0 {2,S} {4,D} {8,S}
-4 *2 C u0 p0 c0 {1,S} {3,D} {9,S}
-5    H u0 p0 c0 {2,S}
-6    H u0 p0 c0 {2,S}
-7    H u0 p0 c0 {2,S}
-8    H u0 p0 c0 {3,S}
-9    H u0 p0 c0 {4,S}
 
 CH3CHCHBr
 1    Br u0 p3 c0 {4,S}
