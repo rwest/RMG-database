@@ -30,8 +30,8 @@ entry(
 """
 1 *1 Cdd u0 {2,D} {5,D}
 2 *2 [O2d,S2d] u0 {1,D}
-3 *3 R u0 {4,D}
-4 *4 R u0 {3,D}
+3 *3 R u0 {4,S}
+4 *4 R u0 {3,S}
 5 [O2d,S2d] u0 {1,D}
 """,
     kinetics = None,
