@@ -91,7 +91,7 @@ Converted to training reaction from rate rule: CO2_Cdd;C/H2/NonDeC
 
 entry(
     index = 5,
-    label = "C3H8-2 + CO2-2 <=> C4H8O2-2",
+    label = "C3H8-2 + CO2 <=> C4H8O2-2",
     degeneracy = 4.0,
     kinetics = Arrhenius(
         A = (292, 'cm^3/(mol*s)'),
