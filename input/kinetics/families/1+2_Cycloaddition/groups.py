@@ -7,10 +7,14 @@ longDesc = u"""
 Reaction site *3 should always be a singlet in this family.
 """
 
-template(reactants=["multiplebond", "elec_def"], products=["cycle"], ownReverse=False)
+template(reactants=["Root"], products=["cycle"], ownReverse=False)
 
 reverse = "Three_Ring_Cleavage"
 reversible = True
+
+reactantNum = 2
+
+productNum = 1
 
 recipe(actions=[
     ['CHANGE_BOND', '*1', -1, '*2'],
@@ -21,10 +25,22 @@ recipe(actions=[
 
 entry(
     index = 0,
-    label = "elec_def",
-    group = "OR{carbene, me_carbene, dime_carbene, ph_carbene, o_atom_singlet, S_atom_singlet, imidogen_singlet}",
+    label = "Root",
+    group = """
+1 *1 R u0 {2,D}
+2 *2 R u0 {1,D}
+3 *3 R u0 p1
+""",
     kinetics = None,
 )
+
+
+# entry(
+#     index = 0,
+#     label = "elec_def",
+#     group = "OR{carbene, me_carbene, dime_carbene, ph_carbene, o_atom_singlet, S_atom_singlet, imidogen_singlet}",
+#     kinetics = None,
+# )
 
 entry(
     index = 1,
