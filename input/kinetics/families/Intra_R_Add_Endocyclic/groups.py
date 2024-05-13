@@ -22,15 +22,15 @@ recipe(actions=[
     ['LOSE_RADICAL', '*1', '1'],
 ])
 
-boundaryAtoms = ["*1", "*2"]
+#boundaryAtoms = ["*1", "*2"]
 
 entry(
     index = 0,
     label = "Root",
     group = """
 1 *1 R u1 {2,[S,D,T,B]}
-2 *2 R u0 {1,[S,D,T,B]}
-3 *3 R {2,[D,T,B]}
+2 *2 R u0 {1,[S,D,T,B]} {3,[D,T,B]}
+3 *3 R u0 {2,[D,T,B]}
 """,
     kinetics = None,
 )
