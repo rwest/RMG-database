@@ -1,7 +1,8 @@
 CHF
-1 F u0 p3 c0 {2,S}
-2 C u0 p1 c0 {1,S} {3,S}
-3 H u0 p0 c0 {2,S}
+multiplicity 3
+1 C u2 p0 c0 {2,S} {3,S}
+2 F u0 p3 c0 {1,S}
+3 H u0 p0 c0 {1,S}
 
 H
 multiplicity 2
@@ -24,9 +25,10 @@ HF
 2 H u0 p0 c0 {1,S}
 
 CF2
-1 F u0 p3 c0 {3,S}
-2 F u0 p3 c0 {3,S}
-3 C u0 p1 c0 {1,S} {2,S}
+multiplicity 3
+1 F u0 p3 c0 {2,S}
+2 C u2 p0 c0 {1,S} {3,S}
+3 F u0 p3 c0 {2,S}
 
 CHF2
 multiplicity 2
@@ -95,8 +97,9 @@ multiplicity 2
 2 H u0 p0 c0 {1,S}
 
 CFOH
+multiplicity 3
 1 O u0 p2 c0 {2,S} {4,S}
-2 C u0 p1 c0 {1,S} {3,S}
+2 C u2 p0 c0 {1,S} {3,S}
 3 F u0 p3 c0 {2,S}
 4 H u0 p0 c0 {1,S}
 
@@ -196,8 +199,9 @@ multiplicity 2
 7 H u0 p0 c0 {1,S}
 
 CH3CF
+multiplicity 3
 1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
-2 C u0 p1 c0 {1,S} {3,S}
+2 C u2 p0 c0 {1,S} {3,S}
 3 F u0 p3 c0 {2,S}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
@@ -239,9 +243,10 @@ CH2FCHF2
 8 H u0 p0 c0 {3,S}
 
 CH2FCF
+multiplicity 3
 1 F u0 p3 c0 {2,S}
 2 C u0 p0 c0 {1,S} {3,S} {5,S} {6,S}
-3 C u0 p1 c0 {2,S} {4,S}
+3 C u2 p0 c0 {2,S} {4,S}
 4 F u0 p3 c0 {3,S}
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
@@ -293,10 +298,11 @@ multiplicity 2
 7 H u0 p0 c0 {4,S}
 
 CHF2CF
+multiplicity 3
 1 F u0 p3 c0 {2,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
 3 F u0 p3 c0 {2,S}
-4 C u0 p1 c0 {2,S} {5,S}
+4 C u2 p0 c0 {2,S} {5,S}
 5 F u0 p3 c0 {4,S}
 6 H u0 p0 c0 {2,S}
 
