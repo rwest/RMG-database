@@ -38164,3 +38164,21 @@ multiplicity 2
 5 *3 C u0 p0 c0 {1,S} {2,S} {6,D}
 6 *2 C u0 p0 c0 {3,S} {4,S} {5,D}
 
+C2F3O-3
+multiplicity 2
+1 F u0 p3 c0 {5,S}
+2 F u0 p3 c0 {5,S}
+3 F u0 p3 c0 {6,S}
+4 O u0 p2 c0 {5,S} {6,S}
+5 C u0 p0 c0 {1,S} {2,S} {4,S} {6,S}
+6 C u1 p0 c0 {3,S} {4,S} {5,S}
+
+C2F3O-4
+multiplicity 2
+1    F u0 p3 c0 {5,S}
+2    F u0 p3 c0 {5,S}
+3    F u0 p3 c0 {6,S}
+4 *3 O u0 p2 c0 {6,D}
+5 *1 C u1 p0 c0 {1,S} {2,S} {6,S}
+6 *2 C u0 p0 c0 {3,S} {4,D} {5,S}
+
