@@ -6,7 +6,8 @@ shortDesc = "Reaction kinetics used to generate rate rules"
 longDesc = """
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
-"""entry(
+"""
+entry(
     index = 1,
     label = "C4F8O <=> C4F8O-2",
     degeneracy = 1.0,
