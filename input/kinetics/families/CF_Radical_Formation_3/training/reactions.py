@@ -8,7 +8,7 @@ Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 entry(
-    index = 1,
+    index = 0,
     label = "C2F3O <=> CF + CF2O",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(5.43e+12,'s^-1'), n=0.46, Ea=(30062.7,'cal/mol'), T0=(1,'K')),
