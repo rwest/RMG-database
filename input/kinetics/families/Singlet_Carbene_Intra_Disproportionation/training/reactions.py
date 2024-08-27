@@ -153,31 +153,3 @@ Original entry: C2F5CF <=> CF3CFCF2
 """,
 )
 
-entry(
-    index = 10,
-    label = "C2F4-3 <=> C2F4-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(2.4e+10,'s^-1'), n=0.81, Ea=(42007.8,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is CF3CF <=> CF2CF2""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: CF3CF <=> CF2CF2
-""",
-)
-
-entry(
-    index = 11,
-    label = "C3F6-3 <=> C3F6-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(5.78e+09,'s^-1'), n=0.81, Ea=(50398.4,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5CF <=> CF3CFCF2""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C2F5CF <=> CF3CFCF2
-""",
-)
-

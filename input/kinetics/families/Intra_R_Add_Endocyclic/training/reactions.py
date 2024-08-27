@@ -12536,17 +12536,3 @@ Original entry: F2COCF <=> CF2CFO
 """,
 )
 
-entry(
-    index = 852,
-    label = "C2F3O-3 <=> C2F3O-4",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.61e+12,'s^-1'), n=0.69, Ea=(59688.5,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is F2COCF <=> CF2CFO""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: F2COCF <=> CF2CFO
-""",
-)
-
