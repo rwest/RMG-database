@@ -656,20 +656,6 @@ Original entry: CF3OH <=> CF2O+HF
 
 entry(
     index = 45,
-    label = "CHFO2 <=> CO2 + HF",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(25300,'s^-1'), n=2.53, Ea=(28082.1,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is FC(O)OH <=> CO2+HF""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: FC(O)OH <=> CO2+HF
-""",
-)
-
-entry(
-    index = 46,
     label = "C2HF5 <=> CF2CF2 + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(3.31e-23,'s^-1'), n=10.54, Ea=(68887.1,'cal/mol'), T0=(1,'K')),
@@ -683,7 +669,7 @@ Original entry: CF3CF2H <=> CF2CF2+HF
 )
 
 entry(
-    index = 47,
+    index = 46,
     label = "C2HF5O <=> C2F4O + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.88e-08,'s^-1'), n=5.97, Ea=(34454.1,'cal/mol'), T0=(1,'K')),
@@ -697,7 +683,7 @@ Original entry: C2F5OH <=> CF3CFO+HF
 )
 
 entry(
-    index = 48,
+    index = 47,
     label = "C3HF7 <=> C3F6 + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(5.52e-42,'s^-1'), n=15.75, Ea=(55659.3,'cal/mol'), T0=(1,'K')),
@@ -711,7 +697,7 @@ Original entry: C2F5CF2H <=> CF3CFCF2+HF
 )
 
 entry(
-    index = 49,
+    index = 48,
     label = "C3HF7O <=> C3F6O + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.99e-08,'s^-1'), n=6.03, Ea=(33888.9,'cal/mol'), T0=(1,'K')),
@@ -725,7 +711,7 @@ Original entry: C3F7OH <=> C2F5CFO+HF
 )
 
 entry(
-    index = 50,
+    index = 49,
     label = "C3HF7O-2 <=> C3F6O-2 + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.21e-20,'s^-1'), n=9.74, Ea=(66242.7,'cal/mol'), T0=(1,'K')),
@@ -739,7 +725,7 @@ Original entry: CF3OCFHCF3 <=> CF3OCFCF2+HF
 )
 
 entry(
-    index = 51,
+    index = 50,
     label = "C4HF9 <=> C4F8 + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(9e-44,'s^-1'), n=16.27, Ea=(53683.1,'cal/mol'), T0=(1,'K')),
@@ -753,7 +739,7 @@ Original entry: C3F7CF2H <=> C2F5CFCF2+HF
 )
 
 entry(
-    index = 52,
+    index = 51,
     label = "C4HF9O <=> C4F8O + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.17e-07,'s^-1'), n=5.9, Ea=(33573.2,'cal/mol'), T0=(1,'K')),
@@ -767,7 +753,7 @@ Original entry: C4F9OH <=> C3F7CFO+HF
 )
 
 entry(
-    index = 53,
+    index = 52,
     label = "C4HF9O-2 <=> C4F8O-2 + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.87e-20,'s^-1'), n=9.7, Ea=(66385.9,'cal/mol'), T0=(1,'K')),
@@ -781,7 +767,7 @@ Original entry: C2F5OCFHCF3 <=> C2F5OCFCF2+HF
 )
 
 entry(
-    index = 54,
+    index = 53,
     label = "C5HF11O <=> C5F10O + HF",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(3.76e-20,'s^-1'), n=9.71, Ea=(66524.5,'cal/mol'), T0=(1,'K')),
