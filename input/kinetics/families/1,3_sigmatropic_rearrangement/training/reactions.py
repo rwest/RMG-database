@@ -309,31 +309,3 @@ Original entry: CF(O)CF2CFO <=> CF2CFOCFO
 """,
 )
 
-entry(
-    index = 17,
-    label = "C4F8O <=> C4F8O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.83e+08,'s^-1'), n=0.97, Ea=(72710,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5OCCF3 <=> CF2OC(CF3)CF3""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C2F5OCCF3 <=> CF2OC(CF3)CF3
-""",
-)
-
-entry(
-    index = 18,
-    label = "C5F10O <=> C5F10O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(302000,'s^-1'), n=1.52, Ea=(74068.3,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is C3F7OCCF3 <=> CF2OC(CF3)C2F5""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C3F7OCCF3 <=> CF2OC(CF3)C2F5
-""",
-)
-
