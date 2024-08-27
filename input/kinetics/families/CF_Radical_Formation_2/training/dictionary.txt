@@ -1,10 +1,10 @@
 C2F4
-1 F u0 p3 c0 {5,S}
-2 F u0 p3 c0 {5,S}
-3 F u0 p3 c0 {5,S}
-4 F u0 p3 c0 {6,S}
-5 C u0 p0 c0 {1,S} {2,S} {3,S} {6,S}
-6 C u0 p1 c0 {4,S} {5,S}
+1    F u0 p3 c0 {5,S}
+2    F u0 p3 c0 {5,S}
+3    F u0 p3 c0 {5,S}
+4 *1 F u0 p3 c0 {6,S}
+5 *3 C u0 p0 c0 {1,S} {2,S} {3,S} {6,S}
+6 *2 C u0 p1 c0 {4,S} {5,S}
 
 CF
 multiplicity 2
@@ -19,15 +19,15 @@ multiplicity 2
 4 *3 C u1 p0 c0 {1,S} {2,S} {3,S}
 
 C3F6
-1 F u0 p3 c0 {7,S}
-2 F u0 p3 c0 {7,S}
-3 F u0 p3 c0 {8,S}
-4 F u0 p3 c0 {8,S}
-5 F u0 p3 c0 {8,S}
-6 F u0 p3 c0 {9,S}
-7 C u0 p0 c0 {1,S} {2,S} {8,S} {9,S}
-8 C u0 p0 c0 {3,S} {4,S} {5,S} {7,S}
-9 C u0 p1 c0 {6,S} {7,S}
+1    F u0 p3 c0 {7,S}
+2    F u0 p3 c0 {7,S}
+3    F u0 p3 c0 {8,S}
+4    F u0 p3 c0 {8,S}
+5    F u0 p3 c0 {8,S}
+6 *1 F u0 p3 c0 {9,S}
+7 *3 C u0 p0 c0 {1,S} {2,S} {8,S} {9,S}
+8    C u0 p0 c0 {3,S} {4,S} {5,S} {7,S}
+9 *2 C u0 p1 c0 {6,S} {7,S}
 
 C2F5
 multiplicity 2

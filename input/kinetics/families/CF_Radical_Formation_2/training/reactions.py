@@ -8,7 +8,7 @@ Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 entry(
-    index = 1,
+    index = 0,
     label = "C2F4 <=> CF + CF3",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.54e+21,'s^-1'), n=-1.47, Ea=(70284.8,'cal/mol'), T0=(1,'K')),
@@ -22,7 +22,7 @@ Original entry: CF3CF <=> CF3+CF
 )
 
 entry(
-    index = 2,
+    index = 1,
     label = "C3F6 <=> CF + C2F5",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.66e+20,'s^-1'), n=-1.26, Ea=(66713.2,'cal/mol'), T0=(1,'K')),
