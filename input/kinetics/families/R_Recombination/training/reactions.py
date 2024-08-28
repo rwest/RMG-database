@@ -4821,6 +4821,7 @@ entry(
     rank = 10,
     shortDesc = """From NIST CH2F2 model""",
 )
+
 entry(
     index = 269,
     label = "CHF3 <=> H + CF3",
