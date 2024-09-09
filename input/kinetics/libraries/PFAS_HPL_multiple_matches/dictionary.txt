@@ -1,0 +1,27 @@
+C3F8
+1  C  u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2  F  u0 p3 c0 {1,S}
+3  F  u0 p3 c0 {1,S}
+4  F  u0 p3 c0 {1,S}
+5  C  u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
+6  F  u0 p3 c0 {5,S}
+7  F  u0 p3 c0 {5,S}
+8  C  u0 p0 c0 {5,S} {9,S} {10,S} {11,S}
+9  F  u0 p3 c0 {8,S}
+10  F  u0 p3 c0 {8,S}
+11  F  u0 p3 c0 {8,S}
+
+C2F6
+1  C  u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2  F  u0 p3 c0 {1,S}
+3  F  u0 p3 c0 {1,S}
+4  F  u0 p3 c0 {1,S}
+5  C  u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
+6  F  u0 p3 c0 {5,S}
+7  F  u0 p3 c0 {5,S}
+8  F  u0 p3 c0 {5,S}
+
+CF2
+1  C  u0 p1 c0 {2,S} {3,S}
+2  F  u0 p3 c0 {1,S}
+3  F  u0 p3 c0 {1,S}
