@@ -155,6 +155,7 @@ PFAS = {
     'CO_CF_bond_dissociation', 
     'PFAS_Hydrolysis', 
     'Lactone_Formation', 
+    'Perfluorinated_Alkyl_Rearrangement' #almost forgot to add this one in : ) 
 }
 
 # Surface chemistry families that are under development and not yet working well.
