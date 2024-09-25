@@ -32,60 +32,124 @@ entry(
     label = "Root",
     group = 
 """
-1 *1 C   u[0,1]     {2,S} {4,S} {5,[S,D]}
-2 *2 C   u[0,1,2]   {1,S} {3,[S,D]}
-3 *4 C   u[0,1,2]   {2,[S,D]} {6,S}
-4    F1s u0         {1,S}
-5    R   u[0,1,2,3] {1,[S,D]}
-6 *3 F1s u0         {3,S}
+1 *1 C       u[0,1]     {2,S} {4,S} {5,[S,D]}
+2 *2 C       u[0,1,2]   {1,S} {3,[S,D]}
+3 *4 C       u[0,1,2]   {2,[S,D]} {6,S}
+4    [F1s,H] u0         {1,S}
+5    R       u[0,1,2,3] {1,[S,D]}
+6 *3 [F1s,H] u0         {3,S}
 """,
     kinetics = None,
 )
 
 entry(
     index = 1,
-    label = "Root_Ext-1C-R",
+    label = "Root_5R->O",
     group = 
 """
-1 *1 C   u0 r0 {2,S} {4,S} {5,[S,D]} {7,[S,D,T,B,Q]}
-2 *2 C   u0 r0 {1,S} {3,S}
-3 *4 C   u0 r0 {2,S} {6,S}
-4    F1s u0 r0 {1,S}
-5    R   u0 r0 {1,[S,D]}
-6 *3 F1s u0 r0 {3,S}
-7    R!H ux {1,[S,D,T,B,Q]}
+1 *1 C       u[0,1]     {2,S} {4,S} {5,[S,D]}
+2 *2 C       u[0,1,2]   {1,S} {3,[S,D]}
+3 *4 C       u[0,1,2]   {2,[S,D]} {6,S}
+4    [F1s,H] u0         {1,S}
+5    O       u[0,1,2,3] {1,[S,D]}
+6 *3 [F1s,H] u0         {3,S}
 """,
     kinetics = None,
 )
 
 entry(
     index = 2,
-    label = "Root_Ext-3C-R_7R!H->C",
+    label = "Root_5R->O_Ext-2C-R",
     group = 
 """
-1 *1 C   u0 r0 {2,S} {4,S} {5,[S,D]}
-2 *2 C   u0 r0 {1,S} {3,S}
-3 *4 C   u0 r0 {2,S} {6,S} {7,S}
-4    F1s u0 r0 {1,S}
-5    O   u0 r0 {1,[S,D]}
-6 *3 F1s u0 r0 {3,S}
-7    C   u0 r0 {3,S}
+1 *1 C   u[0,1]     {2,S} {4,S} {5,D}
+2 *2 C   u[0,1,2]   {1,S} {3,[S,D]} {7,[S,D,T,B,Q]}
+3 *4 C   u[0,1,2]   {2,[S,D]} {6,S}
+4    F1s u0         {1,S}
+5    O   u[0,1,2,3] {1,D}
+6 *3 F1s u0         {3,S}
+7    F   ux         {2,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
 
 entry(
     index = 3,
-    label = "Root_Ext-3C-R_N-7R!H->C",
+    label = "Root_5R->O_Ext-2C-R_Ext-3C-R_8R!H->C",
     group = 
 """
-1 *1 C   u0 r0 {2,S} {4,S} {5,[S,D]}
-2 *2 C   u0 r0 {1,S} {3,S}
-3 *4 C   u0 r0 {2,S} {6,S} {7,S}
-4    F1s u0 r0 {1,S}
-5    O   u0 r0 {1,[S,D]}
-6 *3 F1s u0 r0 {3,S}
-7    F   u0 r0 {3,S}
+1 *1 C   u[0,1]     {2,S} {4,S} {5,D}
+2 *2 C   u[0,1,2]   {1,S} {3,[S,D]} {7,[S,D,T,B,Q]}
+3 *4 C   u[0,1,2]   {2,[S,D]} {6,S} {8,S}
+4    F1s u0         {1,S}
+5    O   u[0,1,2,3] {1,D}
+6 *3 F1s u0         {3,S}
+7    F   ux         {2,[S,D,T,B,Q]}
+8    C   u0         r0 {3,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 4,
+    label = "Root_5R->O_Ext-2C-R_Ext-3C-R_N-8R!H->C",
+    group = 
+"""
+1 *1 C   u[0,1]     {2,S} {4,S} {5,D}
+2 *2 C   u[0,1,2]   {1,S} {3,[S,D]} {7,[S,D,T,B,Q]}
+3 *4 C   u[0,1,2]   {2,[S,D]} {6,S} {8,S}
+4    F1s u0         {1,S}
+5    O   u[0,1,2,3] {1,D}
+6 *3 F1s u0         {3,S}
+7    F   ux         {2,[S,D,T,B,Q]}
+8    F   u0         r0 {3,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 5,
+    label = "Root_5R->O_Ext-3C-R",
+    group = 
+"""
+1 *1 C   u[0,1]     {2,S} {4,S} {5,[S,D]}
+2 *2 C   u[0,1,2]   {1,S} {3,[S,D]}
+3 *4 C   u[0,1,2]   {2,[S,D]} {6,S} {7,[S,D,T,B,Q]}
+4    H   u0         {1,S}
+5    O   u[0,1,2,3] {1,[S,D]}
+6 *3 H   u0         {3,S}
+7    R!H ux         {3,[S,D,T,B,Q]}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 6,
+    label = "Root_N-5R->O",
+    group = 
+"""
+1 *1 C                        u[0,1]     {2,S} {4,S} {5,S}
+2 *2 C                        u[0,1,2]   {1,S} {3,[S,D]}
+3 *4 C                        u[0,1,2]   {2,[S,D]} {6,S}
+4    [F1s,H]                  u0         {1,S}
+5    [I,Br,Cl,C,Si,H,P,S,N,F] u[0,1,2,3] {1,S}
+6 *3 [F1s,H]                  u0         {3,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 7,
+    label = "Root_N-5R->O_Ext-1C-R",
+    group = 
+"""
+1 *1 C                        u[0,1]     {2,S} {4,S} {5,S} {7,[S,D,T,B,Q]}
+2 *2 C                        u[0,1,2]   {1,S} {3,[S,D]}
+3 *4 C                        u[0,1,2]   {2,[S,D]} {6,S}
+4    [F1s,H]                  u0         {1,S}
+5    [I,Br,Cl,C,Si,H,P,S,N,F] u[0,1,2,3] {1,S}
+6 *3 [F1s,H]                  u0         {3,S}
+7    R!H                      ux         {1,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -93,9 +157,13 @@ entry(
 tree(
 """
 L1: Root
-    L2: Root_Ext-1C-R
-    L2: Root_Ext-3C-R_7R!H->C
-    L2: Root_Ext-3C-R_N-7R!H->C
+    L2: Root_5R->O
+        L3: Root_5R->O_Ext-2C-R
+            L4: Root_5R->O_Ext-2C-R_Ext-3C-R_8R!H->C
+            L4: Root_5R->O_Ext-2C-R_Ext-3C-R_N-8R!H->C
+        L3: Root_5R->O_Ext-3C-R
+    L2: Root_N-5R->O
+        L3: Root_N-5R->O_Ext-1C-R
 """
 )
 
