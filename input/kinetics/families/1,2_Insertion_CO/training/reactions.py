@@ -297,7 +297,6 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(7.68e+09,'s^-1'), n=1.26, Ea=(90122.9,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF3CFO <=> CF4+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -311,7 +310,6 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(5.57e+09,'s^-1'), n=1.23, Ea=(106083,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF3C(O)OH <=> CF3OH+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -321,25 +319,10 @@ Original entry: CF3C(O)OH <=> CF3OH+CO
 
 entry(
     index = 17,
-    label = "C2F3O3 <=> CO + CF3O2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.32e+10,'s^-1'), n=0.63, Ea=(67139.3,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is CF(O)CF2OO <=> CF3OO+CO""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: CF(O)CF2OO <=> CF3OO+CO
-""",
-)
-
-entry(
-    index = 18,
     label = "C3F6O <=> CO + C2F6",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.09e+09,'s^-1'), n=1.4, Ea=(86945.8,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5CFO <=> C2F6+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -348,12 +331,11 @@ Original entry: C2F5CFO <=> C2F6+CO
 )
 
 entry(
-    index = 19,
+    index = 18,
     label = "C3F4O2 <=> CO + C2F4O-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.59e+08,'s^-1'), n=1.55, Ea=(87970.3,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF(O)CF2CFO <=> CF3CFO+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -362,12 +344,11 @@ Original entry: CF(O)CF2CFO <=> CF3CFO+CO
 )
 
 entry(
-    index = 20,
+    index = 19,
     label = "C3HF5O2 <=> CO + C2HF5O",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.18e+10,'s^-1'), n=1.11, Ea=(103335,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5C(O)OH <=> C2F5OH+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -376,12 +357,11 @@ Original entry: C2F5C(O)OH <=> C2F5OH+CO
 )
 
 entry(
-    index = 21,
+    index = 20,
     label = "C4F8O <=> CO + C3F8",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.93e+08,'s^-1'), n=1.43, Ea=(86880.4,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C3F7CFO <=> C3F8+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -390,12 +370,11 @@ Original entry: C3F7CFO <=> C3F8+CO
 )
 
 entry(
-    index = 22,
+    index = 21,
     label = "C4F6O2 <=> CO + C3F6O-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.19e+06,'s^-1'), n=2.07, Ea=(82365.8,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF(O)CF2CF2CFO <=> C2F5CFO+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -404,26 +383,11 @@ Original entry: CF(O)CF2CF2CFO <=> C2F5CFO+CO
 )
 
 entry(
-    index = 23,
-    label = "C4F6O2-2 <=> CO + C3F6O-3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(894000,'s^-1'), n=2.13, Ea=(84929.5,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is CF2CFOCF2CFO <=> CF3OCFCF2+CO""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: CF2CFOCF2CFO <=> CF3OCFCF2+CO
-""",
-)
-
-entry(
-    index = 24,
+    index = 22,
     label = "C4HF7O2 <=> CO + C3HF7O",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(8.36e+08,'s^-1'), n=1.49, Ea=(102989,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C3F7C(O)OH <=> C3F7OH+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -432,12 +396,11 @@ Original entry: C3F7C(O)OH <=> C3F7OH+CO
 )
 
 entry(
-    index = 25,
+    index = 23,
     label = "C4F8O2 <=> CO + C3F8O",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(9.97e+10,'s^-1'), n=0.75, Ea=(92443.6,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5OC(O)CF3 <=> C2F5OCF3+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
@@ -446,16 +409,119 @@ Original entry: C2F5OC(O)CF3 <=> C2F5OCF3+CO
 )
 
 entry(
-    index = 26,
+    index = 24,
     label = "C5F10O2 <=> CO + C4F10O",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.44e+11,'s^-1'), n=0.67, Ea=(94390.8,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C3F7OC(O)CF3 <=> C3F7OCF3+CO""",
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL
 Original entry: C3F7OC(O)CF3 <=> C3F7OCF3+CO
+""",
+)
+
+entry(
+    index = 25,
+    label = "C2H4O <=> CO + CH4",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.93e-15,'s^-1'), n=8.36, Ea=(107088,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CH3CHO <=> CH4+CO
+""",
+)
+
+entry(
+    index = 26,
+    label = "C3H6O-2 <=> CO + C2H6-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(8.07e-05,'s^-1'), n=5.05, Ea=(111095,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C2H5CHO <=> C2H6+CO
+""",
+)
+
+entry(
+    index = 27,
+    label = "C3H4O2 <=> CO + C2H4O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.16e-07,'s^-1'), n=5.87, Ea=(105863,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CH(O)CH2CHO <=> CH3CHO+CO
+""",
+)
+
+entry(
+    index = 28,
+    label = "C4H6O2 <=> CO + C3H6O-3",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.26e-11,'s^-1'), n=7.06, Ea=(107868,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CH(O)CH2CH2CHO <=> C2H5CHO+CO
+""",
+)
+
+entry(
+    index = 29,
+    label = "C2H4O2-2 <=> CO + CH4O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4e+09,'s^-1'), n=1.5, Ea=(110643,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CH3C(O)OH <=> CH3OH+CO
+""",
+)
+
+entry(
+    index = 30,
+    label = "C3H6O2 <=> CO + C2H6O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.3e+09,'s^-1'), n=1.37, Ea=(107821,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C2H5C(O)OH <=> C2H5OH+CO
+""",
+)
+
+entry(
+    index = 31,
+    label = "C4H8O2 <=> CO + C3H8O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.2e+08,'s^-1'), n=1.65, Ea=(106461,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C3H7C(O)OH <=> C3H7OH+CO
+""",
+)
+
+entry(
+    index = 32,
+    label = "C4H8O2-2 <=> CO + C3H8O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.6e+08,'s^-1'), n=1.56, Ea=(107162,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C2H5OC(O)CH3 <=> C2H5OCH3+CO
 """,
 )
 
