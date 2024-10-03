@@ -540,3 +540,315 @@ Original entry: C3F7OC(CF3)OCO <=> C3F7OCCF3+CO2
 """,
 )
 
+entry(
+    index = 32,
+    label = "C2F2O2 <=> CF2O + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.58e+12,'s^-1'), n=0.3, Ea=(9852.72,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: c_F2COC(O) <=> CF2O+CO
+""",
+)
+
+entry(
+    index = 33,
+    label = "C2F2O2-2 <=> CO2 + CF2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.17e+13,'s^-1'), n=0.33, Ea=(19504.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: c_F2COC(O) <=> CF2+CO2
+""",
+)
+
+entry(
+    index = 34,
+    label = "C3F4O2 <=> C2F4O + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.29e+12,'s^-1'), n=0.31, Ea=(15935.4,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CF3-c_FCOC(O) <=> CF3CFO+CO
+""",
+)
+
+entry(
+    index = 35,
+    label = "C3F4O2-2 <=> CO2 + C2F4-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.81e+12,'s^-1'), n=0.64, Ea=(32162.9,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CF3-c_FCOC(O) <=> CF3CF+CO2
+""",
+)
+
+entry(
+    index = 36,
+    label = "C4F6O2 <=> C3F6O + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.74e+12,'s^-1'), n=0.27, Ea=(15958.4,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2F5-c_FCOC(O) <=> C2F5CFO+CO
+""",
+)
+
+entry(
+    index = 37,
+    label = "C4F6O2-2 <=> CO2 + C3F6-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(6.9e+08,'s^-1'), n=1.39, Ea=(64235.6,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2F5-c_FCOC(O) <=> C2F5CF+CO2
+""",
+)
+
+entry(
+    index = 38,
+    label = "C5F8O2 <=> C4F8O + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(5.67e+12,'s^-1'), n=0.24, Ea=(16106.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C3F7-c_FCOC(O) <=> C3F7CFO+CO
+""",
+)
+
+entry(
+    index = 39,
+    label = "C5F8O2-2 <=> CO2 + C4F8",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(5.89e+13,'s^-1'), n=0.18, Ea=(32595.1,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C3F7-c_FCOC(O) <=> C3F7CF+CO2
+""",
+)
+
+entry(
+    index = 40,
+    label = "C4F6O3 <=> C3F6O2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.11e+11,'s^-1'), n=0.35, Ea=(17594.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CF3O-c_(CF3)COC(O) <=> CF3OC(O)CF3+CO
+""",
+)
+
+entry(
+    index = 41,
+    label = "C4F6O3-2 <=> CO2 + C3F6O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.62e+11,'s^-1'), n=0.59, Ea=(24008.3,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CF3O-c_(CF3)COC(O) <=> CF3OCCF3+CO2
+""",
+)
+
+entry(
+    index = 42,
+    label = "C5F8O3 <=> C4F8O2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.51e+11,'s^-1'), n=0.39, Ea=(17285.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2F5O-c_(CF3)COC(O) <=> C2F5OC(O)CF3+CO
+""",
+)
+
+entry(
+    index = 43,
+    label = "C5F8O3-2 <=> CO2 + C4F8O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.01e+13,'s^-1'), n=0.17, Ea=(24869.3,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2F5O-c_(CF3)COC(O) <=> C2F5OCCF3+CO2
+""",
+)
+
+entry(
+    index = 44,
+    label = "C6F10O3 <=> C5F10O2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.46e+11,'s^-1'), n=0.45, Ea=(17288.8,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C3F7O-c_(CF3)COC(O) <=> C3F7OC(O)CF3+CO
+""",
+)
+
+entry(
+    index = 45,
+    label = "C6F10O3-2 <=> CO2 + C5F10O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.73e+13,'s^-1'), n=-0.01, Ea=(25134.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C3F7O-c_(CF3)COC(O) <=> C3F7OCCF3+CO2
+""",
+)
+
+entry(
+    index = 46,
+    label = "C2H2O2 <=> CH2O-2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.48e+12,'s^-1'), n=0.3, Ea=(28548.8,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: c_H2COC(O) <=> CH2O+CO
+""",
+)
+
+entry(
+    index = 47,
+    label = "C2H2O2-2 <=> CO2 + CH2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.18e+12,'s^-1'), n=0.62, Ea=(56045.6,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: c_H2COC(O) <=> CH2+CO2
+""",
+)
+
+entry(
+    index = 48,
+    label = "C3H4O2 <=> C2H4O-2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(5.55e+11,'s^-1'), n=0.54, Ea=(27711.1,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CH3-c_HCOC(O) <=> CH3CHO+CO
+""",
+)
+
+entry(
+    index = 49,
+    label = "C3H4O2-2 <=> CO2 + C2H4-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.05e+11,'s^-1'), n=0.76, Ea=(61244.2,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CH3-c_HCOC(O) <=> CH3CH+CO2
+""",
+)
+
+entry(
+    index = 50,
+    label = "C4H6O2 <=> C3H6O-2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.63e+11,'s^-1'), n=0.61, Ea=(27229,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2H5-c_HCOC(O) <=> C2H5CHO+CO
+""",
+)
+
+entry(
+    index = 51,
+    label = "C4H6O2-2 <=> CO2 + C3H6-3",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.01e+11,'s^-1'), n=0.87, Ea=(61019.6,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2H5-c_HCOC(O) <=> C2H5CH+CO2
+""",
+)
+
+entry(
+    index = 52,
+    label = "C4H6O3 <=> C3H6O2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(7.39e+10,'s^-1'), n=0.65, Ea=(20326.3,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CH3O-c_(CH3)COC(O) <=> CH3OC(O)CH3+CO
+""",
+)
+
+entry(
+    index = 53,
+    label = "C4H6O3-2 <=> CO2 + C3H6O-3",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.11e+15,'s^-1'), n=-0.47, Ea=(16581.4,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: CH3O-c_(CH3)COC(O) <=> CH3OCCH3+CO2
+""",
+)
+
+entry(
+    index = 54,
+    label = "C5H8O3 <=> C4H8O2 + CO-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.55e+10,'s^-1'), n=0.75, Ea=(20718.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2H5O-c_(CH3)COC(O) <=> C2H5OC(O)CH3+CO
+""",
+)
+
+entry(
+    index = 55,
+    label = "C5H8O3-2 <=> CO2 + C4H8O-3",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.43e+14,'s^-1'), n=-0.25, Ea=(15680.2,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/1+2_Cycloaddition/
+Original entry: C2H5O-c_(CH3)COC(O) <=> C2H5OCCH3+CO2
+""",
+)
+
