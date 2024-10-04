@@ -31,7 +31,7 @@ entry(
     group = 
 """
 1 *3 [H,F1s,Cl1s,Br1s]  u0 {2,S}
-2 *4 [F1s,Cl1s,Br1s]    u0 {1,S}
+2 *4 [H,F1s,Cl1s,Br1s]    u0 {1,S}
 3 *1 [Cd,Cdd,Ct,CO,O2d] u0 {4,[D,T]}
 4 *2 [Cd,Cdd,Ct,CO,O2d] u0 {3,[D,T]}
 """,
