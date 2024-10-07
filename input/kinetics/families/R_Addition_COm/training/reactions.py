@@ -476,10 +476,9 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.78e+12,'s^-1'), n=0.79, Ea=(11561.1,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF3CO <=> CF3+CO""",
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
 Original entry: CF3CO <=> CF3+CO
 """,
 )
@@ -490,10 +489,9 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(5.81e+12,'s^-1'), n=0.39, Ea=(10740.6,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF(O)CO <=> CFO+CO""",
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
 Original entry: CF(O)CO <=> CFO+CO
 """,
 )
@@ -504,11 +502,10 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(9.45e+11,'s^-1'), n=0.58, Ea=(9168.48,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5CO <=> CF3CF2+CO""",
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C2F5CO <=> CF3CF2+CO
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
+Original entry: C2F5CO <=> C2F5+CO
 """,
 )
 
@@ -518,10 +515,9 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(3.18e+11,'s^-1'), n=0.56, Ea=(5496.44,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is CF(O)CF2CO <=> CF2CFO+CO""",
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
 Original entry: CF(O)CF2CO <=> CF2CFO+CO
 """,
 )
@@ -532,11 +528,49 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.85e+11,'s^-1'), n=0.68, Ea=(8179.35,'cal/mol'), T0=(1,'K')),
     rank = 3,
-    shortDesc = """The chemkin file reaction is C3F7CO <=> C2F5CF2+CO""",
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C3F7CO <=> C2F5CF2+CO
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
+Original entry: C3F7CO <=> C3F7+CO
+""",
+)
+
+entry(
+    index = 22,
+    label = "C2H3O <=> CO + CH3",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(8.46e+10,'s^-1'), n=1.33, Ea=(16487.4,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
+Original entry: CH3CO <=> CH3+CO
+""",
+)
+
+entry(
+    index = 23,
+    label = "C3H5O <=> CO + C2H5",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.14e+10,'s^-1'), n=0.95, Ea=(14285,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
+Original entry: C2H5CO <=> C2H5+CO
+""",
+)
+
+entry(
+    index = 24,
+    label = "C3H3O2 <=> CO + C2H3O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.34e+10,'s^-1'), n=0.98, Ea=(9260.48,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_COm/
+Original entry: CH(O)CH2CO <=> CH2CHO+CO
 """,
 )
 
