@@ -15,7 +15,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CF3C(O)OH <=> c_F2COC(O)+HF
 """,
 )
@@ -24,11 +24,11 @@ entry(
     index = 1,
     label = "C3HF5O2 <=> C3F4O2 + FH",
     degeneracy = 2.0,
-    kinetics = Arrhenius(A=(4.44e+11,'s^-1'), n=0.83, Ea=(67256.4,'cal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(8.93e+10,'s^-1'), n=0.59, Ea=(56742.3,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2F5C(O)OH <=> CF3-c_FCOC(O)+HF
 """,
 )
@@ -41,7 +41,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C3F7C(O)OH <=> C2F5-c_FCOC(O)+HF
 """,
 )
@@ -54,7 +54,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C4F9C(O)OH <=> C3F7-c_FCOC(O)+HF
 """,
 )
@@ -67,7 +67,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CH2FC(O)OH <=> c_H2COC(O)+HF
 """,
 )
@@ -80,7 +80,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CH3CFHC(O)OH <=> CH3-c_HCOC(O)+HF
 """,
 )
@@ -93,7 +93,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CH3C(O)OH <=> c_H2COC(O)+H2
 """,
 )
@@ -106,7 +106,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2H5C(O)OH <=> CH3-c_HCOC(O)+H2
 """,
 )
@@ -119,7 +119,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C3H7C(O)OH <=> C2H5-c_HCOC(O)+H2
 """,
 )
@@ -132,7 +132,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CF3OCF(CF3)C(O)OH <=> CF3O-c_(CF3)COC(O)+HF
 """,
 )
@@ -145,7 +145,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2F5OCF(CF3)C(O)OH <=> C2F5O-c_(CF3)COC(O)+HF
 """,
 )
@@ -158,7 +158,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C3F7OCF(CF3)C(O)OH <=> C3F7O-c_(CF3)COC(O)+HF
 """,
 )
@@ -171,7 +171,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CH3OCH(CH3)C(O)OH <=> CH3O-c_(CH3)COC(O)+H2
 """,
 )
@@ -184,8 +184,47 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/Lactone_Formation
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2H5OCH(CH3)C(O)OH <=> C2H5O-c_(CH3)COC(O)+H2
+""",
+)
+
+entry(
+    index = 14,
+    label = "C6HF11O2 <=> C6F10O2 + FH",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(6.7e+10,'s^-1'), n=0.7, Ea=(55450.5,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C5F11C(O)OH <=> C4F9-c_FCOC(O)+HF
+""",
+)
+
+entry(
+    index = 15,
+    label = "C7HF13O2 <=> C7F12O2 + FH",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.09e+11,'s^-1'), n=0.55, Ea=(55585.8,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C6F13C(O)OH <=> C5F11-c_FCOC(O)+HF
+""",
+)
+
+entry(
+    index = 16,
+    label = "C8HF15O2 <=> C8F14O2 + FH",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.18e+10,'s^-1'), n=0.8, Ea=(55701.8,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C7F15C(O)OH <=> C6F13-c_FCOC(O)+HF
 """,
 )
 
