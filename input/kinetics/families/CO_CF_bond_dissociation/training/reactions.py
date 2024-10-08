@@ -87,19 +87,6 @@ Original entry: C2F5OCCF3 <=> CF3CFO+CF3CF
 
 entry(
     index = 6,
-    label = "C4HF9O <=> C2F4O-2 + C2HF5-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(4.98e+09,'s^-1'), n=0.79, Ea=(79774,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL_Test/CO_CF_bond_dissociation/
-Original entry: C2F5OCFHCF3 <=> CF3CFO+C2F5H
-""",
-)
-
-entry(
-    index = 7,
     label = "C4F8O2 <=> C2F4O-2 + C2F4O",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(2.16e+12,'s^-1'), n=-0.04, Ea=(50928.4,'cal/mol'), T0=(1,'K')),
@@ -112,7 +99,7 @@ Original entry: C2F5OC(O)CF3 <=> CF3CFO+CF3CFO
 )
 
 entry(
-    index = 8,
+    index = 7,
     label = "C5F10O <=> C3F6O-3 + C2F4",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(9.54e+08,'s^-1'), n=1.06, Ea=(80760.3,'cal/mol'), T0=(1,'K')),
@@ -125,7 +112,7 @@ Original entry: C3F7OCFCF2 <=> C2F5CFO+CF2CF2
 )
 
 entry(
-    index = 9,
+    index = 8,
     label = "C5F10O-2 <=> C3F6O-3 + C2F4-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(3.26e+08,'s^-1'), n=1.07, Ea=(51125.8,'cal/mol'), T0=(1,'K')),
@@ -138,7 +125,7 @@ Original entry: C3F7OCCF3 <=> C2F5CFO+CF3CF
 )
 
 entry(
-    index = 10,
+    index = 9,
     label = "C5HF11O <=> C3F6O-3 + C2HF5",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(1.18e+10,'s^-1'), n=0.8, Ea=(79374.9,'cal/mol'), T0=(1,'K')),
@@ -151,7 +138,7 @@ Original entry: C3F7OCFHCF3 <=> C2F5CFO+C2F5H
 )
 
 entry(
-    index = 11,
+    index = 10,
     label = "C5F10O2 <=> C3F6O-3 + C2F4O",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(4.47e+11,'s^-1'), n=0.12, Ea=(50136.7,'cal/mol'), T0=(1,'K')),
@@ -164,7 +151,7 @@ Original entry: C3F7OC(O)CF3 <=> C2F5CFO+CF3CFO
 )
 
 entry(
-    index = 12,
+    index = 11,
     label = "C3H6O <=> CH2O + C2H4",
     degeneracy = 3.0,
     kinetics = Arrhenius(A=(841000,'s^-1'), n=2.05, Ea=(97010.1,'cal/mol'), T0=(1,'K')),
@@ -177,7 +164,7 @@ Original entry: CH3OCHCH2 <=> CH2O+CH2CH2
 )
 
 entry(
-    index = 13,
+    index = 12,
     label = "C4H8O <=> C2H4O + C2H4",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(7.79e+06,'s^-1'), n=1.63, Ea=(93876.2,'cal/mol'), T0=(1,'K')),
@@ -190,7 +177,7 @@ Original entry: C2H5OCHCH2 <=> CH3CHO+CH2CH2
 )
 
 entry(
-    index = 14,
+    index = 13,
     label = "C4H8O-2 <=> C2H4O + C2H4-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(4.11e+06,'s^-1'), n=1.75, Ea=(44653.7,'cal/mol'), T0=(1,'K')),
@@ -199,6 +186,19 @@ entry(
 """
 Training reaction from kinetics library: PFAS_HPL_Test/CO_CF_bond_dissociation/
 Original entry: C2H5OCCH3 <=> CH3CHO+CH3CH
+""",
+)
+
+entry(
+    index = 14,
+    label = "C5H10O <=> C3H6O-2 + C2H4-2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.12e+06,'s^-1'), n=1.87, Ea=(44732.4,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/CO_CF_bond_dissociation/
+Original entry: C3H7OCCH3 <=> C2H5CHO+CH3CH
 """,
 )
 
@@ -252,5 +252,12 @@ entry(
 Training reaction from kinetics library: PFAS_HPL_Test/CO_CF_bond_dissociation/
 Original entry: C2H5OC(O)CH3 <=> CH3CHO+CH3CHO
 """,
+)
+
+entry(
+    index = 19,
+    label = "C2F5OCFHCF3 <=> CF3CFO+C2F5H",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(4.98e+09,'s^-1'), n=0.79, Ea=(79774,'cal/mol'), T0=(1,'K')),
 )
 
