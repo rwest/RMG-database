@@ -17,17 +17,34 @@ entry(
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(4.50E+06,'1/s'), n=1.38, Ea=(77809.6,'cal/mol'), T0=(1,'K')))
 
+#this is the original entry 
+# entry(
+#     index = 2,
+#     label = "C2F5OCCF3 <=> CF2OC(CF3)CF3",
+#     degeneracy = 1.0,
+#     kinetics = Arrhenius(A=(1.83E+08,'1/s'), n=0.97, Ea=(72710.03,'cal/mol'), T0=(1,'K')))
+
+#this is the reverse of the original entry, provided by Caroline
 entry(
     index = 2,
-    label = "C2F5OCCF3 <=> CF2OC(CF3)CF3",
+    label = "CF2OC(CF3)CF3 <=> C2F5OCCF3",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.83E+08,'1/s'), n=0.97, Ea=(72710.03,'cal/mol'), T0=(1,'K')))
+    kinetics = Arrhenius(A=(2.15E+09,'1/s'), n=0.64, Ea=(57426.54,'cal/mol'), T0=(1,'K')))
 
+#this is the original entry 
+# entry(
+#     index = 3,
+#     label = "C3F7OCCF3 <=> CF2OC(CF3)C2F5",
+#     degeneracy = 1.0,
+#     kinetics = Arrhenius(A=(3.02E+05,'1/s'), n=1.52, Ea=(74068.27,'cal/mol'), T0=(1,'K')))
+
+
+#this is the reverse of the original entry, provided by Caroline
 entry(
     index = 3,
-    label = "C3F7OCCF3 <=> CF2OC(CF3)C2F5",
+    label = "CF2OC(CF3)C2F5 <=> C3F7OCCF3",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.02E+05,'1/s'), n=1.52, Ea=(74068.27,'cal/mol'), T0=(1,'K')))
+    kinetics = Arrhenius(A=(2.11E+09,'1/s'), n=0.46, Ea=(58898.23,'cal/mol'), T0=(1,'K')))
 
 entry(
     index = 4,

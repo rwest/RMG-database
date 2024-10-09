@@ -309,27 +309,27 @@ Original entry: CF(O)CF2CFO <=> CF2CFOCFO
 
 entry(
     index = 17,
-    label = "C4F8O <=> C4F8O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.83e+08,'s^-1'), n=0.97, Ea=(72710,'cal/mol'), T0=(1,'K')),
+    label = "C4F8O-3 <=> C4F8O-4",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.15e+09,'s^-1'), n=0.64, Ea=(57426.5,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
-Original entry: C2F5OCCF3 <=> CF2OC(CF3)CF3
+Original entry: CF2OC(CF3)CF3 <=> C2F5OCCF3
 """,
 )
 
 entry(
     index = 18,
-    label = "C5F10O <=> C5F10O-2",
+    label = "C5F10O-3 <=> C5F10O-4",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(302000,'s^-1'), n=1.52, Ea=(74068.3,'cal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(2.11e+09,'s^-1'), n=0.46, Ea=(58898.2,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
-Original entry: C3F7OCCF3 <=> CF2OC(CF3)C2F5
+Original entry: CF2OC(CF3)C2F5 <=> C3F7OCCF3
 """,
 )
 
