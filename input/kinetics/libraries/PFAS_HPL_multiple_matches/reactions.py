@@ -13,4 +13,20 @@ entry(
     shortDesc = u"""The chemkin file reaction is C3F8 <=> C2F6+CF2""",
 )
 
-#matched twice to 1,2_Insertion_Carbene, not sure why it never added it in...
+#matched twice to 1,2_Insertion_Carbene, so never added in...
+
+
+entry(
+    index = 25,
+    label = "C3H5O3 <=> CH2O + C2H3O2",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(5.75e+07,'s^-1'), n=1.52, Ea=(27913,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
+Original entry: CH3OCHC(O)OH <=> CH2C(O)OH+CH2O
+""",
+)
+
+#matched to CO_CF_Bond_dissociation, but causing a split violation so I'm putting this reaction here. 
