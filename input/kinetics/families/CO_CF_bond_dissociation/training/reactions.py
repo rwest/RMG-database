@@ -261,3 +261,68 @@ entry(
     kinetics = Arrhenius(A=(4.98e+09,'s^-1'), n=0.79, Ea=(79774,'cal/mol'), T0=(1,'K')),
 )
 
+entry(
+    index = 20,
+    label = "C3HF4O3 <=> CF2O + C2HF2O2",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.02e+07,'s^-1'), n=1.62, Ea=(30984.3,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
+Original entry: CF3OCFC(O)OH <=> CF2O+CF2C(O)OH
+""",
+)
+
+entry(
+    index = 21,
+    label = "C4HF6O3 <=> C2F4O-2 + C2HF2O2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.85e+07,'s^-1'), n=1.44, Ea=(23859.7,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
+Original entry: C2F5OCFC(O)OH <=> CF3CFO+CF2C(O)OH
+""",
+)
+
+entry(
+    index = 22,
+    label = "C5HF8O3 <=> C3F6O-3 + C2HF2O2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(9e+06,'s^-1'), n=1.39, Ea=(21512.2,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
+Original entry: C3F7OCFC(O)OH <=> C2F5CFO+CF2C(O)OH
+""",
+)
+
+entry(
+    index = 23,
+    label = "C4F9O2 <=> CF2O + C3F7O",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(2480,'s^-1'), n=2.51, Ea=(65844.2,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
+Original entry: CF3OC(CF3)OCF3 <=> CF3OCFCF3+CF2O
+""",
+)
+
+entry(
+    index = 24,
+    label = "C5F11O2 <=> CF2O + C4F9O",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(15200,'s^-1'), n=2.17, Ea=(66752.6,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
+Original entry: C2F5OC(CF3)OCF3 <=> C2F5OCFCF3+CF2O
+""",
+)
+
