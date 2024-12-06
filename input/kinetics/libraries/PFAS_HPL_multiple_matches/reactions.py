@@ -21,7 +21,6 @@ entry(
     label = "C3H5O3 <=> CH2O + C2H3O2",
     degeneracy = 3.0,
     kinetics = Arrhenius(A=(5.75e+07,'s^-1'), n=1.52, Ea=(27913,'cal/mol'), T0=(1,'K')),
-    rank = 3,
     longDesc = 
 """
 Training reaction from kinetics library: PFAS_HPL_Test/R_Addition_MultipleBond/ (actually matched to CO_CF_Bond_Diss.)
