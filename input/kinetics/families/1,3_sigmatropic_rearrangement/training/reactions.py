@@ -309,32 +309,6 @@ Original entry: CF(O)CF2CFO <=> CF2CFOCFO
 
 entry(
     index = 17,
-    label = "C4F8O-3 <=> C4F8O-4",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(2.15e+09,'s^-1'), n=0.64, Ea=(57426.5,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
-Original entry: CF2OC(CF3)CF3 <=> C2F5OCCF3
-""",
-)
-
-entry(
-    index = 18,
-    label = "C5F10O-3 <=> C5F10O-4",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.11e+09,'s^-1'), n=0.46, Ea=(58898.2,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
-Original entry: CF2OC(CF3)C2F5 <=> C3F7OCCF3
-""",
-)
-
-entry(
-    index = 19,
     label = "C3H6O-3 <=> C3H6O-4",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.26e+07,'s^-1'), n=1.81, Ea=(92397.3,'cal/mol'), T0=(1,'K')),
@@ -347,7 +321,7 @@ Original entry: C2H5CHO <=> CH3OCHCH2
 )
 
 entry(
-    index = 20,
+    index = 18,
     label = "C3H4O2 <=> C3H4O2-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(3.15e+06,'s^-1'), n=1.45, Ea=(48596.7,'cal/mol'), T0=(1,'K')),
@@ -360,7 +334,7 @@ Original entry: CH(O)CH2CHO <=> CH2CHOCHO
 )
 
 entry(
-    index = 21,
+    index = 19,
     label = "C4H6O2 <=> C4H6O2-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(3.6e+08,'s^-1'), n=0.98, Ea=(87754.8,'cal/mol'), T0=(1,'K')),
@@ -369,32 +343,6 @@ entry(
 """
 Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
 Original entry: CH(O)CH2CH2CHO <=> CH2CHOCH2CHO
-""",
-)
-
-entry(
-    index = 22,
-    label = "C4H8O <=> C4H8O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.97e+08,'s^-1'), n=1.04, Ea=(64427,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
-Original entry: C2H5OCCH3 <=> CH2OC(CH3)CH3
-""",
-)
-
-entry(
-    index = 23,
-    label = "C5H10O <=> C5H10O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.03e+09,'s^-1'), n=0.6, Ea=(26107.3,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_sigmatropic_rearrangement/
-Original entry: C3H7OCCH3 <=> CH2OC(CH3)C2H5
 """,
 )
 
