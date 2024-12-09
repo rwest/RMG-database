@@ -145,17 +145,17 @@ halogens = {
 #reaction families for PFAS (will be moved in to "halogens" later
 PFAS = {
     'Perfluoroalkene_Formation',
-    'CF_Radical_Formation_3',
-    'CF_Radical_Formation_2', 
-    'CF_Radical_Formation_1', 
-    'OF_Radical_Formation', 
+    #'CF_Radical_Formation_3',
+    #'CF_Radical_Formation_2', 
+    #'CF_Radical_Formation_1', 
+    #'OF_Radical_Formation', 
     'Enol_Ether_Formation',
-    'Lactone_to_Perfluoroalkene', 
+    #'Lactone_to_Perfluoroalkene', 
     'CO2_Elimination_From_Carboxylic_Acid', 
     'CO_CF_bond_dissociation', 
     'PFAS_Hydrolysis', 
     'Lactone_Formation', 
-    'Perfluorinated_Alkyl_Rearrangement' #almost forgot to add this one in : ) 
+    #'Perfluorinated_Alkyl_Rearrangement' #almost forgot to add this one in : ) 
 }
 
 # Surface chemistry families that are under development and not yet working well.
