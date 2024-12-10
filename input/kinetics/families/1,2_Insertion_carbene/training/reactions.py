@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "1,2_Insertion_carbene/training"
-shortDesc = "Reaction kinetics used to generate rate rules"
-longDesc = """
+shortDesc = u"Reaction kinetics used to generate rate rules"
+longDesc = u"""
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 Sources:
@@ -26,7 +26,12 @@ entry(
     index = 0,
     label = "CH2 + C2H2 <=> CH3CCH",
     degeneracy = 2.0,
-    kinetics = Arrhenius(A=(6.63e+07,'cm^3/(mol*s)','*|/',0.25), n=1.475, Ea=(-1.651,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (6.63e+07, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 1.475,
+        Ea = (-1.651, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -37,9 +42,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -48,7 +53,12 @@ entry(
     index = 1,
     label = "CH2 + C2H4 <=> CH3CHCH2",
     degeneracy = 4.0,
-    kinetics = Arrhenius(A=(5.3e+12,'cm^3/(mol*s)','*|/',0.25), n=0.0073, Ea=(-1.054,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (5.3e+12, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 0.0073,
+        Ea = (-1.054, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -59,9 +69,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -70,7 +80,12 @@ entry(
     index = 2,
     label = "CH2 + CH3CCH_r1 <=> CH3CCCH3",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.03e+08,'cm^3/(mol*s)','*|/',0.25), n=1.249, Ea=(-2.214,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (2.03e+08, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 1.249,
+        Ea = (-2.214, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -81,9 +96,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -92,7 +107,12 @@ entry(
     index = 3,
     label = "CH2 + CH3CCH_r2 <=> CH3CH2CCH",
     degeneracy = 3.0,
-    kinetics = Arrhenius(A=(9.18e+10,'cm^3/(mol*s)','*|/',0.25), n=0.524, Ea=(-0.711,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (9.18e+10, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 0.524,
+        Ea = (-0.711, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -103,9 +123,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -114,7 +134,12 @@ entry(
     index = 4,
     label = "CH2 + CH3CHCH2_r1 <=> CH3CHCHCH3",
     degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.97e+13,'cm^3/(mol*s)','*|/',0.25), n=-0.324, Ea=(-0.935,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (3.97e+13, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = -0.324,
+        Ea = (-0.935, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -125,9 +150,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -136,7 +161,12 @@ entry(
     index = 5,
     label = "CH2 + CH3CHCH2_r2 <=> CH2C(CH3)CH3",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.13e+13,'cm^3/(mol*s)','*|/',0.25), n=-0.274, Ea=(-0.686,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (2.13e+13, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = -0.274,
+        Ea = (-0.686, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -147,9 +177,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -158,7 +188,12 @@ entry(
     index = 6,
     label = "CH2 + CH3CHCH2_r3 <=> CH3CH2CHCH2",
     degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1.87e+13,'cm^3/(mol*s)','*|/',0.25), n=-0.146, Ea=(0.00284,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (1.87e+13, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = -0.146,
+        Ea = (0.00284, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -169,9 +204,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -180,7 +215,12 @@ entry(
     index = 7,
     label = "CH2 + CH2CCH2 <=> CH3CHCCH2",
     degeneracy = 4.0,
-    kinetics = Arrhenius(A=(2.8e+11,'cm^3/(mol*s)','*|/',0.25), n=0.465, Ea=(-1.742,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (2.8e+11, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 0.465,
+        Ea = (-1.742, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -191,9 +231,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -202,7 +242,12 @@ entry(
     index = 8,
     label = "CH2 + CH2CHCHCH2_r1 <=> CH3CHCHCHCH2",
     degeneracy = 4.0,
-    kinetics = Arrhenius(A=(5.26e+11,'cm^3/(mol*s)','*|/',0.25), n=0.313, Ea=(-1.854,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (5.26e+11, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 0.313,
+        Ea = (-1.854, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -213,9 +258,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -224,7 +269,12 @@ entry(
     index = 9,
     label = "CH2 + CH2CHCHCH2_r2 <=> CH2C(CH3)CHCH2",
     degeneracy = 2.0,
-    kinetics = Arrhenius(A=(7.34e+10,'cm^3/(mol*s)','*|/',0.25), n=0.498, Ea=(-1.758,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (7.34e+10, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 0.498,
+        Ea = (-1.758, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -235,9 +285,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -246,7 +296,12 @@ entry(
     index = 10,
     label = "CH2 + CH3CCCH3_r1 <=> CH3CH2CCCH3",
     degeneracy = 6.0,
-    kinetics = Arrhenius(A=(2.96e+10,'cm^3/(mol*s)','*|/',0.25), n=0.797, Ea=(-1.174,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (2.96e+10, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = 0.797,
+        Ea = (-1.174, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -257,9 +312,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -268,7 +323,12 @@ entry(
     index = 11,
     label = "CH2 + benzene <=> toluene",
     degeneracy = 6.0,
-    kinetics = Arrhenius(A=(6.48e+13,'cm^3/(mol*s)','*|/',0.25), n=-0.272, Ea=(-1.274,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(
+        A = (6.48e+13, 'cm^3/(mol*s)', '*|/', 0.25),
+        n = -0.272,
+        Ea = (-1.274, 'kcal/mol'),
+        T0 = (1, 'K'),
+    ),
     reference = Article(
         authors = ['D. Polino', 'S.J. Klippenstein', 'L.B. Harding', 'Y. Georgievskii'],
         title = 'Predictive Theory for the Addition and Insertion of Kinetics of CH2 Reacting with Unsaturated Hydrocarbons',
@@ -279,9 +339,9 @@ entry(
     ),
     referenceType = "theory",
     rank = 4,
-    shortDesc = """VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
+    shortDesc = u"""VTST calculations at CCSD(T)/CBS//CASPT2/cc-pVDZ level""",
     longDesc = 
-"""
+u"""
 Quantum chemistry calculations at the CCSD(T)/CBS//CASPT2/cc-pVDZ level with hindered rotor corrections. A-factor error is estimated by source.
 """,
 )
@@ -402,7 +462,7 @@ entry(
     index = 20,
     label = "CHCl + ClH <=> CH2Cl2",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K')),
+    kinetics = Arrhenius(A=(1e13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment=""""""),
     rank = 7,
     shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
     longDesc = 
@@ -466,7 +526,7 @@ entry(
     index = 23,
     label = "CHBr + BrH <=> CH2Br2",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K')),
+    kinetics = Arrhenius(A=(1e13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment=""""""),
     rank = 7,
     shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
     longDesc = 
@@ -1275,48 +1335,6 @@ C    0.25061    -0.012243    0.407489
 O    -1.48699    -0.201823    -0.100577
 H    -0.951324    -0.131807    0.920361
 H    -1.775441    0.692753    -0.328757
-""",
-)
-
-entry(
-    index = 63,
-    label = "CHF3 <=> CF2_r1 + FH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8.66e+07,'s^-1'), n=2.01, Ea=(71629,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is CF3H <=> CF2+HF""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: CF3H <=> CF2+HF
-""",
-)
-
-entry(
-    index = 64,
-    label = "FC(F)(F)C(F)(F)F_p123 <=> CF2_r1 + CF4_r23",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(9.74e+11,'s^-1'), n=0.9, Ea=(119826,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is C2F6 <=> CF4+CF2""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C2F6 <=> CF4+CF2
-""",
-)
-
-entry(
-    index = 65,
-    label = "C4F10 <=> C2F4 + C2F6-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.27e+08,'s^-1'), n=1.39, Ea=(117727,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is C4F10 <=> CF3CF+C2F6""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C4F10 <=> CF3CF+C2F6
 """,
 )
 

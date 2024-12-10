@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Singlet_Carbene_Intra_Disproportionation/training"
-shortDesc = "Reaction kinetics used to generate rate rules"
-longDesc = """
+shortDesc = u"Reaction kinetics used to generate rate rules"
+longDesc = u"""
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 Sources:
@@ -21,11 +21,11 @@ entry(
     index = 0,
     label = "C6H6 <=> C6H6-2",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8.067e+10,'s^-1'), n=0.649, Ea=(8.03,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(8.067e+10, 's^-1'), n=0.649, Ea=(8.03, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
-    shortDesc = """Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
+    shortDesc = u"""Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
     longDesc = 
-"""
+u"""
 Taken from entry: A <=> IV
 """,
 )
@@ -34,11 +34,11 @@ entry(
     index = 1,
     label = "C6H6-3 <=> C6H6-4",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.454e+12,'s^-1'), n=0.178, Ea=(0.205,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1.454e+12, 's^-1'), n=0.178, Ea=(0.205, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
-    shortDesc = """Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
+    shortDesc = u"""Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
     longDesc = 
-"""
+u"""
 Taken from entry: IX <=> VII
 """,
 )
@@ -47,11 +47,11 @@ entry(
     index = 2,
     label = "C6H6-5 <=> C6H6-6",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.865e+11,'s^-1'), n=0.577, Ea=(29.169,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1.865e+11, 's^-1'), n=0.577, Ea=(29.169, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
-    shortDesc = """Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
+    shortDesc = u"""Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
     longDesc = 
-"""
+u"""
 Taken from entry: X <=> IX
 """,
 )
@@ -60,11 +60,11 @@ entry(
     index = 3,
     label = "C6H6-7 <=> C6H6-8",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.355e+12,'s^-1'), n=0.294, Ea=(35.954,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(3.355e+12, 's^-1'), n=0.294, Ea=(35.954, 'kcal/mol'), T0=(1, 'K')),
     rank = 5,
-    shortDesc = """Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
+    shortDesc = u"""Training reaction from kinetics library: 2003_Miller_Propargyl_Recomb_High_P""",
     longDesc = 
-"""
+u"""
 Taken from entry: X <=> XI
 """,
 )
@@ -87,7 +87,7 @@ entry(
     index = 5,
     label = "CH3CF <=> CH2CHF",
     degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1e+13,'s^-1'), n=0, Ea=(15,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1e13,'s^-1'), n=0, Ea=(15,'kcal/mol'), T0=(1,'K')),
     rank = 10,
     shortDesc = """MP2/6-311+G(2d,p)""",
     longDesc = 
@@ -101,7 +101,7 @@ entry(
     index = 6,
     label = "CH3CCl <=> CH2CHCl",
     degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1e+13,'s^-1'), n=0, Ea=(10,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1e13,'s^-1'), n=0, Ea=(10,'kcal/mol'), T0=(1,'K')),
     rank = 10,
     shortDesc = """MP2/6-311+G(2d,p)""",
     longDesc = 
@@ -115,41 +115,13 @@ entry(
     index = 7,
     label = "CH3CH2CBr <=> CH3CHCHBr",
     degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1e+13,'s^-1'), n=0, Ea=(4.2,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1e13,'s^-1'), n=0, Ea=(4.2,'kcal/mol'), T0=(1,'K')),
     rank = 10,
     shortDesc = """MP2/6-311+G(2d,p)""",
     longDesc = 
 """
 Ea is threshold energy for CD3CD2CCl -> CD3CD=CDCl from Figure 6 in [2]
 A factor estimated
-""",
-)
-
-entry(
-    index = 8,
-    label = "C2F4 <=> C2F4-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(2.4e+10,'s^-1'), n=0.81, Ea=(42007.8,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is CF3CF <=> CF2CF2""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: CF3CF <=> CF2CF2
-""",
-)
-
-entry(
-    index = 9,
-    label = "C3F6 <=> C3F6-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(5.78e+09,'s^-1'), n=0.81, Ea=(50398.4,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = """The chemkin file reaction is C2F5CF <=> CF3CFCF2""",
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C2F5CF <=> CF3CFCF2
 """,
 )
 
