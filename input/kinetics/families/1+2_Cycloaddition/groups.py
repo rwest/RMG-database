@@ -32,7 +32,7 @@ entry(
 """
 1 *1 R u0 {2,[D,T]}
 2 *2 R u0 {1,[D,T]}
-3 *3 R u0 p[1,2,3]
+3 *3 R!H!Val7 u0 p[1,2,3]
 """,
     kinetics = None,
 )
@@ -44,7 +44,7 @@ entry(
 """
 1 *1 C u0 {2,[D,T]}
 2 *2 R u0 {1,[D,T]}
-3 *3 R u0 p[1,2,3]
+3 *3 R!H!Val7 u0 p[1,2,3]
 """,
     kinetics = None,
 )
@@ -175,7 +175,7 @@ entry(
 """
 1 *1 C   u0 {2,[D,T]} {4,[S,D,T,B,Q]}
 2 *2 C   u0 {1,[D,T]}
-3 *3 R   u0 p[1,2,3]
+3 *3 R!H!Val7   u0 p[1,2,3]
 4    R!H ux {1,[S,D,T,B,Q]}
 """,
     kinetics = None,
@@ -188,7 +188,7 @@ entry(
 """
 1 *1 C   u0 r0 {2,[D,T]} {4,[S,D,T,B,Q]} {5,[S,D,T,B,Q]}
 2 *2 C   u0 r0 {1,[D,T]}
-3 *3 R   u0 p[1,2,3] r0
+3 *3 R!H!Val7   u0 p[1,2,3] r0
 4    R!H ux {1,[S,D,T,B,Q]}
 5    R!H ux {1,[S,D,T,B,Q]}
 """,
@@ -202,7 +202,7 @@ entry(
 """
 1 *1 C u0 {2,D} {4,[S,D,T,B,Q]}
 2 *2 C u0 {1,D}
-3 *3 R u0 p[1,2,3]
+3 *3 R!H!Val7 u0 p[1,2,3]
 4    C u0 {1,[S,D,T,B,Q]}
 """,
     kinetics = None,
@@ -215,7 +215,7 @@ entry(
 """
 1 *1 C   u0 r0 {2,D} {4,[S,D,T,B,Q]}
 2 *2 C   u0 r0 {1,D} {5,[S,D,T,B,Q]}
-3 *3 R   u0 p[1,2,3] r0
+3 *3 R!H!Val7   u0 p[1,2,3] r0
 4    C   u0 r0 {1,[S,D,T,B,Q]}
 5    R!H ux {2,[S,D,T,B,Q]}
 """,
@@ -256,7 +256,7 @@ entry(
 """
 1 *1 C   u0 {2,[D,T]}
 2 *2 C   u0 {1,[D,T]} {4,[S,D,T,B,Q]}
-3 *3 R   u0 p[1,2,3]
+3 *3 R!H!Val7   u0 p[1,2,3]
 4    R!H ux {2,[S,D,T,B,Q]}
 """,
     kinetics = None,
@@ -323,7 +323,7 @@ entry(
 """
 1 *1 C u0 {2,D}
 2 *2 C u0 {1,D}
-3 *3 R u0 p[1,2,3]
+3 *3 R!H!Val7 u0 p[1,2,3]
 """,
     kinetics = None,
 )
@@ -359,7 +359,7 @@ entry(
 """
 1 *1 C u0 {2,T}
 2 *2 C u0 {1,T}
-3 *3 R u0 p[1,2,3]
+3 *3 R!H!Val7 u0 p[1,2,3]
 """,
     kinetics = None,
 )
